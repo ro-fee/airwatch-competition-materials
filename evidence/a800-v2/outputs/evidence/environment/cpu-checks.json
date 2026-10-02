@@ -1,0 +1,41 @@
+{
+  "bundle_index_sha256": "5c8bcf2b47cadaa2f9cf319934fb6d6e6cb1cde77dcf6ad0c4237d526324fc4e",
+  "claim_scope": "CPU preparation check only",
+  "cuda_training_verified": false,
+  "data": {
+    "sealed_known_test_members": 24,
+    "sealed_signal_samples_read": false,
+    "sealed_unknown_members": 204,
+    "train_members": 115,
+    "train_windows_v1": 3680,
+    "train_windows_v2": 29440,
+    "validation_windows": 768
+  },
+  "executed_test_modules": {
+    "test_a800_allocation": 12,
+    "test_a800_bundle": 2,
+    "test_a800_bundle_review": 6,
+    "test_a800_data": 3,
+    "test_a800_data_integrity": 10,
+    "test_a800_delivery": 2,
+    "test_a800_evaluation": 15,
+    "test_a800_objective": 12,
+    "test_a800_runner": 18,
+    "test_uav_a800_contract": 3,
+    "test_uav_multiscale_tcn": 4
+  },
+  "packages": {
+    "h5py": "3.16.0",
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "torch": "2.14.0+cu126"
+  },
+  "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.35",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "python_executable": "/root/lyh_workspace/envs/airwatch-a800/bin/python",
+  "skipped_tests": 0,
+  "status": "passed",
+  "unit_tests": 87
+}

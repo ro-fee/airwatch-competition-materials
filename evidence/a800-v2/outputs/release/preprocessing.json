@@ -1,0 +1,10 @@
+{
+  "channels": [
+    "in_phase",
+    "quadrature"
+  ],
+  "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+  "sample_rate_hz": 100000000,
+  "window_samples": 4096,
+  "windows_per_member": 32
+}

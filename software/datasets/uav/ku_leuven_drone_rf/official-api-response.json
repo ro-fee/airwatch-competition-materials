@@ -1,0 +1,762 @@
+{
+  "status": "OK",
+  "data": {
+    "id": 154410,
+    "identifier": "HZRVNZ",
+    "persistentUrl": "https://doi.org/10.48804/HZRVNZ",
+    "protocol": "doi",
+    "authority": "10.48804",
+    "separator": "/",
+    "publisher": "KU Leuven RDR",
+    "publicationDate": "2024-01-16",
+    "storageIdentifier": "s3://10.48804/HZRVNZ",
+    "datasetType": "dataset",
+    "latestVersion": {
+      "id": 381,
+      "datasetId": 154410,
+      "datasetPersistentId": "doi:10.48804/HZRVNZ",
+      "datasetType": "dataset",
+      "storageIdentifier": "s3://10.48804/HZRVNZ",
+      "versionNumber": 1,
+      "internalVersionNumber": 34,
+      "versionMinorNumber": 0,
+      "versionState": "RELEASED",
+      "latestVersionPublishingState": "RELEASED",
+      "deaccessionLink": "",
+      "lastUpdateTime": "2026-06-26T07:39:54Z",
+      "releaseTime": "2024-01-16T09:08:34Z",
+      "createTime": "2023-12-25T16:47:58Z",
+      "publicationDate": "2024-01-16",
+      "citationDate": "2024-01-16",
+      "license": {
+        "name": "CC-BY-NC-4.0",
+        "uri": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "iconUri": "https://i.creativecommons.org/l/by-nc/4.0/88x31.png",
+        "rightsIdentifier": "CC-BY-NC-4.0",
+        "rightsIdentifierScheme": "SPDX",
+        "schemeUri": "https://spdx.org/licenses/",
+        "languageCode": "en"
+      },
+      "fileAccessRequest": true,
+      "metadataBlocks": {
+        "citation": {
+          "displayName": "Citation Metadata",
+          "name": "citation",
+          "fields": [
+            {
+              "typeName": "title",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": "Drone RF Dataset"
+            },
+            {
+              "typeName": "author",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Basak, Sanjoy"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Associatie KU Leuven"
+                  },
+                  "authorIdentifierScheme": {
+                    "typeName": "authorIdentifierScheme",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "ORCID"
+                  },
+                  "authorIdentifier": {
+                    "typeName": "authorIdentifier",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "0000-0002-7603-0324"
+                  }
+                },
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Pollin, Sofie"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Associatie KU Leuven"
+                  },
+                  "authorIdentifierScheme": {
+                    "typeName": "authorIdentifierScheme",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "ORCID"
+                  },
+                  "authorIdentifier": {
+                    "typeName": "authorIdentifier",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "0000-0002-1470-2076"
+                  }
+                },
+                {
+                  "authorName": {
+                    "typeName": "authorName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Scheers, Bart"
+                  },
+                  "authorAffiliation": {
+                    "typeName": "authorAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Royal Military Academy"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "departmentFaculty",
+              "multiple": true,
+              "typeClass": "controlledVocabulary",
+              "value": [
+                "Department of Electrical Engineering (ESAT)"
+              ]
+            },
+            {
+              "typeName": "datasetContact",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "datasetContactName": {
+                    "typeName": "datasetContactName",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Basak, Sanjoy"
+                  },
+                  "datasetContactAffiliation": {
+                    "typeName": "datasetContactAffiliation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Associatie KU Leuven"
+                  },
+                  "datasetContactEmail": {
+                    "typeName": "datasetContactEmail",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "sanjoy.basak@kuleuven.be"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "dsDescription",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "dsDescriptionValue": {
+                    "typeName": "dsDescriptionValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "This dataset contains drone RF signals that were recorded within the semi-anechoic chamber at the CISS department of the Royal Military Academy using an Ettus Research USRP X310. A high-speed 10 Gbit Ethernet cable connected the USRP to a computer for data acquisition. We recorded IQ data at a sampling rate of 100 MSps with a center frequency of 2.44 GHz, and an OmniLOG 70600 omnidirectional antenna was employed as the receiving antenna. Drones and remote controllers were positioned at a distance of seven meters from the receiving antenna. IQ samples from the USRP were recorded in binary format, and subsequently, we transformed these binary IQ vectors into complex signal vectors in Matlab, storing them as Mat files (version ‘-v7.3’)."
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "keyword",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "keywordValue": {
+                    "typeName": "keywordValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "UAV, Detection, Classification"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "publication",
+              "multiple": true,
+              "typeClass": "compound",
+              "value": [
+                {
+                  "publicationCitation": {
+                    "typeName": "publicationCitation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Basak, S. (corresp. author), Rajendran, S., Pollin, S., Scheers, B. (2023). Autoencoder based framework for drone RF signal classification and novelty detection. In: <i>2023 25TH INTERNATIONAL CONFERENCE ON ADVANCED COMMUNICATION TECHNOLOGY, ICACT</i>, (218-225). Presented at the 25th International Conference on Advanced Communication Technology (ICACT) - New Cyber Security Risks for Enterprise Amidst COVID-19 Pandemic, SOUTH KOREA, Pyeongchang, 19 Feb 2023-22 Feb 2023. ISBN: 979-11-88428-10-6. doi: 10.23919/ICACT56868.2023.10079363"
+                  },
+                  "publicationIDType": {
+                    "typeName": "publicationIDType",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "doi"
+                  },
+                  "publicationIDNumber": {
+                    "typeName": "publicationIDNumber",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "10.23919/ICACT56868.2023.10079363"
+                  },
+                  "liriasSourceID": {
+                    "typeName": "liriasSourceID",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "4090450"
+                  },
+                  "publicationURL": {
+                    "typeName": "publicationURL",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "https://doi.org/10.23919/ICACT56868.2023.10079363"
+                  }
+                },
+                {
+                  "publicationCitation": {
+                    "typeName": "publicationCitation",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Basak, S. (corresp. author), Rajendran, S., Pollin, S., Scheers, B. (2022). Combined RF-Based Drone Detection and Classification. <i>IEEE TRANSACTIONS ON COGNITIVE COMMUNICATIONS AND NETWORKING</i>, <i>8</i> (1), 111-120. doi: 10.1109/TCCN.2021.3099114"
+                  },
+                  "publicationIDType": {
+                    "typeName": "publicationIDType",
+                    "multiple": false,
+                    "typeClass": "controlledVocabulary",
+                    "value": "doi"
+                  },
+                  "publicationIDNumber": {
+                    "typeName": "publicationIDNumber",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "10.1109/TCCN.2021.3099114"
+                  },
+                  "liriasSourceID": {
+                    "typeName": "liriasSourceID",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "3718029"
+                  },
+                  "publicationURL": {
+                    "typeName": "publicationURL",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "https://doi.org/10.1109/TCCN.2021.3099114"
+                  }
+                }
+              ]
+            },
+            {
+              "typeName": "technicalFormat",
+              "multiple": false,
+              "typeClass": "primitive",
+              "value": "mat"
+            },
+            {
+              "typeName": "access",
+              "multiple": false,
+              "typeClass": "compound",
+              "value": {
+                "accessRights": {
+                  "typeName": "accessRights",
+                  "multiple": false,
+                  "typeClass": "controlledVocabulary",
+                  "value": "open"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "files": [
+        {
+          "label": "Frysky.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154500,
+            "persistentId": "",
+            "filename": "Frysky.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 1707367398,
+            "storageIdentifier": "s3://dataverse:18cea208587-a2e64c036a4d",
+            "rootDataFileId": -1,
+            "md5": "aa3b81678e5daaa3a3eab35b2894ec08",
+            "checksum": {
+              "type": "MD5",
+              "value": "aa3b81678e5daaa3a3eab35b2894ec08"
+            },
+            "tabularData": false,
+            "creationDate": "2024-01-08",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "MavicRC1.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154415,
+            "persistentId": "",
+            "filename": "MavicRC1.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 3704871299,
+            "storageIdentifier": "s3://dataverse:18ca1e0cda1-10b4318e8c52",
+            "rootDataFileId": -1,
+            "md5": "9ddbfab85f643eeb24998071dae7459c",
+            "checksum": {
+              "type": "MD5",
+              "value": "9ddbfab85f643eeb24998071dae7459c"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "MavicRC2.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154416,
+            "persistentId": "",
+            "filename": "MavicRC2.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 4081485570,
+            "storageIdentifier": "s3://dataverse:18ca1e0cf3d-1ff543503dcd",
+            "rootDataFileId": -1,
+            "md5": "44c4e82554f1a8760660d2aa1517d92e",
+            "checksum": {
+              "type": "MD5",
+              "value": "44c4e82554f1a8760660d2aa1517d92e"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "MavicVid1.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154418,
+            "persistentId": "",
+            "filename": "MavicVid1.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 5000491830,
+            "storageIdentifier": "s3://dataverse:18ca1e63f0c-7fff405c5de7",
+            "rootDataFileId": -1,
+            "md5": "1a493f690fd8c757bfb0962fa1f55779",
+            "checksum": {
+              "type": "MD5",
+              "value": "1a493f690fd8c757bfb0962fa1f55779"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "MavicVid2.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154417,
+            "persistentId": "",
+            "filename": "MavicVid2.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 5354223933,
+            "storageIdentifier": "s3://dataverse:18ca1e5efb7-3ff3d3d2231c",
+            "rootDataFileId": -1,
+            "md5": "ba18a843705d17d43a4af773cfc09d83",
+            "checksum": {
+              "type": "MD5",
+              "value": "ba18a843705d17d43a4af773cfc09d83"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "NineEagles.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154427,
+            "persistentId": "",
+            "filename": "NineEagles.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 1491713902,
+            "storageIdentifier": "s3://dataverse:18ca1ff8e1d-c6f8c747ba1f",
+            "rootDataFileId": -1,
+            "md5": "d08bc6bf7cfa9d267d6f637f58c384a5",
+            "checksum": {
+              "type": "MD5",
+              "value": "d08bc6bf7cfa9d267d6f637f58c384a5"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "Q205.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154428,
+            "persistentId": "",
+            "filename": "Q205.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 1531075910,
+            "storageIdentifier": "s3://dataverse:18ca1ff8fbb-f8b5b9a1f533",
+            "rootDataFileId": -1,
+            "md5": "3506e1e507b6575f6d741e93effdb3f5",
+            "checksum": {
+              "type": "MD5",
+              "value": "3506e1e507b6575f6d741e93effdb3f5"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "README.txt",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 156031,
+            "persistentId": "",
+            "filename": "README.txt",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 2862,
+            "storageIdentifier": "s3://dataverse:18d0ecb6499-b49107879af8",
+            "rootDataFileId": -1,
+            "md5": "7dd8c6225f0283e57882011f8fbe24bb",
+            "checksum": {
+              "type": "MD5",
+              "value": "7dd8c6225f0283e57882011f8fbe24bb"
+            },
+            "tabularData": false,
+            "creationDate": "2024-01-15",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "SJRC_pro.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154420,
+            "persistentId": "",
+            "filename": "SJRC_pro.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 1444331879,
+            "storageIdentifier": "s3://dataverse:18ca1ecde24-54af97de4297",
+            "rootDataFileId": -1,
+            "md5": "afdf2346ea788452ffb171fe6bbc6566",
+            "checksum": {
+              "type": "MD5",
+              "value": "afdf2346ea788452ffb171fe6bbc6566"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "Spektrum_DX4e.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154419,
+            "persistentId": "",
+            "filename": "Spektrum_DX4e.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 2026208466,
+            "storageIdentifier": "s3://dataverse:18ca1ecdfb5-7811a49d015f",
+            "rootDataFileId": -1,
+            "md5": "e7f5562f470ac5c66cf3f7463ca91109",
+            "checksum": {
+              "type": "MD5",
+              "value": "e7f5562f470ac5c66cf3f7463ca91109"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "get_spectrogram2.m",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154414,
+            "persistentId": "",
+            "filename": "get_spectrogram2.m",
+            "contentType": "text/plain",
+            "friendlyType": "Plain Text",
+            "filesize": 1102,
+            "storageIdentifier": "s3://dataverse:18ca1ba3a65-c898592f2766",
+            "rootDataFileId": -1,
+            "md5": "eb0094693b1714693e3be4b9c08f94ca",
+            "checksum": {
+              "type": "MD5",
+              "value": "eb0094693b1714693e3be4b9c08f94ca"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "inspire2RC.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154413,
+            "persistentId": "",
+            "filename": "inspire2RC.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 2229675553,
+            "storageIdentifier": "s3://dataverse:18ca1bbe0f1-3f3f0a9b047b",
+            "rootDataFileId": -1,
+            "md5": "9a4eb231c31bd90913424ae4fa487a7b",
+            "checksum": {
+              "type": "MD5",
+              "value": "9a4eb231c31bd90913424ae4fa487a7b"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "inspire2Vid.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154426,
+            "persistentId": "",
+            "filename": "inspire2Vid.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 5316321318,
+            "storageIdentifier": "s3://dataverse:18ca1fa6f74-f274accd29f9",
+            "rootDataFileId": -1,
+            "md5": "784b0b00f7b94376d504355263245891",
+            "checksum": {
+              "type": "MD5",
+              "value": "784b0b00f7b94376d504355263245891"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "matriceRC.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154423,
+            "persistentId": "",
+            "filename": "matriceRC.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 2083914364,
+            "storageIdentifier": "s3://dataverse:18ca1f1d4c9-efb2189903ea",
+            "rootDataFileId": -1,
+            "md5": "0016fb8d1f492da801cb82aab5ca6c7b",
+            "checksum": {
+              "type": "MD5",
+              "value": "0016fb8d1f492da801cb82aab5ca6c7b"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "matricevid.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154422,
+            "persistentId": "",
+            "filename": "matricevid.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 2807063609,
+            "storageIdentifier": "s3://dataverse:18ca1f1d682-dbfdc8c771a5",
+            "rootDataFileId": -1,
+            "md5": "db6eeb668009fea8596a8e16153c9da7",
+            "checksum": {
+              "type": "MD5",
+              "value": "db6eeb668009fea8596a8e16153c9da7"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "mini2RC.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154425,
+            "persistentId": "",
+            "filename": "mini2RC.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 2078132999,
+            "storageIdentifier": "s3://dataverse:18ca1f5ae60-def0852cd89b",
+            "rootDataFileId": -1,
+            "md5": "65aa92bbea24508d5fdf125360ec6e44",
+            "checksum": {
+              "type": "MD5",
+              "value": "65aa92bbea24508d5fdf125360ec6e44"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "mini2vid.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154424,
+            "persistentId": "",
+            "filename": "mini2vid.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 4326090329,
+            "storageIdentifier": "s3://dataverse:18ca1f5aff3-c6e78719c492",
+            "rootDataFileId": -1,
+            "md5": "2041fdaff63169879db6805835801fad",
+            "checksum": {
+              "type": "MD5",
+              "value": "2041fdaff63169879db6805835801fad"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "signal_visualize.m",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 156032,
+            "persistentId": "",
+            "filename": "signal_visualize.m",
+            "contentType": "text/x-objcsrc",
+            "friendlyType": "Objective-C Source Code",
+            "filesize": 606,
+            "storageIdentifier": "s3://dataverse:18d0ecc46b7-03f3d2f4db87",
+            "rootDataFileId": -1,
+            "md5": "27459f8323599bc9e52e1a6976636126",
+            "checksum": {
+              "type": "MD5",
+              "value": "27459f8323599bc9e52e1a6976636126"
+            },
+            "tabularData": false,
+            "creationDate": "2024-01-15",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        },
+        {
+          "label": "wltoys.zip",
+          "restricted": false,
+          "version": 1,
+          "datasetVersionId": 381,
+          "dataFile": {
+            "id": 154421,
+            "persistentId": "",
+            "filename": "wltoys.zip",
+            "contentType": "application/zip",
+            "friendlyType": "ZIP Archive",
+            "filesize": 1513957160,
+            "storageIdentifier": "s3://dataverse:18ca1ece0f0-5701faf0cb3b",
+            "rootDataFileId": -1,
+            "md5": "fb2847bfe3696b835c900fc253ef3f89",
+            "checksum": {
+              "type": "MD5",
+              "value": "fb2847bfe3696b835c900fc253ef3f89"
+            },
+            "tabularData": false,
+            "creationDate": "2023-12-25",
+            "publicationDate": "2024-01-16",
+            "fileAccessRequest": true
+          }
+        }
+      ]
+    }
+  }
+}

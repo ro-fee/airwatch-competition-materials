@@ -1,0 +1,511 @@
+{
+  "code": {
+    "airwatch/__init__.py": "f26efdf859556476028fc99ae8dda93bb60b4060e1f180304eaa4447b23ab500",
+    "airwatch/analysis/__init__.py": "e9d416df4c48c18f9ed74edc91c86dd4a3e7b69f4669a28d8f5ee476d3cfcb05",
+    "airwatch/analysis/bearing_fault_frequencies.py": "b9c9c150985251840388b0b9c39370adb35e19669d8655728626632986f78eee",
+    "airwatch/analysis/bearing_quality.py": "c45ea2801ee01284a9d3dbc5b7764346a30bdf2e7fa3e24db39771a9ab498efa",
+    "airwatch/analysis/bearing_robustness.py": "5f4a36b18b55c08f57314c57888d895bcc29134e646046f824b7cb910766480c",
+    "airwatch/analysis/bispectrum_views.py": "f580cab2a0bb7feddd4743fd229cfc1309fe145e042c0f152073a8a1d7f136a3",
+    "airwatch/analysis/controlled_noise.py": "580dd41451f48ee7eb2fd55a589e152f3c6b9f6a8dc206260ae07a76d64f1860",
+    "airwatch/analysis/feature_views.py": "419450d6aee3d92e6d268d9524f8b94f1cb54ef2aefd37a988a25dc75c319914",
+    "airwatch/analysis/generated_views.py": "64251f49b72cc9d51c8216bcca8b9884290c3ffe105cea6fb211f32dda7c1266",
+    "airwatch/analysis/hht_views.py": "9562622c49d286274c957dd7d919c4560ed0d5c1774c09332d11ec7e491855c8",
+    "airwatch/analysis/home_features.py": "e7aa3636ab9d5a535964066b680f4e5590b765962d08ef7d4785a1b978b2b985",
+    "airwatch/analysis/iq_perturbations.py": "139e9bfa80023dd61229ceb2d4f740d05a1753fcded86dcecc170f1b177a070a",
+    "airwatch/analysis/jr_views.py": "cc9d88f8dd9c084bb4659f2f26e1e7fa1a764eff2a8faaca95233a53189a8983",
+    "airwatch/analysis/signal_transforms.py": "7efe605ab062a1b94dc95149bc46900e50b2b86ed57614819b917345dad6c57d",
+    "airwatch/analysis/tsne_views.py": "301102a1a5ab557b75db2f79998af05945887ed7bf67a5b81dbb74c5da984683",
+    "airwatch/analysis/uav_quality.py": "5d66e10aa48663bc34a1b18e98bd47aab0169405fe2d31e9efc68c97a3c9e197",
+    "airwatch/analysis/waterfall.py": "1f2291e9fc00dd3de964af1b1c4e1804d69e8cbb5d713615982bb481c78a202e",
+    "airwatch/analysis/wavelet_views.py": "39dc954e33be24441c98e3ff15d677fbe75e272fdda21bc04a94894d216221e7",
+    "airwatch/data/__init__.py": "68479e2a7fcd727b4b037c71687b86ccadc9c5cc4b2abb8542ee0738d936aec9",
+    "airwatch/data/bearing_dataset.py": "f752d6c3b389bf24630e1c71161cc7e8343c3002bcf22d089628ff6e55592ee8",
+    "airwatch/data/bearing_metadata.py": "066eb116fceba3543e75a877c254ea0513476ce4f59f46e85ba382a808eac954",
+    "airwatch/data/cwru.py": "3e4d0ee6380003bed66668c4643986c0601ef4f69829df80857d45b053067a97",
+    "airwatch/data/cwru_audit.py": "5f129daa00332cb6548d17c319d624df343854ca9f6eccca02506d7a6b1744f3",
+    "airwatch/data/data_provenance.py": "c69be58464ddbcfa0c9e7f1e57be9168ba1c2c69617d8f0003688cde54df1287",
+    "airwatch/data/dronerf.py": "b52ee17c4612e870fdbd05db2c313a8002538234cccc6fbfc8c126782773f05d",
+    "airwatch/data/dronerf_dataset.py": "3aed6e9a38204db709c3d67b3cea0716d8b9481fc9af83718e422379b04e053b",
+    "airwatch/data/dronerf_windows.py": "b118d9a36c449436cdfb85351a1dc86ece7938dd76f4840690eeca5534c2ebc4",
+    "airwatch/data/external_compat.py": "afe4bf747d040a6fc29c281505dfb38ef3080e6478fb0f6c4d7cc35a42b55338",
+    "airwatch/data/historical_comparison.py": "ab74d735606e30015858c0c1a01b10a72c25b7fa1a609d9ca896e3321b63032a",
+    "airwatch/data/home_input.py": "463e3b2dc40f8512ab9ee4429f93f5d53e6144cbb25793223e8bd21d1d134a48",
+    "airwatch/data/ku_leuven_audit.py": "996b51ce2b418ca344164d14f9995fac1356480c6f006edaa61cea8e3a2788a0",
+    "airwatch/data/ku_leuven_dataset.py": "fcca21c72b932a020858c2efb017c128ddbd68a62deb04532c16187320173928",
+    "airwatch/data/ku_leuven_manifest.py": "671ff67acf392713e2784ba71c612d33ac4abc6007ceae5501889fe3e6681918",
+    "airwatch/data/ku_leuven_preprocessing.py": "e74e8915c1bbc126ba5e0c422ad24e69e17b92d8c4d80d92e153f8d8fe5899ad",
+    "airwatch/data/ku_leuven_preprocessing_audit.py": "0c5081fa7fcb2b168cd096d4a0a8cbb53f8179c17c450a9ec20c0c5b2700f7b3",
+    "airwatch/data/ku_leuven_split.py": "1d1046952a794701f75b0d19050691c4b22ea10cf141e58ec80bb1fec630d87a",
+    "airwatch/data/ku_leuven_training_v2.py": "9a911a6679c35ce67a7934282fec89a24949b8b29822e64da352a16c3b6e56ca",
+    "airwatch/data/materialize_dronerf.py": "49715eb83b4c93a72f10dc24c52c9da06509f191ae5ce9d27fbedefc5989efe1",
+    "airwatch/data/materialize_ku_leuven.py": "846ea84c749002159108fc25291b8755fc1ef2b274f009b939518e75c492b669",
+    "airwatch/data/matlab_v73_iq.py": "b40850e273e93b6fed323ce66326ff1bc3cb2f2deec548770458eb8c10f63329",
+    "airwatch/data/matlab_v73_iq_audit.py": "9d6046ae737c1f0b35ac8d695957cd56ec045be29ac9e3219a617b9c4087223e",
+    "airwatch/data/prepare_dronerf.py": "41df0b011b8e4bacd744729b0481f98353decb1cf91f37dad14905a4c221a7da",
+    "airwatch/data/recognition_input.py": "91cc392973fc961d70dc12df8d012089400fd93e338f269ea71ac7c2fffb6b1c",
+    "airwatch/data/uav_input.py": "36561de4dbe59021a02e4e3d9f0fa6a83c7dfbf721fa16bdd7974e70be86e09b",
+    "airwatch/data/vti_audit.py": "fd94fed8d91becf98588a2ee39fbcd6f11b42a2e94771cdb48767032a6ecc087",
+    "airwatch/evidence/__init__.py": "a1b5ed4f5f373322427567f03e99b90ab0425fcf344bc57c6dc0f50fe21c7872",
+    "airwatch/evidence/ku_leuven_external_protocol.py": "fccd38868d5cc481fa4a46ffdd718d6deebac366c2c57a85039454a7d8a00fce",
+    "airwatch/evidence/uav_baselines.py": "7ba34dbe4b5be56b1f56921db1e48007116de9ebfe0273200cab980b728c88fb",
+    "airwatch/evidence/uav_robustness.py": "79328a2a42ddc67f684592f3c88ac8f59c91ecb72ea989c92e6a71b13c9d2a21",
+    "airwatch/general_recognition_contract.py": "ad78499c740a3f4245d3c85ecc8d9698a1c806e432969d3da587b23b114d7679",
+    "airwatch/inference/__init__.py": "e9bfe0dcadda69e11b6a1c644528d5324e62c2621afbbe376ee13d0971b23a2c",
+    "airwatch/inference/adapter.py": "e9612fa3025b73572d20d3f714846056d85f216d406a82c2adbc879f4877f28c",
+    "airwatch/inference/bearing.py": "baa3d784d463d32267638918e191dd34deb6658474adcc6948c858281f5e1b72",
+    "airwatch/inference/bearing_contract.py": "889ea9b874ae375f4fe71d6811ce13fdc7bb62eca7f1033e7890fc0633109b1e",
+    "airwatch/inference/general_models.py": "d9520a20f93ea0d63f2ce7d3d8136d3fc83f99760e91874f080a6f94d57b13f3",
+    "airwatch/inference/ku_leuven.py": "ae806a9e7f9ed0d32edcda1e4845d427a0a6a323f4ec5cc0ad8d9e6f91d8a005",
+    "airwatch/inference/uav_a800_contract.py": "f31b8f44ef826bf62d285f9f7b4133ec62bb2d0176caa0cca9db2a1b3dbb4036",
+    "airwatch/inference/uav_open_set.py": "e908baf91c04477f51fda761a70d653040f20d3c260914eefb1fdc4dbb31dbfe",
+    "airwatch/models/__init__.py": "3104277c261b3c7c177b58e938c951dfed85585e2759878d3a6c60e51de6d125",
+    "airwatch/models/bearing_cnn.py": "d5b21c146096cff3e3cda5f2c1d05670a35738e8a3d5b9687230338440c257f3",
+    "airwatch/models/uav_baselines.py": "15f48724c3d1747454d4dab6b7a0106c9f84d80e0e2b242d9cf42885ebfcb1d5",
+    "airwatch/models/uav_cnn.py": "e7741d49ae524971dc2dd599ff9fd9312617958e0624b39120e389ab0db41697",
+    "airwatch/models/uav_dual_branch.py": "cc27f238c4f7485832cee82c442aedb07066b70b0ee16a1829a5df298b2ccbf9",
+    "airwatch/models/uav_multiscale_tcn.py": "df62c0b677748f1471b22b06aea4c52eda63e41cf54baf9180bb1c5517eef8c2",
+    "airwatch/runtime_paths.py": "01ef237e945b7a9a314e8ee3130c8c1f50ceaae4d443ea14d7ae382ebb466143",
+    "airwatch/runtime_resources.py": "5b601511f248e17823b1954c4f2725585bb6d4475034d41c9d3d279d3137fe1c",
+    "airwatch/runtime_smoke.py": "1efd691ffaf9034323078738e32617cc191dbf8053e92d59b8f565c73c5d7c23",
+    "training/__init__.py": "e1696139cc6de3a94ade7fbcdc10d15f9d15f805ff154b9584cf5ac0c1f15afc",
+    "training/a800_common.py": "6c3514dbb3249765ead79aaa1da04cef8b49bbf9625fa24a0f0e5090a0d5eb80",
+    "training/a800_cpu_checks.py": "689e4c98697aada5488bc63864f2c209f98340e839fabe925844d55311e61cf6",
+    "training/a800_data.py": "62d36a6e6bc60cf0edb36ce57d55ec9efaffdc4ae1b06e47429153fab4fae390",
+    "training/a800_delivery.py": "88012e9987fd2dc202710e0261f8eb6f4128c0f6f5c2f3888b5660648cacd237",
+    "training/a800_environment.py": "eaf509af773931ea9111425c0beb537578ba24f6a36f83ccba2994e4d2a42554",
+    "training/a800_evaluation.py": "9ba78a72820af5635e37162679043d99d78baee3c0d191fca1d95affd619c1d6",
+    "training/a800_fetch_sources.py": "75ae81bba1f92e92b361281b7201cc85c8875f0996cfd2d51693869f026d87f2",
+    "training/a800_objective.py": "d9e08861e5afbf713bbc64fefc5755c511e3394a38a1a87838973093a4cee1db",
+    "training/a800_runner.py": "9f21df92d2fbfab94621cb4c550d3879c239c9b7cd14e3dc477f14a45f10e09f",
+    "training/accept_bearing_inference.py": "d5155ad9f6f87dd22a5a316112a7891fb115446ec656ea4e57692f9ac0635090",
+    "training/analyze_ku_leuven_local_stability.py": "5c3b12c512b95a7c0ddd4a8eefc8bb7012e2f96c4a52d6a47bd41e65a077859a",
+    "training/audit_bearing_quality_rejection.py": "eb90c9ba4b6b11d191fbbb9d29724db05d78c45c8b7541b79f1a0cfca16b5e95",
+    "training/audit_bearing_quality_v2.py": "8535a315ba95abbafe110a77d35b75296d7155480e6b5636f30edc7d584c298c",
+    "training/audit_bearing_robustness_preprocess.py": "cadf35926c7d4b768617d79f65e32c37a18bc4fbbcdeafb5fa38b9f00af0b3cd",
+    "training/bearing_augmentation.py": "4f7c5909416ad312530f9330f0dca7d6e847f9779dddb91c2da9bd776b3f7fd0",
+    "training/build_a800_bundle.py": "a0e98af8d673842010cfe689eb2739616a910b7f866f4931539458a21bddfb25",
+    "training/calibrate_bearing_quality.py": "7a9080432af9ad55ccbea658530018b0af3d5561be713adf14cec5134dbfd3e7",
+    "training/calibrate_bearing_quality_v2.py": "1f3e9a4c537713b81c50a1a1ad1555f77e3dfaea67961c45f95c5584e70517d8",
+    "training/calibrate_uav_open_set.py": "6ee81dd9f4994252e791dddc4633aa917bbafe81d74bd4553868f1ae65f6a83f",
+    "training/common.py": "a475adc63bf077e885d6ada48d805c41db89ff7e404986c00c6e2153943ac912",
+    "training/configs/a800_v2/matrix.json": "c7b98f236a51e46ecaac554e96582f7ea5be0de0467d975939ecb4dfe853c4c9",
+    "training/configs/bearing_cnn_anti_noise.json": "fb701e9c1da249f5d249b3fd3760df97dee2f519533874323fcd0ef08de74dbb",
+    "training/configs/bearing_cnn_baseline.json": "f3aad100577bfa34cf8d5957b5e67105282d5a01677d101dfcbb24d4591a12de",
+    "training/configs/bearing_cnn_window_zscore.json": "894d1fa618837929e71a14f33befa165c8531873a277e27969ef068b713d1944",
+    "training/configs/dronerf_added_noise_robustness_protocol_v1.json": "bfca2a6ac7487089dc7ae068630ef592632981cf83f98fe1a73f34635769d393",
+    "training/configs/dronerf_cnn_type_baseline_v1.json": "12bc87c8b3322b7e11d97757729234c3e60d3c1f6709aec7cb060d3b4af39c1a",
+    "training/configs/dronerf_dual_adaptive_presence_ablation_v1.json": "780c2ed8884a9d6ef379b35bb257b9abfefe8e0ae45bbdecad4047e46b447acf",
+    "training/configs/dronerf_dual_adaptive_type_ablation_v1.json": "8ee623b84f21f2a020c5958c3975ed18c550e6ebecfb97d7c1e351070d9b193b",
+    "training/configs/dronerf_dual_branch_ablation_protocol_v1.json": "c8e57011ba1c66a5a07283561ff8a6123329fc79dd58a407110cd5bb88d1d2ea",
+    "training/configs/dronerf_dual_concat_type_ablation_v1.json": "b7eaaae6ef121298157657e780e8512c6a30561d5ce93206a5b4fa39e7fae5aa",
+    "training/configs/dronerf_resnet18_type_baseline_v1.json": "026906e30d50d8869c9447194fc9d3cd878dbe9cfb452b8484b1098e08602c1d",
+    "training/configs/dronerf_spectral_type_ablation_v1.json": "089cf7f3a4111eb5c24eb7ed7fa4807f9e9bf414bc18253fbea7497d16079591",
+    "training/configs/dronerf_tcn_low24_a800_formal_v1.json": "83477d66b899fce9df1339316cdd53cd348b81c1d5cb89b2f87006a349597c42",
+    "training/configs/dronerf_tcn_low24_local_smoke_v1.json": "ad70b97b9b1ab05f8c51f4ab3d31b708326ca9012fda16a9f4a927527a06a156",
+    "training/configs/dronerf_tcn_low24_type_baseline_v1.json": "a01acfcda497c662f26f7a42c45f81df4e1040a199d77b4c9d42632277265aa6",
+    "training/configs/dronerf_tcn_noise_augmented_protocol_v1.json": "30781baf6b86bcfa181c20f3825ded039be6ba716b697cf56064a148fec5b3fa",
+    "training/configs/dronerf_tcn_noise_augmented_validation_comparison_protocol_v1.json": "0ca7cc857eebbb10e0b1c4d9e9c95a33138d8f320e98b2b48fab5d224ca21534",
+    "training/configs/dronerf_tcn_noise_augmented_validation_v1.json": "ac9795e36367eef3f6da79a49351bbc044634d26bc19bd49b9e6189350ea9698",
+    "training/configs/dronerf_tcn_open_set_calibration_protocol_v1.json": "9f93e03bb1b5ea628da74dd9ef0c198fb950d7464f64960a1960a93b47da5a87",
+    "training/configs/dronerf_tcn_type_baseline_v1.json": "fb3bb165210123e96766d7e0a3278a58833093a85b89e711ae265ae017daacef",
+    "training/configs/ku_leuven_a800_model_selection_v1.json": "447450eff20f2752ed17af426efe74c119fb8fa2e2a162c8fa8288c451ce7cda",
+    "training/configs/ku_leuven_augmented_local_protocol_v1.json": "e2cb9699cd1dc73b1ef69ab6ac407a8f155244f82e7fe49ce97b019044b11b79",
+    "training/configs/ku_leuven_in_domain_known_unknown_protocol_v1.json": "6f476fc0b5d774b95c22a0bf98a23d9183debd23278c2b4d580ab8a9ecdb0680",
+    "training/configs/ku_leuven_local_comparison_protocol_v1.json": "6a1f8e0a3c7661b6249348d71394b73bec72cc6f253bea35a14aefa5a5d4cf15",
+    "training/configs/ku_leuven_local_reproducibility_v1.json": "6d3b3d9e94a5ba307f90e17a538676ff28df36e500ab58cf49320875bbbb2307",
+    "training/configs/ku_leuven_resnet18_a800_formal_v1.json": "27eba7907717e0783d38e93062c8b6266364a7b46e6c9fb9b616d5fc32853907",
+    "training/configs/ku_leuven_resnet18_local_development_v1.json": "f7e5a21e0c0c8e25393b6d430b1dab24f07534f8c9fb8eb510295209b6423543",
+    "training/configs/ku_leuven_sjrc_external_unknown_protocol_v1.json": "a70fd2f571a97c2cab8cb8805cb2b5b3dbc4fb290bc05956186e64eb408f5a7c",
+    "training/configs/ku_leuven_sjrc_external_unknown_protocol_v2.json": "064f4a33abe4060d0b83cf261f7d3029788f03b254c06f65e056b353fadfbe74",
+    "training/configs/ku_leuven_strong_noise_local_protocol_v2.json": "e9ea78da67ecda35ab03a85c0cd7a520d5d5fb5116b8bd368490c02a8f9b4336",
+    "training/configs/ku_leuven_tcn_a800_formal_v1.json": "ac29bc32ec098323780e738b2cecfd0e3fc5861bc5502e6eca59e63ad2ba483a",
+    "training/configs/ku_leuven_tcn_augmented_validation_robustness_v1.json": "bcde104bb66dc3126aebcdc1898d7aad66028a33b863a9544406f74d6ee0a579",
+    "training/configs/ku_leuven_tcn_local_development_v1.json": "8ee34ccbfabfcb0a938f932c3f2784e5dc57695c1e6d8b6ecca07c877a495304",
+    "training/configs/ku_leuven_tcn_local_smoke_v1.json": "f496680675dd1ec43ad58a936dc4b70ef35f31613c471fe2455b05f7678f10af",
+    "training/configs/ku_leuven_tcn_local_smoke_v2.json": "c7093dbf46159f8ea1ade59d40c3e5dc1190b92be30b5e19b2a6d74fad662143",
+    "training/configs/ku_leuven_tcn_local_validation_robustness_v1.json": "7b224201b79e9965ece6a8a4bb2368b520cd366970245b77579551190f1693f3",
+    "training/configs/ku_leuven_tcn_strong_noise_validation_robustness_v2.json": "cb1022e45c748b0baf85f3f31b143b49151875a2d7138b42e9301502a7a4920b",
+    "training/configs/ku_leuven_tcn_weighted_worst_noise_validation_robustness_v4.json": "448237f2167795515ce6a718fa8eb4a068744e90e71c8b9f4d01959fd06a4dc7",
+    "training/configs/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3.json": "fee08bc842fa5a91fd73c1a6b40eb042b1cbcb3550be4309f0ffe89451d91f33",
+    "training/configs/ku_leuven_weighted_worst_noise_local_protocol_v4.json": "5ce37a01467f4d1820a8036444ab839a890a89e02146523fd1e77b1655377923",
+    "training/configs/ku_leuven_worst_noise_selection_local_protocol_v3.json": "7229b424e1006d2f62de350c542636a20299b059e5ee0e36dd4cbea0bcb54b20",
+    "training/diagnose_ku_leuven_noise_errors.py": "b00f99bd2c68d79785e0a2d7ebf6b4ae60fbab4ea2d07d7b933c5a0db8a77449",
+    "training/evaluate.py": "09db4a3920085622c5083333fd08d5af1cf8693c90d8f7cf45d99270192612b8",
+    "training/evaluate_ku_leuven_robustness.py": "107e9e4376b177667ef069e98fb1535c4292d4047916014b812bf4eb5f6db466",
+    "training/evaluate_robustness.py": "28d8efc05d29e6d536c416333e079730062ea302e32652de8e8cbe2e17e20284",
+    "training/evaluate_uav_robustness.py": "2cd40117e21ee642f893b5646f6d1be6c7144e7c31f50e974169886c57f33f7b",
+    "training/export_ku_leuven_runtime_demo.py": "9fbb1a408d1c5d8953a4aedf6b4e66d3a81ae49b07563346a22967578acf7f21",
+    "training/freeze_ku_leuven_runtime.py": "ba71e19c45f8d3dcad54f6c1303a488c07dbfa5d4cc527d3c536db88da3c87cd",
+    "training/freeze_ku_leuven_v4_runtime.py": "bef73198eb851b7ac8fd75327a55eff82d84f6d287df816d2ca5a95fff4eb0ea",
+    "training/ku_leuven_augmentation.py": "39d13363d416cb6f53ef7d90fa58ef48649a4515ee14c6e7c978b4d115adee08",
+    "training/ku_leuven_baseline.py": "952c36f8f5107062baad0d8b5de35513282cffeb031d8da396c910cdf42827db",
+    "training/ku_leuven_checkpoint_selection.py": "f10003e60bf13574a0eb1797cd859b6f70ea1db3cd1ef2622f18505ae350536e",
+    "training/resolve_a800_environment.py": "c9b5c2e7b787be775829d15af5b3f9ccfdf6c256803b1a9df6693a72eb660b7e",
+    "training/run_ku_leuven_a800_matrix.py": "92f66387d5d062f6eb132e290c73ac7547aa7291bc7aa6c9af6fa2eb1db9612b",
+    "training/run_ku_leuven_augmented_local.py": "2b1dc860365d915ea71fb42c8906cfb4a57e0a0a4ce81a64b1e4a1b2628a845a",
+    "training/run_ku_leuven_local_matrix.py": "0d78d88701c9512b6c7e911d1a967a0a09ec80deccf7c493244805bbe479d801",
+    "training/run_ku_leuven_strong_noise_local.py": "c320daf7fc3ab4516afd7014bac3a8b2094c0558ec22a8bc84ae20ccf53f5f8f",
+    "training/run_ku_leuven_weighted_worst_noise_local.py": "5a0cb074710f61f2cf4975b9047d6c89882070f3bbe4cf74ffdfda1dd673dce7",
+    "training/run_ku_leuven_worst_noise_selection_local.py": "518922af53906210bc6d7a6e4b08eb99b9f18af8cc04588857a09393c9260208",
+    "training/run_uav_ablation.py": "0f2f56ce1d42ca80b83f6df9d8d319ef73f16985fd3d898412083d841d082bad",
+    "training/run_uav_multiseed.py": "af543eae994164474d2deeff90af7a5db6be8f525f273ef8bdc246d742062936",
+    "training/select_ku_leuven_a800_model.py": "a167fd60c71830eb787e5e49acd05aa64bad96531d717086c8978d6c2c30bf20",
+    "training/train.py": "fd2b6515a93f62e1f44834145adc663132a6ed5d9bcb91d06f73eb8a9921e54b",
+    "training/uav_baseline.py": "15ab08e99865b82b3b95f52f17cecac92f7146421d5190504e614f46834a187f",
+    "training/verify_bearing_contract.py": "b108eb3ba6867418054999cc6714feecc83ec12f99e7d0f73b42af938f08a468"
+  },
+  "cuda_version": "12.6",
+  "formal_result": false,
+  "gpu_uuid": "GPU-846ca462-6ed9-19d9-24ab-43bafd745aa0",
+  "kind": "engineering_smoke",
+  "models": [
+    {
+      "anchors_per_batch": 128,
+      "data_identity": {
+        "train": {
+          "artifact_type": "ku_leuven_materialized_known_train_validation",
+          "artifacts": {
+            "data_path": "c11a7027963b2fbe93517b9cb594a7362a7ec17157742570d6a5aebae26c3b13",
+            "labels_path": "4253ec981b7c00eea00687d189ccebe7eea0a7e30b4794e8458835de4d07b1db",
+            "metadata": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+            "windows_path": "292c9daedb6c482456a2ff3e0f21d675a4fb8906e446e24b62e4fa8480949464"
+          },
+          "label_map": {
+            "dji_mini2_rc": 2,
+            "frysky": 0,
+            "spektrum_dx4e": 1
+          },
+          "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+          "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+          "source_window_plan_sha256": [
+            "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+            "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+            "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+          ]
+        },
+        "validation": {
+          "artifact_type": "ku_leuven_materialized_known_train_validation",
+          "artifacts": {
+            "data_path": "78fc54b38f001a8f75984c3a7677c081704d49975658971af385ecd1d663d350",
+            "labels_path": "f1ce8b6e375aa7e190f925392a3ea769f02368e52ab3fc58a3c88d6b8c6bb325",
+            "metadata": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+            "windows_path": "48630436cfe4c3fccd463e4827127e65d286aa6519bdbf4d56e6ddf5710e3d7b"
+          },
+          "label_map": {
+            "dji_mini2_rc": 2,
+            "frysky": 0,
+            "spektrum_dx4e": 1
+          },
+          "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+          "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+          "source_window_plan_sha256": [
+            "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+            "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+            "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+          ]
+        }
+      },
+      "estimate_includes_validation_and_save": true,
+      "estimate_limitations": "three-step measurement; storage/load contention and data-loader variation remain unmeasured",
+      "estimated_full_run_seconds": 1704.4541415572166,
+      "inputs_per_forward": 256,
+      "model": "tcn",
+      "peak_memory_allocated_bytes": 1054239744,
+      "resume_equivalence": {
+        "anchors_per_batch": 3,
+        "checkpoints": {
+          "continuous": "7faf8351c439f962d0eeedd458b7e2708e5482cc2a32aaaf43592bf7d5efc5f8",
+          "resumed": "e28c4fe712d522503a05a381a09b3f0a8e4d3cf27bc8fef5e287ae9e0a104c40"
+        },
+        "compared_fields": [
+          "artifact_type",
+          "best_rank",
+          "best_state",
+          "best_step",
+          "best_training_state",
+          "config",
+          "draw_position",
+          "epoch_step",
+          "global_step",
+          "history",
+          "identity",
+          "kind",
+          "logical_epoch",
+          "model_state",
+          "optimizer_state",
+          "rng",
+          "sampler",
+          "scaler",
+          "scheduler_state",
+          "schema_version",
+          "validation_pending"
+        ],
+        "continuous_steps": 4,
+        "device": "cuda:0",
+        "evidence_path": "outputs/engineering-smoke/resume-tcn-emhtpn0p/check/resume-equivalence.json",
+        "exact_equal": true,
+        "formal_result": false,
+        "interruption_step": 2,
+        "kind": "engineering_smoke",
+        "limitation": "Bounded engineering equivalence; full-budget CUDA results remain unmeasured.",
+        "precision": "bf16",
+        "run_results": [
+          {
+            "directory": "continuous",
+            "global_step": 4,
+            "state": "completed",
+            "stop_after_steps": null
+          },
+          {
+            "directory": "resumed",
+            "global_step": 2,
+            "state": "interrupted",
+            "stop_after_steps": 2
+          },
+          {
+            "directory": "resumed",
+            "global_step": 4,
+            "state": "completed",
+            "stop_after_steps": null
+          }
+        ],
+        "schema_version": "2.0",
+        "state": "completed",
+        "train_identity": {
+          "indices": [
+            0,
+            928,
+            2304
+          ],
+          "parent": {
+            "artifact_type": "ku_leuven_materialized_known_train_validation",
+            "artifacts": {
+              "data_path": "c11a7027963b2fbe93517b9cb594a7362a7ec17157742570d6a5aebae26c3b13",
+              "labels_path": "4253ec981b7c00eea00687d189ccebe7eea0a7e30b4794e8458835de4d07b1db",
+              "metadata": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+              "windows_path": "292c9daedb6c482456a2ff3e0f21d675a4fb8906e446e24b62e4fa8480949464"
+            },
+            "label_map": {
+              "dji_mini2_rc": 2,
+              "frysky": 0,
+              "spektrum_dx4e": 1
+            },
+            "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+            "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+            "source_window_plan_sha256": [
+              "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+              "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+              "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+            ]
+          },
+          "scope": "balanced engineering subset"
+        },
+        "validation_identity": {
+          "indices": [
+            0,
+            192,
+            480
+          ],
+          "parent": {
+            "artifact_type": "ku_leuven_materialized_known_train_validation",
+            "artifacts": {
+              "data_path": "78fc54b38f001a8f75984c3a7677c081704d49975658971af385ecd1d663d350",
+              "labels_path": "f1ce8b6e375aa7e190f925392a3ea769f02368e52ab3fc58a3c88d6b8c6bb325",
+              "metadata": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+              "windows_path": "48630436cfe4c3fccd463e4827127e65d286aa6519bdbf4d56e6ddf5710e3d7b"
+            },
+            "label_map": {
+              "dji_mini2_rc": 2,
+              "frysky": 0,
+              "spektrum_dx4e": 1
+            },
+            "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+            "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+            "source_window_plan_sha256": [
+              "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+              "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+              "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+            ]
+          },
+          "scope": "balanced engineering subset"
+        }
+      },
+      "save_seconds": 0.047786172945052385,
+      "serialized_bytes": 10326153,
+      "step_seconds": [
+        0.8386545949615538,
+        0.17603373574092984,
+        0.17573166592046618
+      ],
+      "training_steps": 3,
+      "validation_seconds": 2.1105461749248207
+    },
+    {
+      "anchors_per_batch": 128,
+      "data_identity": {
+        "train": {
+          "artifact_type": "ku_leuven_a800_v2",
+          "artifacts": {
+            "data_path": "5cb4aa6ccce6ef5486a70a1d51c0a0d86a1a758a5a64311e5332f0f5cdf66f6e",
+            "labels_path": "b418a9fb2729379cdf064d80731a2d67aff8af2a60d6724cba472ce6ac1b2f06",
+            "metadata": "d7316bff7ad76c3596f167c1ce67a233f3aef9e2c77e8c3420bfbbfa7d2dc743",
+            "windows_path": "4e2b7479658ed1a4370ac603ce1fce32b71a32029893414113cc59f65ed66b36"
+          },
+          "metadata_sha256": "d7316bff7ad76c3596f167c1ce67a233f3aef9e2c77e8c3420bfbbfa7d2dc743",
+          "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+          "split": "train"
+        },
+        "validation": {
+          "artifact_type": "ku_leuven_materialized_known_train_validation",
+          "artifacts": {
+            "data_path": "78fc54b38f001a8f75984c3a7677c081704d49975658971af385ecd1d663d350",
+            "labels_path": "f1ce8b6e375aa7e190f925392a3ea769f02368e52ab3fc58a3c88d6b8c6bb325",
+            "metadata": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+            "windows_path": "48630436cfe4c3fccd463e4827127e65d286aa6519bdbf4d56e6ddf5710e3d7b"
+          },
+          "label_map": {
+            "dji_mini2_rc": 2,
+            "frysky": 0,
+            "spektrum_dx4e": 1
+          },
+          "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+          "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+          "source_window_plan_sha256": [
+            "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+            "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+            "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+          ]
+        }
+      },
+      "estimate_includes_validation_and_save": true,
+      "estimate_limitations": "three-step measurement; storage/load contention and data-loader variation remain unmeasured",
+      "estimated_full_run_seconds": 1978.0848804861307,
+      "inputs_per_forward": 256,
+      "model": "multiscale_tcn",
+      "peak_memory_allocated_bytes": 1136701440,
+      "resume_equivalence": {
+        "anchors_per_batch": 3,
+        "checkpoints": {
+          "continuous": "f5eb38611339796ea6e0e6dc8195d2fb625f8c0bdace493f5f14ff08664cfd79",
+          "resumed": "1c5bb85ddbfc36b116753be775d1e7a16f79911045a92043dc3ab9e3bf290469"
+        },
+        "compared_fields": [
+          "artifact_type",
+          "best_rank",
+          "best_state",
+          "best_step",
+          "best_training_state",
+          "config",
+          "draw_position",
+          "epoch_step",
+          "global_step",
+          "history",
+          "identity",
+          "kind",
+          "logical_epoch",
+          "model_state",
+          "optimizer_state",
+          "rng",
+          "sampler",
+          "scaler",
+          "scheduler_state",
+          "schema_version",
+          "validation_pending"
+        ],
+        "continuous_steps": 4,
+        "device": "cuda:0",
+        "evidence_path": "outputs/engineering-smoke/resume-multiscale_tcn-l5a86q_p/check/resume-equivalence.json",
+        "exact_equal": true,
+        "formal_result": false,
+        "interruption_step": 2,
+        "kind": "engineering_smoke",
+        "limitation": "Bounded engineering equivalence; full-budget CUDA results remain unmeasured.",
+        "precision": "bf16",
+        "run_results": [
+          {
+            "directory": "continuous",
+            "global_step": 4,
+            "state": "completed",
+            "stop_after_steps": null
+          },
+          {
+            "directory": "resumed",
+            "global_step": 2,
+            "state": "interrupted",
+            "stop_after_steps": 2
+          },
+          {
+            "directory": "resumed",
+            "global_step": 4,
+            "state": "completed",
+            "stop_after_steps": null
+          }
+        ],
+        "schema_version": "2.0",
+        "state": "completed",
+        "train_identity": {
+          "indices": [
+            0,
+            7424,
+            18432
+          ],
+          "parent": {
+            "artifact_type": "ku_leuven_a800_v2",
+            "artifacts": {
+              "data_path": "5cb4aa6ccce6ef5486a70a1d51c0a0d86a1a758a5a64311e5332f0f5cdf66f6e",
+              "labels_path": "b418a9fb2729379cdf064d80731a2d67aff8af2a60d6724cba472ce6ac1b2f06",
+              "metadata": "d7316bff7ad76c3596f167c1ce67a233f3aef9e2c77e8c3420bfbbfa7d2dc743",
+              "windows_path": "4e2b7479658ed1a4370ac603ce1fce32b71a32029893414113cc59f65ed66b36"
+            },
+            "metadata_sha256": "d7316bff7ad76c3596f167c1ce67a233f3aef9e2c77e8c3420bfbbfa7d2dc743",
+            "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+            "split": "train"
+          },
+          "scope": "balanced engineering subset"
+        },
+        "validation_identity": {
+          "indices": [
+            0,
+            192,
+            480
+          ],
+          "parent": {
+            "artifact_type": "ku_leuven_materialized_known_train_validation",
+            "artifacts": {
+              "data_path": "78fc54b38f001a8f75984c3a7677c081704d49975658971af385ecd1d663d350",
+              "labels_path": "f1ce8b6e375aa7e190f925392a3ea769f02368e52ab3fc58a3c88d6b8c6bb325",
+              "metadata": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+              "windows_path": "48630436cfe4c3fccd463e4827127e65d286aa6519bdbf4d56e6ddf5710e3d7b"
+            },
+            "label_map": {
+              "dji_mini2_rc": 2,
+              "frysky": 0,
+              "spektrum_dx4e": 1
+            },
+            "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+            "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+            "source_window_plan_sha256": [
+              "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+              "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+              "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+            ]
+          },
+          "scope": "balanced engineering subset"
+        }
+      },
+      "save_seconds": 0.0550273647531867,
+      "serialized_bytes": 12152169,
+      "step_seconds": [
+        0.21916191698983312,
+        0.20540911611169577,
+        0.20540508395060897
+      ],
+      "training_steps": 3,
+      "validation_seconds": 2.1534616402350366
+    }
+  ],
+  "protocol": "airwatch-a800-v2",
+  "schema_version": "2.0",
+  "state": "completed",
+  "torch_version": "2.14.0+cu126"
+}

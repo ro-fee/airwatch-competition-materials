@@ -1,0 +1,50 @@
+{
+  "deployment_seed": 20260909,
+  "eligible": [],
+  "groups": {
+    "A": {
+      "clean": 1.0,
+      "minus5_mean": 1.0,
+      "minus5_worst": 1.0,
+      "multipath": 0.9652279090273586,
+      "parameters": 856067,
+      "seeds_complete": true,
+      "zero_five": 1.0
+    },
+    "B": {
+      "clean": 1.0,
+      "minus5_mean": 1.0,
+      "minus5_worst": 1.0,
+      "multipath": 0.9414865633862881,
+      "parameters": 856067,
+      "seeds_complete": true,
+      "zero_five": 0.9924585218702866
+    },
+    "C": {
+      "clean": 1.0,
+      "minus5_mean": 1.0,
+      "minus5_worst": 1.0,
+      "multipath": 0.9560348145401465,
+      "parameters": 1007107,
+      "seeds_complete": true,
+      "zero_five": 0.9958720330237357
+    },
+    "D": {
+      "clean": 1.0,
+      "minus5_mean": 1.0,
+      "minus5_worst": 1.0,
+      "multipath": 0.9352659981916948,
+      "parameters": 1007107,
+      "seeds_complete": true,
+      "zero_five": 0.9903945383821545
+    }
+  },
+  "negative_result": true,
+  "rejected": {
+    "B": "preregistered_improvement_gate_not_met",
+    "C": "preregistered_improvement_gate_not_met",
+    "D": "preregistered_improvement_gate_not_met"
+  },
+  "selected_experiment": "A",
+  "source_split": "validation"
+}

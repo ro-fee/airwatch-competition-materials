@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "dataset": "KU Leuven Drone RF Dataset",
+  "dataset_doi": "doi:10.48804/HZRVNZ",
+  "dataset_version": "1.0",
+  "title": "Drone RF Dataset",
+  "publication_date": "2024-01-16T09:08:34Z",
+  "license": "CC-BY-NC-4.0",
+  "license_verified": true,
+  "source_url": "https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/HZRVNZ",
+  "api_url": "https://rdr.kuleuven.be/api/datasets/:persistentId/?persistentId=doi:10.48804/HZRVNZ",
+  "file_count": 19,
+  "total_size_bytes": 46696930089,
+  "all_files_public": true,
+  "files": [
+    {
+      "file_id": 154500,
+      "name": "Frysky.zip",
+      "size_bytes": 1707367398,
+      "md5": "aa3b81678e5daaa3a3eab35b2894ec08",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154500"
+    },
+    {
+      "file_id": 154414,
+      "name": "get_spectrogram2.m",
+      "size_bytes": 1102,
+      "md5": "eb0094693b1714693e3be4b9c08f94ca",
+      "restricted": false,
+      "content_type": "text/plain",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154414"
+    },
+    {
+      "file_id": 154413,
+      "name": "inspire2RC.zip",
+      "size_bytes": 2229675553,
+      "md5": "9a4eb231c31bd90913424ae4fa487a7b",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154413"
+    },
+    {
+      "file_id": 154426,
+      "name": "inspire2Vid.zip",
+      "size_bytes": 5316321318,
+      "md5": "784b0b00f7b94376d504355263245891",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154426"
+    },
+    {
+      "file_id": 154423,
+      "name": "matriceRC.zip",
+      "size_bytes": 2083914364,
+      "md5": "0016fb8d1f492da801cb82aab5ca6c7b",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154423"
+    },
+    {
+      "file_id": 154422,
+      "name": "matricevid.zip",
+      "size_bytes": 2807063609,
+      "md5": "db6eeb668009fea8596a8e16153c9da7",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154422"
+    },
+    {
+      "file_id": 154415,
+      "name": "MavicRC1.zip",
+      "size_bytes": 3704871299,
+      "md5": "9ddbfab85f643eeb24998071dae7459c",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154415"
+    },
+    {
+      "file_id": 154416,
+      "name": "MavicRC2.zip",
+      "size_bytes": 4081485570,
+      "md5": "44c4e82554f1a8760660d2aa1517d92e",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154416"
+    },
+    {
+      "file_id": 154418,
+      "name": "MavicVid1.zip",
+      "size_bytes": 5000491830,
+      "md5": "1a493f690fd8c757bfb0962fa1f55779",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154418"
+    },
+    {
+      "file_id": 154417,
+      "name": "MavicVid2.zip",
+      "size_bytes": 5354223933,
+      "md5": "ba18a843705d17d43a4af773cfc09d83",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154417"
+    },
+    {
+      "file_id": 154425,
+      "name": "mini2RC.zip",
+      "size_bytes": 2078132999,
+      "md5": "65aa92bbea24508d5fdf125360ec6e44",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154425"
+    },
+    {
+      "file_id": 154424,
+      "name": "mini2vid.zip",
+      "size_bytes": 4326090329,
+      "md5": "2041fdaff63169879db6805835801fad",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154424"
+    },
+    {
+      "file_id": 154427,
+      "name": "NineEagles.zip",
+      "size_bytes": 1491713902,
+      "md5": "d08bc6bf7cfa9d267d6f637f58c384a5",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154427"
+    },
+    {
+      "file_id": 154428,
+      "name": "Q205.zip",
+      "size_bytes": 1531075910,
+      "md5": "3506e1e507b6575f6d741e93effdb3f5",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154428"
+    },
+    {
+      "file_id": 156031,
+      "name": "README.txt",
+      "size_bytes": 2862,
+      "md5": "7dd8c6225f0283e57882011f8fbe24bb",
+      "restricted": false,
+      "content_type": "text/plain",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/156031"
+    },
+    {
+      "file_id": 156032,
+      "name": "signal_visualize.m",
+      "size_bytes": 606,
+      "md5": "27459f8323599bc9e52e1a6976636126",
+      "restricted": false,
+      "content_type": "text/x-objcsrc",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/156032"
+    },
+    {
+      "file_id": 154420,
+      "name": "SJRC_pro.zip",
+      "size_bytes": 1444331879,
+      "md5": "afdf2346ea788452ffb171fe6bbc6566",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154420"
+    },
+    {
+      "file_id": 154419,
+      "name": "Spektrum_DX4e.zip",
+      "size_bytes": 2026208466,
+      "md5": "e7f5562f470ac5c66cf3f7463ca91109",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154419"
+    },
+    {
+      "file_id": 154421,
+      "name": "wltoys.zip",
+      "size_bytes": 1513957160,
+      "md5": "fb2847bfe3696b835c900fc253ef3f89",
+      "restricted": false,
+      "content_type": "application/zip",
+      "access_url": "https://rdr.kuleuven.be/api/access/datafile/154421"
+    }
+  ],
+  "official_description": {
+    "sample_rate_samples_per_second": 100000000,
+    "center_frequency_hz": 2440000000,
+    "receiver": "Ettus Research USRP X310",
+    "environment": "semi-anechoic chamber",
+    "stored_format": "MATLAB v7.3 complex signal vectors inside ZIP archives"
+  },
+  "compatibility_gate": {
+    "existing_dronerf_tcn_direct_input_compatible": false,
+    "existing_input_semantics": "two real-amplitude channels from separate 2.4/5.8 GHz bands",
+    "candidate_input_semantics": "single 2.44 GHz complex I/Q recording",
+    "reason": "Both tensors may have two numeric rows, but I/Q components are not interchangeable with DroneRF low/high-band channels. Direct evaluation would be semantically invalid.",
+    "allowed_next_use": "audit one archive, preserve recording boundaries, and design a common single-band I/Q or spectrogram contract before training or external evaluation"
+  },
+  "training_eligible": false,
+  "training_blocker": "No large archive has been downloaded or content-audited, and the existing DroneRF two-band TCN input contract is incompatible with this dataset's complex-IQ semantics."
+}

@@ -1,0 +1,1762 @@
+{
+  "schema_version": "2.0",
+  "status": "password_verified_outer_crc_complete",
+  "generated_at_utc": "2026-09-29T12:25:01.637514+00:00",
+  "source_sha256": "524e038f6577729778dbd31910076880e296b24e3047e4976d7c74a6b7bc9a3a",
+  "source_bytes": 6277143852,
+  "tool": {
+    "name": "py7zr",
+    "version": "1.1.3"
+  },
+  "members": [
+    {
+      "name": "00_RAW_RF_SNIMCI_24.7z",
+      "size_bytes": 3026305174,
+      "is_directory": false,
+      "sha256": "8b2d73ec9e3bef189fb6144ea8a1d1866a194e08c0f95b094dbae53b786561c9",
+      "members": [
+        {
+          "name": "00_RAW_RF_SNIMCI_24",
+          "size_bytes": 0,
+          "is_directory": true
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0100000.mat",
+          "size_bytes": 537077064,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0100001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0100010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0100011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0100100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0101000.mat",
+          "size_bytes": 537077064,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0101001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0101010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0101011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0101100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0110000.mat",
+          "size_bytes": 537077064,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0110001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0110010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0110011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/0110100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1000000.mat",
+          "size_bytes": 537077064,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1000001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1000010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1000011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1000100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1100000.mat",
+          "size_bytes": 537077064,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1100001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1100010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1100011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_24/1100100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        }
+      ]
+    },
+    {
+      "name": "00_RAW_RF_SNIMCI_58.7z",
+      "size_bytes": 2559291360,
+      "is_directory": false,
+      "sha256": "cc1186d69a36cb30adad4cc0b78d6d3ec32670a4822ad438d1b066f98c7ca49d",
+      "members": [
+        {
+          "name": "00_RAW_RF_SNIMCI_58",
+          "size_bytes": 0,
+          "is_directory": true
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0100000.mat",
+          "size_bytes": 537009568,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0100001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0100010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0100011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0100100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0101000.mat",
+          "size_bytes": 537009568,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0101001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0101010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0101011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0101100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0110000.mat",
+          "size_bytes": 537009568,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0110001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0110010.mat",
+          "size_bytes": 537023640,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0110011.mat",
+          "size_bytes": 537023640,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/0110100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1000000.mat",
+          "size_bytes": 537009568,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1000001.mat",
+          "size_bytes": 537023824,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1000010.mat",
+          "size_bytes": 537023824,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1000011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1000100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1100000.mat",
+          "size_bytes": 537009568,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1100001.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1100010.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1100011.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        },
+        {
+          "name": "00_RAW_RF_SNIMCI_58/1100100.mat",
+          "size_bytes": 537023648,
+          "is_directory": false
+        }
+      ]
+    },
+    {
+      "name": "01_PP_RF_SNIMCI_24.7z",
+      "size_bytes": 227454347,
+      "is_directory": false,
+      "sha256": "8e6e950e4102bcc29277f3c0886ae4796b1628c4357e5e758d477d6fe1c88309",
+      "members": [
+        {
+          "name": "01_PP_RF_SNIMCI_24",
+          "size_bytes": 0,
+          "is_directory": true
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0100000.mat",
+          "size_bytes": 9866468,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0100001.mat",
+          "size_bytes": 9884623,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0100010.mat",
+          "size_bytes": 9880894,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0100011.mat",
+          "size_bytes": 9888559,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0100100.mat",
+          "size_bytes": 9885713,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0101000.mat",
+          "size_bytes": 9866468,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0101001.mat",
+          "size_bytes": 9871512,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0101010.mat",
+          "size_bytes": 9878557,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0101011.mat",
+          "size_bytes": 9882367,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0101100.mat",
+          "size_bytes": 9896594,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0110000.mat",
+          "size_bytes": 9866468,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0110001.mat",
+          "size_bytes": 9893630,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0110010.mat",
+          "size_bytes": 9904440,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0110011.mat",
+          "size_bytes": 9881388,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/0110100.mat",
+          "size_bytes": 9894617,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1000000.mat",
+          "size_bytes": 9867468,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1000001.mat",
+          "size_bytes": 9883514,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1000010.mat",
+          "size_bytes": 9893514,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1000011.mat",
+          "size_bytes": 9895545,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1000100.mat",
+          "size_bytes": 9904958,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1100000.mat",
+          "size_bytes": 9866468,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1100001.mat",
+          "size_bytes": 9904792,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1100010.mat",
+          "size_bytes": 9905109,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1100011.mat",
+          "size_bytes": 9896501,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_24/1100100.mat",
+          "size_bytes": 9909146,
+          "is_directory": false
+        }
+      ]
+    },
+    {
+      "name": "01_PP_RF_SNIMCI_58.7z",
+      "size_bytes": 207317685,
+      "is_directory": false,
+      "sha256": "e39850ada50f4fae817e9ccc16ca6c8b92ca11342b13ee4290c9f4325be487d1",
+      "members": [
+        {
+          "name": "01_PP_RF_SNIMCI_58",
+          "size_bytes": 0,
+          "is_directory": true
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0100000.mat",
+          "size_bytes": 9865740,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0100001.mat",
+          "size_bytes": 9866816,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0100010.mat",
+          "size_bytes": 9869116,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0100011.mat",
+          "size_bytes": 9870240,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0100100.mat",
+          "size_bytes": 9868634,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0101000.mat",
+          "size_bytes": 9865740,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0101001.mat",
+          "size_bytes": 9865761,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0101010.mat",
+          "size_bytes": 9866105,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0101011.mat",
+          "size_bytes": 9868471,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0101100.mat",
+          "size_bytes": 9867936,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0110000.mat",
+          "size_bytes": 9865740,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0110001.mat",
+          "size_bytes": 9867034,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0110010.mat",
+          "size_bytes": 9866698,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0110011.mat",
+          "size_bytes": 9868579,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/0110100.mat",
+          "size_bytes": 9881825,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1000000.mat",
+          "size_bytes": 9865740,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1000001.mat",
+          "size_bytes": 9870818,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1000010.mat",
+          "size_bytes": 9875404,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1000011.mat",
+          "size_bytes": 9870852,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1000100.mat",
+          "size_bytes": 9868933,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1100000.mat",
+          "size_bytes": 9865740,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1100001.mat",
+          "size_bytes": 9875246,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1100010.mat",
+          "size_bytes": 9878034,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1100011.mat",
+          "size_bytes": 9877468,
+          "is_directory": false
+        },
+        {
+          "name": "01_PP_RF_SNIMCI_58/1100100.mat",
+          "size_bytes": 9888363,
+          "is_directory": false
+        }
+      ]
+    },
+    {
+      "name": "02_DNN_DATA_24.7z",
+      "size_bytes": 131117612,
+      "is_directory": false,
+      "sha256": "67e17b85db2b5dca218a45f120448db266f1465b9960610a391e14853fbfb9e8",
+      "members": [
+        {
+          "name": "02_DNN_DATA_24",
+          "size_bytes": 0,
+          "is_directory": true
+        },
+        {
+          "name": "02_DNN_DATA_24/RF_Drone_Data_24GHz_1.csv",
+          "size_bytes": 204545257,
+          "is_directory": false
+        },
+        {
+          "name": "02_DNN_DATA_24/RF_Drone_Data_24GHz_2.csv",
+          "size_bytes": 338193974,
+          "is_directory": false
+        }
+      ]
+    },
+    {
+      "name": "02_DNN_DATA_58.7z",
+      "size_bytes": 125268844,
+      "is_directory": false,
+      "sha256": "ef5303e4a2e55b872eb3810dd2f6a6e203d07fdea2beafc20860196aa08aa49b",
+      "members": [
+        {
+          "name": "02_DNN_DATA_58",
+          "size_bytes": 0,
+          "is_directory": true
+        },
+        {
+          "name": "02_DNN_DATA_58/RF_Drone_Data_58GHz_1.csv",
+          "size_bytes": 205720693,
+          "is_directory": false
+        },
+        {
+          "name": "02_DNN_DATA_58/RF_Drone_Data_58GHz_2.csv",
+          "size_bytes": 342284688,
+          "is_directory": false
+        }
+      ]
+    }
+  ],
+  "model_predictions_run": false,
+  "training_eligible": false,
+  "compatibility": {
+    "status": "blocked_incompatible_representation",
+    "compatible": false,
+    "reason": "The frozen model requires 100 MS/s single-band complex IQ. VTI declares 150 MS/s and different device/multi-drone labels; no independently specified and validated resampling/label contract is available. PP/DNN matrices cannot be assumed equivalent IQ. Audit is complete, model metrics are conditional and not produced.",
+    "sample_rate_source": "Mendeley Data VTI_DroneSET V1 official description, DOI 10.17632/s6tgnnp5n2.1",
+    "model_predictions_run": false
+  },
+  "content_inspection": [
+    {
+      "path": "00_RAW_RF_SNIMCI_24/0100000.mat",
+      "size_bytes": 537077064,
+      "sha256": "a6e0ef41f27e1667427d3e097ec6610bcb622a923986a7b69c610e10b32ebad7",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "rsaMetadata",
+          "shape": [
+            1
+          ],
+          "class": "char"
+        },
+        {
+          "name": "InputCenter",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "InputZoom",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "uint8"
+        },
+        {
+          "name": "Span",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "XDelta",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "Y",
+          "shape": [
+            67107072,
+            1
+          ],
+          "class": "single"
+        }
+      ],
+      "scalar_metadata": {
+        "InputCenter": 2449000000.0,
+        "InputZoom": 1.0,
+        "Span": 110000000.0,
+        "XDelta": 6.666666666666667e-09
+      }
+    },
+    {
+      "path": "00_RAW_RF_SNIMCI_58/0100000.mat",
+      "size_bytes": 537009568,
+      "sha256": "e2c740e2534905a052c827ea5a3659cfce728fa6d370f2bdf95760a7c998b405",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "rsaMetadata",
+          "shape": [
+            1
+          ],
+          "class": "char"
+        },
+        {
+          "name": "InputCenter",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "InputZoom",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "uint8"
+        },
+        {
+          "name": "Span",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "XDelta",
+          "shape": [
+            1,
+            1
+          ],
+          "class": "double"
+        },
+        {
+          "name": "Y",
+          "shape": [
+            67107072,
+            1
+          ],
+          "class": "single"
+        }
+      ],
+      "scalar_metadata": {
+        "InputCenter": 5792000000.0,
+        "InputZoom": 1.0,
+        "Span": 110000000.0,
+        "XDelta": 6.666666666666667e-09
+      }
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0100000.mat",
+      "size_bytes": 9866468,
+      "sha256": "92ac4c17e1ef69ea32c73553564ad90c589447931bdd941b93dbbd1be50a85f8",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0100001.mat",
+      "size_bytes": 9884623,
+      "sha256": "30a35355121bfe1f6ae0c88bbfdd92792a9cf64bc35f43b55785d1d4365141f9",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0100010.mat",
+      "size_bytes": 9880894,
+      "sha256": "4404f05a452ea3ae1906ff05d2a52a0d3b1086b75054c0e8d6c7cebe9c2d3f66",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0100011.mat",
+      "size_bytes": 9888559,
+      "sha256": "9d80f40ae50d0f71db2780d641953c706211dd25a349a6b5c0026ee0afb53852",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0100100.mat",
+      "size_bytes": 9885713,
+      "sha256": "c79a24750c0c7a54135229ebc0149599a9a5aeede2672e934390b446049b33b6",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0101000.mat",
+      "size_bytes": 9866468,
+      "sha256": "9f6cac80dc0093f886e9d4f92c021af279a07da666fbbded2255717717b50740",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0101001.mat",
+      "size_bytes": 9871512,
+      "sha256": "18d7cdbd71e7272e58f3a6b125635a291577acf8f71c6809208a1ef66c7559b1",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0101010.mat",
+      "size_bytes": 9878557,
+      "sha256": "60d34d62f2482fbc19449a055d360539e2367f8e826dcaa3abb6b7769ae6cc15",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0101011.mat",
+      "size_bytes": 9882367,
+      "sha256": "25a34458e93417c609c57390120bcdb799ef21bf649ab849a6c30932a26a551b",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0101100.mat",
+      "size_bytes": 9896594,
+      "sha256": "82461af5a8ceecb53556bffb78d643fe00e4f6f3a62769e97ec69de00a83bca3",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0110000.mat",
+      "size_bytes": 9866468,
+      "sha256": "9d5ce456a209dd1fcabf6f45c894ee061599bb5525ea59962151aa26f472e8f8",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0110001.mat",
+      "size_bytes": 9893630,
+      "sha256": "068bbeed9d97a4d186362863d204d0603af55f01a41e80282619e3e49ba14c09",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0110010.mat",
+      "size_bytes": 9904440,
+      "sha256": "022d875cbbf21dee9885f57ce7024ec6fdf601db05e2c2d86983ac6934c47c16",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0110011.mat",
+      "size_bytes": 9881388,
+      "sha256": "b682f3caf8a00b28e2cd8bcec761fbb9e05bc8c0ea3cb9a28d80811ae6bd60f0",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/0110100.mat",
+      "size_bytes": 9894617,
+      "sha256": "adc70921a66aa3608b63a10d22a3a8abb8a8dd747302e08cfd213e84d37b8c75",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1000000.mat",
+      "size_bytes": 9867468,
+      "sha256": "4e1d6b6c484163925223763af7c1b2a4f021917c98fc4cfc8d547151d16b23e9",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1000001.mat",
+      "size_bytes": 9883514,
+      "sha256": "2b992c2919455f1bd344046af897de83289efc26d93ad6ad2c2eca0e4a45d662",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1000010.mat",
+      "size_bytes": 9893514,
+      "sha256": "fc74f16a6b3e11a2aa26c3f055fddc5519e02b18416a2a2201137b46c2dfe409",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1000011.mat",
+      "size_bytes": 9895545,
+      "sha256": "2effb15decaad9e62f23bd00dc16c306459d9331b0c911e092e07d24863bd800",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1000100.mat",
+      "size_bytes": 9904958,
+      "sha256": "8bad2a4ceda3974f8688a2f99150ac8d2b0885997b94cccd748bcf08eb34e278",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1100000.mat",
+      "size_bytes": 9866468,
+      "sha256": "feb656bba9e97be59943811bd5113c40041d6e732db1723ec97a7e0ae62300d6",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1100001.mat",
+      "size_bytes": 9904792,
+      "sha256": "af3c1997d7c24d53099b4ab02fa837bc47c2a956010b1b87c3b57b387e5bc66f",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1100010.mat",
+      "size_bytes": 9905109,
+      "sha256": "350e2f64d593ed02fb3a23300bd954aac63053149761c94c1158e4c364048d38",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1100011.mat",
+      "size_bytes": 9896501,
+      "sha256": "4b5031ff928adc3c41a63b865a423c80caaba297bbffd7f554f19c815622cbb3",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_24/1100100.mat",
+      "size_bytes": 9909146,
+      "sha256": "ea90668e0db6bb834c562262984a8814aec89a3e05055db4fa5130e0d2f07185",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0100000.mat",
+      "size_bytes": 9865740,
+      "sha256": "89398964a5ba4df1fed809d6e847fffe80709fa26eae65eeb76a8c581aa44f55",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0100001.mat",
+      "size_bytes": 9866816,
+      "sha256": "1d6a9cd343a55e3bc593ef81ea2f935ecd76ce29c71f4adfe77cce47089c4798",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0100010.mat",
+      "size_bytes": 9869116,
+      "sha256": "b356034bf4b6744f03101a1f4a231a30089705f33461b8a9d439db8afcaa9fde",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0100011.mat",
+      "size_bytes": 9870240,
+      "sha256": "98b236269b67279d5581ed5c554b6a8826eaa929e76e818bd043d7dfb41868b0",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0100100.mat",
+      "size_bytes": 9868634,
+      "sha256": "8943b1f8ee52eaa5c3c7145dadf5936b13c116620f6be86f5c11a04ba610bf07",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0101000.mat",
+      "size_bytes": 9865740,
+      "sha256": "88eb16a226bb33ae7f82c5123d5e7bd0c650077298f352d49978f8e3c99cc9bd",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0101001.mat",
+      "size_bytes": 9865761,
+      "sha256": "22c5d8a7b1f1addc694379bcce07013eb1b21925d5beb2d171a22281361aa4d4",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0101010.mat",
+      "size_bytes": 9866105,
+      "sha256": "da6bbfc1a49275a4e7d31415d296797b84d81dbaaa99cd2aa42704447df31e2c",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0101011.mat",
+      "size_bytes": 9868471,
+      "sha256": "a24d4ae5490972910cb4b7e5c23582a24b07ae0f6ba37c417d7ebff9badd6eec",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0101100.mat",
+      "size_bytes": 9867936,
+      "sha256": "6e88a0f66f88acad8663e9ee3cbb43e072bd2b226938b316b93b371a48f8370c",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0110000.mat",
+      "size_bytes": 9865740,
+      "sha256": "6ef1dabeb9998877fd43ee590ca34f7866223da6b4396382e2adf2d63b7c4a15",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0110001.mat",
+      "size_bytes": 9867034,
+      "sha256": "83530a5976ef09b1eb90734786f4beb97adf8b5aa607bc19b5d3eb6e8e6c603b",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0110010.mat",
+      "size_bytes": 9866698,
+      "sha256": "fe5f8c1b98c219dd8249d858bf71fb5025eed71680e390bdbdf84b99fbcd9032",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0110011.mat",
+      "size_bytes": 9868579,
+      "sha256": "43c6366a9091d86ba56a853792fed3b23e9eda84511fe007a3cff500845d5f49",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/0110100.mat",
+      "size_bytes": 9881825,
+      "sha256": "96addba33fdb3506e886f7ddb9d48948f8fa0a689bd99f767ea8c5498ed85758",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1000000.mat",
+      "size_bytes": 9865740,
+      "sha256": "8b55a5c6f2eff9d559295bd5a27a5e60a4ef4004b2dc88a7987973d9da9a928f",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1000001.mat",
+      "size_bytes": 9870818,
+      "sha256": "173cf04ec0f1dfb4d4991481e4ce669493cbf5257213f9174b6309fa38ddef38",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1000010.mat",
+      "size_bytes": 9875404,
+      "sha256": "8f9dcf49ce736de0d4eeb7287f77e3a024d9e863fbd24978623e15cb17a57d90",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1000011.mat",
+      "size_bytes": 9870852,
+      "sha256": "c444bc4a93938b8ad06c0c241de937ac35149da85ad19fd17420a0b3a1024eef",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1000100.mat",
+      "size_bytes": 9868933,
+      "sha256": "470f841556931b319bb0763309ae4815bbc375239a4119658b7bdbf15303a2a8",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1100000.mat",
+      "size_bytes": 9865740,
+      "sha256": "d11b6999c3ba95bf7a4b664257cfcbcdc20f7c474af668a237035b9447a22230",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1100001.mat",
+      "size_bytes": 9875246,
+      "sha256": "1e478cebe31503bd4a8a05ba5f891733fc08e68c22208794a683170b879d9beb",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1100010.mat",
+      "size_bytes": 9878034,
+      "sha256": "cfcc6222990d9b613417ee6e9177c0ac3df2dd769125a2caf5299014ef4975ca",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1100011.mat",
+      "size_bytes": 9877468,
+      "sha256": "bbe8a23e7ae3d7728bd06385225b0d89bbf43637eb5dfef04dfe94364f2eeb34",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "01_PP_RF_SNIMCI_58/1100100.mat",
+      "size_bytes": 9888363,
+      "sha256": "9169770a0902ad738e2741cbf25cadf2ded5145f6810b21cd449ba31a1a8afed",
+      "format": "MAT",
+      "variables": [
+        {
+          "name": "Data",
+          "shape": [
+            670,
+            2048
+          ],
+          "class": "double"
+        }
+      ],
+      "scalar_metadata": {}
+    },
+    {
+      "path": "02_DNN_DATA_24/RF_Drone_Data_24GHz_1.csv",
+      "size_bytes": 204545257,
+      "sha256": "a0be26faa49bbe6228607d24430dce30a505c485866a6e2ef4f9cb98c5453492",
+      "format": "CSV",
+      "rows": 2051,
+      "first_row_columns": 10050,
+      "first_row_is_numeric": true,
+      "last_three_row_unique_values": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      ],
+      "label_row_semantics": "requires author metadata; not inferred from model predictions"
+    },
+    {
+      "path": "02_DNN_DATA_24/RF_Drone_Data_24GHz_2.csv",
+      "size_bytes": 338193974,
+      "sha256": "9d8d9a5612de9e0fe67ec21460c5f03be792b1a94d3329847e12b900754e6cc2",
+      "format": "CSV",
+      "rows": 2051,
+      "first_row_columns": 16750,
+      "first_row_is_numeric": true,
+      "last_three_row_unique_values": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "2",
+          "20",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      ],
+      "label_row_semantics": "requires author metadata; not inferred from model predictions"
+    },
+    {
+      "path": "02_DNN_DATA_58/RF_Drone_Data_58GHz_1.csv",
+      "size_bytes": 205720693,
+      "sha256": "a49816769b925df83d113905feaedfec62a3a179ce45cd06d2624c046ed91ae8",
+      "format": "CSV",
+      "rows": 2051,
+      "first_row_columns": 10050,
+      "first_row_is_numeric": true,
+      "last_three_row_unique_values": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      ],
+      "label_row_semantics": "requires author metadata; not inferred from model predictions"
+    },
+    {
+      "path": "02_DNN_DATA_58/RF_Drone_Data_58GHz_2.csv",
+      "size_bytes": 342284688,
+      "sha256": "a91427f8b2eb6770b5152c97fd6d67dcfe7b2ab10b379ae1c6011ad1198d07a1",
+      "format": "CSV",
+      "rows": 2051,
+      "first_row_columns": 16750,
+      "first_row_is_numeric": true,
+      "last_three_row_unique_values": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "2",
+          "20",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      ],
+      "label_row_semantics": "requires author metadata; not inferred from model predictions"
+    }
+  ],
+  "raw_content_scope": "one member per band; all raw filenames inventoried",
+  "aggregate_content_scope": "all PP MATLAB headers and all DNN CSV row/column counts",
+  "declared_sample_rate_hz": 150000000,
+  "model_sample_rate_hz": 100000000
+}

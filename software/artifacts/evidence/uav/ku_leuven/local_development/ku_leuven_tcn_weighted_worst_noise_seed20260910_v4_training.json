@@ -1,0 +1,2067 @@
+{
+  "experiment_name": "ku_leuven_tcn_local_development_v1",
+  "run_name": "ku_leuven_tcn_weighted_worst_noise_seed20260910_v4",
+  "status": "completed_training_validation_only",
+  "config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\ku_leuven_tcn_local_development_v1.json",
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "seed": 20260910,
+  "dataset": {
+    "train_windows": 3680,
+    "validation_windows": 768,
+    "test_windows_opened": false,
+    "unknown_windows_opened": false,
+    "train_recordings": 115,
+    "validation_recordings": 24,
+    "window_size": 4096,
+    "channels": 2,
+    "label_map": {
+      "frysky": 0,
+      "spektrum_dx4e": 1,
+      "dji_mini2_rc": 2
+    },
+    "data_identity": {
+      "artifact_type": "ku_leuven_materialized_known_train_validation",
+      "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+      "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+      "source_window_plan_sha256": [
+        "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+        "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+        "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+      ],
+      "label_map": {
+        "frysky": 0,
+        "spektrum_dx4e": 1,
+        "dji_mini2_rc": 2
+      }
+    }
+  },
+  "model": {
+    "name": "DroneRFTCN",
+    "input_shape": [
+      2,
+      4096
+    ],
+    "num_classes": 3,
+    "parameter_count": 856067
+  },
+  "class_weights": {
+    "frysky": 1.3218390804597702,
+    "spektrum_dx4e": 0.8914728682170543,
+    "dji_mini2_rc": 0.8914728682170543
+  },
+  "selection_rule": "clean recording macro-F1 must be >=0.97; then maximize the minimum recording macro-F1 across three frozen -5 dB AWGN validation repeats; tie-break by repeat mean, clean recording macro-F1, then minimum clean validation window loss; test and unknown unopened",
+  "aggregation_protocol": "mean-window-softmax-probability-v1",
+  "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_best.pt",
+  "last_checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_last.pt",
+  "resolved_config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_config.json",
+  "best_validation_recording_macro_f1": 1.0,
+  "best_validation_window_loss": 0.5552982315421104,
+  "completed_epochs": 16,
+  "history": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 0.8265896558761596,
+      "train_accuracy": 0.6005434782608695,
+      "validation": {
+        "loss": 1.3503144085407257,
+        "window": {
+          "accuracy": 0.38671875,
+          "macro_f1": 0.38781376560730146,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              143,
+              30,
+              19
+            ],
+            [
+              229,
+              59,
+              0
+            ],
+            [
+              193,
+              0,
+              95
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.25309734513274335,
+              "recall": 0.7447916666666666,
+              "f1": 0.37780713342140027,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.6629213483146067,
+              "recall": 0.2048611111111111,
+              "f1": 0.3129973474801061,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.8333333333333334,
+              "recall": 0.3298611111111111,
+              "f1": 0.472636815920398,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.2916666666666667,
+          "macro_f1": 0.2045977011494253,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.2608695652173913,
+              "recall": 1.0,
+              "f1": 0.41379310344827586,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.1111111111111111,
+              "f1": 0.2,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.2045977011494253,
+        "clean_window_loss": 1.3503144085407257,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "worst_repeat_recording_macro_f1": 0.13333333333333333,
+        "mean_repeat_recording_macro_f1": 0.13333333333333333,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972609476841367,
+      "train_loss": 0.7274142241996268,
+      "train_accuracy": 0.6654891304347826,
+      "validation": {
+        "loss": 0.6512100671728452,
+        "window": {
+          "accuracy": 0.7291666666666666,
+          "macro_f1": 0.7255752257909561,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              111,
+              41,
+              40
+            ],
+            [
+              0,
+              266,
+              22
+            ],
+            [
+              2,
+              103,
+              183
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9823008849557522,
+              "recall": 0.578125,
+              "f1": 0.7278688524590164,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.6487804878048781,
+              "recall": 0.9236111111111112,
+              "f1": 0.7621776504297995,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.746938775510204,
+              "recall": 0.6354166666666666,
+              "f1": 0.6866791744840526,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": true,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 1.0,
+        "clean_window_loss": 0.6512100671728452,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.1818181818181818,
+          0.1818181818181818,
+          0.25416666666666665
+        ],
+        "worst_repeat_recording_macro_f1": 0.1818181818181818,
+        "mean_repeat_recording_macro_f1": 0.2059343434343434,
+        "selection_rank": [
+          0.1818181818181818,
+          0.2059343434343434,
+          1.0,
+          -0.6512100671728452
+        ]
+      }
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009890738003669028,
+      "train_loss": 0.6670543852059737,
+      "train_accuracy": 0.6907608695652174,
+      "validation": {
+        "loss": 1.0733135268092155,
+        "window": {
+          "accuracy": 0.4427083333333333,
+          "macro_f1": 0.42949741769338834,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              179,
+              6,
+              7
+            ],
+            [
+              196,
+              62,
+              30
+            ],
+            [
+              188,
+              1,
+              99
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.31793960923623443,
+              "recall": 0.9322916666666666,
+              "f1": 0.4741721854304636,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8985507246376812,
+              "recall": 0.2152777777777778,
+              "f1": 0.3473389355742297,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.7279411764705882,
+              "recall": 0.34375,
+              "f1": 0.4669811320754717,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.2916666666666667,
+          "macro_f1": 0.2045977011494253,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              1
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.2608695652173913,
+              "recall": 1.0,
+              "f1": 0.41379310344827586,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.1111111111111111,
+              "f1": 0.2,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.2045977011494253,
+        "clean_window_loss": 1.0733135268092155,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "worst_repeat_recording_macro_f1": 0.13333333333333333,
+        "mean_repeat_recording_macro_f1": 0.13333333333333333,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009755282581475768,
+      "train_loss": 0.6458472143048826,
+      "train_accuracy": 0.7005434782608696,
+      "validation": {
+        "loss": 1.0032375485946734,
+        "window": {
+          "accuracy": 0.6822916666666666,
+          "macro_f1": 0.6693402312703555,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              143,
+              44,
+              5
+            ],
+            [
+              0,
+              288,
+              0
+            ],
+            [
+              23,
+              172,
+              93
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.8614457831325302,
+              "recall": 0.7447916666666666,
+              "f1": 0.7988826815642458,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5714285714285714,
+              "recall": 1.0,
+              "f1": 0.7272727272727273,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.9489795918367347,
+              "recall": 0.3229166666666667,
+              "f1": 0.48186528497409326,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.625,
+          "macro_f1": 0.5555555555555555,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.5555555555555555,
+        "clean_window_loss": 1.0032375485946734,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.5238095238095238,
+          0.5238095238095238,
+          0.49554367201426025
+        ],
+        "worst_repeat_recording_macro_f1": 0.49554367201426025,
+        "mean_repeat_recording_macro_f1": 0.5143875732111026,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009567727288213003,
+      "train_loss": 0.620182907063028,
+      "train_accuracy": 0.7105978260869565,
+      "validation": {
+        "loss": 0.618356833855311,
+        "window": {
+          "accuracy": 0.7135416666666666,
+          "macro_f1": 0.7214768068562017,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              123,
+              6,
+              63
+            ],
+            [
+              1,
+              167,
+              120
+            ],
+            [
+              2,
+              28,
+              258
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9761904761904762,
+              "recall": 0.640625,
+              "f1": 0.7735849056603774,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8308457711442786,
+              "recall": 0.5798611111111112,
+              "f1": 0.6830265848670757,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.5850340136054422,
+              "recall": 0.8958333333333334,
+              "f1": 0.7078189300411523,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": true,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 1.0,
+        "clean_window_loss": 0.618356833855311,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.1818181818181818,
+          0.1818181818181818,
+          0.1818181818181818
+        ],
+        "worst_repeat_recording_macro_f1": 0.1818181818181818,
+        "mean_repeat_recording_macro_f1": 0.1818181818181818,
+        "selection_rank": [
+          0.1818181818181818,
+          0.1818181818181818,
+          1.0,
+          -0.618356833855311
+        ]
+      }
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009330127018922195,
+      "train_loss": 0.5890486090079597,
+      "train_accuracy": 0.7361413043478261,
+      "validation": {
+        "loss": 0.7275780836741129,
+        "window": {
+          "accuracy": 0.6549479166666666,
+          "macro_f1": 0.6522758616559948,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              138,
+              1,
+              53
+            ],
+            [
+              3,
+              92,
+              193
+            ],
+            [
+              11,
+              4,
+              273
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9078947368421053,
+              "recall": 0.71875,
+              "f1": 0.8023255813953488,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.9484536082474226,
+              "recall": 0.3194444444444444,
+              "f1": 0.4779220779220779,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.5260115606936416,
+              "recall": 0.9479166666666666,
+              "f1": 0.6765799256505576,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.7083333333333334,
+          "macro_f1": 0.6945454545454547,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              7
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.2222222222222222,
+              "f1": 0.36363636363636365,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.5625,
+              "recall": 1.0,
+              "f1": 0.72,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.6945454545454547,
+        "clean_window_loss": 0.7275780836741129,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.5555555555555555,
+          0.5555555555555555,
+          0.5173160173160173
+        ],
+        "worst_repeat_recording_macro_f1": 0.5173160173160173,
+        "mean_repeat_recording_macro_f1": 0.5428090428090427,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009045084971874739,
+      "train_loss": 0.5822292151658431,
+      "train_accuracy": 0.7396739130434783,
+      "validation": {
+        "loss": 0.5671022360523542,
+        "window": {
+          "accuracy": 0.7513020833333334,
+          "macro_f1": 0.759973909558397,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              136,
+              2,
+              54
+            ],
+            [
+              1,
+              174,
+              113
+            ],
+            [
+              4,
+              17,
+              267
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9645390070921985,
+              "recall": 0.7083333333333334,
+              "f1": 0.8168168168168168,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.9015544041450777,
+              "recall": 0.6041666666666666,
+              "f1": 0.7234927234927235,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6152073732718893,
+              "recall": 0.9270833333333334,
+              "f1": 0.739612188365651,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": true,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 1.0,
+        "clean_window_loss": 0.5671022360523542,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.5555555555555555,
+          0.5555555555555555,
+          0.5555555555555555
+        ],
+        "worst_repeat_recording_macro_f1": 0.5555555555555555,
+        "mean_repeat_recording_macro_f1": 0.5555555555555555,
+        "selection_rank": [
+          0.5555555555555555,
+          0.5555555555555555,
+          1.0,
+          -0.5671022360523542
+        ]
+      }
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008715724127386972,
+      "train_loss": 0.5467820271201755,
+      "train_accuracy": 0.7614130434782609,
+      "validation": {
+        "loss": 0.5552982315421104,
+        "window": {
+          "accuracy": 0.7356770833333334,
+          "macro_f1": 0.7314372553534424,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              157,
+              14,
+              21
+            ],
+            [
+              25,
+              240,
+              23
+            ],
+            [
+              56,
+              64,
+              168
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.6596638655462185,
+              "recall": 0.8177083333333334,
+              "f1": 0.7302325581395349,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.7547169811320755,
+              "recall": 0.8333333333333334,
+              "f1": 0.7920792079207921,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.7924528301886793,
+              "recall": 0.5833333333333334,
+              "f1": 0.672,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": true,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 1.0,
+        "clean_window_loss": 0.5552982315421104,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.9547511312217195,
+          0.9547511312217195,
+          0.9107142857142857
+        ],
+        "worst_repeat_recording_macro_f1": 0.9107142857142857,
+        "mean_repeat_recording_macro_f1": 0.9400721827192416,
+        "selection_rank": [
+          0.9107142857142857,
+          0.9400721827192416,
+          1.0,
+          -0.5552982315421104
+        ]
+      }
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008345653031794292,
+      "train_loss": 0.5456401892330336,
+      "train_accuracy": 0.7668478260869566,
+      "validation": {
+        "loss": 0.5632118756572405,
+        "window": {
+          "accuracy": 0.7630208333333334,
+          "macro_f1": 0.7684729148157817,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              127,
+              10,
+              55
+            ],
+            [
+              0,
+              214,
+              74
+            ],
+            [
+              2,
+              41,
+              245
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9844961240310077,
+              "recall": 0.6614583333333334,
+              "f1": 0.7912772585669782,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8075471698113208,
+              "recall": 0.7430555555555556,
+              "f1": 0.7739602169981917,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6550802139037433,
+              "recall": 0.8506944444444444,
+              "f1": 0.7401812688821753,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": true,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 1.0,
+        "clean_window_loss": 0.5632118756572405,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.25416666666666665,
+          0.25416666666666665,
+          0.3147605083088954
+        ],
+        "worst_repeat_recording_macro_f1": 0.25416666666666665,
+        "mean_repeat_recording_macro_f1": 0.2743646138807429,
+        "selection_rank": [
+          0.25416666666666665,
+          0.2743646138807429,
+          1.0,
+          -0.5632118756572405
+        ]
+      }
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007938926261462366,
+      "train_loss": 0.5164689255797345,
+      "train_accuracy": 0.7872282608695652,
+      "validation": {
+        "loss": 0.829037245362997,
+        "window": {
+          "accuracy": 0.59765625,
+          "macro_f1": 0.5956627970656027,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              178,
+              6,
+              8
+            ],
+            [
+              107,
+              175,
+              6
+            ],
+            [
+              152,
+              30,
+              106
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.4073226544622426,
+              "recall": 0.9270833333333334,
+              "f1": 0.5659777424483307,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8293838862559242,
+              "recall": 0.6076388888888888,
+              "f1": 0.7014028056112225,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.8833333333333333,
+              "recall": 0.3680555555555556,
+              "f1": 0.5196078431372549,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.875,
+          "macro_f1": 0.8666666666666667,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              3,
+              0,
+              6
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.8666666666666667,
+        "clean_window_loss": 0.829037245362997,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.2045977011494253,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "worst_repeat_recording_macro_f1": 0.13333333333333333,
+        "mean_repeat_recording_macro_f1": 0.15708812260536398,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.00075,
+      "train_loss": 0.5037283728951993,
+      "train_accuracy": 0.7961956521739131,
+      "validation": {
+        "loss": 2.1428100808213153,
+        "window": {
+          "accuracy": 0.4361979166666667,
+          "macro_f1": 0.40996608708502674,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              187,
+              0,
+              5
+            ],
+            [
+              220,
+              41,
+              27
+            ],
+            [
+              181,
+              0,
+              107
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.31802721088435376,
+              "recall": 0.9739583333333334,
+              "f1": 0.4794871794871795,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.1423611111111111,
+              "f1": 0.24924012158054712,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.7697841726618705,
+              "recall": 0.3715277777777778,
+              "f1": 0.5011709601873536,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.3333333333333333,
+          "macro_f1": 0.26406926406926406,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.2727272727272727,
+              "recall": 1.0,
+              "f1": 0.42857142857142855,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.2222222222222222,
+              "f1": 0.36363636363636365,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.26406926406926406,
+        "clean_window_loss": 2.1428100808213153,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "worst_repeat_recording_macro_f1": 0.13333333333333333,
+        "mean_repeat_recording_macro_f1": 0.13333333333333333,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007033683215379003,
+      "train_loss": 0.45887294800385187,
+      "train_accuracy": 0.8146739130434782,
+      "validation": {
+        "loss": 2.682129829268282,
+        "window": {
+          "accuracy": 0.4192708333333333,
+          "macro_f1": 0.3962819481184881,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              190,
+              0,
+              2
+            ],
+            [
+              244,
+              43,
+              1
+            ],
+            [
+              199,
+              0,
+              89
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.3001579778830964,
+              "recall": 0.9895833333333334,
+              "f1": 0.46060606060606063,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.14930555555555555,
+              "f1": 0.2598187311178248,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.967391304347826,
+              "recall": 0.3090277777777778,
+              "f1": 0.46842105263157896,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.25,
+          "macro_f1": 0.13333333333333333,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1": 0.4,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.13333333333333333,
+        "clean_window_loss": 2.682129829268282,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "worst_repeat_recording_macro_f1": 0.13333333333333333,
+        "mean_repeat_recording_macro_f1": 0.13333333333333333,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.0006545084971874739,
+      "train_loss": 0.45759233495463497,
+      "train_accuracy": 0.8201086956521739,
+      "validation": {
+        "loss": 0.6953674529989561,
+        "window": {
+          "accuracy": 0.6953125,
+          "macro_f1": 0.6873419564215743,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              132,
+              43,
+              17
+            ],
+            [
+              2,
+              284,
+              2
+            ],
+            [
+              19,
+              151,
+              118
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.8627450980392157,
+              "recall": 0.6875,
+              "f1": 0.7652173913043478,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5941422594142259,
+              "recall": 0.9861111111111112,
+              "f1": 0.741514360313316,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.8613138686131386,
+              "recall": 0.4097222222222222,
+              "f1": 0.5552941176470588,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.875,
+          "macro_f1": 0.8857142857142858,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              3,
+              6
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.8857142857142858,
+        "clean_window_loss": 0.6953674529989561,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.4341692789968652,
+          0.49206349206349204,
+          0.4230399230399231
+        ],
+        "worst_repeat_recording_macro_f1": 0.4230399230399231,
+        "mean_repeat_recording_macro_f1": 0.4497575647000935,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006039558454088797,
+      "train_loss": 0.4381774891977725,
+      "train_accuracy": 0.821195652173913,
+      "validation": {
+        "loss": 1.758632868528366,
+        "window": {
+          "accuracy": 0.4375,
+          "macro_f1": 0.42060008560687834,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              185,
+              0,
+              7
+            ],
+            [
+              239,
+              47,
+              2
+            ],
+            [
+              184,
+              0,
+              104
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.3042763157894737,
+              "recall": 0.9635416666666666,
+              "f1": 0.4625,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.16319444444444445,
+              "f1": 0.28059701492537314,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.9203539823008849,
+              "recall": 0.3611111111111111,
+              "f1": 0.5187032418952618,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.3333333333333333,
+          "macro_f1": 0.26406926406926406,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              9,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.2727272727272727,
+              "recall": 1.0,
+              "f1": 0.42857142857142855,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.2222222222222222,
+              "f1": 0.36363636363636365,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.26406926406926406,
+        "clean_window_loss": 1.758632868528366,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333
+        ],
+        "worst_repeat_recording_macro_f1": 0.13333333333333333,
+        "mean_repeat_recording_macro_f1": 0.13333333333333333,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005522642316338269,
+      "train_loss": 0.4015211621056432,
+      "train_accuracy": 0.8342391304347826,
+      "validation": {
+        "loss": 1.7406512219070767,
+        "window": {
+          "accuracy": 0.6666666666666666,
+          "macro_f1": 0.661580022433477,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              123,
+              55,
+              14
+            ],
+            [
+              0,
+              288,
+              0
+            ],
+            [
+              1,
+              186,
+              101
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9919354838709677,
+              "recall": 0.640625,
+              "f1": 0.7784810126582279,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5444234404536862,
+              "recall": 1.0,
+              "f1": 0.7050183598531212,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.8782608695652174,
+              "recall": 0.3506944444444444,
+              "f1": 0.5012406947890818,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.625,
+          "macro_f1": 0.5555555555555555,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": false,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 0.5555555555555555,
+        "clean_window_loss": 1.7406512219070767,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.1818181818181818,
+          0.1818181818181818,
+          0.1818181818181818
+        ],
+        "worst_repeat_recording_macro_f1": 0.1818181818181818,
+        "mean_repeat_recording_macro_f1": 0.1818181818181818,
+        "selection_rank": null
+      }
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005000000000000002,
+      "train_loss": 0.3922324960646422,
+      "train_accuracy": 0.835054347826087,
+      "validation": {
+        "loss": 0.5700948387384415,
+        "window": {
+          "accuracy": 0.75,
+          "macro_f1": 0.758578629825294,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              149,
+              10,
+              33
+            ],
+            [
+              3,
+              194,
+              91
+            ],
+            [
+              22,
+              33,
+              233
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.8563218390804598,
+              "recall": 0.7760416666666666,
+              "f1": 0.8142076502732241,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8185654008438819,
+              "recall": 0.6736111111111112,
+              "f1": 0.7390476190476191,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6526610644257703,
+              "recall": 0.8090277777777778,
+              "f1": 0.7224806201550388,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      },
+      "checkpoint_selection": {
+        "protocol": "clean-guarded-minus5-worst-repeat-v1",
+        "eligible": true,
+        "clean_recording_macro_f1_floor": 0.97,
+        "clean_recording_macro_f1": 1.0,
+        "clean_window_loss": 0.5700948387384415,
+        "stress_family": "awgn",
+        "stress_snr_db": -5.0,
+        "repeat_seeds": [
+          2026090901,
+          2026090902,
+          2026090903
+        ],
+        "repeat_recording_macro_f1": [
+          0.5555555555555555,
+          0.5555555555555555,
+          0.5555555555555555
+        ],
+        "worst_repeat_recording_macro_f1": 0.5555555555555555,
+        "mean_repeat_recording_macro_f1": 0.5555555555555555,
+        "selection_rank": [
+          0.5555555555555555,
+          0.5555555555555555,
+          1.0,
+          -0.5700948387384415
+        ]
+      }
+    }
+  ],
+  "validation_model_selection_evidence_allowed": true,
+  "competition_test_claim_allowed": false,
+  "test_data_used": false,
+  "unknown_data_used": false,
+  "best_checkpoint_selection": {
+    "protocol": "clean-guarded-minus5-worst-repeat-v1",
+    "eligible": true,
+    "clean_recording_macro_f1_floor": 0.97,
+    "clean_recording_macro_f1": 1.0,
+    "clean_window_loss": 0.5552982315421104,
+    "stress_family": "awgn",
+    "stress_snr_db": -5.0,
+    "repeat_seeds": [
+      2026090901,
+      2026090902,
+      2026090903
+    ],
+    "repeat_recording_macro_f1": [
+      0.9547511312217195,
+      0.9547511312217195,
+      0.9107142857142857
+    ],
+    "worst_repeat_recording_macro_f1": 0.9107142857142857,
+    "mean_repeat_recording_macro_f1": 0.9400721827192416,
+    "selection_rank": [
+      0.9107142857142857,
+      0.9400721827192416,
+      1.0,
+      -0.5552982315421104
+    ]
+  }
+}

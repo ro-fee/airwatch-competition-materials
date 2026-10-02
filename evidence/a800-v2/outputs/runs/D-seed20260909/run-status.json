@@ -1,0 +1,18 @@
+{
+  "anchors_presented": 1177600,
+  "best_checkpoint_sha256": "6d67ddb3cd33e3ec64a85e7c31bc41120ee15d1aca61b8edbfcbbdfed9d4b88e",
+  "checkpoint_sha256": "95f4083dd79b6e4987844d8b70135866bad2c8c5ec525884e89df9972db3ef90",
+  "config_sha256": "6e244dc4f27ba8698139caebc1b446c242691797b6f0deb358626f3d968da128",
+  "elapsed_compute_seconds": 711.2676250208169,
+  "experiment": "D",
+  "forward_inputs_presented": 2355200,
+  "global_step": 9200,
+  "kind": "formal",
+  "measured_gpu_step_seconds": 291.41301127815245,
+  "reason": null,
+  "run_id": "D-seed20260909",
+  "schema_version": "2.0",
+  "seed": 20260909,
+  "state": "completed",
+  "total_steps": 9200
+}

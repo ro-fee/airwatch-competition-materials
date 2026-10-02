@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "scope": "Frozen runtime load and real validation-member forward; selected clean metrics recomputed from returned predictions, not fresh held-out inference",
+  "model_version": "ff57311926a7633bf4643b394dd740d4329b9ae3dafcf16e34d22436ca507ed2",
+  "parameters": 856067,
+  "validation_member": "ku-leuven:frysky-v1:0034",
+  "window_shape": [
+    32,
+    2,
+    4096
+  ],
+  "forward_finite": true,
+  "validation_prediction": {
+    "known_class_candidate": "frysky",
+    "decision": "known",
+    "window_count": 32,
+    "precision": "fp32"
+  },
+  "selected_run": "A-seed20260909",
+  "known_members": 24,
+  "unknown_members": 204,
+  "closed_set": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0
+  },
+  "open_set_primary": {
+    "auroc": 0.8780637254901961,
+    "fpr95": 0.5833333333333334,
+    "known_acceptance": 0.9166666666666666,
+    "unknown_false_acceptance": 0.5637254901960784
+  },
+  "unknown_rejection_rate": 0.4362745098039216,
+  "metric_recomputation_matches": true,
+  "desktop_ui_activated": false
+}

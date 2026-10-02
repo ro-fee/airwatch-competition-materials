@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "protocol": "ku-leuven-worst-noise-selection-local-development-v3",
+  "base_config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+  "seeds": [20260909, 20260910, 20260911],
+  "augmentation": {
+    "protocol": "ku-leuven-clean-strong-awgn-multipath-training-v2"
+  },
+  "checkpoint_selection": {
+    "protocol": "clean-guarded-minus5-worst-repeat-v1",
+    "clean_recording_macro_f1_floor": 0.97,
+    "awgn_snr_db": -5.0,
+    "repeat_seeds": [2026090901, 2026090902, 2026090903]
+  },
+  "controlled_change": "Training data, deterministic augmentation, branch probabilities, optimizer, model, seeds, maximum epochs and patience remain identical to V2. The only controlled change is checkpoint selection: after the clean guardrail, prioritize the worst of three frozen -5 dB validation repeats instead of clean validation loss.",
+  "checkpoint_selection_order": [
+    "require clean recording Macro-F1 >= 0.97",
+    "maximize minimum -5 dB recording Macro-F1 across the three frozen repeat seeds",
+    "maximize mean -5 dB recording Macro-F1 across the repeats",
+    "maximize clean recording Macro-F1",
+    "minimize clean validation window loss"
+  ],
+  "comparison": "Exactly paired against V2 on all 40 previously frozen known-validation stress conditions, three model seeds and the unchanged probability ensemble.",
+  "acceptance": {
+    "clean_guardrail": "candidate three-seed mean clean recording Macro-F1 must be at least V2 minus 0.03",
+    "minus5_primary_mean": "candidate single-model mean across the three -5 dB repeats and three seeds must exceed V2",
+    "minus5_primary_worst_case": "candidate worst seed-repeat -5 dB recording Macro-F1 must strictly exceed the V2 worst seed-repeat",
+    "zero_to5_guardrail": "candidate single-model 0/5 dB mean must be at least V2 minus 0.03",
+    "multipath_guardrail": "candidate single-model multipath mean must be at least V2 minus 0.03"
+  },
+  "reference_evidence": {
+    "base_config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+    "base_config_sha256": "8ee34ccbfabfcb0a938f932c3f2784e5dc57695c1e6d8b6ecca07c877a495304",
+    "v2_protocol": "training/configs/ku_leuven_strong_noise_local_protocol_v2.json",
+    "v2_protocol_sha256": "e9ea78da67ecda35ab03a85c0cd7a520d5d5fb5116b8bd368490c02a8f9b4336",
+    "v2_robustness": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_validation_robustness_v2.json",
+    "v2_robustness_sha256": "e3f9c72638c9181221177a3cb915f2ade26ef89511332cccf911e9094007a608",
+    "v2_comparison": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_strong_noise_local_comparison_v2.json",
+    "v2_comparison_sha256": "10f0fc265d0424a13a29f7c21dfb9dad1c6560498a0b47bd1bc406f0bb71024c"
+  },
+  "development_validation_only": true,
+  "test_data_allowed": false,
+  "unknown_data_allowed": false,
+  "open_set_threshold_calibration_allowed": false,
+  "competition_test_claim_allowed": false,
+  "a800_protocol_replaced": false
+}

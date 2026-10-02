@@ -1,0 +1,23 @@
+{
+  "deviation": "gpu_occupancy_gate_narrowed_to_owner_processes",
+  "authorized_by": "repository owner, direct instruction 2026-10-02",
+  "stock_behaviour": "training/a800_common.py:113 refuses any co-resident compute process",
+  "applied_behaviour": "owner-owned PIDs tolerated under a memory ceiling; non-owner PIDs still refused",
+  "owner_process_prefixes": [
+    "/root/lyh_workspace/envs/exp1/",
+    "/root/lyh_workspace/envs/exp2-dqn/",
+    "/root/lyh_workspace/envs/exp2-weight/"
+  ],
+  "owner_memory_ceiling_mib": 20000,
+  "immutable_payload_modified": false,
+  "scientific_protocol_modified": false,
+  "residual_risk": "co-tenant OMBC jobs may expand and cause CUDA OOM; training would then fail and be recorded, not silently retried",
+  "unchanged_gates": [
+    "A800 80GB model check",
+    "GPU UUID identity",
+    "bundle payload integrity",
+    "environment verification",
+    "session-minutes lease",
+    "fixed 12-run matrix"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "protocol": "ku-leuven-tcn-local-known-validation-robustness-v1",
+  "frozen_on": "2026-09-09",
+  "purpose": "Controlled clean-guarded worst--5-dB checkpoint-selection candidate evaluated on the unchanged development-only 40-condition protocol.",
+  "split": "validation",
+  "dataset": {
+    "root": "D:/AirWatch_Datasets/ku_leuven_drone_rf/prepared/known-iq-v1",
+    "metadata": "D:/AirWatch_Datasets/ku_leuven_drone_rf/prepared/known-iq-v1/dataset-metadata.json",
+    "metadata_sha256": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+    "base_config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+    "base_config_sha256": "8ee34ccbfabfcb0a938f932c3f2784e5dc57695c1e6d8b6ecca07c877a495304",
+    "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "post_perturbation_preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "sample_rate_hz": 100000000,
+    "window_samples": 4096,
+    "windows_per_recording": 32,
+    "expected_validation_windows": 768,
+    "expected_validation_recordings": 24
+  },
+  "source_comparison": {
+    "path": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_local_reproducibility_v1.json",
+    "sha256": "e381ea62a8be4e771206b47b273500d373ea5f3f3f74d677a7b27f4c6de50028"
+  },
+  "models": [
+    {
+      "id": "tcn_seed20260909",
+      "model": "DroneRFTCN",
+      "seed": 20260909,
+      "training_evidence": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260909_v3_training.json",
+      "training_evidence_sha256": "d882252f8304efa0165a61c9290f6674de8ba4bb51caa1ef64957043d122f816",
+      "resolved_config": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260909_v3_config.json",
+      "resolved_config_sha256": "62c598ded10e96cfde4ce01d4d6ca8626377d4acfe07585d516e08466b6283da",
+      "checkpoint": "artifacts/checkpoints/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260909_v3_best.pt",
+      "checkpoint_sha256": "53754b63dc673a491d22c68a3606b62ab47a3eb8d0f61555e06161df374232fc"
+    },
+    {
+      "id": "tcn_seed20260910",
+      "model": "DroneRFTCN",
+      "seed": 20260910,
+      "training_evidence": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260910_v3_training.json",
+      "training_evidence_sha256": "caa6dc65d198e17bc33f8a83355248ac5b2095565060c179e72aa23c3a93a038",
+      "resolved_config": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260910_v3_config.json",
+      "resolved_config_sha256": "3acc13471347e6ffcfca835c769f3431d7004ad19d1cf573bbbba924011cc292",
+      "checkpoint": "artifacts/checkpoints/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260910_v3_best.pt",
+      "checkpoint_sha256": "29c5329eb975d6da10d0ee414ccff8acdd0976215376155f8d27e22aa979e8f6"
+    },
+    {
+      "id": "tcn_seed20260911",
+      "model": "DroneRFTCN",
+      "seed": 20260911,
+      "training_evidence": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260911_v3_training.json",
+      "training_evidence_sha256": "41c1cd75a4ae92ac986477f5117b4e765f7ce13d08e73119bb2dd9a5ce261252",
+      "resolved_config": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260911_v3_config.json",
+      "resolved_config_sha256": "2bf0166970ac6943271c301dfe81af5af36a188bf605cf03c193ae6d9bf3cb79",
+      "checkpoint": "artifacts/checkpoints/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260911_v3_best.pt",
+      "checkpoint_sha256": "1f31b63aaaa3aac2d4e1e103ab594a561721b4e1fe03debdeddf970051f55167"
+    }
+  ],
+  "ensemble": {
+    "id": "tcn_three_seed_probability_ensemble",
+    "method": "arithmetic_mean_of_window_softmax_probabilities",
+    "logit_averaging_allowed": false,
+    "majority_voting_allowed": false
+  },
+  "perturbations": {
+    "single_factor_only": true,
+    "include_clean_reference": true,
+    "awgn": {
+      "snr_db_levels": [
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "repeat_seeds": [
+        2026090901,
+        2026090902,
+        2026090903
+      ],
+      "definition": "Joint complex-signal power divided by newly added circular-complex AWGN power after source preprocessing; the same deterministic noise direction is only rescaled across SNR levels.",
+      "common_random_numbers_across_snr": true
+    },
+    "carrier_frequency_offset": {
+      "offset_hz_levels": [
+        -100000,
+        -50000,
+        -25000,
+        25000,
+        50000,
+        100000
+      ],
+      "sample_rate_hz": 100000000,
+      "phase_reference": "absolute_start_sample_within_registered_mat_member",
+      "definition": "Synthetic complex rotation exp(j*2*pi*offset_hz*n/sample_rate_hz); +/-100 kHz is a deliberately strong stress condition."
+    },
+    "multipath": {
+      "profiles": {
+        "mild": {
+          "delay_samples": [
+            0,
+            5,
+            12
+          ],
+          "relative_amplitude_db": [
+            0,
+            -6,
+            -12
+          ]
+        },
+        "severe": {
+          "delay_samples": [
+            0,
+            8,
+            24,
+            64
+          ],
+          "relative_amplitude_db": [
+            0,
+            -3,
+            -6,
+            -9
+          ]
+        }
+      },
+      "repeat_seeds": [
+        2026090901,
+        2026090902,
+        2026090903
+      ],
+      "tap_energy_normalization": true,
+      "reflection_phase_seed": "sha256(profile_id,recording_id,repeat_seed); direct_path_phase_zero",
+      "boundary_approximation": "causal_zero_padding_within_each_materialized_window; no source pre-roll available"
+    },
+    "post_perturbation_processing": "per-window complex DC removal and complex RMS normalization"
+  },
+  "statistics": {
+    "primary_unit": "recording",
+    "primary_metric": "recording_macro_f1",
+    "secondary_metrics": [
+      "recording_accuracy",
+      "window_macro_f1",
+      "window_accuracy",
+      "recording_nll",
+      "recording_brier_score"
+    ],
+    "seed_and_repeat_summary": "mean_sample_standard_deviation_minimum_maximum",
+    "clean_delta_confidence_interval": "class-stratified paired recording bootstrap percentile 95% for ensemble predictions",
+    "bootstrap_seed": 2026090904,
+    "bootstrap_replicates": 2000
+  },
+  "evaluation": {
+    "batch_size": 64,
+    "num_workers": 0,
+    "device": "cuda"
+  },
+  "data_access": {
+    "development_validation_only": true,
+    "test_data_allowed": false,
+    "unknown_data_allowed": false,
+    "open_set_threshold_calibration_allowed": false,
+    "competition_test_claim_allowed": false,
+    "a800_protocol_replaced": false
+  },
+  "outputs": {
+    "summary_json": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3.json",
+    "metrics_csv": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3_metrics.csv",
+    "window_predictions_csv": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3_window_predictions.csv",
+    "recording_predictions_csv": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3_recording_predictions.csv",
+    "curve_png": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3.png",
+    "curve_svg": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3.svg"
+  },
+  "interpretation_boundaries": [
+    "All results are development diagnostics on 24 known validation MAT members; no test or unknown samples are opened.",
+    "The official metadata does not prove that MAT members are independent physical acquisition sessions.",
+    "Added-noise dB is relative to already captured normalized signal power and is not physical acquisition SNR.",
+    "CFO and multipath are deterministic mathematical stressors, not calibrated field-channel measurements.",
+    "Window-local zero padding makes the multipath result a boundary approximation rather than a source-continuous channel simulation.",
+    "No open-set, cross-session, cross-source, or real-deployment claim is allowed from this artifact."
+  ]
+}

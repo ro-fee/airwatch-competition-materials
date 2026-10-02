@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "protocol": "dronerf-tcn-known-only-open-set-calibration-v1",
+  "frozen_on": "2026-09-08",
+  "model_config": "training/configs/dronerf_tcn_type_baseline_v1.json",
+  "checkpoint": "artifacts/checkpoints/uav/dronerf_tcn_type_seed20260908_v1_best.pt",
+  "prototype_split": "train",
+  "calibration_split": "validation",
+  "target_known_acceptance": 0.95,
+  "methods": [
+    {"name": "maximum_softmax_probability"},
+    {"name": "negative_energy", "temperature": 1.0},
+    {"name": "prototype_cosine"}
+  ],
+  "evaluation": {
+    "batch_size": 64,
+    "num_workers": 0,
+    "device": "auto",
+    "seed": 20260908
+  },
+  "output": {
+    "json": "artifacts/evidence/uav/dronerf_tcn_open_set_calibration_v1.json",
+    "scores_csv": "artifacts/evidence/uav/dronerf_tcn_open_set_calibration_v1_scores.csv"
+  }
+}

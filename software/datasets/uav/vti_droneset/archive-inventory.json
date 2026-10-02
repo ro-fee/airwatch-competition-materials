@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "dataset": "VTI_DroneSET",
+  "dataset_version": "1",
+  "outer_archive": "source/VTI_DroneSET.7z",
+  "outer_archive_bytes": 6277143852,
+  "outer_archive_sha256": "524e038f6577729778dbd31910076880e296b24e3047e4976d7c74a6b7bc9a3a",
+  "inspected_at": "2026-09-08T18:27:00+08:00",
+  "inspection_tool": "py7zr 1.1.3",
+  "needs_password": true,
+  "member_count": 6,
+  "members": [
+    {"name": "00_RAW_RF_SNIMCI_24.7z", "declared_bytes": 3026305174},
+    {"name": "00_RAW_RF_SNIMCI_58.7z", "declared_bytes": 2559291360},
+    {"name": "01_PP_RF_SNIMCI_24.7z", "declared_bytes": 227454347},
+    {"name": "01_PP_RF_SNIMCI_58.7z", "declared_bytes": 207317685},
+    {"name": "02_DNN_DATA_24.7z", "declared_bytes": 131117612},
+    {"name": "02_DNN_DATA_58.7z", "declared_bytes": 125268844}
+  ],
+  "content_verified": false,
+  "training_eligible": false,
+  "blocker": "外层归档内容受密码保护；成员名和声明大小可读，但成员字节、内层文件与数据语义尚未验证。"
+}

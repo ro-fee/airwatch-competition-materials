@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "ku_leuven_local_validation_reproducibility",
+  "status": "completed_development_validation_only",
+  "generated_at_utc": "2026-09-09T05:21:30.154646+00:00",
+  "matrix_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\ku_leuven_local_reproducibility_v1.json",
+  "matrix_sha256": "6d3b3d9e94a5ba307f90e17a538676ff28df36e500ab58cf49320875bbbb2307",
+  "data_identity": {
+    "artifact_type": "ku_leuven_materialized_known_train_validation",
+    "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+    "source_window_plan_sha256": [
+      "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+      "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+      "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+    ],
+    "label_map": {
+      "frysky": 0,
+      "spektrum_dx4e": 1,
+      "dji_mini2_rc": 2
+    }
+  },
+  "environment_scope": "local_rtx_4060_laptop_gpu",
+  "runs": [
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260909,
+      "run_name": "ku_leuven_tcn_local_development_seed20260909_v1",
+      "validation_recording_macro_f1": 1.0,
+      "validation_window_loss": 0.8766841813921928,
+      "completed_epochs": 17,
+      "parameter_count": 856067,
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260909_v1_best.pt",
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260909_v1_training.json",
+      "evidence_sha256": "7c314468df53372161bd1abf21c56cb45d89a2b03e5ffa0d7a610cf23e69401a",
+      "reused_existing_evidence": true
+    },
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260910,
+      "run_name": "ku_leuven_tcn_local_development_seed20260910_v1",
+      "validation_recording_macro_f1": 1.0,
+      "validation_window_loss": 0.598219096660614,
+      "completed_epochs": 11,
+      "parameter_count": 856067,
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260910_v1_best.pt",
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260910_v1_training.json",
+      "evidence_sha256": "b77d6a5360d4605cf83e7202b5a0d27ec50c7b0fc77f56ee9b1567134dd777dd",
+      "reused_existing_evidence": false
+    },
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260911,
+      "run_name": "ku_leuven_tcn_local_development_seed20260911_v1",
+      "validation_recording_macro_f1": 1.0,
+      "validation_window_loss": 0.7765388811628023,
+      "completed_epochs": 18,
+      "parameter_count": 856067,
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260911_v1_best.pt",
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260911_v1_training.json",
+      "evidence_sha256": "8b4e3789736018425d29b56c6bfef741bd94482352dab81a0f0218f46ce7b38f",
+      "reused_existing_evidence": false
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260909,
+      "run_name": "ku_leuven_resnet18_local_development_seed20260909_v1",
+      "validation_recording_macro_f1": 1.0,
+      "validation_window_loss": 0.8991341243187586,
+      "completed_epochs": 18,
+      "parameter_count": 964995,
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260909_v1_best.pt",
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260909_v1_training.json",
+      "evidence_sha256": "41d5224c59521abc4258b04b4c4fee32e76a478dc8c052c093fcee940e653104",
+      "reused_existing_evidence": true
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260910,
+      "run_name": "ku_leuven_resnet18_local_development_seed20260910_v1",
+      "validation_recording_macro_f1": 1.0,
+      "validation_window_loss": 0.8892190953095754,
+      "completed_epochs": 13,
+      "parameter_count": 964995,
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260910_v1_best.pt",
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260910_v1_training.json",
+      "evidence_sha256": "fae960712be6d2eaebd69dd1fefd8517c45d9c6a9bed86cb9d0776d11d011c8c",
+      "reused_existing_evidence": false
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260911,
+      "run_name": "ku_leuven_resnet18_local_development_seed20260911_v1",
+      "validation_recording_macro_f1": 1.0,
+      "validation_window_loss": 0.8494665697216988,
+      "completed_epochs": 9,
+      "parameter_count": 964995,
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260911_v1_best.pt",
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260911_v1_training.json",
+      "evidence_sha256": "56259c4d876f2959c344534b05c96bdf4dea9c947602191a477781dbc43e2c6f",
+      "reused_existing_evidence": false
+    }
+  ],
+  "candidate_summaries": [
+    {
+      "model": "DroneRFTCN",
+      "seeds": [
+        20260909,
+        20260910,
+        20260911
+      ],
+      "validation_recording_macro_f1": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_validation_recording_macro_f1": 1.0,
+      "standard_deviation_validation_recording_macro_f1": 0.0,
+      "minimum_validation_recording_macro_f1": 1.0,
+      "maximum_validation_recording_macro_f1": 1.0,
+      "parameter_count": 856067
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seeds": [
+        20260909,
+        20260910,
+        20260911
+      ],
+      "validation_recording_macro_f1": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_validation_recording_macro_f1": 1.0,
+      "standard_deviation_validation_recording_macro_f1": 0.0,
+      "minimum_validation_recording_macro_f1": 1.0,
+      "maximum_validation_recording_macro_f1": 1.0,
+      "parameter_count": 964995
+    }
+  ],
+  "development_leader": {
+    "model": "DroneRFTCN",
+    "seeds": [
+      20260909,
+      20260910,
+      20260911
+    ],
+    "validation_recording_macro_f1": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mean_validation_recording_macro_f1": 1.0,
+    "standard_deviation_validation_recording_macro_f1": 0.0,
+    "minimum_validation_recording_macro_f1": 1.0,
+    "maximum_validation_recording_macro_f1": 1.0,
+    "parameter_count": 856067
+  },
+  "comparison_rule": {
+    "primary": "highest_mean_validation_recording_macro_f1_across_three_seeds",
+    "tie_break_1": "lower_standard_deviation_validation_recording_macro_f1",
+    "tie_break_2": "lower_parameter_count",
+    "test_data_allowed": false,
+    "unknown_data_allowed": false,
+    "formal_model_selection_claim_allowed": false
+  },
+  "formal_model_selection_claim_allowed": false,
+  "competition_test_claim_allowed": false,
+  "a800_protocol_replaced": false,
+  "test_data_used": false,
+  "unknown_data_used": false,
+  "limitations": [
+    "Only 24 validation MAT members are available across three known classes.",
+    "Official metadata does not prove that MAT members are independent physical acquisition sessions.",
+    "This development comparison cannot be reported as competition test performance."
+  ],
+  "next_step": "Use the local variance diagnosis to freeze one stability intervention before any sealed evaluation."
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "dataset": "VTI_DroneSET",
+  "dataset_version": "1",
+  "dataset_doi": "10.17632/s6tgnnp5n2.1",
+  "source_url": "https://data.mendeley.com/datasets/s6tgnnp5n2/1",
+  "archive_url": "https://data.mendeley.com/public-files/datasets/s6tgnnp5n2/files/0d16966c-fe20-45fe-a70f-d5dc55ba44ce/file_downloaded",
+  "downloaded_at": "2026-09-08T18:24:58+08:00",
+  "archive_path": "source/VTI_DroneSET.7z",
+  "size_bytes": 6277143852,
+  "expected_sha256": "524e038f6577729778dbd31910076880e296b24e3047e4976d7c74a6b7bc9a3a",
+  "actual_sha256": "524e038f6577729778dbd31910076880e296b24e3047e4976d7c74a6b7bc9a3a",
+  "checksum_verified": true,
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "archive_password_required": true,
+  "password_request_status": "requested_2026-09-08_awaiting_reply",
+  "content_audit_status": "blocked_pending_author_password",
+  "training_eligible": false,
+  "training_blocker": "官方说明要求邮件向通讯作者索取解压密码；取得密码并完成内层格式、标签和录制边界审计前禁止训练。"
+}

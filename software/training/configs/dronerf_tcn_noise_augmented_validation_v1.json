@@ -1,0 +1,43 @@
+{
+  "experiment_name": "dronerf_tcn_noise_augmented_validation_v1",
+  "experiment_protocol": "training/configs/dronerf_tcn_noise_augmented_protocol_v1.json",
+  "dataset": {
+    "name": "DroneRF",
+    "root": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908",
+    "target": "drone_type",
+    "window_size": 4096,
+    "normalization": "per_channel_window_zscore",
+    "num_classes": 4,
+    "cache_recordings": 12
+  },
+  "model": {"name": "DroneRFTCN"},
+  "training": {
+    "seed": 20260908,
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 20,
+    "early_stopping_patience": 6,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "auto"
+  },
+  "training_augmentation": {
+    "name": "deterministic_mixed_awgn_after_normalization",
+    "noise_probability": 0.75,
+    "snr_db_levels": [0, 5, 10, 15, 20],
+    "noise_seed": 2026090801
+  },
+  "validation_robustness": {
+    "selection_metric": "mean_noisy_recording_macro_f1",
+    "snr_db_levels": [0, 5, 10, 15, 20],
+    "noise_seed": 2026090802,
+    "clean_reference_recording_macro_f1": 0.9365079365079365,
+    "clean_guardrail_max_absolute_drop": 0.03,
+    "clean_guardrail_min_recording_macro_f1": 0.9065079365079365
+  },
+  "output": {
+    "run_name": "dronerf_tcn_noise_augmented_seed20260908_validation_v1",
+    "checkpoint_dir": "artifacts/checkpoints/uav",
+    "evidence_dir": "artifacts/evidence/uav"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "Compare hashes computed during safe archive extraction against returned completion markers and freeze; original input references compared against the SHA-256-verified upload index (raw dataset not reread in this audit). Runtime sources reread and compared to project. No retraining.",
+  "files_hashed_on_import": 18419,
+  "import_index_sha256": "57f0e10bf9d9c65119bde2721e9bfe7d773ade60e2c27401b671ae43b31db4c7",
+  "source_archive_sha256": "325cf8f650b6bfa3dab6adf68bff55f940e52f031bc734a18acd36777de31e51",
+  "freeze_sha256": "ff57311926a7633bf4643b394dd740d4329b9ae3dafcf16e34d22436ca507ed2",
+  "freeze_bindings": {
+    "original_upload_index": 208,
+    "returned": 111
+  },
+  "upload_index_sha256": "5c8bcf2b47cadaa2f9cf319934fb6d6e6cb1cde77dcf6ad0c4237d526324fc4e",
+  "completion_checks": [
+    {
+      "name": "release-completed.json",
+      "files": 22,
+      "passed": true
+    },
+    {
+      "name": "evaluation-completed.json",
+      "files": 17513,
+      "passed": true
+    }
+  ],
+  "benchmark_raw_files": 80,
+  "completed_runs": 12,
+  "steps_per_run": 9200,
+  "runtime_sources_match": true,
+  "errors": [],
+  "desktop_activated": false,
+  "limitations": [
+    "Sender archive checksum sidecar not supplied.",
+    "Shared-GPU execution deviation preserved.",
+    "D-seed20260910 failed first attempt preserved.",
+    "Physical acquisition-session independence unproven."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "ready_for_training": true,
+  "primary_sources": [
+    "DroneRF"
+  ],
+  "findings": [
+    {
+      "source": "VTI_DroneSET",
+      "severity": "info",
+      "message": "候选原始归档存在，大小与登记一致，SHA-256 已复核"
+    },
+    {
+      "source": "VTI_DroneSET",
+      "severity": "info",
+      "message": "缺少作者提供的归档密码，无法核验内层文件、MAT 变量、标签或录制边界；禁止用于训练或指标声明。"
+    },
+    {
+      "source": "KU Leuven Drone RF Dataset",
+      "severity": "info",
+      "message": "整个 SJRC_pro 归档被锁为外部未知类测试，永久禁止用于训练、验证、阈值选择或模型选择。现有 DroneRF 双频段模型与单频段 I/Q 不兼容。"
+    },
+    {
+      "source": "UAVSig",
+      "severity": "review",
+      "missing": [
+        "license",
+        "version"
+      ]
+    },
+    {
+      "source": "UAVSig",
+      "severity": "review",
+      "message": "许可证尚未核实"
+    },
+    {
+      "source": "仓库历史演示数据",
+      "severity": "info",
+      "file_count": 30,
+      "expected_record_count": 30
+    }
+  ],
+  "manifest": "docs\\uav_data_sources.json"
+}

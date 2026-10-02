@@ -1,0 +1,1856 @@
+{
+  "experiment_name": "ku_leuven_resnet18_local_development_v1",
+  "run_name": "ku_leuven_resnet18_local_development_seed20260909_v1",
+  "status": "completed_training_validation_only",
+  "config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\ku_leuven_resnet18_local_development_v1.json",
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "seed": 20260909,
+  "dataset": {
+    "train_windows": 3680,
+    "validation_windows": 768,
+    "test_windows_opened": false,
+    "unknown_windows_opened": false,
+    "train_recordings": 115,
+    "validation_recordings": 24,
+    "window_size": 4096,
+    "channels": 2,
+    "label_map": {
+      "frysky": 0,
+      "spektrum_dx4e": 1,
+      "dji_mini2_rc": 2
+    },
+    "data_identity": {
+      "artifact_type": "ku_leuven_materialized_known_train_validation",
+      "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+      "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+      "source_window_plan_sha256": [
+        "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+        "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+        "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+      ],
+      "label_map": {
+        "frysky": 0,
+        "spektrum_dx4e": 1,
+        "dji_mini2_rc": 2
+      }
+    }
+  },
+  "model": {
+    "name": "DroneRFResNet18",
+    "input_shape": [
+      2,
+      4096
+    ],
+    "num_classes": 3,
+    "parameter_count": 964995
+  },
+  "class_weights": {
+    "frysky": 1.3218390804597702,
+    "spektrum_dx4e": 0.8914728682170543,
+    "dji_mini2_rc": 0.8914728682170543
+  },
+  "selection_rule": "maximum validation recording macro_f1; tie-break minimum validation window loss; test and unknown unopened",
+  "aggregation_protocol": "mean-window-softmax-probability-v1",
+  "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260909_v1_best.pt",
+  "last_checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260909_v1_last.pt",
+  "resolved_config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260909_v1_config.json",
+  "best_validation_recording_macro_f1": 1.0,
+  "best_validation_window_loss": 0.8991341243187586,
+  "completed_epochs": 18,
+  "history": [
+    {
+      "epoch": 1,
+      "learning_rate": 0.001,
+      "train_loss": 0.796635027035423,
+      "train_accuracy": 0.6097826086956522,
+      "validation": {
+        "loss": 0.9204842944939932,
+        "window": {
+          "accuracy": 0.578125,
+          "macro_f1": 0.5386808257478023,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              134,
+              49,
+              9
+            ],
+            [
+              13,
+              269,
+              6
+            ],
+            [
+              32,
+              215,
+              41
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.7486033519553073,
+              "recall": 0.6979166666666666,
+              "f1": 0.7223719676549866,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5046904315196998,
+              "recall": 0.9340277777777778,
+              "f1": 0.6552984165651644,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.7321428571428571,
+              "recall": 0.1423611111111111,
+              "f1": 0.23837209302325582,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.625,
+          "macro_f1": 0.5555555555555555,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.0009972609476841367,
+      "train_loss": 0.6442997517793075,
+      "train_accuracy": 0.7048913043478261,
+      "validation": {
+        "loss": 0.8063922549287478,
+        "window": {
+          "accuracy": 0.58984375,
+          "macro_f1": 0.5896976451926587,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              175,
+              8,
+              9
+            ],
+            [
+              107,
+              167,
+              14
+            ],
+            [
+              151,
+              26,
+              111
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.40415704387990764,
+              "recall": 0.9114583333333334,
+              "f1": 0.56,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8308457711442786,
+              "recall": 0.5798611111111112,
+              "f1": 0.6830265848670757,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.8283582089552238,
+              "recall": 0.3854166666666667,
+              "f1": 0.5260663507109005,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.9166666666666666,
+          "macro_f1": 0.9107142857142857,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              2,
+              0,
+              7
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.7777777777777778,
+              "f1": 0.875,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0009890738003669028,
+      "train_loss": 0.5223031095836473,
+      "train_accuracy": 0.7785326086956522,
+      "validation": {
+        "loss": 0.82178487504522,
+        "window": {
+          "accuracy": 0.6705729166666666,
+          "macro_f1": 0.6644066026688149,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              125,
+              55,
+              12
+            ],
+            [
+              0,
+              288,
+              0
+            ],
+            [
+              5,
+              181,
+              102
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9615384615384616,
+              "recall": 0.6510416666666666,
+              "f1": 0.7763975155279503,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.549618320610687,
+              "recall": 1.0,
+              "f1": 0.7093596059113301,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.8947368421052632,
+              "recall": 0.3541666666666667,
+              "f1": 0.5074626865671642,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.75,
+          "macro_f1": 0.75,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              6,
+              3
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.6,
+              "recall": 1.0,
+              "f1": 0.75,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.3333333333333333,
+              "f1": 0.5,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0009755282581475768,
+      "train_loss": 0.4332257364107215,
+      "train_accuracy": 0.8176630434782609,
+      "validation": {
+        "loss": 2.593598877390226,
+        "window": {
+          "accuracy": 0.4635416666666667,
+          "macro_f1": 0.4289589303502301,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              182,
+              0,
+              10
+            ],
+            [
+              127,
+              41,
+              120
+            ],
+            [
+              155,
+              0,
+              133
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.3922413793103448,
+              "recall": 0.9479166666666666,
+              "f1": 0.5548780487804879,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.1423611111111111,
+              "f1": 0.24924012158054712,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.5057034220532319,
+              "recall": 0.4618055555555556,
+              "f1": 0.4827586206896552,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.5,
+          "macro_f1": 0.4239130434782609,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              1
+            ],
+            [
+              3,
+              0,
+              6
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.35294117647058826,
+              "recall": 1.0,
+              "f1": 0.5217391304347826,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.8571428571428571,
+              "recall": 0.6666666666666666,
+              "f1": 0.75,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0009567727288213003,
+      "train_loss": 0.35207347999448363,
+      "train_accuracy": 0.8603260869565217,
+      "validation": {
+        "loss": 2.3877241231578714,
+        "window": {
+          "accuracy": 0.6510416666666666,
+          "macro_f1": 0.6392911126122608,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              122,
+              65,
+              5
+            ],
+            [
+              0,
+              288,
+              0
+            ],
+            [
+              10,
+              188,
+              90
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9242424242424242,
+              "recall": 0.6354166666666666,
+              "f1": 0.7530864197530864,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.532347504621072,
+              "recall": 1.0,
+              "f1": 0.6948130277442702,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.9473684210526315,
+              "recall": 0.3125,
+              "f1": 0.4699738903394256,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.625,
+          "macro_f1": 0.5555555555555555,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.0009330127018922195,
+      "train_loss": 0.22048264677109924,
+      "train_accuracy": 0.9144021739130435,
+      "validation": {
+        "loss": 0.9284679268797239,
+        "window": {
+          "accuracy": 0.6536458333333334,
+          "macro_f1": 0.6400430872389111,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              164,
+              15,
+              13
+            ],
+            [
+              33,
+              230,
+              25
+            ],
+            [
+              93,
+              87,
+              108
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.5655172413793104,
+              "recall": 0.8541666666666666,
+              "f1": 0.6804979253112033,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.6927710843373494,
+              "recall": 0.7986111111111112,
+              "f1": 0.7419354838709677,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.7397260273972602,
+              "recall": 0.375,
+              "f1": 0.4976958525345622,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.875,
+          "macro_f1": 0.8743589743589745,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              1,
+              2,
+              6
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.9230769230769231,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8181818181818182,
+              "recall": 1.0,
+              "f1": 0.9,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.0009045084971874739,
+      "train_loss": 0.13572633221097616,
+      "train_accuracy": 0.9502717391304348,
+      "validation": {
+        "loss": 0.8765274286270142,
+        "window": {
+          "accuracy": 0.6953125,
+          "macro_f1": 0.6916076698309322,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              145,
+              21,
+              26
+            ],
+            [
+              21,
+              237,
+              30
+            ],
+            [
+              48,
+              88,
+              152
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.677570093457944,
+              "recall": 0.7552083333333334,
+              "f1": 0.7142857142857143,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.684971098265896,
+              "recall": 0.8229166666666666,
+              "f1": 0.7476340694006309,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.7307692307692307,
+              "recall": 0.5277777777777778,
+              "f1": 0.6129032258064516,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.9583333333333334,
+          "macro_f1": 0.9628482972136222,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              1,
+              8
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 0.9,
+              "recall": 1.0,
+              "f1": 0.9473684210526315,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.8888888888888888,
+              "f1": 0.9411764705882353,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.0008715724127386972,
+      "train_loss": 0.10953790960104569,
+      "train_accuracy": 0.9586956521739131,
+      "validation": {
+        "loss": 1.468739241361618,
+        "window": {
+          "accuracy": 0.6796875,
+          "macro_f1": 0.6880610103989183,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              125,
+              9,
+              58
+            ],
+            [
+              0,
+              136,
+              152
+            ],
+            [
+              3,
+              24,
+              261
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9765625,
+              "recall": 0.6510416666666666,
+              "f1": 0.78125,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8047337278106509,
+              "recall": 0.4722222222222222,
+              "f1": 0.5951859956236324,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.554140127388535,
+              "recall": 0.90625,
+              "f1": 0.6877470355731226,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.8441558441558442,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              4
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.5555555555555556,
+              "f1": 0.7142857142857143,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6923076923076923,
+              "recall": 1.0,
+              "f1": 0.8181818181818182,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.0008345653031794292,
+      "train_loss": 0.07569406810014144,
+      "train_accuracy": 0.9706521739130435,
+      "validation": {
+        "loss": 1.0130425964792569,
+        "window": {
+          "accuracy": 0.7057291666666666,
+          "macro_f1": 0.71073892975854,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              135,
+              9,
+              48
+            ],
+            [
+              10,
+              170,
+              108
+            ],
+            [
+              24,
+              27,
+              237
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.7988165680473372,
+              "recall": 0.703125,
+              "f1": 0.7479224376731302,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8252427184466019,
+              "recall": 0.5902777777777778,
+              "f1": 0.6882591093117408,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6030534351145038,
+              "recall": 0.8229166666666666,
+              "f1": 0.6960352422907489,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.0007938926261462366,
+      "train_loss": 0.044829298231912694,
+      "train_accuracy": 0.9883152173913043,
+      "validation": {
+        "loss": 0.8991341243187586,
+        "window": {
+          "accuracy": 0.73828125,
+          "macro_f1": 0.7424772306231678,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              141,
+              16,
+              35
+            ],
+            [
+              5,
+              233,
+              50
+            ],
+            [
+              24,
+              71,
+              193
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.8294117647058824,
+              "recall": 0.734375,
+              "f1": 0.7790055248618785,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.728125,
+              "recall": 0.8090277777777778,
+              "f1": 0.7664473684210527,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6942446043165468,
+              "recall": 0.6701388888888888,
+              "f1": 0.6819787985865724,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.00075,
+      "train_loss": 0.03819599226117134,
+      "train_accuracy": 0.9899456521739131,
+      "validation": {
+        "loss": 1.6768577272693317,
+        "window": {
+          "accuracy": 0.5872395833333334,
+          "macro_f1": 0.5893354893354893,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              169,
+              3,
+              20
+            ],
+            [
+              93,
+              139,
+              56
+            ],
+            [
+              131,
+              14,
+              143
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.4300254452926209,
+              "recall": 0.8802083333333334,
+              "f1": 0.5777777777777777,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8910256410256411,
+              "recall": 0.4826388888888889,
+              "f1": 0.6261261261261262,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6529680365296804,
+              "recall": 0.4965277777777778,
+              "f1": 0.5641025641025641,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.7916666666666666,
+          "macro_f1": 0.7871148459383753,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              1,
+              8,
+              0
+            ],
+            [
+              4,
+              0,
+              5
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.5454545454545454,
+              "recall": 1.0,
+              "f1": 0.7058823529411765,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.8888888888888888,
+              "f1": 0.9411764705882353,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 0.5555555555555556,
+              "f1": 0.7142857142857143,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.0007033683215379003,
+      "train_loss": 0.027297476824858915,
+      "train_accuracy": 0.9932065217391305,
+      "validation": {
+        "loss": 1.4563683718442917,
+        "window": {
+          "accuracy": 0.68359375,
+          "macro_f1": 0.688379692531631,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              134,
+              4,
+              54
+            ],
+            [
+              5,
+              131,
+              152
+            ],
+            [
+              15,
+              13,
+              260
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.8701298701298701,
+              "recall": 0.6979166666666666,
+              "f1": 0.7745664739884393,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8851351351351351,
+              "recall": 0.4548611111111111,
+              "f1": 0.6009174311926605,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.5579399141630901,
+              "recall": 0.9027777777777778,
+              "f1": 0.6896551724137931,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.7083333333333334,
+          "macro_f1": 0.6945454545454547,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              7
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.2222222222222222,
+              "f1": 0.36363636363636365,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.5625,
+              "recall": 1.0,
+              "f1": 0.72,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.0006545084971874739,
+      "train_loss": 0.016366762042288548,
+      "train_accuracy": 0.9964673913043478,
+      "validation": {
+        "loss": 1.0793135464191437,
+        "window": {
+          "accuracy": 0.7213541666666666,
+          "macro_f1": 0.7233078200389657,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              142,
+              14,
+              36
+            ],
+            [
+              13,
+              233,
+              42
+            ],
+            [
+              29,
+              80,
+              179
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.7717391304347826,
+              "recall": 0.7395833333333334,
+              "f1": 0.7553191489361702,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.7125382262996942,
+              "recall": 0.8090277777777778,
+              "f1": 0.7577235772357723,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6964980544747081,
+              "recall": 0.6215277777777778,
+              "f1": 0.6568807339449542,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.0006039558454088797,
+      "train_loss": 0.011611337954198699,
+      "train_accuracy": 0.997554347826087,
+      "validation": {
+        "loss": 1.0637201443314552,
+        "window": {
+          "accuracy": 0.7291666666666666,
+          "macro_f1": 0.7296706164971316,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              144,
+              16,
+              32
+            ],
+            [
+              12,
+              241,
+              35
+            ],
+            [
+              31,
+              82,
+              175
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.7700534759358288,
+              "recall": 0.75,
+              "f1": 0.7598944591029023,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.7109144542772862,
+              "recall": 0.8368055555555556,
+              "f1": 0.7687400318979266,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.7231404958677686,
+              "recall": 0.6076388888888888,
+              "f1": 0.660377358490566,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.0005522642316338269,
+      "train_loss": 0.008055829307388353,
+      "train_accuracy": 0.9991847826086957,
+      "validation": {
+        "loss": 1.1611646264791489,
+        "window": {
+          "accuracy": 0.734375,
+          "macro_f1": 0.7410493395568228,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              129,
+              19,
+              44
+            ],
+            [
+              2,
+              232,
+              54
+            ],
+            [
+              7,
+              78,
+              203
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.9347826086956522,
+              "recall": 0.671875,
+              "f1": 0.7818181818181819,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.7051671732522796,
+              "recall": 0.8055555555555556,
+              "f1": 0.7520259319286872,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6744186046511628,
+              "recall": 0.7048611111111112,
+              "f1": 0.6893039049235993,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.0005000000000000002,
+      "train_loss": 0.00886853355003278,
+      "train_accuracy": 0.9980978260869565,
+      "validation": {
+        "loss": 1.2914899587631226,
+        "window": {
+          "accuracy": 0.70703125,
+          "macro_f1": 0.7148065493786255,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              146,
+              7,
+              39
+            ],
+            [
+              8,
+              172,
+              108
+            ],
+            [
+              33,
+              30,
+              225
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.7807486631016043,
+              "recall": 0.7604166666666666,
+              "f1": 0.7704485488126649,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.8229665071770335,
+              "recall": 0.5972222222222222,
+              "f1": 0.6921529175050302,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6048387096774194,
+              "recall": 0.78125,
+              "f1": 0.6818181818181818,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 0.9583333333333334,
+          "macro_f1": 0.9628482972136223,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              8,
+              1
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 0.8888888888888888,
+              "f1": 0.9411764705882353,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 0.9,
+              "recall": 1.0,
+              "f1": 0.9473684210526315,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.0004477357683661734,
+      "train_loss": 0.06334247485754768,
+      "train_accuracy": 0.9842391304347826,
+      "validation": {
+        "loss": 1.2603288739919662,
+        "window": {
+          "accuracy": 0.70703125,
+          "macro_f1": 0.7111028200642034,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              141,
+              20,
+              31
+            ],
+            [
+              10,
+              226,
+              52
+            ],
+            [
+              30,
+              82,
+              176
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.7790055248618785,
+              "recall": 0.734375,
+              "f1": 0.7560321715817694,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.6890243902439024,
+              "recall": 0.7847222222222222,
+              "f1": 0.7337662337662337,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6795366795366795,
+              "recall": 0.6111111111111112,
+              "f1": 0.643510054844607,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 0.00039604415459112036,
+      "train_loss": 0.019554655327785598,
+      "train_accuracy": 0.9953804347826087,
+      "validation": {
+        "loss": 1.1982717017332714,
+        "window": {
+          "accuracy": 0.7200520833333334,
+          "macro_f1": 0.7244308946755487,
+          "sample_count": 768,
+          "confusion_matrix": [
+            [
+              142,
+              14,
+              36
+            ],
+            [
+              6,
+              227,
+              55
+            ],
+            [
+              31,
+              73,
+              184
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 0.7932960893854749,
+              "recall": 0.7395833333333334,
+              "f1": 0.7654986522911051,
+              "support": 192
+            },
+            "spektrum_dx4e": {
+              "precision": 0.7229299363057324,
+              "recall": 0.7881944444444444,
+              "f1": 0.7541528239202658,
+              "support": 288
+            },
+            "dji_mini2_rc": {
+              "precision": 0.6690909090909091,
+              "recall": 0.6388888888888888,
+              "f1": 0.6536412078152753,
+              "support": 288
+            }
+          }
+        },
+        "recording": {
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "sample_count": 24,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              9
+            ]
+          ],
+          "per_class": {
+            "frysky": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "spektrum_dx4e": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            },
+            "dji_mini2_rc": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 9
+            }
+          }
+        },
+        "recording_aggregation": {
+          "protocol": "mean-window-softmax-probability-v1",
+          "windows_per_recording": 32,
+          "recording_count": 24,
+          "confidence_definition": "maximum_of_mean_class_probability"
+        }
+      }
+    }
+  ],
+  "validation_model_selection_evidence_allowed": true,
+  "competition_test_claim_allowed": false,
+  "test_data_used": false,
+  "unknown_data_used": false
+}

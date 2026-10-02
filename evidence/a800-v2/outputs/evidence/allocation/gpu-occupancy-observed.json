@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-10-02T16:52:59Z",
+  "gpu_uuid": "GPU-846ca462-6ed9-19d9-24ab-43bafd745aa0",
+  "name": "NVIDIA A800 80GB PCIe",
+  "memory_total_mib": 81920,
+  "owner_owned_processes": [],
+  "owner_owned_memory_mib": 0,
+  "non_owner_processes": [],
+  "gate": "owner_authorized_shared_occupancy"
+}

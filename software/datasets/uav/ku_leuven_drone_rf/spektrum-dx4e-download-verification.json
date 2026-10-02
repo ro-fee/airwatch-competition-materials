@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "dataset": "KU Leuven Drone RF Dataset",
+  "dataset_version": "1.0",
+  "dataset_doi": "10.48804/HZRVNZ",
+  "downloaded_at_utc": "2026-09-09T02:18:39Z",
+  "file": {
+    "name": "Spektrum_DX4e.zip",
+    "dataverse_file_id": 154419,
+    "official_access_url": "https://rdr.kuleuven.be/api/access/datafile/154419",
+    "external_local_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/Spektrum_DX4e.zip",
+    "size_bytes": 2026208466,
+    "official_md5": "e7f5562f470ac5c66cf3f7463ca91109",
+    "verified_md5": "e7f5562f470ac5c66cf3f7463ca91109",
+    "sha256": "fc80f0552abd72f306088004b114d9329b7c86a47a7dee247400803f5f6bad06"
+  },
+  "paper_role": "known_source",
+  "signal_source": "Spektrum DX4e RC",
+  "protocol": "DSM",
+  "download_verified": true,
+  "training_eligible": false,
+  "training_blocker": "The archive content is verified, but a member-group split and complete known/unknown protocol have not been frozen."
+}

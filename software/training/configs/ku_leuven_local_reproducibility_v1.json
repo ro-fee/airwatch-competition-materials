@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "protocol": "ku-leuven-known-source-local-reproducibility-v1",
+  "status": "ready_to_run",
+  "purpose": "Measure three-seed validation reproducibility on the local RTX 4060 without replacing or modifying the preserved A800 protocol.",
+  "dataset_artifact": "datasets/uav/ku_leuven_drone_rf/known-materialization-verification-v1.json",
+  "candidates": [
+    {
+      "model": "DroneRFTCN",
+      "config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+      "run_prefix": "ku_leuven_tcn_local_development"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "config": "training/configs/ku_leuven_resnet18_local_development_v1.json",
+      "run_prefix": "ku_leuven_resnet18_local_development"
+    }
+  ],
+  "seeds": [20260909, 20260910, 20260911],
+  "comparison": {
+    "primary": "highest_mean_validation_recording_macro_f1_across_three_seeds",
+    "tie_break_1": "lower_standard_deviation_validation_recording_macro_f1",
+    "tie_break_2": "lower_parameter_count",
+    "test_data_allowed": false,
+    "unknown_data_allowed": false,
+    "formal_model_selection_claim_allowed": false
+  },
+  "a800_protocol_replaced": false,
+  "comparison_output": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_local_reproducibility_v1.json"
+}

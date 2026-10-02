@@ -1,0 +1,22 @@
+{
+ "action": "moved_failed_run_dir_out_of_outputs_runs",
+ "from": "outputs/runs/D-seed20260910",
+ "to": "outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1",
+ "deleted_anything": false,
+ "files_preserved": [
+  "best.pt",
+  "best.pt.sha256.json",
+  "config.json",
+  "data-access-audit.json",
+  "failure.json",
+  "last.previous.pt",
+  "last.pt",
+  "last.pt.sha256.json",
+  "run-status.json",
+  "timing.json"
+ ],
+ "why": "training/a800_runner.py:592 refuses to continue while any run is in state=failed. The shipped protocol defines no automatic recovery for a failed run, so continuing required an explicit owner decision rather than an agent-chosen workaround.",
+ "authorized_by": "repository owner, explicit instruction 2026-10-02",
+ "reporting_obligation": "D-seed20260910 failed on its first attempt at step 1840/9200 with a DataLoader worker crash; the supervising agent had also hit a harness background time limit that killed the parent process at around the same time, so the two causes cannot be separated from the retained evidence. The seed was re-run. Both the failed attempt and the re-run must appear in any report; the failure must not be presented as if it never happened.",
+ "status_not_edited": "The failed run-status.json was moved verbatim, not rewritten."
+}

@@ -1,0 +1,18 @@
+{
+  "anchors_presented": 235520,
+  "best_checkpoint_sha256": "6ce043c6e450e05c78b3f7871b2b9cb7cee1e62454d1ec47ce8b3f211f0e7be5",
+  "checkpoint_sha256": "b072275a6af8a3d4b3e61a8eef5edcc306eeee42fbb1fef61f8ebc3fe7ccf589",
+  "config_sha256": "3693912d2c22f4f29e7455055c884fd8ee7e09d9a038fa4ea885aee570e10922",
+  "elapsed_compute_seconds": 125.91603844705969,
+  "experiment": "D",
+  "forward_inputs_presented": 471040,
+  "global_step": 1840,
+  "kind": "formal",
+  "measured_gpu_step_seconds": 57.92879801940918,
+  "reason": "RuntimeError: DataLoader worker (pid(s) 1577908, 1577919, 1577923, 1577927) exited unexpectedly",
+  "run_id": "D-seed20260910",
+  "schema_version": "2.0",
+  "seed": 20260910,
+  "state": "failed",
+  "total_steps": 9200
+}

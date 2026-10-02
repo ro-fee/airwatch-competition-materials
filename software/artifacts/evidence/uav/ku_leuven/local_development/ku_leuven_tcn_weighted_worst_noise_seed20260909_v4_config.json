@@ -1,0 +1,52 @@
+{
+  "experiment_name": "ku_leuven_tcn_local_development_v1",
+  "dataset": {
+    "name": "KU Leuven Drone RF Dataset",
+    "root": "D:/AirWatch_Datasets/ku_leuven_drone_rf/prepared/known-iq-v1",
+    "target": "known_source_classification",
+    "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "window_size": 4096,
+    "windows_per_recording": 32,
+    "input_channels": 2,
+    "num_classes": 3
+  },
+  "model": {
+    "name": "DroneRFTCN"
+  },
+  "aggregation": {
+    "protocol": "mean-window-softmax-probability-v1",
+    "windows_per_recording": 32,
+    "open_set_target_known_acceptance": 0.95,
+    "threshold_selection_split": "validation"
+  },
+  "training": {
+    "seed": 20260909,
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 30,
+    "early_stopping_patience": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "cuda",
+    "amp": true,
+    "engineering_smoke": false
+  },
+  "output": {
+    "run_name": "ku_leuven_tcn_weighted_worst_noise_seed20260909_v4",
+    "checkpoint_dir": "artifacts/checkpoints/uav/ku_leuven/local_development",
+    "evidence_dir": "artifacts/evidence/uav/ku_leuven/local_development"
+  },
+  "augmentation": {
+    "protocol": "ku-leuven-clean-weighted-minus5-awgn-multipath-training-v3"
+  },
+  "checkpoint_selection": {
+    "protocol": "clean-guarded-minus5-worst-repeat-v1",
+    "clean_recording_macro_f1_floor": 0.97,
+    "awgn_snr_db": -5.0,
+    "repeat_seeds": [
+      2026090901,
+      2026090902,
+      2026090903
+    ]
+  }
+}

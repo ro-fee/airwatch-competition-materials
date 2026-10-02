@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "protocol_id": "ku-leuven-sjrc-external-unknown-v2",
+  "protocol_sha256": "064f4a33abe4060d0b83cf261f7d3029788f03b254c06f65e056b353fadfbe74",
+  "official_readme": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\datasets\\uav\\ku_leuven_drone_rf\\source-documentation\\README.txt",
+  "recording_count": 51,
+  "window_count": 1632,
+  "assigned_external_role": "external_unknown_test",
+  "source_manifest_split": "unassigned",
+  "training_data_used": false,
+  "validation_data_used": false,
+  "threshold_selection_data_used": false,
+  "evaluation_run": false,
+  "evaluation_eligible": false,
+  "blocker": "DroneRF provides 40 MS/s real time-domain amplitude from lower/upper 2.4 GHz half-band receivers, while SJRC_pro provides 100 MS/s single-band complex IQ; no frozen shared derived representation and compatible model exist yet."
+}

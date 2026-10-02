@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "dataset": "KU Leuven Drone RF Dataset",
+  "dataset_version": "1.0",
+  "dataset_doi": "10.48804/HZRVNZ",
+  "downloaded_at_utc": "2026-09-09T01:34:59Z",
+  "file": {
+    "name": "Frysky.zip",
+    "dataverse_file_id": 154500,
+    "official_access_url": "https://rdr.kuleuven.be/api/access/datafile/154500",
+    "external_local_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/Frysky.zip",
+    "size_bytes": 1707367398,
+    "official_md5": "aa3b81678e5daaa3a3eab35b2894ec08",
+    "verified_md5": "aa3b81678e5daaa3a3eab35b2894ec08",
+    "sha256": "062aa766b5c28adf317b6f8759b1892e0862fc94e52a3b5abb78aa42b98a4be1"
+  },
+  "paper_role": "known_source",
+  "signal_source": "RadioMaster/Taranis RC",
+  "protocol": "Frysky",
+  "download_verified": true,
+  "training_eligible": false,
+  "training_blocker": "The archive content is verified, but a member-group split and complete known/unknown protocol have not been frozen."
+}

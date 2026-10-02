@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "dataset": "KU Leuven Drone RF Dataset",
+  "dataset_version": "1.0",
+  "dataset_doi": "doi:10.48804/HZRVNZ",
+  "archive_name": "SJRC_pro.zip",
+  "archive_sha256": "4fc096a61f07cdc5e38b005578056264dad4742fa9a1778ed41abe89310f7cb9",
+  "sample_member": "SJRC_pro/sjrc__0.mat",
+  "sample_external_local_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/audit_sample/SJRC_pro/sjrc__0.mat",
+  "sample_size_bytes": 29478333,
+  "sample_sha256": "8632c26277a538c03982ccc48b6fd18cbbeaadfa42a3197094e1ceac434df6c8",
+  "inspection_tool": "h5dump 1.14.5",
+  "matlab_format": "MATLAB v7.3 / HDF5",
+  "datasets": [
+    {
+      "name": "/uhd_samps",
+      "shape": [1, 10000000],
+      "maximum_shape": [null, null],
+      "matlab_class": "double",
+      "storage_type": "HDF5 compound",
+      "compound_fields": {
+        "real": "IEEE float64 little-endian",
+        "imag": "IEEE float64 little-endian"
+      },
+      "semantic_interpretation": "single 2.44 GHz complex-IQ recording"
+    }
+  ],
+  "spot_checks": {
+    "offsets": [0, 100000, 1000000, 5000000, 9000000],
+    "first_samples_zero": true,
+    "later_samples_finite_and_nonzero": true,
+    "full_signal_statistics_computed": false
+  },
+  "recording_duration_seconds_from_official_sample_rate": 0.1,
+  "content_audit_scope": "one of 51 MAT members; archive-wide member names and sizes are audited separately",
+  "training_eligible": false,
+  "training_blocker": "Only one device archive and one MAT member have been content-inspected; a common single-band IQ contract, recording manifest and leakage-audited split do not yet exist."
+}

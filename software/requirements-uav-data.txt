@@ -1,0 +1,3 @@
+# Offline UAV dataset preparation only; not required by the packaged desktop app.
+# Install the target CPU/CUDA build of PyTorch separately when training is needed.
+h5py==3.16.0

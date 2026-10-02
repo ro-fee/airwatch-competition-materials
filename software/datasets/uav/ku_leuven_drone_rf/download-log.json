@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "dataset": "KU Leuven Drone RF Dataset",
+  "dataset_version": "1.0",
+  "dataset_doi": "doi:10.48804/HZRVNZ",
+  "audited_at_utc": "2026-09-08T13:10:36.932527+00:00",
+  "official_metadata_saved": true,
+  "documentation": [
+    {
+      "name": "get_spectrogram2.m",
+      "file_id": 154414,
+      "size_bytes": 1102,
+      "official_md5": "eb0094693b1714693e3be4b9c08f94ca",
+      "actual_md5": "eb0094693b1714693e3be4b9c08f94ca",
+      "verified": true,
+      "local_path": "datasets/uav/ku_leuven_drone_rf/source-documentation/get_spectrogram2.m"
+    },
+    {
+      "name": "README.txt",
+      "file_id": 156031,
+      "size_bytes": 2862,
+      "official_md5": "7dd8c6225f0283e57882011f8fbe24bb",
+      "actual_md5": "7dd8c6225f0283e57882011f8fbe24bb",
+      "verified": true,
+      "local_path": "datasets/uav/ku_leuven_drone_rf/source-documentation/README.txt"
+    },
+    {
+      "name": "signal_visualize.m",
+      "file_id": 156032,
+      "size_bytes": 606,
+      "official_md5": "27459f8323599bc9e52e1a6976636126",
+      "actual_md5": "27459f8323599bc9e52e1a6976636126",
+      "verified": true,
+      "local_path": "datasets/uav/ku_leuven_drone_rf/source-documentation/signal_visualize.m"
+    }
+  ],
+  "large_archives_downloaded": true,
+  "downloaded_archives": [
+    {
+      "name": "SJRC_pro.zip",
+      "file_id": 154420,
+      "downloaded_at_local": "2026-09-08",
+      "external_local_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/SJRC_pro.zip",
+      "size_bytes": 1444331879,
+      "official_md5": "afdf2346ea788452ffb171fe6bbc6566",
+      "actual_md5": "afdf2346ea788452ffb171fe6bbc6566",
+      "sha256": "4fc096a61f07cdc5e38b005578056264dad4742fa9a1778ed41abe89310f7cb9",
+      "checksum_verified": true,
+      "archive_audit": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-archive-audit.json",
+      "sample_content_audit": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-sample-content-audit.json"
+    }
+  ],
+  "training_eligible": false,
+  "training_blocker": "The first archive and one MAT sample are verified, but a common single-band IQ contract, recording manifest and leakage-audited split do not yet exist; the current DroneRF two-band TCN remains incompatible."
+}

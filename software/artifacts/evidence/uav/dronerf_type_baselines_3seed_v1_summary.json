@@ -1,0 +1,329 @@
+{
+  "schema_version": "1.0",
+  "dataset": "DroneRF",
+  "task": "four-class drone type including background",
+  "seeds": [
+    20260908,
+    20260909,
+    20260910
+  ],
+  "interval_method": "two-sided 95% Student-t interval across random seeds; descriptive only for n=3",
+  "ranking_scope": "reporting only; test-set ranking is not used for architecture or threshold selection",
+  "data_identity": {
+    "dataset": "DroneRF",
+    "dataset_version": "1",
+    "preprocessing_version": "dronerf-two-band-raw-windows-v1",
+    "metadata_sha256": "526b0c41a0611994e3d97269f14c33f2910d118f6352fc6bd20ff8bf933402ee",
+    "verification_sha256": "eb6ba43cc88076e042e84cffb31d0cd9069a38fc9aa1522c20a089e4470e9149",
+    "window_manifest_sha256": "0cc0414945430d06d60be59c495fd948381f7f97c4b22e7cf34a8956d9bf3ba2",
+    "source_recording_manifest_sha256": "e0ee395eebac30c03de3007cb2269e2d471b58d703ae02ff5ec76ad6a2dda135",
+    "source_split_manifest_sha256": "d176a2598e7e1a0e2d888f52363d5d17ae3dec5351bfbbd6d2e9f0a5874edff2",
+    "split_protocol": "dronerf-recording-stratified-v1",
+    "split_seed": 20260908
+  },
+  "label_map": {
+    "background": 0,
+    "parrot_bebop": 1,
+    "parrot_ar": 2,
+    "dji_phantom_3": 3
+  },
+  "models": [
+    {
+      "model": "DroneRFTCN",
+      "parameter_count": 856324,
+      "seeds": [
+        20260908,
+        20260909,
+        20260910
+      ],
+      "metrics": {
+        "window_accuracy": {
+          "values_by_seed": {
+            "20260908": 0.7926136363636364,
+            "20260909": 0.7840909090909091,
+            "20260910": 0.7509469696969697
+          },
+          "mean": 0.7758838383838383,
+          "sample_standard_deviation": 0.022012377994458487,
+          "student_t_95_ci": [
+            0.7212020600831786,
+            0.8305656166844981
+          ],
+          "run_count": 3
+        },
+        "window_macro_f1": {
+          "values_by_seed": {
+            "20260908": 0.7831046963422019,
+            "20260909": 0.77448797420901,
+            "20260910": 0.7271115748042467
+          },
+          "mean": 0.7615680817851529,
+          "sample_standard_deviation": 0.030149629020505164,
+          "student_t_95_ci": [
+            0.686672251340962,
+            0.8364639122293438
+          ],
+          "run_count": 3
+        },
+        "recording_accuracy": {
+          "values_by_seed": {
+            "20260908": 0.9090909090909091,
+            "20260909": 0.9696969696969697,
+            "20260910": 0.8787878787878788
+          },
+          "mean": 0.9191919191919192,
+          "sample_standard_deviation": 0.04628864338339234,
+          "student_t_95_ci": [
+            0.8042045545388968,
+            1.0
+          ],
+          "run_count": 3
+        },
+        "recording_macro_f1": {
+          "values_by_seed": {
+            "20260908": 0.9365079365079365,
+            "20260909": 0.9791304347826086,
+            "20260910": 0.8785714285714286
+          },
+          "mean": 0.9314032666206579,
+          "sample_standard_deviation": 0.05047347495010231,
+          "student_t_95_ci": [
+            0.806020204055577,
+            1.0
+          ],
+          "run_count": 3
+        }
+      },
+      "mean_recording_macro_f1_rank": 1
+    },
+    {
+      "model": "DroneRFCNN",
+      "parameter_count": 242564,
+      "seeds": [
+        20260908,
+        20260909,
+        20260910
+      ],
+      "metrics": {
+        "window_accuracy": {
+          "values_by_seed": {
+            "20260908": 0.6998106060606061,
+            "20260909": 0.6600378787878788,
+            "20260910": 0.7433712121212122
+          },
+          "mean": 0.7010732323232324,
+          "sample_standard_deviation": 0.041681012222838563,
+          "student_t_95_ci": [
+            0.5975318579978358,
+            0.8046146066486289
+          ],
+          "run_count": 3
+        },
+        "window_macro_f1": {
+          "values_by_seed": {
+            "20260908": 0.6926761268559883,
+            "20260909": 0.6554224977787872,
+            "20260910": 0.7372199191644894
+          },
+          "mean": 0.6951061812664218,
+          "sample_standard_deviation": 0.04095281931278699,
+          "student_t_95_ci": [
+            0.5933737384102911,
+            0.7968386241225525
+          ],
+          "run_count": 3
+        },
+        "recording_accuracy": {
+          "values_by_seed": {
+            "20260908": 0.8787878787878788,
+            "20260909": 0.8787878787878788,
+            "20260910": 0.9090909090909091
+          },
+          "mean": 0.8888888888888888,
+          "sample_standard_deviation": 0.017495462702715917,
+          "student_t_95_ci": [
+            0.8454277502050894,
+            0.9323500275726883
+          ],
+          "run_count": 3
+        },
+        "recording_macro_f1": {
+          "values_by_seed": {
+            "20260908": 0.9142857142857143,
+            "20260909": 0.9058441558441558,
+            "20260910": 0.9365079365079365
+          },
+          "mean": 0.918879268879269,
+          "sample_standard_deviation": 0.015839583927682192,
+          "student_t_95_ci": [
+            0.8795315611065668,
+            0.9582269766519711
+          ],
+          "run_count": 3
+        }
+      },
+      "mean_recording_macro_f1_rank": 2
+    },
+    {
+      "model": "DroneRFResNet18",
+      "parameter_count": 965252,
+      "seeds": [
+        20260908,
+        20260909,
+        20260910
+      ],
+      "metrics": {
+        "window_accuracy": {
+          "values_by_seed": {
+            "20260908": 0.7073863636363636,
+            "20260909": 0.6742424242424242,
+            "20260910": 0.5426136363636364
+          },
+          "mean": 0.6414141414141414,
+          "sample_standard_deviation": 0.0871538009975092,
+          "student_t_95_ci": [
+            0.42491209763652826,
+            0.8579161851917546
+          ],
+          "run_count": 3
+        },
+        "window_macro_f1": {
+          "values_by_seed": {
+            "20260908": 0.7003220359382347,
+            "20260909": 0.6660051282652169,
+            "20260910": 0.5459321651691424
+          },
+          "mean": 0.6374197764575313,
+          "sample_standard_deviation": 0.0810672548104419,
+          "student_t_95_ci": [
+            0.43603755159733487,
+            0.8388020013177278
+          ],
+          "run_count": 3
+        },
+        "recording_accuracy": {
+          "values_by_seed": {
+            "20260908": 0.8787878787878788,
+            "20260909": 0.8181818181818182,
+            "20260910": 0.8181818181818182
+          },
+          "mean": 0.8383838383838383,
+          "sample_standard_deviation": 0.03499092540543183,
+          "student_t_95_ci": [
+            0.7514615610162396,
+            0.9253061157514371
+          ],
+          "run_count": 3
+        },
+        "recording_macro_f1": {
+          "values_by_seed": {
+            "20260908": 0.904040404040404,
+            "20260909": 0.875,
+            "20260910": 0.8193181818181818
+          },
+          "mean": 0.8661195286195286,
+          "sample_standard_deviation": 0.04305358072823243,
+          "student_t_95_ci": [
+            0.7591685051079645,
+            0.9730705521310926
+          ],
+          "run_count": 3
+        }
+      },
+      "mean_recording_macro_f1_rank": 3
+    }
+  ],
+  "sources": [
+    {
+      "model": "DroneRFCNN",
+      "seed": 20260908,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_cnn_type_seed20260908_v1_training.json",
+      "training_evidence_sha256": "08023090e0a61c6148a7d7bc029ae77aa1aae15943ac69e04875d7b043329609",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_cnn_type_seed20260908_v1_test.json",
+      "test_evidence_sha256": "12bb7d499f9d7c66b2aadef923c2c5f0687c014d76a2a8af7015db30cd2deb13",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_cnn_type_seed20260908_v1_best.pt",
+      "checkpoint_sha256": "a57964df65f59b1c102d9b880234a04a9ef1f5c3a1d75aff34e1a2acbfab2d81"
+    },
+    {
+      "model": "DroneRFCNN",
+      "seed": 20260909,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_cnn_type_seed20260909_v1_training.json",
+      "training_evidence_sha256": "3f152c91ab4624af63258da1d3f648b8830c4285d09b9d889d3ff131533022db",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_cnn_type_seed20260909_v1_test.json",
+      "test_evidence_sha256": "a3955dc0d83f505dc8b4641f45a4a00fa92fc1d3fd0ee42c2d5b507a20d14ed6",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_cnn_type_seed20260909_v1_best.pt",
+      "checkpoint_sha256": "2f95e94ea3095f102f50d260af0ac6c47bd3673399516e75f513b39b4aa33868"
+    },
+    {
+      "model": "DroneRFCNN",
+      "seed": 20260910,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_cnn_type_seed20260910_v1_training.json",
+      "training_evidence_sha256": "73a2b08e6cc0cdb03d2e1c9e2c9f33362d72e807cd7834b08c8e7b59c67e922b",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_cnn_type_seed20260910_v1_test.json",
+      "test_evidence_sha256": "9cce1dca1c61c3795716148efa02763b006781c5c1d1aac1d5afafa0e93e5e0c",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_cnn_type_seed20260910_v1_best.pt",
+      "checkpoint_sha256": "284acc462415b8375da5efbd1e73de19dd4d4a3c7b5e614042fee2d78463ee4f"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260908,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_resnet18_type_seed20260908_v1_training.json",
+      "training_evidence_sha256": "5909e8b0b0dfce0f8a296e63aca7cafcb719cc2279df3e96868fc8dff55c1407",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_resnet18_type_seed20260908_v1_test.json",
+      "test_evidence_sha256": "1e3e05a750425956e23c299450a508e280dca9f1067b80822c9dc26a18d29d41",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_resnet18_type_seed20260908_v1_best.pt",
+      "checkpoint_sha256": "163e68716c291f9f8e801d2c0b6cb7079efeb11e6b2bfb44a6131f8bb2ac8f6b"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260909,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_resnet18_type_seed20260909_v1_training.json",
+      "training_evidence_sha256": "cfff18166e7a583fbcfe85e22a8a4d55929d11174623afa53f9aa194b8bd6c21",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_resnet18_type_seed20260909_v1_test.json",
+      "test_evidence_sha256": "f8585840129bacbe1ea079057d7647df6c83f62903bbb745c557f20c21b0ec5d",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_resnet18_type_seed20260909_v1_best.pt",
+      "checkpoint_sha256": "dfcb30aaf64becafb7cd9aa31ca7f33ae193f2ac76890db397d0529f966a75e7"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260910,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_resnet18_type_seed20260910_v1_training.json",
+      "training_evidence_sha256": "8544f295fc84d796f9e46b3805e32fc994e8caf9a6203e4798b418e1468f6cc1",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_resnet18_type_seed20260910_v1_test.json",
+      "test_evidence_sha256": "74857787e03b317f5e7de8bd9b9ebc16090aaa7252a86866fd8de991ccf60bf5",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_resnet18_type_seed20260910_v1_best.pt",
+      "checkpoint_sha256": "fcec73e0a85060fcefb5fc9d434333210d57067f2625e58721012a87fbe12165"
+    },
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260908,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_tcn_type_seed20260908_v1_training.json",
+      "training_evidence_sha256": "a65a237242714a0765b8244f3e477a736c6b7903579641cfc83316f45b9dbbda",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_tcn_type_seed20260908_v1_test.json",
+      "test_evidence_sha256": "3d13c3a8a41a30e80c6ae35bcaea7884832ac94207427c1e963074c1f36e7207",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_tcn_type_seed20260908_v1_best.pt",
+      "checkpoint_sha256": "7bfa947e0d06d2ee17819bd0e757e3df724d23ef342b0a1ba71c61012db194d3"
+    },
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260909,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_tcn_type_seed20260909_v1_training.json",
+      "training_evidence_sha256": "31b2e2b287318880567c59e192356ff164d91502656fa105800d62d7d30868f4",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_tcn_type_seed20260909_v1_test.json",
+      "test_evidence_sha256": "9f44fa68b8531bae159ce39e2607d1da106e427cc40791136670cfd4db28cd4e",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_tcn_type_seed20260909_v1_best.pt",
+      "checkpoint_sha256": "4b9adeb339ddcc0092fcbbdb89d5dc2de8840e12d7c45195ca7848dbe6219ec3"
+    },
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260910,
+      "training_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_tcn_type_seed20260910_v1_training.json",
+      "training_evidence_sha256": "90de816da64b161c31b1b6d1ea6a35f2e8dcf461621fa843fa8409fdd0a329eb",
+      "test_evidence": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_tcn_type_seed20260910_v1_test.json",
+      "test_evidence_sha256": "1faee9e607ac5645d046a6d518f20235d1fa78617efecfb814a8ba0dc166b14c",
+      "checkpoint": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_tcn_type_seed20260910_v1_best.pt",
+      "checkpoint_sha256": "87796fef4437e6982edd5a2e658388115e1fc7e9e2a2f16b8adc7464426f0c18"
+    }
+  ],
+  "known_limitation": "DroneRF v1 未提供独立采集会话、日期或物理设备实例 ID；本划分仅证明 L/H 录制对及其未来切片不跨集合，不能证明跨会话泛化。"
+}

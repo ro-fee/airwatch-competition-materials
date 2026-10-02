@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "dataset": "KU Leuven Drone RF Dataset",
+  "dataset_version": "1.0",
+  "dataset_doi": "doi:10.48804/HZRVNZ",
+  "archive_name": "SJRC_pro.zip",
+  "archive_path": "D:\\AirWatch_Datasets\\ku_leuven_drone_rf\\source\\SJRC_pro.zip",
+  "archive_size_bytes": 1444331879,
+  "official_md5": "afdf2346ea788452ffb171fe6bbc6566",
+  "actual_md5": "afdf2346ea788452ffb171fe6bbc6566",
+  "sha256": "4fc096a61f07cdc5e38b005578056264dad4742fa9a1778ed41abe89310f7cb9",
+  "checksum_verified": true,
+  "member_count": 51,
+  "mat_member_count": 51,
+  "total_uncompressed_bytes": 1502241518,
+  "members": [
+    {
+      "name": "SJRC_pro/sjrc__0.mat",
+      "size_bytes": 29478333,
+      "compressed_bytes": 28343384,
+      "crc32": "964fabae"
+    },
+    {
+      "name": "SJRC_pro/sjrc__1.mat",
+      "size_bytes": 29492353,
+      "compressed_bytes": 28356686,
+      "crc32": "2aa3be82"
+    },
+    {
+      "name": "SJRC_pro/sjrc__2.mat",
+      "size_bytes": 29417575,
+      "compressed_bytes": 28282915,
+      "crc32": "61339a05"
+    },
+    {
+      "name": "SJRC_pro/sjrc__3.mat",
+      "size_bytes": 29494895,
+      "compressed_bytes": 28356911,
+      "crc32": "eb835f1e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__4.mat",
+      "size_bytes": 29348663,
+      "compressed_bytes": 28213178,
+      "crc32": "443516ee"
+    },
+    {
+      "name": "SJRC_pro/sjrc__5.mat",
+      "size_bytes": 29347483,
+      "compressed_bytes": 28214682,
+      "crc32": "e6b2322b"
+    },
+    {
+      "name": "SJRC_pro/sjrc__6.mat",
+      "size_bytes": 29488333,
+      "compressed_bytes": 28352566,
+      "crc32": "25dc7e1e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__7.mat",
+      "size_bytes": 29468328,
+      "compressed_bytes": 28332898,
+      "crc32": "d7eac85e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__8.mat",
+      "size_bytes": 29493042,
+      "compressed_bytes": 28354334,
+      "crc32": "654caab2"
+    },
+    {
+      "name": "SJRC_pro/sjrc__9.mat",
+      "size_bytes": 29476570,
+      "compressed_bytes": 28337657,
+      "crc32": "859de0fa"
+    },
+    {
+      "name": "SJRC_pro/sjrc__10.mat",
+      "size_bytes": 29475823,
+      "compressed_bytes": 28341299,
+      "crc32": "41a773da"
+    },
+    {
+      "name": "SJRC_pro/sjrc__11.mat",
+      "size_bytes": 29489778,
+      "compressed_bytes": 28353808,
+      "crc32": "96d272c7"
+    },
+    {
+      "name": "SJRC_pro/sjrc__12.mat",
+      "size_bytes": 29489759,
+      "compressed_bytes": 28354219,
+      "crc32": "8302f5fd"
+    },
+    {
+      "name": "SJRC_pro/sjrc__13.mat",
+      "size_bytes": 29485163,
+      "compressed_bytes": 28348934,
+      "crc32": "bfebf050"
+    },
+    {
+      "name": "SJRC_pro/sjrc__14.mat",
+      "size_bytes": 29478759,
+      "compressed_bytes": 28345255,
+      "crc32": "af36f7bc"
+    },
+    {
+      "name": "SJRC_pro/sjrc__15.mat",
+      "size_bytes": 29414302,
+      "compressed_bytes": 28280082,
+      "crc32": "14ec8980"
+    },
+    {
+      "name": "SJRC_pro/sjrc__16.mat",
+      "size_bytes": 29496092,
+      "compressed_bytes": 28357411,
+      "crc32": "c9beeaf9"
+    },
+    {
+      "name": "SJRC_pro/sjrc__17.mat",
+      "size_bytes": 29482369,
+      "compressed_bytes": 28347144,
+      "crc32": "f534bfa1"
+    },
+    {
+      "name": "SJRC_pro/sjrc__18.mat",
+      "size_bytes": 29498806,
+      "compressed_bytes": 28361515,
+      "crc32": "7fb3afe0"
+    },
+    {
+      "name": "SJRC_pro/sjrc__19.mat",
+      "size_bytes": 29340734,
+      "compressed_bytes": 28207863,
+      "crc32": "5473580e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__20.mat",
+      "size_bytes": 29488095,
+      "compressed_bytes": 28353770,
+      "crc32": "862e8aaa"
+    },
+    {
+      "name": "SJRC_pro/sjrc__21.mat",
+      "size_bytes": 29417736,
+      "compressed_bytes": 28282365,
+      "crc32": "4166449d"
+    },
+    {
+      "name": "SJRC_pro/sjrc__22.mat",
+      "size_bytes": 29483844,
+      "compressed_bytes": 28346842,
+      "crc32": "6e86f19e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__23.mat",
+      "size_bytes": 29495102,
+      "compressed_bytes": 28359992,
+      "crc32": "061f2c63"
+    },
+    {
+      "name": "SJRC_pro/sjrc__24.mat",
+      "size_bytes": 29350574,
+      "compressed_bytes": 28216646,
+      "crc32": "8453d202"
+    },
+    {
+      "name": "SJRC_pro/sjrc__25.mat",
+      "size_bytes": 29423151,
+      "compressed_bytes": 28288222,
+      "crc32": "e916cfcd"
+    },
+    {
+      "name": "SJRC_pro/sjrc__26.mat",
+      "size_bytes": 29476148,
+      "compressed_bytes": 28339235,
+      "crc32": "387dbb14"
+    },
+    {
+      "name": "SJRC_pro/sjrc__27.mat",
+      "size_bytes": 29480745,
+      "compressed_bytes": 28343494,
+      "crc32": "1a48cc5c"
+    },
+    {
+      "name": "SJRC_pro/sjrc__28.mat",
+      "size_bytes": 29472992,
+      "compressed_bytes": 28337735,
+      "crc32": "a9671bfc"
+    },
+    {
+      "name": "SJRC_pro/sjrc__29.mat",
+      "size_bytes": 29494949,
+      "compressed_bytes": 28359741,
+      "crc32": "87ff9307"
+    },
+    {
+      "name": "SJRC_pro/sjrc__30.mat",
+      "size_bytes": 29503604,
+      "compressed_bytes": 28367086,
+      "crc32": "3d092f7d"
+    },
+    {
+      "name": "SJRC_pro/sjrc__31.mat",
+      "size_bytes": 29500367,
+      "compressed_bytes": 28362977,
+      "crc32": "11c9e3ec"
+    },
+    {
+      "name": "SJRC_pro/sjrc__32.mat",
+      "size_bytes": 29422693,
+      "compressed_bytes": 28288160,
+      "crc32": "fb7ef511"
+    },
+    {
+      "name": "SJRC_pro/sjrc__33.mat",
+      "size_bytes": 29479616,
+      "compressed_bytes": 28342848,
+      "crc32": "9150bea8"
+    },
+    {
+      "name": "SJRC_pro/sjrc__34.mat",
+      "size_bytes": 29418297,
+      "compressed_bytes": 28285482,
+      "crc32": "8a0ffc4e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__35.mat",
+      "size_bytes": 29481634,
+      "compressed_bytes": 28347226,
+      "crc32": "39983655"
+    },
+    {
+      "name": "SJRC_pro/sjrc__36.mat",
+      "size_bytes": 29407208,
+      "compressed_bytes": 28270831,
+      "crc32": "978d031d"
+    },
+    {
+      "name": "SJRC_pro/sjrc__37.mat",
+      "size_bytes": 29415272,
+      "compressed_bytes": 28278582,
+      "crc32": "c0442161"
+    },
+    {
+      "name": "SJRC_pro/sjrc__38.mat",
+      "size_bytes": 29498379,
+      "compressed_bytes": 28360199,
+      "crc32": "86e46b21"
+    },
+    {
+      "name": "SJRC_pro/sjrc__39.mat",
+      "size_bytes": 29444346,
+      "compressed_bytes": 28308624,
+      "crc32": "ec090477"
+    },
+    {
+      "name": "SJRC_pro/sjrc__40.mat",
+      "size_bytes": 29439672,
+      "compressed_bytes": 28305459,
+      "crc32": "a86a9f02"
+    },
+    {
+      "name": "SJRC_pro/sjrc__41.mat",
+      "size_bytes": 29502321,
+      "compressed_bytes": 28365495,
+      "crc32": "5ef6639e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__42.mat",
+      "size_bytes": 29358743,
+      "compressed_bytes": 28224713,
+      "crc32": "1ae646cb"
+    },
+    {
+      "name": "SJRC_pro/sjrc__43.mat",
+      "size_bytes": 29415331,
+      "compressed_bytes": 28280187,
+      "crc32": "4ed53153"
+    },
+    {
+      "name": "SJRC_pro/sjrc__44.mat",
+      "size_bytes": 29356414,
+      "compressed_bytes": 28224754,
+      "crc32": "633dc29e"
+    },
+    {
+      "name": "SJRC_pro/sjrc__45.mat",
+      "size_bytes": 29400128,
+      "compressed_bytes": 28264870,
+      "crc32": "5c2200e8"
+    },
+    {
+      "name": "SJRC_pro/sjrc__46.mat",
+      "size_bytes": 29498461,
+      "compressed_bytes": 28361162,
+      "crc32": "6e2b9bae"
+    },
+    {
+      "name": "SJRC_pro/sjrc__47.mat",
+      "size_bytes": 29483599,
+      "compressed_bytes": 28346935,
+      "crc32": "2a7fff03"
+    },
+    {
+      "name": "SJRC_pro/sjrc__48.mat",
+      "size_bytes": 29485500,
+      "compressed_bytes": 28348346,
+      "crc32": "e0864fe2"
+    },
+    {
+      "name": "SJRC_pro/sjrc__49.mat",
+      "size_bytes": 29494792,
+      "compressed_bytes": 28359596,
+      "crc32": "fdd6004c"
+    },
+    {
+      "name": "SJRC_pro/sjrc__50.mat",
+      "size_bytes": 29494645,
+      "compressed_bytes": 28357306,
+      "crc32": "30cbe8e4"
+    }
+  ],
+  "content_extracted": false,
+  "training_eligible": false,
+  "training_blocker": "ZIP integrity and member names are verified, but MAT variables and recording semantics require a separate content audit before any training use."
+}

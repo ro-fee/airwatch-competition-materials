@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "corrected_on": "2026-09-09",
+  "scope": "project-side DroneRF compatibility description",
+  "superseded_artifacts": [
+    {
+      "path": "datasets/uav/ku_leuven_drone_rf/file-inventory.json",
+      "sha256": "daebfe290ed7b0ba35ae0170f4381d64117a69706c8494ed858f0fccd0122896",
+      "incorrect_field": "compatibility_assessment.existing_input_semantics"
+    },
+    {
+      "path": "training/configs/ku_leuven_sjrc_external_unknown_protocol_v1.json",
+      "sha256": "a70fd2f571a97c2cab8cb8805cb2b5b3dbc4fb290bc05956186e64eb408f5a7c",
+      "incorrect_field": "blocker"
+    },
+    {
+      "path": "datasets/uav/ku_leuven_drone_rf/external-unknown-protocol-validation-v1.json",
+      "sha256": "4f8367cbb31a0365791720f72310528442d4d020641830b7df427593d2e1802b",
+      "incorrect_field": "blocker"
+    }
+  ],
+  "incorrect_statement": "DroneRF L/H are separate 2.4 GHz and 5.8 GHz channels",
+  "corrected_statement": "DroneRF L/H are simultaneous real time-domain amplitude captures of the lower and upper halves of the approximately 80 MHz-wide 2.4 GHz band",
+  "compatibility_conclusion": "KU Leuven SJRC is still incompatible with the current frozen DroneRF models because it stores 100 MS/s complex IQ while DroneRF stores 40 MS/s real amplitude; a shared derived power or time-frequency representation must be frozen before external evaluation",
+  "source_review": "datasets/uav/dronerf/source-semantics-review.json",
+  "active_protocol": "training/configs/ku_leuven_sjrc_external_unknown_protocol_v2.json"
+}

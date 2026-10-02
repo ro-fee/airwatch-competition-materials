@@ -1,0 +1,164 @@
+{
+  "experiment_name": "dronerf_tcn_type_baseline_v1",
+  "run_name": "dronerf_tcn_type_seed20260910_v1",
+  "status": "completed",
+  "split": "test",
+  "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_tcn_type_seed20260910_v1_best.pt",
+  "checkpoint_epoch": 2,
+  "config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\dronerf_tcn_type_baseline_v1.json",
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "data_identity": {
+    "dataset": "DroneRF",
+    "dataset_version": "1",
+    "preprocessing_version": "dronerf-two-band-raw-windows-v1",
+    "metadata_sha256": "526b0c41a0611994e3d97269f14c33f2910d118f6352fc6bd20ff8bf933402ee",
+    "verification_sha256": "eb6ba43cc88076e042e84cffb31d0cd9069a38fc9aa1522c20a089e4470e9149",
+    "window_manifest_sha256": "0cc0414945430d06d60be59c495fd948381f7f97c4b22e7cf34a8956d9bf3ba2",
+    "source_recording_manifest_sha256": "e0ee395eebac30c03de3007cb2269e2d471b58d703ae02ff5ec76ad6a2dda135",
+    "source_split_manifest_sha256": "d176a2598e7e1a0e2d888f52363d5d17ae3dec5351bfbbd6d2e9f0a5874edff2",
+    "split_protocol": "dronerf-recording-stratified-v1",
+    "split_seed": 20260908
+  },
+  "label_map": {
+    "background": 0,
+    "parrot_bebop": 1,
+    "parrot_ar": 2,
+    "dji_phantom_3": 3
+  },
+  "metrics": {
+    "window": {
+      "accuracy": 0.7509469696969697,
+      "macro_f1": 0.7271115748042467,
+      "sample_count": 1056,
+      "confusion_matrix": [
+        [
+          188,
+          4,
+          0,
+          0
+        ],
+        [
+          50,
+          219,
+          113,
+          2
+        ],
+        [
+          22,
+          19,
+          343,
+          0
+        ],
+        [
+          0,
+          5,
+          48,
+          43
+        ]
+      ],
+      "per_class": {
+        "background": {
+          "label_index": 0,
+          "precision": 0.7230769230769231,
+          "recall": 0.9791666666666666,
+          "f1": 0.831858407079646,
+          "support": 192
+        },
+        "parrot_bebop": {
+          "label_index": 1,
+          "precision": 0.8866396761133604,
+          "recall": 0.5703125,
+          "f1": 0.694136291600634,
+          "support": 384
+        },
+        "parrot_ar": {
+          "label_index": 2,
+          "precision": 0.6805555555555556,
+          "recall": 0.8932291666666666,
+          "f1": 0.7725225225225225,
+          "support": 384
+        },
+        "dji_phantom_3": {
+          "label_index": 3,
+          "precision": 0.9555555555555556,
+          "recall": 0.4479166666666667,
+          "f1": 0.6099290780141844,
+          "support": 96
+        }
+      },
+      "loss": 0.6384856655742183,
+      "evaluation_seconds": 0.26593389999470674,
+      "windows_per_second": 3970.9115687056787
+    },
+    "recording": {
+      "accuracy": 0.8787878787878788,
+      "macro_f1": 0.8785714285714286,
+      "sample_count": 33,
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "per_class": {
+        "background": {
+          "label_index": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 6
+        },
+        "parrot_bebop": {
+          "label_index": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "support": 12
+        },
+        "parrot_ar": {
+          "label_index": 2,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "support": 12
+        },
+        "dji_phantom_3": {
+          "label_index": 3,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 3
+        }
+      }
+    }
+  },
+  "known_limitation": "DroneRF v1 未提供独立采集会话、日期或物理设备实例 ID；本划分仅证明 L/H 录制对及其未来切片不跨集合，不能证明跨会话泛化。"
+}

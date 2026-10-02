@@ -1,0 +1,16 @@
+{
+ "failed_run": "D-seed20260910",
+ "failed_at_step": 1840,
+ "reason_recorded_by_trainer": "RuntimeError: DataLoader worker (pid(s) 1577908, 1577919, 1577923, 1577927) exited unexpectedly",
+ "resource_state_at_failure": {
+  "gpu_memory_used_mib": 3590,
+  "gpu_memory_total_mib": 81920,
+  "host_memory_available_gib": 233,
+  "disk_available_gib": 140,
+  "dmesg_oom_records": "none found"
+ },
+ "confounder_disclosed": "The supervising agent ran the trainer as a background task that hit a 30-minute harness time limit; the parent process was killed around the same time. It cannot be proven from available evidence whether the DataLoader worker crash was independent or a consequence of that kill.",
+ "owner_decision": "resume via the same entry point with a longer time limit; failure evidence retained, not deleted",
+ "runs_completed_before_resume": 10,
+ "interpretation_status": "unresolved_single_failure_retained_for_reporting"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "dataset": "KU Leuven Drone RF Dataset",
+  "dataset_version": "1.0",
+  "dataset_doi": "10.48804/HZRVNZ",
+  "downloaded_at_utc": "2026-09-09T02:29:35Z",
+  "file": {
+    "name": "mini2RC.zip",
+    "dataverse_file_id": 154425,
+    "official_access_url": "https://rdr.kuleuven.be/api/access/datafile/154425",
+    "external_local_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/mini2RC.zip",
+    "size_bytes": 2078132999,
+    "official_md5": "65aa92bbea24508d5fdf125360ec6e44",
+    "verified_md5": "65aa92bbea24508d5fdf125360ec6e44",
+    "sha256": "230ac862bfa50dad70082fbf413f13e2331a229e891eaeeb3ee278bb8de8b2d4"
+  },
+  "paper_role": "known_source",
+  "signal_source": "DJI Mini 2 RC",
+  "protocol": "Ocusync 2",
+  "download_verified": true,
+  "training_eligible": false,
+  "training_blocker": "The archive content is verified, but a leakage-audited split and frozen IQ preprocessing protocol are still required."
+}

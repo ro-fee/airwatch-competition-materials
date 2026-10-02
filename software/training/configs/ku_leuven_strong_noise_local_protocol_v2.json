@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "protocol": "ku-leuven-strong-noise-local-development-v2",
+  "base_config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+  "seeds": [20260909, 20260910, 20260911],
+  "augmentation": {
+    "protocol": "ku-leuven-clean-strong-awgn-multipath-training-v2"
+  },
+  "training_mixture": "50% clean; 25% circular AWGN uniformly at -5/0/5/10/15/20 dB; 25% mild/severe multipath uniformly; epoch-dependent deterministic draw",
+  "controlled_change": "Compared with ku-leuven-augmented-local-development-v1, the only training-factor change is adding -5 dB to the AWGN level set. Branch probabilities, multipath profiles, model, optimizer, clean-validation checkpoint selection, data, and seeds are unchanged.",
+  "checkpoint_selection": "unchanged: maximum clean validation recording macro-F1 then minimum clean validation loss",
+  "comparison": "all 40 previously frozen validation stress conditions, all three paired model seeds and each ensemble",
+  "acceptance": {
+    "clean": "candidate mean recording macro-F1 across three model seeds must be at least prior augmented mean minus 0.03",
+    "awgn_minus5_to_5_db": "candidate mean -5/0/5 dB recording macro-F1 across model seeds and perturbation repeats must improve over the prior augmented experiment",
+    "multipath_guardrail": "candidate mean mild/severe multipath recording macro-F1 across model seeds and repeats must be at least prior augmented mean minus 0.03"
+  },
+  "reference_evidence": {
+    "prior_protocol": "training/configs/ku_leuven_augmented_local_protocol_v1.json",
+    "prior_protocol_sha256": "e2cb9699cd1dc73b1ef69ab6ac407a8f155244f82e7fe49ce97b019044b11b79",
+    "prior_robustness": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_validation_robustness_v1.json",
+    "prior_robustness_sha256": "b32808c364b419466fec64b913c533af4188652419611f9523c7ab81f55dc903",
+    "prior_comparison": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_augmented_local_comparison_v1.json",
+    "prior_comparison_sha256": "c1cbc090efc2d3fb77753327dca9bd2a9f7a005e1206b32c20852bb692b59f12"
+  },
+  "test_data_allowed": false,
+  "unknown_data_allowed": false,
+  "competition_test_claim_allowed": false,
+  "a800_protocol_replaced": false
+}

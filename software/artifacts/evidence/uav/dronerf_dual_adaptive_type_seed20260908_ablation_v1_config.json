@@ -1,0 +1,33 @@
+{
+  "experiment_name": "dronerf_dual_adaptive_type_ablation_v1",
+  "experiment_protocol": "training/configs/dronerf_dual_branch_ablation_protocol_v1.json",
+  "dataset": {
+    "name": "DroneRF",
+    "root": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908",
+    "target": "drone_type",
+    "window_size": 4096,
+    "normalization": "per_channel_window_zscore",
+    "num_classes": 4,
+    "cache_recordings": 12
+  },
+  "model": {
+    "name": "DroneRFDualBranch",
+    "fusion_mode": "adaptive",
+    "presence_head": false
+  },
+  "training": {
+    "seed": 20260908,
+    "batch_size": 48,
+    "num_workers": 0,
+    "epochs": 20,
+    "early_stopping_patience": 6,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "auto"
+  },
+  "output": {
+    "run_name": "dronerf_dual_adaptive_type_seed20260908_ablation_v1",
+    "checkpoint_dir": "artifacts/checkpoints/uav",
+    "evidence_dir": "artifacts/evidence/uav"
+  }
+}

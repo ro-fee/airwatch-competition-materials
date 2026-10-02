@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "protocol": "ku-leuven-known-source-a800-model-selection-v1",
+  "status": "ready_not_run",
+  "dataset_artifact": "datasets/uav/ku_leuven_drone_rf/known-materialization-verification-v1.json",
+  "dataset_root_must_be_passed_on_a800": true,
+  "candidates": [
+    {
+      "model": "DroneRFTCN",
+      "config": "training/configs/ku_leuven_tcn_a800_formal_v1.json",
+      "run_prefix": "ku_leuven_tcn_a800"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "config": "training/configs/ku_leuven_resnet18_a800_formal_v1.json",
+      "run_prefix": "ku_leuven_resnet18_a800"
+    }
+  ],
+  "seeds": [20260909, 20260910, 20260911],
+  "selection": {
+    "primary": "highest_mean_validation_recording_macro_f1_across_three_seeds",
+    "tie_break_1": "lower_standard_deviation_validation_recording_macro_f1",
+    "tie_break_2": "lower_parameter_count",
+    "test_data_allowed": false,
+    "unknown_data_allowed": false
+  },
+  "post_selection": {
+    "open_set_threshold_source": "known_validation_recordings_only",
+    "target_known_acceptance": 0.95,
+    "test_and_unknown_remain_sealed": true
+  },
+  "selection_output": "artifacts/evidence/uav/ku_leuven/formal/ku_leuven_a800_model_selection_v1.json"
+}

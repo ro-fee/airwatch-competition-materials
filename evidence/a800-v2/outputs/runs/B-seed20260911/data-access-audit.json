@@ -1,0 +1,50 @@
+{
+  "allowed_splits": [
+    "train",
+    "validation"
+  ],
+  "config_sha256": "433aca39b1fc8585e16b430f8e2bbe917d05d94258f71f4966c353f56c52284d",
+  "inputs": {
+    "train": {
+      "artifact_type": "ku_leuven_a800_v2",
+      "artifacts": {
+        "data_path": "5cb4aa6ccce6ef5486a70a1d51c0a0d86a1a758a5a64311e5332f0f5cdf66f6e",
+        "labels_path": "b418a9fb2729379cdf064d80731a2d67aff8af2a60d6724cba472ce6ac1b2f06",
+        "metadata": "d7316bff7ad76c3596f167c1ce67a233f3aef9e2c77e8c3420bfbbfa7d2dc743",
+        "windows_path": "4e2b7479658ed1a4370ac603ce1fce32b71a32029893414113cc59f65ed66b36"
+      },
+      "metadata_sha256": "d7316bff7ad76c3596f167c1ce67a233f3aef9e2c77e8c3420bfbbfa7d2dc743",
+      "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+      "split": "train"
+    },
+    "validation": {
+      "artifact_type": "ku_leuven_materialized_known_train_validation",
+      "artifacts": {
+        "data_path": "78fc54b38f001a8f75984c3a7677c081704d49975658971af385ecd1d663d350",
+        "labels_path": "f1ce8b6e375aa7e190f925392a3ea769f02368e52ab3fc58a3c88d6b8c6bb325",
+        "metadata": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca",
+        "windows_path": "48630436cfe4c3fccd463e4827127e65d286aa6519bdbf4d56e6ddf5710e3d7b"
+      },
+      "label_map": {
+        "dji_mini2_rc": 2,
+        "frysky": 0,
+        "spektrum_dx4e": 1
+      },
+      "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+      "source_split_assignments_sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce",
+      "source_window_plan_sha256": [
+        "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d",
+        "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0",
+        "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+      ]
+    }
+  },
+  "kind": "formal",
+  "sealed_access_count": 0,
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "test_accessed": false,
+  "unknown_accessed": false
+}

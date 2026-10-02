@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "protocol": "ku-leuven-weighted-worst-noise-local-development-v4",
+  "base_config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+  "seeds": [20260909, 20260910, 20260911],
+  "augmentation": {
+    "protocol": "ku-leuven-clean-weighted-minus5-awgn-multipath-training-v3"
+  },
+  "checkpoint_selection": {
+    "protocol": "clean-guarded-minus5-worst-repeat-v1",
+    "clean_recording_macro_f1_floor": 0.97,
+    "awgn_snr_db": -5.0,
+    "repeat_seeds": [2026090901, 2026090902, 2026090903]
+  },
+  "training_mixture": "50% clean; 25% AWGN; 25% mild/severe multipath. Within the AWGN branch, -5 dB has weight 5 and 0/5/10/15/20 dB each have weight 1, so -5 dB is half of AWGN draws and 12.5% of all draws.",
+  "controlled_change": "Compared with V3, the only controlled change is the deterministic within-AWGN level weighting: -5 dB increases from 1/6 to 1/2 of AWGN draws. Branch probabilities, data, model, optimizer, seeds, epochs, patience, checkpoint selection, multipath and all evaluation conditions are unchanged.",
+  "comparison": "Exactly paired against V3 on all 40 frozen known-validation stress conditions, three model seeds and the unchanged probability ensemble.",
+  "acceptance": {
+    "clean_guardrail": "candidate three-seed mean clean recording Macro-F1 must be at least V3 minus 0.03",
+    "minus5_primary_mean": "candidate single-model mean across the three -5 dB repeats and three seeds must exceed V3",
+    "minus5_primary_worst_case": "candidate worst seed-repeat -5 dB recording Macro-F1 must strictly exceed the V3 worst seed-repeat",
+    "zero_to5_guardrail": "candidate single-model 0/5 dB mean must be at least V3 minus 0.03",
+    "multipath_guardrail": "candidate single-model multipath mean must be at least V3 minus 0.03"
+  },
+  "reference_evidence": {
+    "base_config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+    "base_config_sha256": "8ee34ccbfabfcb0a938f932c3f2784e5dc57695c1e6d8b6ecca07c877a495304",
+    "v3_protocol": "training/configs/ku_leuven_worst_noise_selection_local_protocol_v3.json",
+    "v3_protocol_sha256": "7229b424e1006d2f62de350c542636a20299b059e5ee0e36dd4cbea0bcb54b20",
+    "v3_robustness": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3.json",
+    "v3_robustness_sha256": "a1d1fd90a98b9b4eb75f38c8f71284d8f727409cc88121ec74e2eaca9bf383f2",
+    "v3_comparison": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_worst_noise_selection_local_comparison_v3.json",
+    "v3_comparison_sha256": "8ca89fed4ea9e5ff0501fcf182eadaeb6f3f4930c1dd3f00c389fa099ed53ecd"
+  },
+  "development_validation_only": true,
+  "test_data_allowed": false,
+  "unknown_data_allowed": false,
+  "open_set_threshold_calibration_allowed": false,
+  "competition_test_claim_allowed": false,
+  "a800_protocol_replaced": false
+}

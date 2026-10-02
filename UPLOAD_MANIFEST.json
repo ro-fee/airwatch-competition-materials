@@ -1,0 +1,3778 @@
+{
+  "as_of": "2026-10-03",
+  "purpose": "Private Codex Your dot competition writing reference",
+  "intended_repository": "ro-fee/airwatch-competition-materials",
+  "visibility_required": "private",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 81,
+      "sha256": "32838d64e84172c97e36cc3e5ba01b057816f285780e6527444fa0a876a775b3"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 181,
+      "sha256": "88686c3cca390ed95eb16acf375383e06e752609e18e3a70faaec45da94da929"
+    },
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 1900,
+      "sha256": "98164918ba75e7b7f61acdf37eb6abd7ba2864bc7f267f587f8c5af6dcebc5ee"
+    },
+    {
+      "path": "CURRENT_FACTS.md",
+      "size_bytes": 3406,
+      "sha256": "9306ff5c4ef0b6eb21defbf260a109a32acbd9a1a72fa1fddbd10c5df4c090b1"
+    },
+    {
+      "path": "DOT_START_HERE.md",
+      "size_bytes": 2573,
+      "sha256": "0e0fabe01fc6bcfba5b3633e24e9b7db48b36ac24aadded526cf3a21cfa2c93c"
+    },
+    {
+      "path": "evidence/a800-v2/environment/candidate-status.json",
+      "size_bytes": 644,
+      "sha256": "8ceb0c81dd86e03b5cb3dc993f66e7ecd3b040be5dd824b1a5ae8d969d3b1fcb"
+    },
+    {
+      "path": "evidence/a800-v2/environment/linux-resolve.json",
+      "size_bytes": 589989,
+      "sha256": "bd18073cfaca75de2bf4fd33def7f47e510033da3a22ddcccdc623e1f01f4960"
+    },
+    {
+      "path": "evidence/a800-v2/environment/requirements-linux-lock.txt",
+      "size_bytes": 10893,
+      "sha256": "b11ce967173d82c6c4cf84e22febb91c9ed1ac9df3d95c5f0976dfb972a2fd85"
+    },
+    {
+      "path": "evidence/a800-v2/environment/requirements-training.txt",
+      "size_bytes": 105,
+      "sha256": "a52f7eaebeeac24c251fe87bccf6b93d44ff5df8b98b57cd61ac39e86aed64e7"
+    },
+    {
+      "path": "evidence/a800-v2/environment/resolver-input.txt",
+      "size_bytes": 1234,
+      "sha256": "509ce9881d5e3005cfaa0854a4e973aa4d561055bfae5ec163e2fa36f1cbecf7"
+    },
+    {
+      "path": "evidence/a800-v2/local-integrity-audit.json",
+      "size_bytes": 1460,
+      "sha256": "c9519387a223521f96dd87d72b95865546a29dce1659a09e1d318d11ffea43b9"
+    },
+    {
+      "path": "evidence/a800-v2/local-runtime-verification.json",
+      "size_bytes": 1083,
+      "sha256": "b7693aaa4a4e08e4b09c94bc15a369f2cdeb378f27929831a565c7bbadd59b44"
+    },
+    {
+      "path": "evidence/a800-v2/local-unit-tests.json",
+      "size_bytes": 315,
+      "sha256": "ca8a181cdc8ddb5033aa25a8f4fc2bde350295fc7bea6fd0beb96ef656411609"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/allocation/gpu-occupancy-observed.json",
+      "size_bytes": 307,
+      "sha256": "0fd1ce2d39849616577d9515b4aa4694ec3d40405649a797532f8ca73a93e99d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/allocation/protocol-deviation.json",
+      "size_bytes": 949,
+      "sha256": "a805a9e68db1ab3678b2e4588f424090f679dd01aa71156067bc4d05bc6eb01e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-00.json",
+      "size_bytes": 1714,
+      "sha256": "85fefed98d8541ad37ecded7e12033c6ae900dfcaf3f61cd45da1c9bea29a721"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-01.json",
+      "size_bytes": 1722,
+      "sha256": "8c3cefb7d261292ee5a8c143c7045771df5e02e06ca4ab0ccb5a71a2672af071"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-02.json",
+      "size_bytes": 1719,
+      "sha256": "4e0707c6e46fce45f208d47221214091d87f9343069f0a7fdac194111471ec4d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-03.json",
+      "size_bytes": 1723,
+      "sha256": "b66851569226e33496dbf722f57d85f5792d9ebad400f903e24211842283596a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-04.json",
+      "size_bytes": 1716,
+      "sha256": "f98d8e679fc21329e27178d62f10033ec917a348ea553fabfff7d85bc5552a3d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-05.json",
+      "size_bytes": 1707,
+      "sha256": "16e0b1a2ebbd18dac4efc49e03b5fdd1e8f8c216f5a3881afcdc877d7fa3ceb5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-06.json",
+      "size_bytes": 1715,
+      "sha256": "9c2cccdcc5d6f4215bc3b099f2e3881af843370b5247d493302e4cab89e42a58"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-07.json",
+      "size_bytes": 1714,
+      "sha256": "6fa1f29a186c680026be097634eb7013c1c601c5237ce43e2d4c19140e05b9f5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-08.json",
+      "size_bytes": 1711,
+      "sha256": "dbcf54e80f0e2abe853a8a8e53987e77048e0a688802e99a5adeabc23e7cb428"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-09.json",
+      "size_bytes": 1707,
+      "sha256": "0c6cdd2ae1868d2575a5cbfd5b281245f847635587407406a55181628cc52b0f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-10.json",
+      "size_bytes": 1705,
+      "sha256": "ead5070c576d239cb6e41fb4423f4c05628be694f317d6cf223be1fb8426652c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-11.json",
+      "size_bytes": 1713,
+      "sha256": "28ae6b5dc87694fa5558a2ea325d0e09e85793c8f9453bf04930de7c5b7874e2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-12.json",
+      "size_bytes": 1705,
+      "sha256": "3825cd9eff87eec6e9eaa771310fc1c510d5e6cd2806ca86cd1df25f064d7a0c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-13.json",
+      "size_bytes": 1710,
+      "sha256": "d13f5cce228288cc5b046f98f9245b77c25ff60184f7495fafc175dbfa7efe37"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-14.json",
+      "size_bytes": 1717,
+      "sha256": "3b497129c9aa9cc575dccd68e07e664a6825d40fe14c69fe105c79d1c4232ec5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-15.json",
+      "size_bytes": 1707,
+      "sha256": "67d5981886c2b7302022dc505c8c60b20e3239836f74af07b7d1119879f89019"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-16.json",
+      "size_bytes": 1717,
+      "sha256": "68c922cb41b23af053c7e59b39c304016d0a34e0b9e31f6e062296220043a78f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-17.json",
+      "size_bytes": 1716,
+      "sha256": "3dccae4fa1213b54ad9f29f6d6cbccb1b4abda0d9237e890e4cb4a2dae8b903b"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-18.json",
+      "size_bytes": 1712,
+      "sha256": "0080db1ff74cab38525cc6a991cc0bb37667f9f36720895c47addc0718f55401"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-end_to_end-19.json",
+      "size_bytes": 1713,
+      "sha256": "f50ee6d59561ca27a0b3536e205804935f6bb5850f72155cce44a65edafa8a7c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-00.json",
+      "size_bytes": 1721,
+      "sha256": "0c616d273e1948f464b07cfd3a630bbc1bd1f8d1826691a5adab001641c10764"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-01.json",
+      "size_bytes": 1712,
+      "sha256": "06531001f756592c59a18fd453588f80d31c18fb0d9822c6652ca7d86e00f7af"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-02.json",
+      "size_bytes": 1723,
+      "sha256": "6ddc9b2ac1558662fee3accf89b63477b3ac7dd198d8393f9a1b54423b818b77"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-03.json",
+      "size_bytes": 1721,
+      "sha256": "0882982360b7fbc5a740acbff060e72dd15b527cb31fce73702a5fd4ff698e27"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-04.json",
+      "size_bytes": 1719,
+      "sha256": "440c5a842e27bfb9a940a61777f9954e04143ebc42645884d5294c94446206de"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-05.json",
+      "size_bytes": 1717,
+      "sha256": "2f683d33f9445f01f6303945efa1aeac61885cbfb1721635f8d91f49f448bc4a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-06.json",
+      "size_bytes": 1722,
+      "sha256": "4dc7e0242133f7ef89cd6d2cc3c834139f572574104d1071d4a0f1038e1d2043"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-07.json",
+      "size_bytes": 1722,
+      "sha256": "8a78f497a2ec1f7054d9100d3bb30d710242a6c28f68d44dad5e165b9d5e22e9"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-08.json",
+      "size_bytes": 1721,
+      "sha256": "0ee68215632d56a009798ba9a8fb95a49dc938b9ff6371768bc1511368f1c2df"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-09.json",
+      "size_bytes": 1719,
+      "sha256": "3bd7734306a75448a26c8d73c180507a56e1fbe341c43bd740d95f28fbccf745"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-10.json",
+      "size_bytes": 1726,
+      "sha256": "506379ebf3adb51515f6c91892f2a354a23d87f62bb2104ae04cc95573731152"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-11.json",
+      "size_bytes": 1721,
+      "sha256": "16cd76bbb4dd4361b61e4b3de5bc59e296f9838e477dc192a5cdc82e9968cb69"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-12.json",
+      "size_bytes": 1721,
+      "sha256": "e7f40e72214ce2b7ceb7feff839a3357c0dd34784a45e55a522ebc890d73c4ac"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-13.json",
+      "size_bytes": 1728,
+      "sha256": "aa9b5b8071f68e221a5da21705bd9a43feaa32bab8e73c2575c9f8f9387177b1"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-14.json",
+      "size_bytes": 1720,
+      "sha256": "9b4d3995004b39e9af20baccb2cb84d5ccb750dd4b7e025c575b92d644c8df76"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-15.json",
+      "size_bytes": 1718,
+      "sha256": "dcb35a368ac295db735300bc34c0ddd930f8aacefdc5ae021aa4684359ca8f87"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-16.json",
+      "size_bytes": 1722,
+      "sha256": "28092ecd20a2f4cfc15b7684ecb9b41f43bcb4fc19df351e320c64d30d029f46"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-17.json",
+      "size_bytes": 1722,
+      "sha256": "57f838e7db34122bce97f0d4fae8a550d5c8bbbde41b0316341c4141d350ebb2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-18.json",
+      "size_bytes": 1718,
+      "sha256": "44041e89bd22055c3df5654c377d168ac41875f94279c9fe79396c1951dadcfb"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/1-model-19.json",
+      "size_bytes": 1723,
+      "sha256": "31e75352e6fccc5873cfe8d7450305311942c2cf47b9a34935bedbeeef8d00c7"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-00.json",
+      "size_bytes": 1680,
+      "sha256": "83979965b387910132fd2329a9d4737a4778cc26b3d9accf51f357be75774124"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-01.json",
+      "size_bytes": 1684,
+      "sha256": "653167d80b69a59cd6ae8d9a7386f64c6d98ccdd53b84fc431ecfcea33704559"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-02.json",
+      "size_bytes": 1690,
+      "sha256": "ae88d45944ecda0de0ce3a5c33568240ed5068a864fc60c6bb2b1e229133d014"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-03.json",
+      "size_bytes": 1687,
+      "sha256": "c1e3daaa4a4e4038cb4c940ca7035270485fb8a5528c7d4bc366cb306f8f2077"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-04.json",
+      "size_bytes": 1691,
+      "sha256": "f92af41e6ebfeea180ef70f018df8311c2abc9dfe24a2a1306ed863fc854d93e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-05.json",
+      "size_bytes": 1687,
+      "sha256": "ee79eb5855886e8677ae575b96f6da63228ebb7c99a69c7f42b17fa15cc940e0"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-06.json",
+      "size_bytes": 1687,
+      "sha256": "0232f956be005554445c3aef14e1fa95d06101c1747bffcbe3bff33bd7d89ced"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-07.json",
+      "size_bytes": 1684,
+      "sha256": "8ca7a9b8d54dc6211412f6152567b155ff2930053ac31eba6e09872dea691edf"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-08.json",
+      "size_bytes": 1685,
+      "sha256": "585b684a747e41edeb3151d22cd990c1b0074a1910f5defa938d365ca25e6107"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-09.json",
+      "size_bytes": 1682,
+      "sha256": "d5558c90426e71f23d71877f712efb3c0308453d229cbce753f47b81c46cacb0"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-10.json",
+      "size_bytes": 1681,
+      "sha256": "377ec4c9a6a65e7d219a7b2c25f570396b936e590e1433cd3e77342233651990"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-11.json",
+      "size_bytes": 1685,
+      "sha256": "588e7379a93bec2fa2fc2aa09c8f3f191851d5e8068b82f6ebcc4b66a1044290"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-12.json",
+      "size_bytes": 1684,
+      "sha256": "97f64e22864ec768e31443f0eb7a928f340843c59d87df08fbe0a38a31b54cfa"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-13.json",
+      "size_bytes": 1684,
+      "sha256": "b8248f5de9ca20a027dc9c1adde85ccc8393705bb53ac33ceed80e838dcec654"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-14.json",
+      "size_bytes": 1683,
+      "sha256": "67f95b67c754450873f9e80a5708531cb703630ab905e2674b2a021583358a4a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-15.json",
+      "size_bytes": 1687,
+      "sha256": "ccb0aa07901a6ff7b2dfbb7cf2e4133bcd3d0a8c6328e23ec736ecfde9d3ca98"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-16.json",
+      "size_bytes": 1686,
+      "sha256": "5be852c27038b70c656c58f2902671819af1f508f264dee4a6fcb14d67ad1413"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-17.json",
+      "size_bytes": 1688,
+      "sha256": "3fdf57ba3642f7054a45bda91c200db734f5a9646e9b06a7f38dc6ce0bb8b854"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-18.json",
+      "size_bytes": 1694,
+      "sha256": "f2aa84b4fde818c1a33c56c9bf50876577d6a9d6c2c19c31fa4154b458460ced"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-end_to_end-19.json",
+      "size_bytes": 1689,
+      "sha256": "da797303007200ce5fea705c8e151392410ea50d7d4ca76d2e4b2be23bd96b26"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-00.json",
+      "size_bytes": 1702,
+      "sha256": "3209241bc28868c43dfac76d9dd6c97894599e86d15961cef5861a9c96660b1b"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-01.json",
+      "size_bytes": 1711,
+      "sha256": "99b9ec227afe5b63dac9b832c2f1e7618e456a31e428d82045db728a007e3b91"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-02.json",
+      "size_bytes": 1706,
+      "sha256": "0265224535c532011b3801cb0e6c5786837f1c89b7a78d9d7a12e564a99f89c3"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-03.json",
+      "size_bytes": 1715,
+      "sha256": "5b87bb5b184f9deca3728b554a133d6908fbdbbf46526e28c1de8fc4c1ac0c6a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-04.json",
+      "size_bytes": 1706,
+      "sha256": "8ef59cba7d19c56d431d668b7217568470c58acdb8ebb4904c7d9f757a18a7d9"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-05.json",
+      "size_bytes": 1711,
+      "sha256": "94f39f580bb6e9cc96b762d3f715a47d698208eabaa779bc40a1358ef4ce6ec4"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-06.json",
+      "size_bytes": 1715,
+      "sha256": "ffe11bbbb85d82e3f92dd706daa5d807647b8aa6a9da9812ec14201cfd6d6254"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-07.json",
+      "size_bytes": 1710,
+      "sha256": "cb9bfe03a041048dc0f3cf6563fddced5b20c3c5ac5ec224a8ead7d2f2cbe4d6"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-08.json",
+      "size_bytes": 1718,
+      "sha256": "300490c7d66cfd2cb29e873d4fd2c2f96d76d84c1fa04f856c6ac1d9afb63856"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-09.json",
+      "size_bytes": 1711,
+      "sha256": "140a904a8274c8b3ab4fdeb277cce5d5271ed9f5f1111b78f75bed7b908aa3f1"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-10.json",
+      "size_bytes": 1707,
+      "sha256": "7f60401af00101d209d0c008a48368817ff79bd201039ef61e02355060b379f8"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-11.json",
+      "size_bytes": 1700,
+      "sha256": "0ffeb70552db5fe554f868d91bcdd9013d9491ec1171a398ce933e7b9a1ef731"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-12.json",
+      "size_bytes": 1709,
+      "sha256": "da88d57e1ce63fe89f80a42b336eabf9f741f34be7fcbbc10bff9364bd340ea7"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-13.json",
+      "size_bytes": 1709,
+      "sha256": "5f4cfb7fa151e81b4eef7dcb16e64fa10b73255e25238753b76c4293a7f224a2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-14.json",
+      "size_bytes": 1703,
+      "sha256": "b31a48bc66bfac9374471380d253d18e9079d8834c559d4b6c5e28da3212e367"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-15.json",
+      "size_bytes": 1709,
+      "sha256": "69f73ecb81b06535b9dfd4182f0f4928ee07379b82869633b081d584486bb213"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-16.json",
+      "size_bytes": 1707,
+      "sha256": "b8de72a04f07bd16e1fbb25813ee33194a9da0d20fad7b937fb51fd4146d870a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-17.json",
+      "size_bytes": 1718,
+      "sha256": "a069ab3037fbe36d65eed42736534507dac0c094d091ac336e2631890a7b12c4"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-18.json",
+      "size_bytes": 1706,
+      "sha256": "f223a1770f01325a45cc436a4d0dfae7a1ff9891e29f24cf6a5b1e0e102b0e9e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/32-model-19.json",
+      "size_bytes": 1710,
+      "sha256": "79e2299508c19b05177c3e049e06b08aa705d7af8b60e936d71a7c5af1c9c248"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/benchmark/benchmark.json",
+      "size_bytes": 12680,
+      "sha256": "9440b45bd41936d0f491507e1a7a6558cea39015c8838d861d7bb5d14aa6f069"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/A-seed20260909.json",
+      "size_bytes": 226805,
+      "sha256": "87cc52b4f2415c4e90d9662ca399c412a95d24ecbfa0f86fa6add8b9ce361504"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/A-seed20260910.json",
+      "size_bytes": 226150,
+      "sha256": "826503e312986f9a88051b0c9542c8b7b358ddea6d17b31d57ec5fd53934e79d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/A-seed20260911.json",
+      "size_bytes": 227220,
+      "sha256": "01f29cb6b55b4db1da8a67df7a7400a7e0a146151b2d4a08f9166036c46941bb"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/B-seed20260909.json",
+      "size_bytes": 227379,
+      "sha256": "bfd01a5d2d1d30a29778be14c61ef2f5ac8eb2fc7a5369004298be8211603fba"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/B-seed20260910.json",
+      "size_bytes": 228966,
+      "sha256": "b10ae6f8e3e1e202e851c56668da2474e9316e5f8339302f5dd28813058ea46f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/B-seed20260911.json",
+      "size_bytes": 228294,
+      "sha256": "4cd36631fe14b0f1a78bad3a7f233a2f6a6aea2dfe9c79b02a75a9aeb0b77c5d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/C-seed20260909.json",
+      "size_bytes": 228719,
+      "sha256": "a52cb6b2aed289e39a1b5f5dc26f787c48d162f68df7a255f7133a42b0c249da"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/C-seed20260910.json",
+      "size_bytes": 228626,
+      "sha256": "95f4e6ff8f53d3c08c370e6e295e3d3a659a918085c2a158a6f19050aea0dae2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/C-seed20260911.json",
+      "size_bytes": 228794,
+      "sha256": "49f4bf26aed531e7dfb49ad6ce37daa3af257d167bc054731f7ef1bb123ec717"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/D-seed20260909.json",
+      "size_bytes": 227863,
+      "sha256": "0387b17ed598f35207d0f838bdcc17f8d8b932ad61c95d99c2b76af9850c1631"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/D-seed20260910.json",
+      "size_bytes": 228237,
+      "sha256": "4f7c110292377c3eaf81f6e74b0df766d8b49f92d7565fcb683e961273a7fbcc"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/D-seed20260911.json",
+      "size_bytes": 228525,
+      "sha256": "f29b9847d01b913ca911c5861ddb82b5a9e7f61fa0e16ad21316191b1982554b"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/V4-seed20260909.json",
+      "size_bytes": 228579,
+      "sha256": "4b9c7a73b6cacf60c4d50301dde0df64fb9f6d0d636a4f0702b0a4a0b1c893cc"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/V4-seed20260910.json",
+      "size_bytes": 228068,
+      "sha256": "46d2f2b344da3aea1dcbd02ae3e19d4eabce35ef9cd07b5191ad26effbeffe1d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/calibration/V4-seed20260911.json",
+      "size_bytes": 228346,
+      "sha256": "514fbdfa9c8f0539a7fb9eba0d2ca1a4d7a8e335a8edb4a131691f85e78c5cc9"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/environment/cpu-checks.json",
+      "size_bytes": 1241,
+      "sha256": "c44e0ba453a3d3d130cdd04f89b2257b43c1654091bb407f9104a4e62ca22d58"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/environment/installed-environment.json",
+      "size_bytes": 1646,
+      "sha256": "8978c7ca8f9628118201db0617d0c38a732bee2e686c7f6e3541bb68dddf9f48"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/environment/pip-freeze.txt",
+      "size_bytes": 10927,
+      "sha256": "a6977d40a0466ff6f9c1e7802ceef320678bdf2ab5893519d4d32793a939e57c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/D-seed20260910-dataloader-worker-failure.json",
+      "size_bytes": 741,
+      "sha256": "77e982cfcb53e8444b25d7f0bbe010660d6197b41e457dfab09a05ff4abbb456"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantine-action.json",
+      "size_bytes": 1293,
+      "sha256": "f06010d043c2fc1795ccb3db54f213955f6453991a625e55bfe16022a22008e4"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "44263da6e2e43893b10772dadd2679ad79cedc4e33ee2a6c4b04c3dfc03cd52e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/config.json",
+      "size_bytes": 1012,
+      "sha256": "b39d71bef9233286b2df80338e0a62559898677c408989bfa6bcb96206e8b033"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "20b381833870b5c77158fd464be9d21f1b465d16e140286305ee23e5949cae92"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/failure.json",
+      "size_bytes": 1314,
+      "sha256": "02b530637d56cd2ee9d9aa234038c89b6827756f0409a4242d29467ed077ba9e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "c707fd32d53309beced520038534ccafd4a778f6b63a9a0f1c803cb68688633f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "ba78f5340e10edce40abffe087db6f02364e145e851204399474e53373d15fca"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/run-status.json",
+      "size_bytes": 741,
+      "sha256": "77e982cfcb53e8444b25d7f0bbe010660d6197b41e457dfab09a05ff4abbb456"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/quarantined-runs/D-seed20260910-attempt1/timing.json",
+      "size_bytes": 43223,
+      "sha256": "5eb5729aa3a8ee8676cb695900366583d96859af7a97900cec06a112a79dc59d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/failures/resume-context.json",
+      "size_bytes": 933,
+      "sha256": "f65f1a33a4645bdb839e08329278bb61e88227d0f985d89d19f1ffee7c357636"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/freeze.json",
+      "size_bytes": 102652,
+      "sha256": "ff57311926a7633bf4643b394dd740d4329b9ae3dafcf16e34d22436ca507ed2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/gpu-preflight.json",
+      "size_bytes": 32017,
+      "sha256": "9297cf9c566830ab697305e5062bb655639d2d8f899807a54aaee4fc3a1aa976"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/selection.json",
+      "size_bytes": 1223,
+      "sha256": "7689c8017ee18bdb688c0374152feac2231d9211d74550b9ab251089a5327ec6"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/confusion.json",
+      "size_bytes": 292883,
+      "sha256": "ef4c512ca68caf9046e9132ff75e25b176639db0606bd5eaaaa76494e20f6866"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/evaluation-completed.json",
+      "size_bytes": 3325618,
+      "sha256": "a0ae5eb7446f3b525ee54e73be5ee0266f9037e1dea223a42d59f1dde1980661"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/failure-cases.json",
+      "size_bytes": 1125650,
+      "sha256": "4ddda95d117c12f2f11d37feb9161d5827d493a94b2ed3aacb5091562ffd7009"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/member-predictions.csv",
+      "size_bytes": 3522259,
+      "sha256": "34d9bdcdefee1714f43ad5a7af2d72eb2d222df77b162f36a7c0c32ca99a963e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/metrics.csv",
+      "size_bytes": 311235,
+      "sha256": "8fea86217adcaf640376c0c416b464f024f9578c6b2df9a7b60926a2f1ff853e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/metrics.json",
+      "size_bytes": 2151689,
+      "sha256": "258d5af0802f2aa7431830bf836e33cbfb4fd6af2147752af3b61b242bacdfec"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/open-set-curves.json",
+      "size_bytes": 1439395,
+      "sha256": "e5f0500f1984385a8eeddc3640df551a2c871b1185e0471ab023018d7ecc9876"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/evidence/test/robustness-curves.json",
+      "size_bytes": 600881,
+      "sha256": "c5bad74e55fd1a7ba9952a18444cd16e1550e90bb6800d72439f67da432ed730"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/progress/allocation-status.json",
+      "size_bytes": 825,
+      "sha256": "397fe4a42342968645fae0c68712fb92b9f1a84c934ce7cc10572af6139e82f5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/benchmark.json",
+      "size_bytes": 12680,
+      "sha256": "9440b45bd41936d0f491507e1a7a6558cea39015c8838d861d7bb5d14aa6f069"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/environment.json",
+      "size_bytes": 231,
+      "sha256": "69adf1f7561b454e3bfd36c5754bd90b3248b1f7e9b2a011a2e341379b20eda4"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/freeze.json",
+      "size_bytes": 102652,
+      "sha256": "ff57311926a7633bf4643b394dd740d4329b9ae3dafcf16e34d22436ca507ed2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/label-map.json",
+      "size_bytes": 61,
+      "sha256": "05b2e2ccb91d7b479dd9bd5d32d1dc318a923e25cb9ca9dac6fe99053c86d76a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/metrics-reference.json",
+      "size_bytes": 268,
+      "sha256": "456cc323985e1be564a8a9d6699cce50028007fbc580c3e8eaad3eea06f711f7"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/metrics.json",
+      "size_bytes": 2151689,
+      "sha256": "258d5af0802f2aa7431830bf836e33cbfb4fd6af2147752af3b61b242bacdfec"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/open-set.json",
+      "size_bytes": 22306,
+      "sha256": "eb313281c57ae8a70509d8949c2ee8a7e296e32a65e61bd01254cc264173eeb4"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/preprocessing.json",
+      "size_bytes": 190,
+      "sha256": "882adc584d5a6443964fd7a1d0c7fea751ee4e2fa50434ef2aa5d397b54ce66f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/release-completed.json",
+      "size_bytes": 3222,
+      "sha256": "c2f58a2b2108846b2b150170ff2f5c97cb1a055ee05456caac488de2ca276d9d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/reload-verification.json",
+      "size_bytes": 215,
+      "sha256": "d7cc6b4d82753d2b475fa5a3da39e09a85c8d5ada9d67ddc46a18c02ad6d193e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/runtime-contract.json",
+      "size_bytes": 2622,
+      "sha256": "5bd6d76f4dc946c7bf297e08564685bfbb08011d7210952510a549420d8206a2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/runtime-contract.sha256",
+      "size_bytes": 65,
+      "sha256": "fd9b3fff0e50344455a87736f7d1d8923bc92d07f02ed016fe9ae6a07336ebea"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/__init__.py",
+      "size_bytes": 73,
+      "sha256": "f26efdf859556476028fc99ae8dda93bb60b4060e1f180304eaa4447b23ab500"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/data/__init__.py",
+      "size_bytes": 4047,
+      "sha256": "68479e2a7fcd727b4b037c71687b86ccadc9c5cc4b2abb8542ee0738d936aec9"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/data/data_provenance.py",
+      "size_bytes": 9623,
+      "sha256": "c69be58464ddbcfa0c9e7f1e57be9168ba1c2c69617d8f0003688cde54df1287"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/data/ku_leuven_preprocessing.py",
+      "size_bytes": 1995,
+      "sha256": "e74e8915c1bbc126ba5e0c422ad24e69e17b92d8c4d80d92e153f8d8fe5899ad"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/inference/__init__.py",
+      "size_bytes": 2991,
+      "sha256": "e9bfe0dcadda69e11b6a1c644528d5324e62c2621afbbe376ee13d0971b23a2c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/inference/uav_a800_contract.py",
+      "size_bytes": 8786,
+      "sha256": "f31b8f44ef826bf62d285f9f7b4133ec62bb2d0176caa0cca9db2a1b3dbb4036"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/inference/uav_open_set.py",
+      "size_bytes": 11775,
+      "sha256": "e908baf91c04477f51fda761a70d653040f20d3c260914eefb1fdc4dbb31dbfe"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/models/__init__.py",
+      "size_bytes": 990,
+      "sha256": "3104277c261b3c7c177b58e938c951dfed85585e2759878d3a6c60e51de6d125"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/models/uav_baselines.py",
+      "size_bytes": 6118,
+      "sha256": "15f48724c3d1747454d4dab6b7a0106c9f84d80e0e2b242d9cf42885ebfcb1d5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/release/source/airwatch/models/uav_multiscale_tcn.py",
+      "size_bytes": 4205,
+      "sha256": "df62c0b677748f1471b22b06aea4c52eda63e41cf54baf9180bb1c5517eef8c2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260909/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "ae41356a905f4fb16747a9628976a5701ac8b3567b65ad96ec6f13575199a635"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260909/config.json",
+      "size_bytes": 998,
+      "sha256": "af5f7e2651efa8d8b37267c9df6b03424fe06d186b426b070db10e935bcc262a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260909/data-access-audit.json",
+      "size_bytes": 2364,
+      "sha256": "528be1f1431e5e1000c64695429b4b76041defa8a56dd09cc3af7fdd8f7cca5e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260909/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "c41c256c4847fc948a47f918a56d98f99baa650744ac09947b631b14735b5090"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260909/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "b8b9caeecbfc0927459d8d62a665ae03e902bdaf2d06791f85d9061768aecbf0"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260909/run-status.json",
+      "size_bytes": 652,
+      "sha256": "f3566c14a2be67fd7a60b78fa79ee55cb66215da35f557be010d24ae4e118946"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260909/timing.json",
+      "size_bytes": 217192,
+      "sha256": "452148f7f8ff13485e9762e3c7fd803e886bd12109b19c50253d48247db75961"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260910/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "8d402ebe35053595152857d3c4e91ac0055366e738c9feb82c606d8bda90f52e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260910/config.json",
+      "size_bytes": 998,
+      "sha256": "0dcec388a529cb94f42ccc63187db19f2fc4c44b7c357648edb27d6747b3e22d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260910/data-access-audit.json",
+      "size_bytes": 2364,
+      "sha256": "a44a5774bcce21a2f1c1672dd6371d5614d86814526d5d594789fce03205bdd5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260910/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "0668f6eb87f0c681ac2cc204e606407e8fc4c2492ee4082389b2a833d4943df2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260910/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "740932c7befb01bdb1597f929725756cea01bb08907d6e0da649e0f94d6b8100"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260910/run-status.json",
+      "size_bytes": 653,
+      "sha256": "95ba6bdbc4980c12e2fe5b0817f36f591ba386db15c5c410e93fa9c81471bb40"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260910/timing.json",
+      "size_bytes": 217093,
+      "sha256": "a8c388430e5b7561f0d19337a64ec4b687145dec1b81d0762ac13b67e88b8a64"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260911/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "45df21ff794f6adfa77abf8f308b8648c8a9fb812e578675bf99cc5cab2784c2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260911/config.json",
+      "size_bytes": 998,
+      "sha256": "fcab8c8f6ebc0f13b24a58387cb50434538da2a9e302fcbbb17f155c5dcb1a8e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260911/data-access-audit.json",
+      "size_bytes": 2364,
+      "sha256": "16b734447e5414e08611e1d6fc68500123150c35eea3c0e9a555effd35d94f0a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260911/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "1e5cb541ff25055f55ca87666363adb9778c754095bb2bca7dbbe388472653ff"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260911/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "8c6516cddcd9906e103276850e37a4b6334d85435c7cd681490d1c870d321e14"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260911/run-status.json",
+      "size_bytes": 653,
+      "sha256": "852a386cd3afbcae6905981cc4ac8f8215d4747d389221c87f8bdfea5e186033"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/A-seed20260911/timing.json",
+      "size_bytes": 217148,
+      "sha256": "361e8e13671dabb425607489b55598ad38bc01e2cc44517814d3a51cfcbd53b6"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260909/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "63ccfb2a916e57ab9f92357f0515a50f718f17595f5deba6c5bb691b234b605a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260909/config.json",
+      "size_bytes": 1001,
+      "sha256": "38fed4bea340125f23f64265ff5715a2f8528e1fe15d5e26f0c53b5192402687"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260909/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "1702c7d23d4ac9c0dbc92e5082b9198502e985d3fae12d8544f8faadf2da81ba"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260909/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "2efba7d12c968727cb00447a53abd6b8485937127595924bfb3c1b6eed43879c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260909/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "69e9f4602f42ca08715c47c50c313ce6d649d4af22b53cdff04798167c29773c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260909/run-status.json",
+      "size_bytes": 653,
+      "sha256": "67ffc29a729fa76009b9d1150c657a9cdd4264d1bfa1556eb20d1bb5e945ebc8"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260909/timing.json",
+      "size_bytes": 217038,
+      "sha256": "21f40daea87cd4fc6f3ba978bd1fead40eda1e16c662f923660d527d5d014ea8"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260910/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "169e3f48289753cb61f5a084630ebf46653394f2765e84983e7d6411b9869a99"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260910/config.json",
+      "size_bytes": 1001,
+      "sha256": "da6998ab3b9ca393f3eeba48f7231e434e8cbdc1d6f7c052e115c7933b514f8f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260910/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "ff307c08d381bc75f2afbefd6dda1b5d35975ba86a4d71d5a88299d8414e06f0"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260910/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "a816e938bf34a7dae68d578bec177290cc632f8954ee289f23906c9773b520ba"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260910/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "76ce1ef7f42147b2f392f3dede7bdd63b9c1b12242bb3f6bed745feac311eb2f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260910/run-status.json",
+      "size_bytes": 652,
+      "sha256": "37cdc401ce2666d15ded1265b3c215232ffb1510be4a13c6bacc3f06d9bf40cc"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260910/timing.json",
+      "size_bytes": 217088,
+      "sha256": "04bbfe63fa6b810c70a3549ec11e7cba90d139fd34d47cee49a60d1fc2329619"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260911/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "e934fde0b9aba7d6f72aa4d13a18c32b2caa12d976e9b0187fc4e5add0f833e6"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260911/config.json",
+      "size_bytes": 1001,
+      "sha256": "6189eb03827e0bade93118f8aac5aa846c2a8683abd67bdbc6bd795b439b636b"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260911/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "a5ee17ca37b7e6d7ad2936c224ca7590a4f0879da368ba236d903f7afd60386e"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260911/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "a77203b170513ff5411136503da9f4fabd6bda0a364488fb456e546a966c26e1"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260911/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "511ad3970fc7e93d014e59c37c330cf345c6581a730f4358ac76b69af6c57272"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260911/run-status.json",
+      "size_bytes": 653,
+      "sha256": "34a956cc0d032e53859700520ac06fe027692839b8c72cd05e2fb29adec45cf9"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/B-seed20260911/timing.json",
+      "size_bytes": 216995,
+      "sha256": "95de21789a00ae4b33cc684029d8f73f26c1603abf96fc40a52ace9aaf10355a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260909/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "da1a642501becc4dbca49555b5afffacd6114a42547d647740e0be7e1aac2439"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260909/config.json",
+      "size_bytes": 1012,
+      "sha256": "9250c8e27f44b36c2f9cd9571dd5591ee6ca46bf2454d7622ac036a41997f857"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260909/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "13d2be059e553cc42023f8a64ead5b857fa016be20f25048ec5a6778daa693e7"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260909/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "e8893c60af6dc3ce46fcc2b4e1fce18f686574a85fcb8be074860e8bad0da167"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260909/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "8356a4c65f48a28eb7151fbeb143a1f9e1d3a40dccb1fdbec6804cd35a70563d"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260909/run-status.json",
+      "size_bytes": 653,
+      "sha256": "b162b5cd3620d9125b073ce6befdad51450828f28ed52ac28d5d663a3a6e6228"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260909/timing.json",
+      "size_bytes": 215427,
+      "sha256": "bb9065810e8e208f7390109f141e067d3e424e212c128618bd1a8821a59137bd"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260910/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "5c238bf121d8931021db39506751fc8d104c2ad581cb43d18a4f5d81922809c6"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260910/config.json",
+      "size_bytes": 1012,
+      "sha256": "e8df953a116142ad9399a2c574ffd79f1e12870e6c24ce4fcaf106fcf318ff67"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260910/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "baa84e0d1335326ec7d42cb4f955c5cc7b94b8cb6a5f55a3872cf686b1244d0b"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260910/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "25bddeb99bf0772159137e8ca916422d11b41718b87002232ea5d83f9edad338"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260910/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "5c688cde3644db359ffc840175c6d4ed02875ede0d0ab7a71771bc5179aff301"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260910/run-status.json",
+      "size_bytes": 653,
+      "sha256": "acf50cb1000c12260ff9e0ae23c7361aa9f8a7e08aeb47f8c171ce886f5b5982"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260910/timing.json",
+      "size_bytes": 215396,
+      "sha256": "31dbbfb9028d6debdf61d0477dae7716714ad2d890d181f5e6890519eebc3413"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260911/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "2cf582282c539c80440e953959f4fabbda7721349afc04f51507c2827d1e879a"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260911/config.json",
+      "size_bytes": 1012,
+      "sha256": "ab8758bd07541c9dfe3e6a1cbb440d2ce3139818fcbd112e02a86e2efe5a43e9"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260911/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "0e1cc630039d15dc7ce07a52d93cb4cf48823df4ce625a52e84ae76d314a0b02"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260911/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "f0e44a02ba821e66970ea3b42e66e4265da8b4e8b617cba036721eea9952e163"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260911/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "b995ed27dee1751103aea5ca8889196b79bbf967a6024744a384efd5adbf4fc7"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260911/run-status.json",
+      "size_bytes": 650,
+      "sha256": "530d3f36b75e5bfdfe5656528f2811e3c8ad1be7c51c7cdaae25f768bb3fad90"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/C-seed20260911/timing.json",
+      "size_bytes": 215292,
+      "sha256": "2d7837f49801341b97f335a33ebb25a5f6b8c9cb2db42e5e1bedcfda0cf0ae92"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260909/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "6541d08f7563d0b98e9afaf7ede733ca41508e56c7bfe2a8c4fd7c5e96e568f2"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260909/config.json",
+      "size_bytes": 1012,
+      "sha256": "95b00af33c111ae4f8fc0c3692d9a68362c534e22895ea7db0341d2c4112f1eb"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260909/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "5d37944ffe9025ac09b7bc7792a48be4b7c6bdeec06a87e1a07a76ed0eb092be"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260909/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "0a30cedd7a5dd73c5fe1e581287e361ada14b4b7c9e3141c415bee3da4cb6f61"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260909/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "84dbb5425f77dc387f9e9a6a7b5387a82df2d6d5d6b005ed94d7b78cd9605db5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260909/run-status.json",
+      "size_bytes": 653,
+      "sha256": "5665371a76edfddfe63812a9303471a6e02ad35599c4a4c2165ba8aacfd96213"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260909/timing.json",
+      "size_bytes": 215392,
+      "sha256": "7de766dada62341326ba2d61f19e95ba5d05eb681f4c7c5aa207565a8773b98c"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260910/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "5bea87d42318f93ad6e404948f04c939ecbb2fb55421a0ecc65ef25782b0a9b5"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260910/config.json",
+      "size_bytes": 1012,
+      "sha256": "b39d71bef9233286b2df80338e0a62559898677c408989bfa6bcb96206e8b033"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260910/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "20b381833870b5c77158fd464be9d21f1b465d16e140286305ee23e5949cae92"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260910/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "db3144750f515c407fa508bb620b78f1b6941b3573632a8b32e1da06e5856c1f"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260910/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "111ace24a2a63b178389939a9eabf05c321d35149c125bd76c6774054fac2156"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260910/run-status.json",
+      "size_bytes": 652,
+      "sha256": "04e510b97196b397f83fbca231658ac43ba8e79acc271ac59ac290ac47589c62"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260910/timing.json",
+      "size_bytes": 215744,
+      "sha256": "952be3d3f7a06c0d727ac5f8267da4f676fb671aff55bbc83db69c3b2408baf4"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260911/best.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "ec2a05b212c6f9fea1d77c19eb394026cee3c6ac993165d7cc8febfcc64a5961"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260911/config.json",
+      "size_bytes": 1012,
+      "sha256": "54eba7fd217d9f058d84cecfd5e5e93f402856abfad80c73cb9823712b1cf493"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260911/data-access-audit.json",
+      "size_bytes": 1966,
+      "sha256": "343822a8f784eddfacbfb046cd5d80ebb95b151f9464220ba2bbadd9366e41a6"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260911/last.previous.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "60a15d19c98bf2ff9a1a720df2d3438fcc459d17e59d6b269ca059cde723efc7"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260911/last.pt.sha256.json",
+      "size_bytes": 109,
+      "sha256": "489e9b05b002db49766108ed5e006e0230940e1913228121590bfc23becebc54"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260911/run-status.json",
+      "size_bytes": 653,
+      "sha256": "ecbf3e19defaf3940d7e681dd299fac7f4cfe0c4725054a1d6bb6e2c41ef1c5b"
+    },
+    {
+      "path": "evidence/a800-v2/outputs/runs/D-seed20260911/timing.json",
+      "size_bytes": 215650,
+      "sha256": "e7b96212911e4337dc5c3c1a0ad26e82c502e17388a941eff358d6895d7a7b3f"
+    },
+    {
+      "path": "evidence/a800-v2/README.md",
+      "size_bytes": 892,
+      "sha256": "5d4074ccc9978dcc24dabdcee9687988d4efb9bfce4840683d081041ac876f48"
+    },
+    {
+      "path": "evidence/a800-v2/training/configs/a800_v2/matrix.json",
+      "size_bytes": 14465,
+      "sha256": "c7b98f236a51e46ecaac554e96582f7ea5be0de0467d975939ecb4dfe853c4c9"
+    },
+    {
+      "path": "FACTS.json",
+      "size_bytes": 63591,
+      "sha256": "affae8088fb7d84fc12c1127db8f298169db59d77ba23fd8904ce2c1725befeb"
+    },
+    {
+      "path": "PRIVATE_USE.md",
+      "size_bytes": 1018,
+      "sha256": "c37c45f5eda41d3ec84e2640db78c619ea7af7a0d9246713b03e2ffc18360f68"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2273,
+      "sha256": "75c4a1bfe6cfbff29885333fd9362697c6fbb544cb3e989bb15dbdb3e2fe760c"
+    },
+    {
+      "path": "reference/空域电波哨兵_竞赛技术报告雏形_Word文本摘录.md",
+      "size_bytes": 13209,
+      "sha256": "a610ebf878d967610fea1fd9477fdafe7e607c29a760a7ccb4ce2e9542561146"
+    },
+    {
+      "path": "reference/空域电波哨兵_项目改造任务书_Word文本摘录.md",
+      "size_bytes": 42442,
+      "sha256": "90594cfa5f3fabf09c7ac58f24ed15c451bc08121978f34f34e1a294b023f9de"
+    },
+    {
+      "path": "reference/项目功能与模块说明书_Word文本摘录.md",
+      "size_bytes": 12452,
+      "sha256": "7f8e3d8efa3f57edb326326d3ba525ef2d04494e39582d37cb09bc5ee2c9d31e"
+    },
+    {
+      "path": "software/airwatch/__init__.py",
+      "size_bytes": 73,
+      "sha256": "f26efdf859556476028fc99ae8dda93bb60b4060e1f180304eaa4447b23ab500"
+    },
+    {
+      "path": "software/airwatch/analysis/__init__.py",
+      "size_bytes": 3325,
+      "sha256": "e9d416df4c48c18f9ed74edc91c86dd4a3e7b69f4669a28d8f5ee476d3cfcb05"
+    },
+    {
+      "path": "software/airwatch/analysis/bearing_fault_frequencies.py",
+      "size_bytes": 2322,
+      "sha256": "b9c9c150985251840388b0b9c39370adb35e19669d8655728626632986f78eee"
+    },
+    {
+      "path": "software/airwatch/analysis/bearing_quality.py",
+      "size_bytes": 12558,
+      "sha256": "c45ea2801ee01284a9d3dbc5b7764346a30bdf2e7fa3e24db39771a9ab498efa"
+    },
+    {
+      "path": "software/airwatch/analysis/bearing_robustness.py",
+      "size_bytes": 5642,
+      "sha256": "5f4a36b18b55c08f57314c57888d895bcc29134e646046f824b7cb910766480c"
+    },
+    {
+      "path": "software/airwatch/analysis/bispectrum_views.py",
+      "size_bytes": 2923,
+      "sha256": "f580cab2a0bb7feddd4743fd229cfc1309fe145e042c0f152073a8a1d7f136a3"
+    },
+    {
+      "path": "software/airwatch/analysis/controlled_noise.py",
+      "size_bytes": 5792,
+      "sha256": "580dd41451f48ee7eb2fd55a589e152f3c6b9f6a8dc206260ae07a76d64f1860"
+    },
+    {
+      "path": "software/airwatch/analysis/feature_views.py",
+      "size_bytes": 2175,
+      "sha256": "419450d6aee3d92e6d268d9524f8b94f1cb54ef2aefd37a988a25dc75c319914"
+    },
+    {
+      "path": "software/airwatch/analysis/generated_views.py",
+      "size_bytes": 1338,
+      "sha256": "64251f49b72cc9d51c8216bcca8b9884290c3ffe105cea6fb211f32dda7c1266"
+    },
+    {
+      "path": "software/airwatch/analysis/hht_views.py",
+      "size_bytes": 6364,
+      "sha256": "9562622c49d286274c957dd7d919c4560ed0d5c1774c09332d11ec7e491855c8"
+    },
+    {
+      "path": "software/airwatch/analysis/home_features.py",
+      "size_bytes": 5682,
+      "sha256": "e7aa3636ab9d5a535964066b680f4e5590b765962d08ef7d4785a1b978b2b985"
+    },
+    {
+      "path": "software/airwatch/analysis/iq_perturbations.py",
+      "size_bytes": 21525,
+      "sha256": "139e9bfa80023dd61229ceb2d4f740d05a1753fcded86dcecc170f1b177a070a"
+    },
+    {
+      "path": "software/airwatch/analysis/jr_views.py",
+      "size_bytes": 2751,
+      "sha256": "cc9d88f8dd9c084bb4659f2f26e1e7fa1a764eff2a8faaca95233a53189a8983"
+    },
+    {
+      "path": "software/airwatch/analysis/signal_transforms.py",
+      "size_bytes": 10775,
+      "sha256": "7efe605ab062a1b94dc95149bc46900e50b2b86ed57614819b917345dad6c57d"
+    },
+    {
+      "path": "software/airwatch/analysis/tsne_views.py",
+      "size_bytes": 2650,
+      "sha256": "301102a1a5ab557b75db2f79998af05945887ed7bf67a5b81dbb74c5da984683"
+    },
+    {
+      "path": "software/airwatch/analysis/uav_quality.py",
+      "size_bytes": 2585,
+      "sha256": "5d66e10aa48663bc34a1b18e98bd47aab0169405fe2d31e9efc68c97a3c9e197"
+    },
+    {
+      "path": "software/airwatch/analysis/waterfall.py",
+      "size_bytes": 2291,
+      "sha256": "1f2291e9fc00dd3de964af1b1c4e1804d69e8cbb5d713615982bb481c78a202e"
+    },
+    {
+      "path": "software/airwatch/analysis/wavelet_views.py",
+      "size_bytes": 2297,
+      "sha256": "39dc954e33be24441c98e3ff15d677fbe75e272fdda21bc04a94894d216221e7"
+    },
+    {
+      "path": "software/airwatch/data/__init__.py",
+      "size_bytes": 4047,
+      "sha256": "68479e2a7fcd727b4b037c71687b86ccadc9c5cc4b2abb8542ee0738d936aec9"
+    },
+    {
+      "path": "software/airwatch/data/bearing_dataset.py",
+      "size_bytes": 13307,
+      "sha256": "f752d6c3b389bf24630e1c71161cc7e8343c3002bcf22d089628ff6e55592ee8"
+    },
+    {
+      "path": "software/airwatch/data/bearing_metadata.py",
+      "size_bytes": 789,
+      "sha256": "066eb116fceba3543e75a877c254ea0513476ce4f59f46e85ba382a808eac954"
+    },
+    {
+      "path": "software/airwatch/data/cwru.py",
+      "size_bytes": 7135,
+      "sha256": "3e4d0ee6380003bed66668c4643986c0601ef4f69829df80857d45b053067a97"
+    },
+    {
+      "path": "software/airwatch/data/cwru_audit.py",
+      "size_bytes": 19040,
+      "sha256": "5f129daa00332cb6548d17c319d624df343854ca9f6eccca02506d7a6b1744f3"
+    },
+    {
+      "path": "software/airwatch/data/data_provenance.py",
+      "size_bytes": 9623,
+      "sha256": "c69be58464ddbcfa0c9e7f1e57be9168ba1c2c69617d8f0003688cde54df1287"
+    },
+    {
+      "path": "software/airwatch/data/dronerf.py",
+      "size_bytes": 18168,
+      "sha256": "b52ee17c4612e870fdbd05db2c313a8002538234cccc6fbfc8c126782773f05d"
+    },
+    {
+      "path": "software/airwatch/data/dronerf_dataset.py",
+      "size_bytes": 9444,
+      "sha256": "3aed6e9a38204db709c3d67b3cea0716d8b9481fc9af83718e422379b04e053b"
+    },
+    {
+      "path": "software/airwatch/data/dronerf_windows.py",
+      "size_bytes": 8474,
+      "sha256": "b118d9a36c449436cdfb85351a1dc86ece7938dd76f4840690eeca5534c2ebc4"
+    },
+    {
+      "path": "software/airwatch/data/external_compat.py",
+      "size_bytes": 10409,
+      "sha256": "afe4bf747d040a6fc29c281505dfb38ef3080e6478fb0f6c4d7cc35a42b55338"
+    },
+    {
+      "path": "software/airwatch/data/historical_comparison.py",
+      "size_bytes": 9827,
+      "sha256": "ab74d735606e30015858c0c1a01b10a72c25b7fa1a609d9ca896e3321b63032a"
+    },
+    {
+      "path": "software/airwatch/data/home_input.py",
+      "size_bytes": 1265,
+      "sha256": "463e3b2dc40f8512ab9ee4429f93f5d53e6144cbb25793223e8bd21d1d134a48"
+    },
+    {
+      "path": "software/airwatch/data/ku_leuven_audit.py",
+      "size_bytes": 16495,
+      "sha256": "996b51ce2b418ca344164d14f9995fac1356480c6f006edaa61cea8e3a2788a0"
+    },
+    {
+      "path": "software/airwatch/data/ku_leuven_dataset.py",
+      "size_bytes": 7897,
+      "sha256": "fcca21c72b932a020858c2efb017c128ddbd68a62deb04532c16187320173928"
+    },
+    {
+      "path": "software/airwatch/data/ku_leuven_manifest.py",
+      "size_bytes": 21617,
+      "sha256": "671ff67acf392713e2784ba71c612d33ac4abc6007ceae5501889fe3e6681918"
+    },
+    {
+      "path": "software/airwatch/data/ku_leuven_preprocessing.py",
+      "size_bytes": 1995,
+      "sha256": "e74e8915c1bbc126ba5e0c422ad24e69e17b92d8c4d80d92e153f8d8fe5899ad"
+    },
+    {
+      "path": "software/airwatch/data/ku_leuven_preprocessing_audit.py",
+      "size_bytes": 7173,
+      "sha256": "0c5081fa7fcb2b168cd096d4a0a8cbb53f8179c17c450a9ec20c0c5b2700f7b3"
+    },
+    {
+      "path": "software/airwatch/data/ku_leuven_split.py",
+      "size_bytes": 14462,
+      "sha256": "1d1046952a794701f75b0d19050691c4b22ea10cf141e58ec80bb1fec630d87a"
+    },
+    {
+      "path": "software/airwatch/data/ku_leuven_training_v2.py",
+      "size_bytes": 6331,
+      "sha256": "9a911a6679c35ce67a7934282fec89a24949b8b29822e64da352a16c3b6e56ca"
+    },
+    {
+      "path": "software/airwatch/data/materialize_dronerf.py",
+      "size_bytes": 13557,
+      "sha256": "49715eb83b4c93a72f10dc24c52c9da06509f191ae5ce9d27fbedefc5989efe1"
+    },
+    {
+      "path": "software/airwatch/data/materialize_ku_leuven.py",
+      "size_bytes": 10432,
+      "sha256": "846ea84c749002159108fc25291b8755fc1ef2b274f009b939518e75c492b669"
+    },
+    {
+      "path": "software/airwatch/data/matlab_v73_iq.py",
+      "size_bytes": 12620,
+      "sha256": "b40850e273e93b6fed323ce66326ff1bc3cb2f2deec548770458eb8c10f63329"
+    },
+    {
+      "path": "software/airwatch/data/matlab_v73_iq_audit.py",
+      "size_bytes": 4770,
+      "sha256": "9d6046ae737c1f0b35ac8d695957cd56ec045be29ac9e3219a617b9c4087223e"
+    },
+    {
+      "path": "software/airwatch/data/prepare_dronerf.py",
+      "size_bytes": 3051,
+      "sha256": "41df0b011b8e4bacd744729b0481f98353decb1cf91f37dad14905a4c221a7da"
+    },
+    {
+      "path": "software/airwatch/data/recognition_input.py",
+      "size_bytes": 9083,
+      "sha256": "91cc392973fc961d70dc12df8d012089400fd93e338f269ea71ac7c2fffb6b1c"
+    },
+    {
+      "path": "software/airwatch/data/uav_input.py",
+      "size_bytes": 5778,
+      "sha256": "36561de4dbe59021a02e4e3d9f0fa6a83c7dfbf721fa16bdd7974e70be86e09b"
+    },
+    {
+      "path": "software/airwatch/data/vti_audit.py",
+      "size_bytes": 7540,
+      "sha256": "fd94fed8d91becf98588a2ee39fbcd6f11b42a2e94771cdb48767032a6ecc087"
+    },
+    {
+      "path": "software/airwatch/evidence/__init__.py",
+      "size_bytes": 421,
+      "sha256": "a1b5ed4f5f373322427567f03e99b90ab0425fcf344bc57c6dc0f50fe21c7872"
+    },
+    {
+      "path": "software/airwatch/evidence/ku_leuven_external_protocol.py",
+      "size_bytes": 6041,
+      "sha256": "fccd38868d5cc481fa4a46ffdd718d6deebac366c2c57a85039454a7d8a00fce"
+    },
+    {
+      "path": "software/airwatch/evidence/uav_baselines.py",
+      "size_bytes": 20854,
+      "sha256": "7ba34dbe4b5be56b1f56921db1e48007116de9ebfe0273200cab980b728c88fb"
+    },
+    {
+      "path": "software/airwatch/evidence/uav_robustness.py",
+      "size_bytes": 7340,
+      "sha256": "79328a2a42ddc67f684592f3c88ac8f59c91ecb72ea989c92e6a71b13c9d2a21"
+    },
+    {
+      "path": "software/airwatch/general_recognition_contract.py",
+      "size_bytes": 2684,
+      "sha256": "ad78499c740a3f4245d3c85ecc8d9698a1c806e432969d3da587b23b114d7679"
+    },
+    {
+      "path": "software/airwatch/inference/__init__.py",
+      "size_bytes": 2991,
+      "sha256": "e9bfe0dcadda69e11b6a1c644528d5324e62c2621afbbe376ee13d0971b23a2c"
+    },
+    {
+      "path": "software/airwatch/inference/adapter.py",
+      "size_bytes": 7165,
+      "sha256": "e9612fa3025b73572d20d3f714846056d85f216d406a82c2adbc879f4877f28c"
+    },
+    {
+      "path": "software/airwatch/inference/bearing.py",
+      "size_bytes": 27144,
+      "sha256": "baa3d784d463d32267638918e191dd34deb6658474adcc6948c858281f5e1b72"
+    },
+    {
+      "path": "software/airwatch/inference/bearing_contract.py",
+      "size_bytes": 11237,
+      "sha256": "889ea9b874ae375f4fe71d6811ce13fdc7bb62eca7f1033e7890fc0633109b1e"
+    },
+    {
+      "path": "software/airwatch/inference/general_models.py",
+      "size_bytes": 1359,
+      "sha256": "d9520a20f93ea0d63f2ce7d3d8136d3fc83f99760e91874f080a6f94d57b13f3"
+    },
+    {
+      "path": "software/airwatch/inference/ku_leuven.py",
+      "size_bytes": 18152,
+      "sha256": "ae806a9e7f9ed0d32edcda1e4845d427a0a6a323f4ec5cc0ad8d9e6f91d8a005"
+    },
+    {
+      "path": "software/airwatch/inference/uav_a800_contract.py",
+      "size_bytes": 8786,
+      "sha256": "f31b8f44ef826bf62d285f9f7b4133ec62bb2d0176caa0cca9db2a1b3dbb4036"
+    },
+    {
+      "path": "software/airwatch/inference/uav_open_set.py",
+      "size_bytes": 11775,
+      "sha256": "e908baf91c04477f51fda761a70d653040f20d3c260914eefb1fdc4dbb31dbfe"
+    },
+    {
+      "path": "software/airwatch/models/__init__.py",
+      "size_bytes": 990,
+      "sha256": "3104277c261b3c7c177b58e938c951dfed85585e2759878d3a6c60e51de6d125"
+    },
+    {
+      "path": "software/airwatch/models/bearing_cnn.py",
+      "size_bytes": 2097,
+      "sha256": "d5b21c146096cff3e3cda5f2c1d05670a35738e8a3d5b9687230338440c257f3"
+    },
+    {
+      "path": "software/airwatch/models/uav_baselines.py",
+      "size_bytes": 6118,
+      "sha256": "15f48724c3d1747454d4dab6b7a0106c9f84d80e0e2b242d9cf42885ebfcb1d5"
+    },
+    {
+      "path": "software/airwatch/models/uav_cnn.py",
+      "size_bytes": 2061,
+      "sha256": "e7741d49ae524971dc2dd599ff9fd9312617958e0624b39120e389ab0db41697"
+    },
+    {
+      "path": "software/airwatch/models/uav_dual_branch.py",
+      "size_bytes": 5699,
+      "sha256": "cc27f238c4f7485832cee82c442aedb07066b70b0ee16a1829a5df298b2ccbf9"
+    },
+    {
+      "path": "software/airwatch/models/uav_multiscale_tcn.py",
+      "size_bytes": 4205,
+      "sha256": "df62c0b677748f1471b22b06aea4c52eda63e41cf54baf9180bb1c5517eef8c2"
+    },
+    {
+      "path": "software/airwatch/runtime_paths.py",
+      "size_bytes": 4538,
+      "sha256": "01ef237e945b7a9a314e8ee3130c8c1f50ceaae4d443ea14d7ae382ebb466143"
+    },
+    {
+      "path": "software/airwatch/runtime_resources.py",
+      "size_bytes": 16568,
+      "sha256": "5b601511f248e17823b1954c4f2725585bb6d4475034d41c9d3d279d3137fe1c"
+    },
+    {
+      "path": "software/airwatch/runtime_smoke.py",
+      "size_bytes": 8528,
+      "sha256": "1efd691ffaf9034323078738e32617cc191dbf8053e92d59b8f565c73c5d7c23"
+    },
+    {
+      "path": "software/airwatch/ui/__init__.py",
+      "size_bytes": 591,
+      "sha256": "eb00fe4ee35ab9f7b84c8fda9bf710224962d2079d5bebe9e169f141a3297368"
+    },
+    {
+      "path": "software/airwatch/ui/bearing_background.py",
+      "size_bytes": 10128,
+      "sha256": "999f353c517520d078ad92d2fcf7613c8eba72e18b6f9c413069f3999855bfd5"
+    },
+    {
+      "path": "software/airwatch/ui/bearing_plot_panel.py",
+      "size_bytes": 14404,
+      "sha256": "40543c96551387653a0156c296382d06b6840c722b3f57b61f5cfc5b488c227d"
+    },
+    {
+      "path": "software/airwatch/ui/bearing_presentation.py",
+      "size_bytes": 3692,
+      "sha256": "1b340dc7b6df92c2c0539aa1fe06579d156f90a4b553a7f3134a7ef59b19371f"
+    },
+    {
+      "path": "software/airwatch/ui/generation_background.py",
+      "size_bytes": 4323,
+      "sha256": "80de7315c3a963f9ae6028602e6b2037f43af03f5a2854135366a660d165b4b2"
+    },
+    {
+      "path": "software/airwatch/ui/historical_comparison_background.py",
+      "size_bytes": 4526,
+      "sha256": "b562cec931cfba001cff599eb2e8b435ffe902b46b202fbe8edc628baae0268f"
+    },
+    {
+      "path": "software/airwatch/ui/home_feature_background.py",
+      "size_bytes": 3742,
+      "sha256": "a58e17633252ad92639ca796e13b712a56129354083587aa0d526eba76937a71"
+    },
+    {
+      "path": "software/airwatch/ui/plots/__init__.py",
+      "size_bytes": 514,
+      "sha256": "32abed3e38ea1ba6f59a82377e72e0cc0d400a52cf4848f7881e5ec89dc9422d"
+    },
+    {
+      "path": "software/airwatch/ui/plots/bispectrum_renderer.py",
+      "size_bytes": 1402,
+      "sha256": "a2144756bd9d6b920fdc87763781b8b14c748fa88349f2caa00c4e8f03616a78"
+    },
+    {
+      "path": "software/airwatch/ui/plots/feature_renderer.py",
+      "size_bytes": 1857,
+      "sha256": "ea29cef1aba596fdef2814ad309ecaf0204ca48805767cf4440a352f3f780e42"
+    },
+    {
+      "path": "software/airwatch/ui/plots/hht_renderer.py",
+      "size_bytes": 1368,
+      "sha256": "2eb3a1ebb21f3f840c1470981a2f4966f88a0b4274130b08cc4a36a35f021714"
+    },
+    {
+      "path": "software/airwatch/ui/plots/home_feature_renderer.py",
+      "size_bytes": 3855,
+      "sha256": "6fea6b312a4c5b0300cbbc8e734740768cf8cfc9efa07df812fc24fc74f7aac2"
+    },
+    {
+      "path": "software/airwatch/ui/plots/jr_renderer.py",
+      "size_bytes": 1424,
+      "sha256": "9b3edad8938e07a6d568d3f1b0110f69cfeaf341efdad0db4bd8fba537809b6c"
+    },
+    {
+      "path": "software/airwatch/ui/plots/plot_registry.py",
+      "size_bytes": 9286,
+      "sha256": "2dbba297d8d653db804b38adefd45f675586f6946b3dc324e0f4c8d6d14b3f09"
+    },
+    {
+      "path": "software/airwatch/ui/plots/pyqtgraph_renderer.py",
+      "size_bytes": 5568,
+      "sha256": "a9ead049cb72a568ac5aa1e764bc48a1c08c9e1d5a77776a59d4debc5bdaa711"
+    },
+    {
+      "path": "software/airwatch/ui/plots/waterfall.py",
+      "size_bytes": 9023,
+      "sha256": "4f13361b4311da589b8decfe40b7bda1629a6121bd59586f124ce355b137dd79"
+    },
+    {
+      "path": "software/airwatch/ui/plots/wavelet_renderer.py",
+      "size_bytes": 1587,
+      "sha256": "07847cd9363f3f9980f903aa9fc9a468942d30804bdeb3624a33e86fdf379c95"
+    },
+    {
+      "path": "software/airwatch/ui/recognition_background.py",
+      "size_bytes": 4501,
+      "sha256": "96383f0eb48101cd7b9311b88f1f66c618c81985d3c5d202568db0dcb0233274"
+    },
+    {
+      "path": "software/airwatch/ui/recognition_workbench.py",
+      "size_bytes": 16326,
+      "sha256": "38b270593762b569382eaa1f91681c8f35093052d6e7ba133deb5e9352f540df"
+    },
+    {
+      "path": "software/airwatch/ui/signal_workbench.py",
+      "size_bytes": 11083,
+      "sha256": "9d737746cb04754359844a3c149c3702f3eaa80657aad660b8e388dad506653e"
+    },
+    {
+      "path": "software/airwatch/ui/tsne_background.py",
+      "size_bytes": 2577,
+      "sha256": "88b49dfbcafd3ba50370c5bf9706de17a65441736d5f7f406d9c16df8b519fce"
+    },
+    {
+      "path": "software/airwatch/ui/uav_background.py",
+      "size_bytes": 4671,
+      "sha256": "f69e9115c42cce860bdc07c0ed4679de163b1de5a2f606ee0d484992253fec2c"
+    },
+    {
+      "path": "software/airwatch/ui/uav_plot_panel.py",
+      "size_bytes": 9663,
+      "sha256": "6c731fa909e334d406d4e02f037487486879733bb153ceb89f0f80386f7e5135"
+    },
+    {
+      "path": "software/airwatch/workflows/__init__.py",
+      "size_bytes": 2229,
+      "sha256": "2720441e26ee1b0f80f4569ca610984c2046f367e4d5194a9d27e005b9418976"
+    },
+    {
+      "path": "software/airwatch/workflows/bearing_batch.py",
+      "size_bytes": 19556,
+      "sha256": "ef791e978c487aeeea03ed219c076e35875d681775877624c9b261ce20b172d0"
+    },
+    {
+      "path": "software/airwatch/workflows/bearing_diagnosis.py",
+      "size_bytes": 4819,
+      "sha256": "31b3fc7e632bfcd1401a4f3964b8cc3e7c3a87c76e8c1fc2b74d21b38bdc2e79"
+    },
+    {
+      "path": "software/airwatch/workflows/bearing_preview.py",
+      "size_bytes": 2676,
+      "sha256": "17151d744ae375b1114cc569491951618b21fe456d8dfbda154e33a8aad2b655"
+    },
+    {
+      "path": "software/airwatch/workflows/bearing_progressive.py",
+      "size_bytes": 10200,
+      "sha256": "e1e7fb6b7f6da22ae84ec0385f3dddf9232f936a405966356851c4a0f9fb17f5"
+    },
+    {
+      "path": "software/airwatch/workflows/general_recognition.py",
+      "size_bytes": 5415,
+      "sha256": "02303e8a05dcf93c7e32a0dafdc584e8aa5e01393b6c9c477462c0ab69986faf"
+    },
+    {
+      "path": "software/airwatch/workflows/historical_generation.py",
+      "size_bytes": 17079,
+      "sha256": "311fb8bac85ea7b2ca1ccc111781b0ad21ae66b56d720eb3ff2f3ad019858fc4"
+    },
+    {
+      "path": "software/airwatch/workflows/historical_model_comparison.py",
+      "size_bytes": 17138,
+      "sha256": "d0f4c53cba1058b28bbccaf79f5843e67116ba8ea942e6e7d62e0a57a1311841"
+    },
+    {
+      "path": "software/airwatch/workflows/ku_leuven_recognition.py",
+      "size_bytes": 8327,
+      "sha256": "d44b9ea7ed5b84d7c21a0efc1962836e2dc97b34d3ef8411984847990876ca64"
+    },
+    {
+      "path": "software/airwatch/workflows/uav_contract.py",
+      "size_bytes": 4380,
+      "sha256": "3007bb51289a52e07de5bf6758fbc97a34701aa70893a2890a72cb252730d6f1"
+    },
+    {
+      "path": "software/airwatch/workflows/uav_intake.py",
+      "size_bytes": 3370,
+      "sha256": "de26e432ce542ae4682767a1f11f225d00815a4041c8a5286d4945509847b8f9"
+    },
+    {
+      "path": "software/airwatch/workflows/uav_preview.py",
+      "size_bytes": 3373,
+      "sha256": "4166d8e9a30a09deebc0057fb28acff1a788d89bb794485782e77fd6475b5173"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_added_noise_robustness_seed20260908_v1.json",
+      "size_bytes": 20056,
+      "sha256": "f5a8fff5253ce8a694451aa2129027c5ce332789f5dd8fbf11e8fd5998a78174"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_added_noise_robustness_seed20260908_v1_failure_analysis.json",
+      "size_bytes": 56832,
+      "sha256": "3a1a9bb96c5958a595bf105239e5d91225df96dd8ac6b65ec8da96e2449ed304"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260908_v1_test.json",
+      "size_bytes": 4511,
+      "sha256": "12bb7d499f9d7c66b2aadef923c2c5f0687c014d76a2a8af7015db30cd2deb13"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260908_v1_training.json",
+      "size_bytes": 43397,
+      "sha256": "08023090e0a61c6148a7d7bc029ae77aa1aae15943ac69e04875d7b043329609"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260909_v1_config.json",
+      "size_bytes": 809,
+      "sha256": "f0055ed5cbced140efeccee68bfa541353c0593bb39305d96257fbabdef65b5a"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260909_v1_test.json",
+      "size_bytes": 4576,
+      "sha256": "a3955dc0d83f505dc8b4641f45a4a00fa92fc1d3fd0ee42c2d5b507a20d14ed6"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260909_v1_training.json",
+      "size_bytes": 43667,
+      "sha256": "3f152c91ab4624af63258da1d3f648b8830c4285d09b9d889d3ff131533022db"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260910_v1_config.json",
+      "size_bytes": 809,
+      "sha256": "31dd4439f644621e7504323d48e6f21336989e71d828cefd63a0d41bec3f794b"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260910_v1_test.json",
+      "size_bytes": 4548,
+      "sha256": "9cce1dca1c61c3795716148efa02763b006781c5c1d1aac1d5afafa0e93e5e0c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_cnn_type_seed20260910_v1_training.json",
+      "size_bytes": 70723,
+      "sha256": "73a2b08e6cc0cdb03d2e1c9e2c9f33362d72e807cd7834b08c8e7b59c67e922b"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_adaptive_presence_seed20260908_ablation_v1_config.json",
+      "size_bytes": 1038,
+      "sha256": "ab88c09f4b68910569d6b13634dab372a93279c3563d25a24cb94634b00215b7"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_adaptive_presence_seed20260908_ablation_v1_test.json",
+      "size_bytes": 6260,
+      "sha256": "224bdbde409ca3b013922adfb9a5ecbe0b22f587206fc9f2ce91e32a40b2961f"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_adaptive_presence_seed20260908_ablation_v1_training.json",
+      "size_bytes": 40251,
+      "sha256": "ead7ce89af0682c7b2141b356d141543a735f2843b39f044f4f2253ebdd9c76b"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_adaptive_type_seed20260908_ablation_v1_config.json",
+      "size_bytes": 997,
+      "sha256": "e0b58d87be8123cbfa8093a092831803db78f6a4f66e2f1b69dccf14eb5a00d6"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_adaptive_type_seed20260908_ablation_v1_test.json",
+      "size_bytes": 4823,
+      "sha256": "486af782dfcbd92810fcda1e286a52e975a050ee292a53fd042bfb0af6f56759"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_adaptive_type_seed20260908_ablation_v1_training.json",
+      "size_bytes": 46538,
+      "sha256": "66dde7b14c83ae2091fc4f0f2ca4ab96f25dda60de737d220cbf7a7ca386b18a"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_branch_ablation_seed20260908_v1_summary.json",
+      "size_bytes": 10227,
+      "sha256": "5e29bfba112a267b2f8240f1dc181d6c97ec28d8e47c6abecfe103b68969faf3"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_concat_type_seed20260908_ablation_v1_config.json",
+      "size_bytes": 991,
+      "sha256": "c38a1b2841f0d9015d2cd6b4b030bed583d66175aa7fb8494ae8c6c42553944a"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_concat_type_seed20260908_ablation_v1_test.json",
+      "size_bytes": 4692,
+      "sha256": "fd6385571634c459914cb87bdd1ad6c375a82328bad896f9b46ed10698a0d000"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_dual_concat_type_seed20260908_ablation_v1_training.json",
+      "size_bytes": 28087,
+      "sha256": "9132c024c2bd179b591051cb30431f3a570d9bd1d76cbf588c4acc6716c19011"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260908_v1_test.json",
+      "size_bytes": 4607,
+      "sha256": "1e3e05a750425956e23c299450a508e280dca9f1067b80822c9dc26a18d29d41"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260908_v1_training.json",
+      "size_bytes": 50388,
+      "sha256": "5909e8b0b0dfce0f8a296e63aca7cafcb719cc2279df3e96868fc8dff55c1407"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260909_v1_config.json",
+      "size_bytes": 823,
+      "sha256": "a49ef7206eb7340df05651e6feffc9726b4f9a28845559e5b322ba7aa8e30f01"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260909_v1_test.json",
+      "size_bytes": 4486,
+      "sha256": "f8585840129bacbe1ea079057d7647df6c83f62903bbb745c557f20c21b0ec5d"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260909_v1_training.json",
+      "size_bytes": 33468,
+      "sha256": "cfff18166e7a583fbcfe85e22a8a4d55929d11174623afa53f9aa194b8bd6c21"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260910_v1_config.json",
+      "size_bytes": 823,
+      "sha256": "82e84a463f7b25b39e377b0742bbe0a9efe8b1e6fe2a63514dc378b9bfe60af6"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260910_v1_test.json",
+      "size_bytes": 4609,
+      "sha256": "74857787e03b317f5e7de8bd9b9ebc16090aaa7252a86866fd8de991ccf60bf5"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_resnet18_type_seed20260910_v1_training.json",
+      "size_bytes": 36959,
+      "sha256": "8544f295fc84d796f9e46b3805e32fc994e8caf9a6203e4798b418e1468f6cc1"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_spectral_type_seed20260908_ablation_v1_config.json",
+      "size_bytes": 927,
+      "sha256": "4f8b8cfcff5a8a876bb706a1ac8635a98e02223bfd7e43a1f8cba4d03e7a26d8"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_spectral_type_seed20260908_ablation_v1_test.json",
+      "size_bytes": 4621,
+      "sha256": "21e670d2b0e25035578476407ad7380a234e918802adaf135232628a818e59d1"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_spectral_type_seed20260908_ablation_v1_training.json",
+      "size_bytes": 30154,
+      "sha256": "155082088575ebb5e064861e72600ff318d38fe63a84af9d817babea8bce0807"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_noise_augmented_seed20260908_validation_v1_config.json",
+      "size_bytes": 1563,
+      "sha256": "eeafa40385034b74aa7727d34b1997f595a66e7ff45bdcc0190b25698b206a53"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_noise_augmented_seed20260908_validation_v1_training.json",
+      "size_bytes": 230139,
+      "sha256": "1a9cf416524f321e3908a59d599f6390ee373be5ae1ced6ef5d496801027f77c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_noise_augmented_validation_comparison_v1.json",
+      "size_bytes": 13215,
+      "sha256": "9a90ce94585e5fc899266b04d6f275ab393ae3e8ba64b95fc6c7cdbd42d527c2"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_noise_augmented_validation_comparison_v1_failure_analysis.json",
+      "size_bytes": 35416,
+      "sha256": "0d569530ed26b2fc566d1f34a35185493bb44a2bed737f01e85ca09630e4d8a7"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_open_set_calibration_v1.json",
+      "size_bytes": 36624,
+      "sha256": "e7cada743a82b0fad926d4a2da6513acb4be037807ef26a1dae09213a22d9ca6"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260908_v1_test.json",
+      "size_bytes": 4544,
+      "sha256": "3d13c3a8a41a30e80c6ae35bcaea7884832ac94207427c1e963074c1f36e7207"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260908_v1_training.json",
+      "size_bytes": 36519,
+      "sha256": "a65a237242714a0765b8244f3e477a736c6b7903579641cfc83316f45b9dbbda"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260909_v1_config.json",
+      "size_bytes": 808,
+      "sha256": "ce12513513b3b8be85c13cfa32287bbadb3377e4cabf9a8e70c95324468e5506"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260909_v1_test.json",
+      "size_bytes": 4572,
+      "sha256": "9f44fa68b8531bae159ce39e2607d1da106e427cc40791136670cfd4db28cd4e"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260909_v1_training.json",
+      "size_bytes": 60365,
+      "sha256": "31b2e2b287318880567c59e192356ff164d91502656fa105800d62d7d30868f4"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260910_v1_config.json",
+      "size_bytes": 808,
+      "sha256": "5df3d633544dfd4d40ecc47c082fe8006b00ecff351cf5140ddf0fff154a5022"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260910_v1_test.json",
+      "size_bytes": 4563,
+      "sha256": "1faee9e607ac5645d046a6d518f20235d1fa78617efecfb814a8ba0dc166b14c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_tcn_type_seed20260910_v1_training.json",
+      "size_bytes": 29915,
+      "sha256": "90de816da64b161c31b1b6d1ea6a35f2e8dcf461621fa843fa8409fdd0a329eb"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_type_baselines_3seed_v1_summary.json",
+      "size_bytes": 15849,
+      "sha256": "0c1ceb28052be5c436c280dd6c0807d32caa2c02fc5883a1fb627b4f9264ffc4"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/dronerf_type_baselines_seed20260908_v1_comparison.json",
+      "size_bytes": 5470,
+      "sha256": "5c75e3b192014b88eefaeb2294f38e61111b77a2323b735f5a9bdb6f271ab019"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_augmented_local_comparison_v1.json",
+      "size_bytes": 41645,
+      "sha256": "c1cbc090efc2d3fb77753327dca9bd2a9f7a005e1206b32c20852bb692b59f12"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_local_reproducibility_v1.json",
+      "size_bytes": 8957,
+      "sha256": "e381ea62a8be4e771206b47b273500d373ea5f3f3f74d677a7b27f4c6de50028"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_local_stability_diagnostic_v1.json",
+      "size_bytes": 10245,
+      "sha256": "b13479b7d7941aaa6789aafa0cf5e00ab53540001ceddd37fe6f4f5505a3172c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_noise_error_diagnosis_v1.json",
+      "size_bytes": 80387,
+      "sha256": "803ea6567af2b65ce278159a815c25fb4667236d14806bac7632acf8f3055a34"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_resnet18_local_development_seed20260909_v1_config.json",
+      "size_bytes": 1202,
+      "sha256": "95bdff68a572075376747903c252dee7b2249174dc935c9a95623b6ad14e0fc2"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_resnet18_local_development_seed20260909_v1_training.json",
+      "size_bytes": 49695,
+      "sha256": "41d5224c59521abc4258b04b4c4fee32e76a478dc8c052c093fcee940e653104"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_resnet18_local_development_seed20260910_v1_config.json",
+      "size_bytes": 1202,
+      "sha256": "fc17bb71cea93196ba3d46bb7f5561b487f14434c65cbbdd8e2156691ad20184"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_resnet18_local_development_seed20260910_v1_training.json",
+      "size_bytes": 36871,
+      "sha256": "fae960712be6d2eaebd69dd1fefd8517c45d9c6a9bed86cb9d0776d11d011c8c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_resnet18_local_development_seed20260911_v1_config.json",
+      "size_bytes": 1202,
+      "sha256": "cf355055b3352d6041c9f1fc260757419b9b147c72a17287b8bc117d982c29c9"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_resnet18_local_development_seed20260911_v1_training.json",
+      "size_bytes": 26279,
+      "sha256": "56259c4d876f2959c344534b05c96bdf4dea9c947602191a477781dbc43e2c6f"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_strong_noise_local_comparison_v2.json",
+      "size_bytes": 41883,
+      "sha256": "10f0fc265d0424a13a29f7c21dfb9dad1c6560498a0b47bd1bc406f0bb71024c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_seed20260909_v1_config.json",
+      "size_bytes": 1268,
+      "sha256": "8ae10758ba284a6943c6d01568cc55fe13edbac2981c370e62352c1de4bac320"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_seed20260909_v1_training.json",
+      "size_bytes": 31434,
+      "sha256": "310b31396d396e6945fd19d01993afecc1698a36fe83f285e620291ab9c0a31e"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_seed20260910_v1_config.json",
+      "size_bytes": 1268,
+      "sha256": "c1bae79bbdd2e3fa196917ccf655ef8e7f8b1b40010d40acf53b965302369a9c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_seed20260910_v1_training.json",
+      "size_bytes": 31386,
+      "sha256": "7dfa36cb945250ce8bb2c45ce02aed1e3633aca95caf1331cffc5742fff0aa9b"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_seed20260911_v1_config.json",
+      "size_bytes": 1268,
+      "sha256": "cf10afbcca9156cb2243abd0289dba3d59208c4fd7bf03341ba4e28369df1055"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_seed20260911_v1_training.json",
+      "size_bytes": 49559,
+      "sha256": "a3852a751a6238e7a522eb9dd39afc29223c701668c5c2fadd3905c6bc7577c0"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_augmented_validation_robustness_v1.json",
+      "size_bytes": 544395,
+      "sha256": "b32808c364b419466fec64b913c533af4188652419611f9523c7ab81f55dc903"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_local_development_seed20260909_v1_config.json",
+      "size_bytes": 1187,
+      "sha256": "c047d7fa177e6b097ca786528d98a6595198a96a04b7b7b0f7921d7a767f8327"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_local_development_seed20260909_v1_training.json",
+      "size_bytes": 47073,
+      "sha256": "7c314468df53372161bd1abf21c56cb45d89a2b03e5ffa0d7a610cf23e69401a"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_local_development_seed20260910_v1_config.json",
+      "size_bytes": 1187,
+      "sha256": "bf448b8fca64d8f62e20d7632b575d3f2447c47e43f32bcf4748d380f5102105"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_local_development_seed20260910_v1_training.json",
+      "size_bytes": 31540,
+      "sha256": "b77d6a5360d4605cf83e7202b5a0d27ec50c7b0fc77f56ee9b1567134dd777dd"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_local_development_seed20260911_v1_config.json",
+      "size_bytes": 1187,
+      "sha256": "99a028f1baee6d88e54874706eb7bbd597d364401e6d1bc5e777a8b11032f652"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_local_development_seed20260911_v1_training.json",
+      "size_bytes": 49846,
+      "sha256": "8b4e3789736018425d29b56c6bfef741bd94482352dab81a0f0218f46ce7b38f"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_seed20260909_v2_config.json",
+      "size_bytes": 1278,
+      "sha256": "62028bcca148a1fcf9bb4f4bd1b06c48fd66dcc6c75ffd44a8181a5f0612e92c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_seed20260909_v2_training.json",
+      "size_bytes": 31292,
+      "sha256": "a8408bde04ac5c25631b62241a2802508e404ee9902e39acc5539baba798a4ec"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_seed20260910_v2_config.json",
+      "size_bytes": 1278,
+      "sha256": "8e07c08208abe5da60a721f93cdbba388199ca64e279be680de301c84faa81d7"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_seed20260910_v2_runtime_contract.json",
+      "size_bytes": 4543,
+      "sha256": "2fe65cd47117d1526c4655c7c1bae41ed02a09ea9eaa3b3803ae23577a8a4a8d"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_seed20260910_v2_training.json",
+      "size_bytes": 52248,
+      "sha256": "8719426c7c0ec468a138c7505ab10547e965047e64ef37e0e3f1807865d37115"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_seed20260911_v2_config.json",
+      "size_bytes": 1278,
+      "sha256": "8ab605542d2a2de520d7951a565d69915f594b0f90d91a9222bddee54bb656e8"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_seed20260911_v2_training.json",
+      "size_bytes": 39377,
+      "sha256": "4ee77a08eff957ef07643e13e037b3d4806ba35d222f29a9f4a484833563d2ed"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_strong_noise_validation_robustness_v2.json",
+      "size_bytes": 542363,
+      "sha256": "e3f9c72638c9181221177a3cb915f2ade26ef89511332cccf911e9094007a608"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_validation_robustness_v1.json",
+      "size_bytes": 546986,
+      "sha256": "190f842518eedabc2e6d514be1a1d0fc0464a1acc36bad15210e93d13a7d8861"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260909_v4_config.json",
+      "size_bytes": 1544,
+      "sha256": "778a95ae158e46f8041109dd81d4d883f21183e978a8af7f640b8a986cc6bce8"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260909_v4_training.json",
+      "size_bytes": 84469,
+      "sha256": "c4202452966d46995149a41e78daa1c5941c34c8bd486096429f36664f3a8a1f"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_config.json",
+      "size_bytes": 1544,
+      "sha256": "3af90d988560380a32406fbe167c106d7617923d324f8168cadd4ef3448fe241"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_runtime_contract.json",
+      "size_bytes": 5611,
+      "sha256": "82081842571a166234d599dabd091538df313701c5f4c160a803b1d0e86beba5"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_training.json",
+      "size_bytes": 58208,
+      "sha256": "9c80e825c4c26041713539af901e8ee4079482364ef0bf097dc3924128720779"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260911_v4_config.json",
+      "size_bytes": 1544,
+      "sha256": "8558cd3e54699ef1bf4d293bf3ca1797ddcc11fa6a57ea307217f6eaf6ab94d7"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260911_v4_training.json",
+      "size_bytes": 81166,
+      "sha256": "0bc021141084aefa4c7968ebae9a355a7c226bd8b887b94e25f16fb9f654812c"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_validation_robustness_v4.json",
+      "size_bytes": 546847,
+      "sha256": "1f0572bb980f25cd3b6543b1519c9ea2a1d71de87a71ab2f7c076bfb352b7966"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260909_v3_config.json",
+      "size_bytes": 1536,
+      "sha256": "62c598ded10e96cfde4ce01d4d6ca8626377d4acfe07585d516e08466b6283da"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260909_v3_training.json",
+      "size_bytes": 34185,
+      "sha256": "d882252f8304efa0165a61c9290f6674de8ba4bb51caa1ef64957043d122f816"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260910_v3_config.json",
+      "size_bytes": 1536,
+      "sha256": "3acc13471347e6ffcfca835c769f3431d7004ad19d1cf573bbbba924011cc292"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260910_v3_training.json",
+      "size_bytes": 105247,
+      "sha256": "caa6dc65d198e17bc33f8a83355248ac5b2095565060c179e72aa23c3a93a038"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260911_v3_config.json",
+      "size_bytes": 1536,
+      "sha256": "2bf0166970ac6943271c301dfe81af5af36a188bf605cf03c193ae6d9bf3cb79"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_seed20260911_v3_training.json",
+      "size_bytes": 51068,
+      "sha256": "41c1cd75a4ae92ac986477f5117b4e765f7ce13d08e73119bb2dd9a5ce261252"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3.json",
+      "size_bytes": 545171,
+      "sha256": "a1d1fd90a98b9b4eb75f38c8f71284d8f727409cc88121ec74e2eaca9bf383f2"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_weighted_worst_noise_local_comparison_v4.json",
+      "size_bytes": 44694,
+      "sha256": "739ab39c90928f63c2c1d7f888716feadb0d09d1bbffb3bd5ba8b33f8dc48323"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_worst_noise_selection_local_comparison_v3.json",
+      "size_bytes": 44228,
+      "sha256": "8ca89fed4ea9e5ff0501fcf182eadaeb6f3f4930c1dd3f00c389fa099ed53ecd"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/smoke/ku_leuven_tcn_local_smoke_seed20260909_v1_config.json",
+      "size_bytes": 1150,
+      "sha256": "a4e96a15d1b29e03129409192bb72b55c90a07ec7d5cb6a14464abd415984e66"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/smoke/ku_leuven_tcn_local_smoke_seed20260909_v1_training.json",
+      "size_bytes": 5566,
+      "sha256": "badcf866ba92390036f53d28333a63278c313dbaeb5bbc56d0b6ccdc50912292"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/smoke/ku_leuven_tcn_local_smoke_seed20260909_v2_config.json",
+      "size_bytes": 1150,
+      "sha256": "d00c2b75533d14daab2f53ee1b268600ab3d86e7a280c92a72de27d8c1b90373"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/ku_leuven/smoke/ku_leuven_tcn_local_smoke_seed20260909_v2_training.json",
+      "size_bytes": 5568,
+      "sha256": "7865ac8b350c68b42a02d2dfb12c0b26d42d9fa2f353aa055282a55fee11e854"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/smoke/dronerf_tcn_low24_local_smoke_seed20260908_v1_config.json",
+      "size_bytes": 973,
+      "sha256": "0a278d291e4205cb28658a0a9e9c36cee7d3b259a726c1b1f6c29358a9f45390"
+    },
+    {
+      "path": "software/artifacts/evidence/uav/smoke/dronerf_tcn_low24_local_smoke_seed20260908_v1_training.json",
+      "size_bytes": 7044,
+      "sha256": "1653c23bcb7c464437325600178557b79b49983df1c3ffb41c613ad83ece3dbe"
+    },
+    {
+      "path": "software/datasets/uav/dronerf/download-log.json",
+      "size_bytes": 1702,
+      "sha256": "d0d56e011579ec31c96951ffc0583b3bedb287256b18ea21359af6503cbda4cb"
+    },
+    {
+      "path": "software/datasets/uav/dronerf/README.md",
+      "size_bytes": 2038,
+      "sha256": "3efde8c2dd19d22b99eb866a1a4f6f1551bf021125ddc511a468701c1a366801"
+    },
+    {
+      "path": "software/datasets/uav/dronerf/source-semantics-review.json",
+      "size_bytes": 1473,
+      "sha256": "90157dd5651b7aaf8635759d5f0f7e124477d230898c61edf555d5d16baedeb6"
+    },
+    {
+      "path": "software/datasets/uav/dronerf/split-audit.json",
+      "size_bytes": 2133,
+      "sha256": "d2e792edad6b6dfb3d065970a88fa2df17f00575b75cabdd7eaaa2a6ca9dab4d"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/acquisition-semantics-review.json",
+      "size_bytes": 2094,
+      "sha256": "0981e3167cfb44143c298e2c87cb8597ba1d48802563826695aa9aba83addd7c"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/compatibility-semantics-correction.json",
+      "size_bytes": 1542,
+      "sha256": "818ac34ff564e98a0e2859058a74822cbc680ca9ee3c74bf2aa9a44d07d44e59"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/download-log.json",
+      "size_bytes": 2253,
+      "sha256": "187e9a5df338ee8125d93dd5b9ce30c8f5b27d335817a38863cb4b236d737520"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/external-unknown-protocol-validation-v1.json",
+      "size_bytes": 752,
+      "sha256": "4f8367cbb31a0365791720f72310528442d4d020641830b7df427593d2e1802b"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/external-unknown-protocol-validation-v2.json",
+      "size_bytes": 901,
+      "sha256": "5d7d7a675eac60e41720276ece59de18a3b264625a961c59fee9ffa5806edfce"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/file-inventory.json",
+      "size_bytes": 7398,
+      "sha256": "daebfe290ed7b0ba35ae0170f4381d64117a69706c8494ed858f0fccd0122896"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/frysky-download-verification.json",
+      "size_bytes": 953,
+      "sha256": "80bd53c9b2edde912c9402e458560cb334a15261021bc7e2fe0726e0827d3920"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/known-materialization-verification-v1.json",
+      "size_bytes": 1417,
+      "sha256": "1636b2ce7db6ce60c018b059ed535b892e5631cd10908080ba89434ac970d2e9"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/known-preprocessing-acceptance-v1.json",
+      "size_bytes": 3961,
+      "sha256": "789e4e9c01536a8a30ee6457b4056f7bbe5a8ef0d55a263caeb55b3ca310e896"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/mini2-rc-download-verification.json",
+      "size_bytes": 951,
+      "sha256": "510da561aadb903fec27a72280507449ccd0dc635b7bae79ab7014a2a3d1ce74"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/official-api-response.json",
+      "size_bytes": 28622,
+      "sha256": "0d65561efebda94605655eef065b60040b11f0634e3583012b9e2b72fee502a1"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/README.md",
+      "size_bytes": 14374,
+      "sha256": "0c2774d9e0f3c67fba419ecca384dc49bd7ecdae18917adbd53884347b95ee8a"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/sjrc-pro-archive-audit.json",
+      "size_bytes": 8511,
+      "sha256": "be7c53dc533db173fed7a3931c8abe5a3c4419c60d004585614c6a7c35e3d1e7"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/sjrc-pro-sample-content-audit.json",
+      "size_bytes": 1611,
+      "sha256": "b1ca79aeef503d7f5f10a1949939e97c9ead93b97354c4a27d08f181e1feadd1"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/sjrc-pro-window-reader-acceptance.json",
+      "size_bytes": 1563,
+      "sha256": "c5f039cc4b8ea5a27bc1b07d0f68a1c62101a44e737d5f11e7b20f92a93b9562"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/spektrum-dx4e-download-verification.json",
+      "size_bytes": 958,
+      "sha256": "1295070224649c511c4fdf22b23c906957ea28af32b8307d49c851be746f1e8b"
+    },
+    {
+      "path": "software/datasets/uav/vti_droneset/archive-inventory.json",
+      "size_bytes": 1019,
+      "sha256": "8da373da682f4de06575d247d1782a722ed043bc1a0b79e4bb678f0db93ed2bc"
+    },
+    {
+      "path": "software/datasets/uav/vti_droneset/content-audit-v2.json",
+      "size_bytes": 45323,
+      "sha256": "638740c6e7fb3e5194cfc153b9d6032226a971a8d123d7311b710b2bc3655dc9"
+    },
+    {
+      "path": "software/datasets/uav/vti_droneset/download-log.json",
+      "size_bytes": 1095,
+      "sha256": "a97301acd60cd2a32f3be75a76290a1ca1f8232da983ad4c3058ab7099bc6d2e"
+    },
+    {
+      "path": "software/datasets/uav/vti_droneset/README.md",
+      "size_bytes": 2429,
+      "sha256": "e0a89af2317cce0ec73155456d17ef79008abe6588364a07066a56ccdb9f58e8"
+    },
+    {
+      "path": "software/docs/A800_ClaudeCode执行指南.md",
+      "size_bytes": 9529,
+      "sha256": "6e4234fca5313cf77390ea730dc693c4000aba1e3534af46f9c0c45175e62311"
+    },
+    {
+      "path": "software/docs/A800训练结果归档与接入说明.md",
+      "size_bytes": 4536,
+      "sha256": "60dc18b11da7cdd6f1765d0223321e69d4e6d340c8a6690b0ea742da0d21730b"
+    },
+    {
+      "path": "software/docs/README.md",
+      "size_bytes": 6286,
+      "sha256": "caa4679f559850aac784f19fac3a732ef172112632ed990bf6dce24cae8649ef"
+    },
+    {
+      "path": "software/docs/superpowers/plans/2026-09-29-a800-server-training-plan.md",
+      "size_bytes": 39725,
+      "sha256": "3cd320da5de729cafe402538896b01c7a7688a133e415e13d2c2312d638f64a9"
+    },
+    {
+      "path": "software/docs/uav_data_audit_report.json",
+      "size_bytes": 1247,
+      "sha256": "cdb1e48d511cd8569bc2fc0867a91a6b8d1ac43150b3191d00b9c09550bfa956"
+    },
+    {
+      "path": "software/docs/uav_data_sources.json",
+      "size_bytes": 19872,
+      "sha256": "f99eebfb691d60638bbc153d4ea9ef450b16107a5dc9aeab7fb14af6a92a9e89"
+    },
+    {
+      "path": "software/docs/ui_manual_cases/manifest.json",
+      "size_bytes": 2515,
+      "sha256": "80033fae48baeaf3272b762963577afc41215a32f03c264289434f150c764720"
+    },
+    {
+      "path": "software/docs/ui_manual_cases/前端人工验收测试案例说明.md",
+      "size_bytes": 10054,
+      "sha256": "13450e7f59955e4588e68c2faff14f83ca2492c0c48bf7cd6b2ed0837e42fccb"
+    },
+    {
+      "path": "software/docs/ui_manual_cases/前端人工验收测试案例说明_无路径.md",
+      "size_bytes": 9845,
+      "sha256": "f7c030b0fb3f93f1a3c7e48bd6171e543945e2e7796bb166c74afb272350fb2c"
+    },
+    {
+      "path": "software/docs/优化报告.md",
+      "size_bytes": 22031,
+      "sha256": "61b310596e583a82c234c36bffba90687a333cda6aa3d47a372c6d212f004ee1"
+    },
+    {
+      "path": "software/docs/前端产品结构与功能规划.md",
+      "size_bytes": 22175,
+      "sha256": "3cb2ab7444ce73b2a55116fb7dbb43815175ceaeea0649a302a75ef3e2bc9a0c"
+    },
+    {
+      "path": "software/docs/参赛改造方案.md",
+      "size_bytes": 17893,
+      "sha256": "8f165de19e6dabc2e1d1973c51047d0ff06836037cec97655f3b91c8bc7ab9e3"
+    },
+    {
+      "path": "software/docs/图形能力盘点与迁移地图.md",
+      "size_bytes": 41723,
+      "sha256": "746bf0aff73c8fcb77f8eaab06e77f9bde43f3cbb720ffb4d31086e34d6daafe"
+    },
+    {
+      "path": "software/docs/开发与验收规范.md",
+      "size_bytes": 6998,
+      "sha256": "555af232c22fcc42384e6c123a2d21435ed1c07d016c2f5e8788bb1578fc8378"
+    },
+    {
+      "path": "software/docs/空域电波哨兵_竞赛技术报告雏形.md",
+      "size_bytes": 17771,
+      "sha256": "0f8feef0a9a88bb95c1d85c627a68f13e345419ba3fd7bba514eec2ebde7ad05"
+    },
+    {
+      "path": "software/docs/网上轴承模型对照记录.md",
+      "size_bytes": 18527,
+      "sha256": "8d95f2e019e5afeec4ee6b88eb125f0564526c89af8063fe82563d2390b092ff"
+    },
+    {
+      "path": "software/docs/轴承故障诊断_启动清单.md",
+      "size_bytes": 7803,
+      "sha256": "c82af085b0337709c8a32f709bd53673b2996775df71588b88a2633dbcabcb88"
+    },
+    {
+      "path": "software/docs/轴承数据适配说明.md",
+      "size_bytes": 5430,
+      "sha256": "2aa1ea6c27c70467f73fa0dc161a10a3b7056ae46ddeccc099b0b7d019f1529b"
+    },
+    {
+      "path": "software/docs/轴承训练准备说明.md",
+      "size_bytes": 14127,
+      "sha256": "05700ab71db0f3849e5f1b140483b55b3ed05f1ddf4b98c2d14ea5c4762f9890"
+    },
+    {
+      "path": "software/docs/项目功能与模块说明书.md",
+      "size_bytes": 13340,
+      "sha256": "1da016c6564b8ffde8fff86f811caa8d1fce225a093fd526e504d0250b8fb456"
+    },
+    {
+      "path": "software/docs/项目说明.md",
+      "size_bytes": 14083,
+      "sha256": "b7c9bf900abc19cf7e52f684ac314b74eb0da5019ce455e08e5d4cd38dcea36c"
+    },
+    {
+      "path": "software/main.py",
+      "size_bytes": 101182,
+      "sha256": "d4fe8c295ff547826d0b93db6d7046787236dd885dfcbd61a0840bacca92a64c"
+    },
+    {
+      "path": "software/main2.py",
+      "size_bytes": 140574,
+      "sha256": "e639c6615781f5b81abab55ba62dfea204c4f79f05898aa183d344ae2aa3caa7"
+    },
+    {
+      "path": "software/MainWindowui.py",
+      "size_bytes": 66565,
+      "sha256": "1ce045d8729f017fe4c7e4a0c3dfc002d72972a5bf1af3de83ce469b5f2ffb9f"
+    },
+    {
+      "path": "software/MainWindowui.ui",
+      "size_bytes": 67626,
+      "sha256": "74c856a468b4a44bf459c6da77ef3cf1e159212744ff7a8060da8907a373fddf"
+    },
+    {
+      "path": "software/models/__init__.py",
+      "size_bytes": 226,
+      "sha256": "4b4a6968dffb51c79d4902750ecb55b0384a49750920ca8500da92c34261bc6d"
+    },
+    {
+      "path": "software/models/cnn.py",
+      "size_bytes": 2167,
+      "sha256": "a82999c877e944c2c8eedd762244f87f7ddbadfea9d5054106e61a4bb20417a0"
+    },
+    {
+      "path": "software/models/cnn_light.py",
+      "size_bytes": 3024,
+      "sha256": "2665afdd715910cc58f07d4195f803d6ee2634793f62e182ebae46122a780a16"
+    },
+    {
+      "path": "software/models/generator.py",
+      "size_bytes": 1105,
+      "sha256": "31e1850f0d5821ef61100f0e6d03868a78ed800481d63bac4fa2a08c0cc53371"
+    },
+    {
+      "path": "software/models/individual_light.py",
+      "size_bytes": 3299,
+      "sha256": "42e5b359c3b4eb2f8807885d887909af19c18d3f62f4854868f48d0a84391400"
+    },
+    {
+      "path": "software/models/inference_file.py",
+      "size_bytes": 10200,
+      "sha256": "c3dfe877b23d72de83bd50bdc7e16fcd91e41766f45ec00bae66663ff5ff8428"
+    },
+    {
+      "path": "software/models/resnet.py",
+      "size_bytes": 4342,
+      "sha256": "0e6be7f56f5230146ddb5ccca0d432f3533b1dd723c1418ab17470197c207beb"
+    },
+    {
+      "path": "software/models/ResNet18_TCN.py",
+      "size_bytes": 3474,
+      "sha256": "d6a7eb851c81a54803360aea0a2f18b01314482737767a544064d6e98a58033a"
+    },
+    {
+      "path": "software/models/resnet_tonglian.py",
+      "size_bytes": 4303,
+      "sha256": "4f225941547f40d7c741db094575f5deadb42ea14003c5e5afb58d3a19ad5557"
+    },
+    {
+      "path": "software/models/utils.py",
+      "size_bytes": 33712,
+      "sha256": "4dfd41e39ecdf4b7b65e74113edc230183b53277257e0e8b8714f7623a2f3d4e"
+    },
+    {
+      "path": "software/newwindow_.py",
+      "size_bytes": 68481,
+      "sha256": "37c24a11546921331b2a9a1442bf2685b88dd9f37b8a3340db0394ea399dd9b8"
+    },
+    {
+      "path": "software/packaging/airwatch_bootstrap.py",
+      "size_bytes": 2096,
+      "sha256": "0250786bc5f1d5fdea3b0d0edeb72006cab02722efb5992717b6a5b81164fcb1"
+    },
+    {
+      "path": "software/packaging/airwatch_debug.spec",
+      "size_bytes": 1461,
+      "sha256": "573b7444284a80595e5224571905a5f887dd6edc0f7ac972176947e7250a12c1"
+    },
+    {
+      "path": "software/packaging/airwatch_onedir.spec",
+      "size_bytes": 2485,
+      "sha256": "b57e99f41fd9bf4e63cfd05c3fa9199d504f7747231917aee7659034ad857455"
+    },
+    {
+      "path": "software/packaging/airwatch_torch_diagnostic.spec",
+      "size_bytes": 804,
+      "sha256": "ca0fa8d2882bf0e5fb6da418b444123338fdbb0363432b18bf646001184a2d81"
+    },
+    {
+      "path": "software/packaging/build_installer.ps1",
+      "size_bytes": 1290,
+      "sha256": "d382e0ac7a6ec628df2f842e6a1ff96de42aafe3faef45fea681a53101bf33d8"
+    },
+    {
+      "path": "software/packaging/build_onedir.ps1",
+      "size_bytes": 2141,
+      "sha256": "8a52972c38ebc02d5c893611bf20af3d6e3f50623f78b40770350a55b050e6f0"
+    },
+    {
+      "path": "software/packaging/dll_probe.py",
+      "size_bytes": 645,
+      "sha256": "79a5999d4a3ed594fa4eff0d8b2ac7e9e9edcfff8d7e49b16d8a2dbf981d3a8a"
+    },
+    {
+      "path": "software/packaging/dll_probe.spec",
+      "size_bytes": 636,
+      "sha256": "06753123e6975a92c9ed0b390cf61a553fbcbc46c469b0a83dc88e00c044b519"
+    },
+    {
+      "path": "software/packaging/prepare_portable_release.ps1",
+      "size_bytes": 2653,
+      "sha256": "1bdaad86b67da0b305587daf9b8361167dd6973a6103bc9aab4a24da507ed60b"
+    },
+    {
+      "path": "software/packaging/start_airwatch.bat",
+      "size_bytes": 129,
+      "sha256": "82f72d5cfad1fe10602f577691e766c8676032fcf92f204295c7998cff880548"
+    },
+    {
+      "path": "software/packaging/torch_dll_diagnostic.py",
+      "size_bytes": 1384,
+      "sha256": "f50e93f6576a18d879deb0f72b51e0fe8f84d3eba03c4672125f63f76dadd50f"
+    },
+    {
+      "path": "software/packaging/torch_dll_path_hook.py",
+      "size_bytes": 1075,
+      "sha256": "f89de212458112c71ad4bf5cea8cb92cf0edfd7d80550165a6bc3fa818dadb31"
+    },
+    {
+      "path": "software/packaging/validate_portable_release.ps1",
+      "size_bytes": 3390,
+      "sha256": "4add4dcec248caace3c397ae6b77855754107649cae22b267a8c71ad4ff6525a"
+    },
+    {
+      "path": "software/packaging/使用说明.txt",
+      "size_bytes": 2295,
+      "sha256": "268866160cfb08e928c52c8067c044b4e42975d2a9e8e3adde989b43044d80fc"
+    },
+    {
+      "path": "software/README.md",
+      "size_bytes": 7079,
+      "sha256": "80f23cec971561c5eb3eee82afcc7bd792b36dd3add9b5d093582e1b08271ba2"
+    },
+    {
+      "path": "software/requirements-hht.txt",
+      "size_bytes": 332,
+      "sha256": "4da2051729705564382d17f63146d4b0a1138a4e761c181616c123eddde282a4"
+    },
+    {
+      "path": "software/requirements-runtime.txt",
+      "size_bytes": 756,
+      "sha256": "ddb004b02430aaaa971646100901a5062dede145782615ed8eca8a26762c942c"
+    },
+    {
+      "path": "software/requirements-uav-data.txt",
+      "size_bytes": 178,
+      "sha256": "f067df6546b436a8359574afa8d6a4c46a482168b7d239e24b3b08eec15add3c"
+    },
+    {
+      "path": "software/scripts/bootstrap_server.sh",
+      "size_bytes": 2052,
+      "sha256": "bfb14acc8efa240d99ac6ca6a592de1b28a956aebd8d06425c8cc9b5667ee153"
+    },
+    {
+      "path": "software/scripts/export_results.sh",
+      "size_bytes": 425,
+      "sha256": "052fd3de2493787385a6b5dd7d39291e6689435bde286a285160674fa6ed69d3"
+    },
+    {
+      "path": "software/scripts/run_allocated_gpu.sh",
+      "size_bytes": 875,
+      "sha256": "943609095f9d53db541dc205c021eb77e34cc526a44c1e0f4dd906e7c1b93744"
+    },
+    {
+      "path": "software/scripts/run_app.ps1",
+      "size_bytes": 2222,
+      "sha256": "a2a16ff601a5a6bc3316c45631e4bfc2ac7ab8049d901e95b7fa9bb4e3ebbd83"
+    },
+    {
+      "path": "software/scripts/run_cpu_checks.sh",
+      "size_bytes": 402,
+      "sha256": "04e68ff844f9c571330c952bda42d68d1ccacdbb8f731fc9c92a5119a88bede0"
+    },
+    {
+      "path": "software/scripts/run_tests.ps1",
+      "size_bytes": 1850,
+      "sha256": "2fd9c36dae2150532fce3ccefebcba3bb10463efaa4fdadc26aefab5f08c4bd5"
+    },
+    {
+      "path": "software/scripts/verify_hht_replacement.py",
+      "size_bytes": 3655,
+      "sha256": "9de12c4acf536cde2fe0f660862241ac692fee3b5b00168f5e8758d3f10aee52"
+    },
+    {
+      "path": "software/tests/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "software/tests/audit_general_recognition.py",
+      "size_bytes": 4068,
+      "sha256": "68c0970af6faefb03076a09aa8e7d1acbfdef5d9981fd78b5e03d7ef4e778801"
+    },
+    {
+      "path": "software/tests/README.md",
+      "size_bytes": 5695,
+      "sha256": "3d530c5ad6591abcdbd66dd195543d2fef9adde2366e0a0364e7c7e6b45490eb"
+    },
+    {
+      "path": "software/tests/smoke_test.py",
+      "size_bytes": 3867,
+      "sha256": "24be7445269eac356e5918884d4231646647d7e0438a0fe5a60daac880f0928d"
+    },
+    {
+      "path": "software/tests/test_a800_allocation.py",
+      "size_bytes": 7360,
+      "sha256": "d2bedf4219855d1f12e4fb6da7105e175969bdf5ab6760b4a0d534eb69e48bd2"
+    },
+    {
+      "path": "software/tests/test_a800_bundle.py",
+      "size_bytes": 1213,
+      "sha256": "f38a8156d87961e6178ec3fbc0c20e4626f98122ced1fa7de0e6727ef85f6fe7"
+    },
+    {
+      "path": "software/tests/test_a800_bundle_review.py",
+      "size_bytes": 5216,
+      "sha256": "9fcd04c9f4a3f7528836d8e439af41c02e4bb1620010c4fd6155fa6b239eb880"
+    },
+    {
+      "path": "software/tests/test_a800_data.py",
+      "size_bytes": 1174,
+      "sha256": "cbce0aaa6da7a62d660a55cc70f4c9c4d034b26d282d13bbba563048b8235dc0"
+    },
+    {
+      "path": "software/tests/test_a800_data_integrity.py",
+      "size_bytes": 11855,
+      "sha256": "65b3eee6e6ed7f11282b890070d77e1ef9f8c117b2ced765a17f511ff5a997fc"
+    },
+    {
+      "path": "software/tests/test_a800_delivery.py",
+      "size_bytes": 4247,
+      "sha256": "4619368fbe89a056ccb72eec3c290925c412364e8861ca2a1f7427d38e97c5ab"
+    },
+    {
+      "path": "software/tests/test_a800_evaluation.py",
+      "size_bytes": 15339,
+      "sha256": "382eb9a12f6caffcd63b372102b24521eb5920cd63de457d480c9337046a8b24"
+    },
+    {
+      "path": "software/tests/test_a800_objective.py",
+      "size_bytes": 11965,
+      "sha256": "adc6bd9c469330c938f00b3b6ea46a38da81b6cb5210cde9405dd62b6576df8d"
+    },
+    {
+      "path": "software/tests/test_a800_runner.py",
+      "size_bytes": 16868,
+      "sha256": "325f922b6dac36c52e02a762c2d4de517de7595a279088277199ca748ce111c8"
+    },
+    {
+      "path": "software/tests/test_bearing_adapter.py",
+      "size_bytes": 4119,
+      "sha256": "9cb84a07598e550f9218e887a51743696bed8ac2e3fc0f6c86885084bb5ba05a"
+    },
+    {
+      "path": "software/tests/test_bearing_anti_noise_training.py",
+      "size_bytes": 2592,
+      "sha256": "ed8eb319aff9a5ee0d93ab6b32574bfda70f65060b2fcef4b067d69d9c1d825a"
+    },
+    {
+      "path": "software/tests/test_bearing_background.py",
+      "size_bytes": 11953,
+      "sha256": "b3d76fbf69069a8d5848212d99ff2860942fbe1b1cfb996fc1a1a7cfc621d14e"
+    },
+    {
+      "path": "software/tests/test_bearing_batch.py",
+      "size_bytes": 7564,
+      "sha256": "efe3d0dab9b96549ccf68b4e0ead86ddf9dab43fbc19b7b8a011915ad2e71485"
+    },
+    {
+      "path": "software/tests/test_bearing_contract.py",
+      "size_bytes": 4101,
+      "sha256": "7adf8d750fac451c2316e3295a7d53e65d840e51bbb8207386e42c06ee5a491f"
+    },
+    {
+      "path": "software/tests/test_bearing_dataset.py",
+      "size_bytes": 3760,
+      "sha256": "4c8ea567f14b212ed97620bbe515a752e29e3adad0bb963db1e9e1c1a0b3a619"
+    },
+    {
+      "path": "software/tests/test_bearing_external_compat.py",
+      "size_bytes": 2255,
+      "sha256": "48fc282af5ed3d224a80209086bf44fdfb2b90275a07caa1cb317248c67eab1e"
+    },
+    {
+      "path": "software/tests/test_bearing_inference.py",
+      "size_bytes": 16584,
+      "sha256": "824750b7ddd2a666f6e612a46078acdd7fe27abd473011b9cc4f895fa8d06941"
+    },
+    {
+      "path": "software/tests/test_bearing_inference_acceptance.py",
+      "size_bytes": 6625,
+      "sha256": "46a67189f4bb106556f837ba17995cf27bdfcb28914d545f96255598f9265c8f"
+    },
+    {
+      "path": "software/tests/test_bearing_model.py",
+      "size_bytes": 814,
+      "sha256": "e7631fa9e30d2ede2664dffdede27fa8b70b8ea849a9e4944255aad05d3512da"
+    },
+    {
+      "path": "software/tests/test_bearing_preview.py",
+      "size_bytes": 11933,
+      "sha256": "08573932e06d761daf8ee763e8f757085f7e8419c6c90f4a531f3ec81fcf6763"
+    },
+    {
+      "path": "software/tests/test_bearing_quality.py",
+      "size_bytes": 7356,
+      "sha256": "0fcfa7e21d15ef022a33c400ef032b0f6e6386a2cddbd77e3eafc6b0af49a6e6"
+    },
+    {
+      "path": "software/tests/test_bearing_quality_audit_v2.py",
+      "size_bytes": 2621,
+      "sha256": "c5121d7a066b92947f82f14cbc09e3c68b85e2c0909f5fd942658851671ab045"
+    },
+    {
+      "path": "software/tests/test_bearing_quality_calibration.py",
+      "size_bytes": 4868,
+      "sha256": "cfea39d5a918ce9ac2218d932a863df116a62f5e8f16a8957e397360327e105c"
+    },
+    {
+      "path": "software/tests/test_bearing_quality_calibration_v2.py",
+      "size_bytes": 7594,
+      "sha256": "500a8f75e48c0d1ee7840c89d5295713eea161eb24535c3a49e9d2445871c77c"
+    },
+    {
+      "path": "software/tests/test_bearing_quality_rejection_audit.py",
+      "size_bytes": 8386,
+      "sha256": "50cda907fb50ba5d2ff579c7f6a436420a7d32ee0b478c5a30fdb0bf0aa1b52b"
+    },
+    {
+      "path": "software/tests/test_bearing_quality_v2.py",
+      "size_bytes": 8198,
+      "sha256": "63ed0bbccfdf5d2df628319875ba3ccd1e74ea7470be0c347933874257ecedb1"
+    },
+    {
+      "path": "software/tests/test_bearing_robustness.py",
+      "size_bytes": 3467,
+      "sha256": "0e4f53183fa7ceef4bbd3209cad7a507cbea2d53bc03ef12e4e47e93c4accbfe"
+    },
+    {
+      "path": "software/tests/test_bearing_robustness_preprocess.py",
+      "size_bytes": 4651,
+      "sha256": "7c03063429c2ec45a5f19468dda5571651bdf0cec39c9b7b6743e0588a9e2167"
+    },
+    {
+      "path": "software/tests/test_bearing_training_prep.py",
+      "size_bytes": 4385,
+      "sha256": "a39c37c8e5e97d6dde577297a7fe452cf4014e9233ae0ab3bbf1f674a8ba4ede"
+    },
+    {
+      "path": "software/tests/test_bearing_ui_acceptance.py",
+      "size_bytes": 10623,
+      "sha256": "e84507355324d6356ae5bee5479507106c11f423ccad66dc296a04f84a9da0e5"
+    },
+    {
+      "path": "software/tests/test_bearing_workflow.py",
+      "size_bytes": 5502,
+      "sha256": "e9f48a95a5db60aa425befa01011cbd993721aa6f3bd298529e1ff83357e791a"
+    },
+    {
+      "path": "software/tests/test_bispectrum_views.py",
+      "size_bytes": 4775,
+      "sha256": "325a8eb433ad70593dd87643872ac3c2f3d4afbd3f1ba8ea79820d2ad91f38a1"
+    },
+    {
+      "path": "software/tests/test_constellation_integration.py",
+      "size_bytes": 6049,
+      "sha256": "056714f3290dabeecb8ecd530a433582dee26dac00695e6b0b10a2089e3532ce"
+    },
+    {
+      "path": "software/tests/test_controlled_noise.py",
+      "size_bytes": 3260,
+      "sha256": "f51868eb49fdd4069751893a02bf9dc60b45a4b86becc1cb9092af4fa9c95c8c"
+    },
+    {
+      "path": "software/tests/test_cwru_data.py",
+      "size_bytes": 5988,
+      "sha256": "b8979054944fb5b310cc0e59dbf7f44f1b033d314df01b3f119b1fcb1a390f92"
+    },
+    {
+      "path": "software/tests/test_cwru_manifest_audit.py",
+      "size_bytes": 9902,
+      "sha256": "d292d1e55c92a894fd79dcf9cd245796d08a1caca1a42f50066d0f83ff865807"
+    },
+    {
+      "path": "software/tests/test_cwru_slice_audit.py",
+      "size_bytes": 2027,
+      "sha256": "c896e94388710aa1fd05ba3ad4ef0dd7c4a4114d118c06a0785b0a655ac2983e"
+    },
+    {
+      "path": "software/tests/test_data_provenance.py",
+      "size_bytes": 6244,
+      "sha256": "34597749e49d7ca90e749b1bf1517695ac6b35197f04c352a60b88a237ed78be"
+    },
+    {
+      "path": "software/tests/test_desktop_thread_retention.py",
+      "size_bytes": 1070,
+      "sha256": "167e8089591ddf1dbc6914685162d7b0162aed4ae039ac9896cc66af1dea1105"
+    },
+    {
+      "path": "software/tests/test_dronerf_dataset.py",
+      "size_bytes": 3381,
+      "sha256": "f88cc334659ad0b10d75df8fdd9fc7622ff6c8e0c748fd0042fa856b171cd502"
+    },
+    {
+      "path": "software/tests/test_dronerf_manifest.py",
+      "size_bytes": 5766,
+      "sha256": "dcfb7788da730558965999ab03e5827dc45d2a0f25a5fa1e9431a03c511893db"
+    },
+    {
+      "path": "software/tests/test_dronerf_windows.py",
+      "size_bytes": 2322,
+      "sha256": "429f86e4d4c8dcd53e93165ea0425bb40980194c98cd56d9a3e730a4c8e31d50"
+    },
+    {
+      "path": "software/tests/test_feature_views.py",
+      "size_bytes": 4465,
+      "sha256": "528fa6da3f73cc2e2f06b28a8d27ac2c7db56d727ac5036e41a146278bf4567e"
+    },
+    {
+      "path": "software/tests/test_file_dialog_lifecycle.py",
+      "size_bytes": 1663,
+      "sha256": "604e8e0126e616d673232932c27e0f609191fac1aae1f80f3e790b7e006dd614"
+    },
+    {
+      "path": "software/tests/test_general_recognition_input.py",
+      "size_bytes": 5533,
+      "sha256": "f16a63f3d77c305f41caf64dcf5c1b15023fe61c9f8ed436ab7a828cf6fe9c20"
+    },
+    {
+      "path": "software/tests/test_generation_background.py",
+      "size_bytes": 4219,
+      "sha256": "95aa6080245035a2b012ff8d2be8d3d09d393a9de2c9fbee73f9e881bb71d49d"
+    },
+    {
+      "path": "software/tests/test_hht_real_backend.py",
+      "size_bytes": 2945,
+      "sha256": "bc5a8dbe5a2f5a99dbe901b3e5019dfeb7dc6b89b20cc57c08fbb5bf9d8ad458"
+    },
+    {
+      "path": "software/tests/test_hht_views.py",
+      "size_bytes": 7229,
+      "sha256": "9b25515c679c44d84619d21f85719cb60b56caacfe2a1bf5cd3755c3dbdff760"
+    },
+    {
+      "path": "software/tests/test_historical_comparison_background.py",
+      "size_bytes": 4676,
+      "sha256": "f301678b8d80300cdaea860a396285ba3ee4ea6f976f2d8589916f82177b55fb"
+    },
+    {
+      "path": "software/tests/test_historical_comparison_input.py",
+      "size_bytes": 6179,
+      "sha256": "6de606555b405955d67d619b9589fec695621dd926fba783ccf6732c8167974d"
+    },
+    {
+      "path": "software/tests/test_historical_generation.py",
+      "size_bytes": 5427,
+      "sha256": "45b785c62ccf4bc076b01894c026dd545fea3b289ec1a9541bb3aa5bc10616ad"
+    },
+    {
+      "path": "software/tests/test_historical_model_comparison.py",
+      "size_bytes": 6561,
+      "sha256": "8cf01d84c2aea3e0b90e43be1d04271b3b82294336f6656db9e8e610ecedeb19"
+    },
+    {
+      "path": "software/tests/test_home_features.py",
+      "size_bytes": 5657,
+      "sha256": "28897874061e3954e25b1d05039c537deb224eb0377a14f0bf113ae6ae8d07f4"
+    },
+    {
+      "path": "software/tests/test_home_import_integrity.py",
+      "size_bytes": 3977,
+      "sha256": "61bca95b788dadda9744b96343d043c3a9590b40fe1725d072404e0755f83f34"
+    },
+    {
+      "path": "software/tests/test_iq_perturbations.py",
+      "size_bytes": 10705,
+      "sha256": "9c4a2164af3e79ca251ca625de70ae8c6462eff74880922f053cc2abd3a3c3f5"
+    },
+    {
+      "path": "software/tests/test_jr_views.py",
+      "size_bytes": 5264,
+      "sha256": "4b244efeda7e2a96d5143db272f2d7d61eb49a28f740167414e220eda9657040"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_audit.py",
+      "size_bytes": 3991,
+      "sha256": "76bb9a407c1327e5c342eb53bbedb807536bc668d1ac25c9a6a82a7fa84c9c0b"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_augmentation.py",
+      "size_bytes": 3312,
+      "sha256": "abb494efbb194eba979f1b82151b41d0cf34415ed7fcf9813e76888812751fbe"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_checkpoint_selection.py",
+      "size_bytes": 6370,
+      "sha256": "74c855fee97cf66e00383b654d70256844d21282dcb215dedc89edeb0c84304a"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_dataset.py",
+      "size_bytes": 4383,
+      "sha256": "5db5665534c0135e4bb3ea57e663b4466eb16bffca13ac56d0e9125ee62f7044"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_external_protocol.py",
+      "size_bytes": 2954,
+      "sha256": "98f5522bc7fde257907fc7579811b1bf06d20a2b3130a9d7c7bd6be7f6362545"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_inference.py",
+      "size_bytes": 7800,
+      "sha256": "33fcd59ba0005db319cf5b300db43bf51d5fa640401596f70b0fbaeb2f5d53a3"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_local_reproducibility.py",
+      "size_bytes": 2779,
+      "sha256": "d3e3fc5d0a534b10cd6f5ab1bf71f0cd220dac29da6028c9c9a3959a2be102dc"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_local_stability.py",
+      "size_bytes": 1884,
+      "sha256": "6406bfe8fc039167284c305702a7692edf9ef8f148899cf012c80e7076f1bbcc"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_manifest.py",
+      "size_bytes": 7640,
+      "sha256": "4c71fde894fbaec00fe74c18673c907249124f95588a2d3b596bd9d2adbcca1b"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_model_selection.py",
+      "size_bytes": 1532,
+      "sha256": "a1a9fce739d243c05e57500d50c15bc0d03bff97986283c1bac1c5e4aa2a606d"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_noise_errors.py",
+      "size_bytes": 833,
+      "sha256": "3cf3f722b77c8c226542975823842425f5527c45c49178b5aa331ac2f82fe317"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_preprocessing.py",
+      "size_bytes": 4007,
+      "sha256": "832cb8bfe91f82fb4fe810615a433dcdb1bfc327c00c9e8147a924c90356aac7"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_runtime_demo.py",
+      "size_bytes": 2043,
+      "sha256": "bb472ebb9d82eb81e7ee5205ff8fcf4b5d9edb8fbb6daa8458f777ef479bef4d"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_split.py",
+      "size_bytes": 3180,
+      "sha256": "dbac15698efded4e6838d490d9cedb12ede93636752ba8fdaa14a75275986e1e"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_training_prep.py",
+      "size_bytes": 1629,
+      "sha256": "4b33242e0ee9c06e27155b9ba3caa68c7308004fe1f112756eb53e4b65fe6d85"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_ui_integration.py",
+      "size_bytes": 4112,
+      "sha256": "c70c41b9f1fea4b8e106af7e81dafebb9823618d844e086d50e97fd9ed2f5e21"
+    },
+    {
+      "path": "software/tests/test_ku_leuven_validation_robustness.py",
+      "size_bytes": 3313,
+      "sha256": "c551cf7739eebd64f1083c19a801bd3c0fc45685d9078c335dd970970fe97570"
+    },
+    {
+      "path": "software/tests/test_materialize_dronerf.py",
+      "size_bytes": 3538,
+      "sha256": "58afb285aaff0688ed97e2ccee8babf01538c43977b367ab1ea46df247515f6c"
+    },
+    {
+      "path": "software/tests/test_materialize_ku_leuven.py",
+      "size_bytes": 3586,
+      "sha256": "2c8a6e398838c0ddd653d595fcb44d5eba3d16ba1ae1472425f860b789bba4c1"
+    },
+    {
+      "path": "software/tests/test_matlab_v73_iq.py",
+      "size_bytes": 7063,
+      "sha256": "7f6fe61b8bcd8046951a16aadc808a1ffc5e9ed48e26319c39ec4fff075f05cf"
+    },
+    {
+      "path": "software/tests/test_plot_registry.py",
+      "size_bytes": 1522,
+      "sha256": "74c09a628358d1ab00068807b407c7874e819a7dd725ce340439976d88013794"
+    },
+    {
+      "path": "software/tests/test_recognition_background.py",
+      "size_bytes": 5660,
+      "sha256": "9811de94d8292e80b859e91983a5e0ad373f75723ea3cfe5b8e0eeeaa4ffbf6f"
+    },
+    {
+      "path": "software/tests/test_recognition_workbench.py",
+      "size_bytes": 10382,
+      "sha256": "27e52e0b576bfb65800fdb1cfeb5a107722d7cc2ac668c6cfb82cc7b00b78682"
+    },
+    {
+      "path": "software/tests/test_result_invalidation.py",
+      "size_bytes": 3777,
+      "sha256": "a7bbedc093942c9abcaa9ceef0204d12baa0d96cce6f5215055567e39d8cd617"
+    },
+    {
+      "path": "software/tests/test_runtime_paths.py",
+      "size_bytes": 6259,
+      "sha256": "e9f7e78d4f7faa633086da65e076169282a77c45709ec87a84fe5728794ad24f"
+    },
+    {
+      "path": "software/tests/test_runtime_resources.py",
+      "size_bytes": 14170,
+      "sha256": "c09a82f568cabf28cd9b84f30a5db81eef3134af9645924cb5141b3b92232da3"
+    },
+    {
+      "path": "software/tests/test_runtime_smoke.py",
+      "size_bytes": 2818,
+      "sha256": "cf88a4f14f9b53744b26f75c428424874c92087af595f2bfd7fe052bfddae500"
+    },
+    {
+      "path": "software/tests/test_signal_transforms.py",
+      "size_bytes": 4169,
+      "sha256": "774a5bf63cb222c39306a313a6e1e9e7da9055e2f9872176c027c5a9dfa6a023"
+    },
+    {
+      "path": "software/tests/test_signal_workbench.py",
+      "size_bytes": 5934,
+      "sha256": "1b924309c7f7fa0980dbe461ad397fd643231bdd44ea09605af31d12ef1ecc8c"
+    },
+    {
+      "path": "software/tests/test_soak_driver_exit.py",
+      "size_bytes": 2425,
+      "sha256": "84c2c470cf2308a296b0558f2e2c75418aa8f325041f0d9b18e2a6e6eccd5954"
+    },
+    {
+      "path": "software/tests/test_spectrogram_integration.py",
+      "size_bytes": 9720,
+      "sha256": "1ffbca6503a893779f136b6727f946ebbd10cfc2d6ef9f25ee8b4f87fe8eafb8"
+    },
+    {
+      "path": "software/tests/test_spectrum_integration.py",
+      "size_bytes": 7406,
+      "sha256": "c968a19b809bb544ab044d4339abd6a634ea62e00e2f227c52d504a1e06b4e36"
+    },
+    {
+      "path": "software/tests/test_stress_bootstrap.py",
+      "size_bytes": 1640,
+      "sha256": "766285b9b7c25879af2afb00408b7fe207bce70ea1a02f7935b4717adec7a010"
+    },
+    {
+      "path": "software/tests/test_stress_data_edges.py",
+      "size_bytes": 2138,
+      "sha256": "6cf12bb79b96ee430afca3f08dd8609fd752325b89421576789de0d393ac4a95"
+    },
+    {
+      "path": "software/tests/test_tsne_background.py",
+      "size_bytes": 5771,
+      "sha256": "b3fe3c763e7dc95e47c831f5801f15214e54b586382d99043e3a13dde6fac5a6"
+    },
+    {
+      "path": "software/tests/test_uav_a800_contract.py",
+      "size_bytes": 4791,
+      "sha256": "a872b2ff36ac561842c4a44b6f34f3276d3709c305977e5fda461c5fbb156892"
+    },
+    {
+      "path": "software/tests/test_uav_ablation_protocol.py",
+      "size_bytes": 1589,
+      "sha256": "4a5f11ab6543c7cb26a03f1cbbd38211429c1d3ee33cdc4262bcdb5bfd6ea556"
+    },
+    {
+      "path": "software/tests/test_uav_background.py",
+      "size_bytes": 3136,
+      "sha256": "ab7744b1ee72e5c50d723e1e0a3c85596ff9bef1ff92ae43e81e428c2434b0d2"
+    },
+    {
+      "path": "software/tests/test_uav_baseline_evidence.py",
+      "size_bytes": 9091,
+      "sha256": "58502a4dc2a4e037a1ab7f74e27596336ba36318d4ef0c70f0bf0fe435e21522"
+    },
+    {
+      "path": "software/tests/test_uav_cnn.py",
+      "size_bytes": 1729,
+      "sha256": "d6671089406b79dcf0da04f0e957d81d72918bfd55b484f2fedad3f9fcab1188"
+    },
+    {
+      "path": "software/tests/test_uav_contract.py",
+      "size_bytes": 2218,
+      "sha256": "d5bee6694796a59b1c88a2557b43cac0bd8afb06d6c6e042b7e8a4ddbb6dca68"
+    },
+    {
+      "path": "software/tests/test_uav_dual_branch.py",
+      "size_bytes": 1704,
+      "sha256": "135640196698d0930271743fec26ceca1a7be23979b28e33215ab7db5b140efa"
+    },
+    {
+      "path": "software/tests/test_uav_input.py",
+      "size_bytes": 2618,
+      "sha256": "6890542f926e5197a5e6f965918cb6c8bad1edda22914bf36c13139db0e1d77c"
+    },
+    {
+      "path": "software/tests/test_uav_intake_workflow.py",
+      "size_bytes": 4752,
+      "sha256": "51f69fd415c23db69a4839640d9593efdf277da7fbfa5dab82bf55519b35e2b6"
+    },
+    {
+      "path": "software/tests/test_uav_main_integration.py",
+      "size_bytes": 3495,
+      "sha256": "ef40ea70037603d756bdea8773c23e1561b4c5a310fa2961cfee13be242a44c1"
+    },
+    {
+      "path": "software/tests/test_uav_multiscale_tcn.py",
+      "size_bytes": 3348,
+      "sha256": "6445fb74bf6bc8c3e4817c101869cdf815261b0eb40be0a6f4deb7d82cb21144"
+    },
+    {
+      "path": "software/tests/test_uav_multiseed.py",
+      "size_bytes": 821,
+      "sha256": "0d7edb1f6dd87c95ec5db9a26440ce6a3ec28827de3eca9e7e487bbbe35fa40b"
+    },
+    {
+      "path": "software/tests/test_uav_noise_augmented_training.py",
+      "size_bytes": 2765,
+      "sha256": "27c836bf5936caf789fdc2820657c80f7af59dac8aad81fd86cde81e2caf3f2b"
+    },
+    {
+      "path": "software/tests/test_uav_open_set.py",
+      "size_bytes": 3508,
+      "sha256": "3b19541889f5ca0922f6211b7af3b94b401aeb9d60cdca9112973f8db3389808"
+    },
+    {
+      "path": "software/tests/test_uav_plot_panel.py",
+      "size_bytes": 4451,
+      "sha256": "5f987064c69fdfa9e3cabe6a860883d4ca84aa3f752cc23edc255f009132401e"
+    },
+    {
+      "path": "software/tests/test_uav_quality.py",
+      "size_bytes": 907,
+      "sha256": "be11f2453a54e1a04c33e8eb727737b74d6eb326386ac3114c9c15aeb288608a"
+    },
+    {
+      "path": "software/tests/test_uav_robustness_evidence.py",
+      "size_bytes": 2580,
+      "sha256": "1e4c99cafcd6d77ccc480d80dcae763dc373204101395611bbd7f851370b44f6"
+    },
+    {
+      "path": "software/tests/test_uav_robustness_protocol.py",
+      "size_bytes": 2628,
+      "sha256": "d664e2b14859fe36ecfee83157c06902aca5344b3fe02d034e1f7d37ff44c7e3"
+    },
+    {
+      "path": "software/tests/test_uav_training_prep.py",
+      "size_bytes": 2061,
+      "sha256": "e1cd41f7dc35e999332d31b2383b74c3a631c7a04bb0ea364ed4338ba0215436"
+    },
+    {
+      "path": "software/tests/test_waterfall.py",
+      "size_bytes": 14862,
+      "sha256": "c0d1f67ff8d4f0f9eb7aa0b3215dc14d5727ca8fd8a7d5439c31d31845fd60b2"
+    },
+    {
+      "path": "software/tests/test_waterfall_migration.py",
+      "size_bytes": 6622,
+      "sha256": "264646f5ce37bad9f82387da35dd9a67cef439768e948a332986b63a6e8928d3"
+    },
+    {
+      "path": "software/tests/test_wavelet_views.py",
+      "size_bytes": 4112,
+      "sha256": "6bb550a405b1f8004818d4db98995fbe525e54a226f043bdf6560535cf6dbf8d"
+    },
+    {
+      "path": "software/training/__init__.py",
+      "size_bytes": 70,
+      "sha256": "e1696139cc6de3a94ade7fbcdc10d15f9d15f805ff154b9584cf5ac0c1f15afc"
+    },
+    {
+      "path": "software/training/a800_common.py",
+      "size_bytes": 9687,
+      "sha256": "6c3514dbb3249765ead79aaa1da04cef8b49bbf9625fa24a0f0e5090a0d5eb80"
+    },
+    {
+      "path": "software/training/a800_cpu_checks.py",
+      "size_bytes": 5728,
+      "sha256": "689e4c98697aada5488bc63864f2c209f98340e839fabe925844d55311e61cf6"
+    },
+    {
+      "path": "software/training/a800_data.py",
+      "size_bytes": 14119,
+      "sha256": "62d36a6e6bc60cf0edb36ce57d55ec9efaffdc4ae1b06e47429153fab4fae390"
+    },
+    {
+      "path": "software/training/a800_delivery.py",
+      "size_bytes": 19145,
+      "sha256": "88012e9987fd2dc202710e0261f8eb6f4128c0f6f5c2f3888b5660648cacd237"
+    },
+    {
+      "path": "software/training/a800_environment.py",
+      "size_bytes": 1789,
+      "sha256": "eaf509af773931ea9111425c0beb537578ba24f6a36f83ccba2994e4d2a42554"
+    },
+    {
+      "path": "software/training/a800_evaluation.py",
+      "size_bytes": 60657,
+      "sha256": "9ba78a72820af5635e37162679043d99d78baee3c0d191fca1d95affd619c1d6"
+    },
+    {
+      "path": "software/training/a800_fetch_sources.py",
+      "size_bytes": 2729,
+      "sha256": "75ae81bba1f92e92b361281b7201cc85c8875f0996cfd2d51693869f026d87f2"
+    },
+    {
+      "path": "software/training/A800_IMPLEMENTATION_CONTRACT.md",
+      "size_bytes": 4913,
+      "sha256": "fb0bf53bf0c9e3b0ed859e8c8f05bf790d61b4c9473a0e17fca874cba05a29d8"
+    },
+    {
+      "path": "software/training/a800_objective.py",
+      "size_bytes": 8909,
+      "sha256": "d9e08861e5afbf713bbc64fefc5755c511e3394a38a1a87838973093a4cee1db"
+    },
+    {
+      "path": "software/training/a800_runner.py",
+      "size_bytes": 51376,
+      "sha256": "9f21df92d2fbfab94621cb4c550d3879c239c9b7cd14e3dc477f14a45f10e09f"
+    },
+    {
+      "path": "software/training/A800_SERVER_AGENTS.md",
+      "size_bytes": 2041,
+      "sha256": "dab98a2def085d98f0d8cb217d00a8ff577fd485576ec930f9b33371927204ed"
+    },
+    {
+      "path": "software/training/accept_bearing_inference.py",
+      "size_bytes": 23793,
+      "sha256": "d5155ad9f6f87dd22a5a316112a7891fb115446ec656ea4e57692f9ac0635090"
+    },
+    {
+      "path": "software/training/analyze_ku_leuven_local_stability.py",
+      "size_bytes": 8010,
+      "sha256": "5c3b12c512b95a7c0ddd4a8eefc8bb7012e2f96c4a52d6a47bd41e65a077859a"
+    },
+    {
+      "path": "software/training/audit_bearing_quality_rejection.py",
+      "size_bytes": 29168,
+      "sha256": "eb90c9ba4b6b11d191fbbb9d29724db05d78c45c8b7541b79f1a0cfca16b5e95"
+    },
+    {
+      "path": "software/training/audit_bearing_quality_v2.py",
+      "size_bytes": 30294,
+      "sha256": "8535a315ba95abbafe110a77d35b75296d7155480e6b5636f30edc7d584c298c"
+    },
+    {
+      "path": "software/training/audit_bearing_robustness_preprocess.py",
+      "size_bytes": 36113,
+      "sha256": "cadf35926c7d4b768617d79f65e32c37a18bc4fbbcdeafb5fa38b9f00af0b3cd"
+    },
+    {
+      "path": "software/training/bearing_augmentation.py",
+      "size_bytes": 6068,
+      "sha256": "4f7c5909416ad312530f9330f0dca7d6e847f9779dddb91c2da9bd776b3f7fd0"
+    },
+    {
+      "path": "software/training/build_a800_bundle.py",
+      "size_bytes": 13345,
+      "sha256": "a0e98af8d673842010cfe689eb2739616a910b7f866f4931539458a21bddfb25"
+    },
+    {
+      "path": "software/training/calibrate_bearing_quality.py",
+      "size_bytes": 18838,
+      "sha256": "7a9080432af9ad55ccbea658530018b0af3d5561be713adf14cec5134dbfd3e7"
+    },
+    {
+      "path": "software/training/calibrate_bearing_quality_v2.py",
+      "size_bytes": 30979,
+      "sha256": "1f3e9a4c537713b81c50a1a1ad1555f77e3dfaea67961c45f95c5584e70517d8"
+    },
+    {
+      "path": "software/training/calibrate_uav_open_set.py",
+      "size_bytes": 10628,
+      "sha256": "6ee81dd9f4994252e791dddc4633aa917bbafe81d74bd4553868f1ae65f6a83f"
+    },
+    {
+      "path": "software/training/common.py",
+      "size_bytes": 12006,
+      "sha256": "a475adc63bf077e885d6ada48d805c41db89ff7e404986c00c6e2153943ac912"
+    },
+    {
+      "path": "software/training/configs/a800_v2/matrix.json",
+      "size_bytes": 14465,
+      "sha256": "c7b98f236a51e46ecaac554e96582f7ea5be0de0467d975939ecb4dfe853c4c9"
+    },
+    {
+      "path": "software/training/configs/bearing_cnn_anti_noise.json",
+      "size_bytes": 764,
+      "sha256": "fb701e9c1da249f5d249b3fd3760df97dee2f519533874323fcd0ef08de74dbb"
+    },
+    {
+      "path": "software/training/configs/bearing_cnn_baseline.json",
+      "size_bytes": 604,
+      "sha256": "f3aad100577bfa34cf8d5957b5e67105282d5a01677d101dfcbb24d4591a12de"
+    },
+    {
+      "path": "software/training/configs/bearing_cnn_window_zscore.json",
+      "size_bytes": 646,
+      "sha256": "894d1fa618837929e71a14f33befa165c8531873a277e27969ef068b713d1944"
+    },
+    {
+      "path": "software/training/configs/dronerf_added_noise_robustness_protocol_v1.json",
+      "size_bytes": 2812,
+      "sha256": "bfca2a6ac7487089dc7ae068630ef592632981cf83f98fe1a73f34635769d393"
+    },
+    {
+      "path": "software/training/configs/dronerf_cnn_type_baseline_v1.json",
+      "size_bytes": 779,
+      "sha256": "12bc87c8b3322b7e11d97757729234c3e60d3c1f6709aec7cb060d3b4af39c1a"
+    },
+    {
+      "path": "software/training/configs/dronerf_dual_adaptive_presence_ablation_v1.json",
+      "size_bytes": 984,
+      "sha256": "780c2ed8884a9d6ef379b35bb257b9abfefe8e0ae45bbdecad4047e46b447acf"
+    },
+    {
+      "path": "software/training/configs/dronerf_dual_adaptive_type_ablation_v1.json",
+      "size_bytes": 948,
+      "sha256": "8ee623b84f21f2a020c5958c3975ed18c550e6ebecfb97d7c1e351070d9b193b"
+    },
+    {
+      "path": "software/training/configs/dronerf_dual_branch_ablation_protocol_v1.json",
+      "size_bytes": 1146,
+      "sha256": "c8e57011ba1c66a5a07283561ff8a6123329fc79dd58a407110cd5bb88d1d2ea"
+    },
+    {
+      "path": "software/training/configs/dronerf_dual_concat_type_ablation_v1.json",
+      "size_bytes": 942,
+      "sha256": "b7eaaae6ef121298157657e780e8512c6a30561d5ce93206a5b4fa39e7fae5aa"
+    },
+    {
+      "path": "software/training/configs/dronerf_resnet18_type_baseline_v1.json",
+      "size_bytes": 785,
+      "sha256": "026906e30d50d8869c9447194fc9d3cd878dbe9cfb452b8484b1098e08602c1d"
+    },
+    {
+      "path": "software/training/configs/dronerf_spectral_type_ablation_v1.json",
+      "size_bytes": 888,
+      "sha256": "089cf7f3a4111eb5c24eb7ed7fa4807f9e9bf414bc18253fbea7497d16079591"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_low24_a800_formal_v1.json",
+      "size_bytes": 935,
+      "sha256": "83477d66b899fce9df1339316cdd53cd348b81c1d5cb89b2f87006a349597c42"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_low24_local_smoke_v1.json",
+      "size_bytes": 940,
+      "sha256": "ad70b97b9b1ab05f8c51f4ab3d31b708326ca9012fda16a9f4a927527a06a156"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_low24_type_baseline_v1.json",
+      "size_bytes": 925,
+      "sha256": "a01acfcda497c662f26f7a42c45f81df4e1040a199d77b4c9d42632277265aa6"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_noise_augmented_protocol_v1.json",
+      "size_bytes": 1866,
+      "sha256": "30781baf6b86bcfa181c20f3825ded039be6ba716b697cf56064a148fec5b3fa"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_noise_augmented_validation_comparison_protocol_v1.json",
+      "size_bytes": 2873,
+      "sha256": "0ca7cc857eebbb10e0b1c4d9e9c95a33138d8f320e98b2b48fab5d224ca21534"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_noise_augmented_validation_v1.json",
+      "size_bytes": 1426,
+      "sha256": "ac9795e36367eef3f6da79a49351bbc044634d26bc19bd49b9e6189350ea9698"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_open_set_calibration_protocol_v1.json",
+      "size_bytes": 832,
+      "sha256": "9f93e03bb1b5ea628da74dd9ef0c198fb950d7464f64960a1960a93b47da5a87"
+    },
+    {
+      "path": "software/training/configs/dronerf_tcn_type_baseline_v1.json",
+      "size_bytes": 770,
+      "sha256": "fb3bb165210123e96766d7e0a3278a58833093a85b89e711ae265ae017daacef"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_a800_model_selection_v1.json",
+      "size_bytes": 1225,
+      "sha256": "447450eff20f2752ed17af426efe74c119fb8fa2e2a162c8fa8288c451ce7cda"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_augmented_local_protocol_v1.json",
+      "size_bytes": 998,
+      "sha256": "e2cb9699cd1dc73b1ef69ab6ac407a8f155244f82e7fe49ce97b019044b11b79"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_in_domain_known_unknown_protocol_v1.json",
+      "size_bytes": 4728,
+      "sha256": "6f476fc0b5d774b95c22a0bf98a23d9183debd23278c2b4d580ab8a9ecdb0680"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_local_comparison_protocol_v1.json",
+      "size_bytes": 709,
+      "sha256": "6a1f8e0a3c7661b6249348d71394b73bec72cc6f253bea35a14aefa5a5d4cf15"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_local_reproducibility_v1.json",
+      "size_bytes": 1284,
+      "sha256": "6d3b3d9e94a5ba307f90e17a538676ff28df36e500ab58cf49320875bbbb2307"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_resnet18_a800_formal_v1.json",
+      "size_bytes": 1116,
+      "sha256": "27eba7907717e0783d38e93062c8b6266364a7b46e6c9fb9b616d5fc32853907"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_resnet18_local_development_v1.json",
+      "size_bytes": 1155,
+      "sha256": "f7e5a21e0c0c8e25393b6d430b1dab24f07534f8c9fb8eb510295209b6423543"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_sjrc_external_unknown_protocol_v1.json",
+      "size_bytes": 3494,
+      "sha256": "a70fd2f571a97c2cab8cb8805cb2b5b3dbc4fb290bc05956186e64eb408f5a7c"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_sjrc_external_unknown_protocol_v2.json",
+      "size_bytes": 4102,
+      "sha256": "064f4a33abe4060d0b83cf261f7d3029788f03b254c06f65e056b353fadfbe74"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_strong_noise_local_protocol_v2.json",
+      "size_bytes": 2271,
+      "sha256": "e9ea78da67ecda35ab03a85c0cd7a520d5d5fb5116b8bd368490c02a8f9b4336"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_a800_formal_v1.json",
+      "size_bytes": 1101,
+      "sha256": "ac29bc32ec098323780e738b2cecfd0e3fc5861bc5502e6eca59e63ad2ba483a"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_augmented_validation_robustness_v1.json",
+      "size_bytes": 8454,
+      "sha256": "bcde104bb66dc3126aebcdc1898d7aad66028a33b863a9544406f74d6ee0a579"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_local_development_v1.json",
+      "size_bytes": 1140,
+      "sha256": "8ee34ccbfabfcb0a938f932c3f2784e5dc57695c1e6d8b6ecca07c877a495304"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_local_smoke_v1.json",
+      "size_bytes": 1103,
+      "sha256": "f496680675dd1ec43ad58a936dc4b70ef35f31613c471fe2455b05f7678f10af"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_local_smoke_v2.json",
+      "size_bytes": 1103,
+      "sha256": "c7093dbf46159f8ea1ade59d40c3e5dc1190b92be30b5e19b2a6d74fad662143"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_local_validation_robustness_v1.json",
+      "size_bytes": 7917,
+      "sha256": "7b224201b79e9965ece6a8a4bb2368b520cd366970245b77579551190f1693f3"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_strong_noise_validation_robustness_v2.json",
+      "size_bytes": 8522,
+      "sha256": "cb1022e45c748b0baf85f3f31b143b49151875a2d7138b42e9301502a7a4920b"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_weighted_worst_noise_validation_robustness_v4.json",
+      "size_bytes": 8649,
+      "sha256": "448237f2167795515ce6a718fa8eb4a068744e90e71c8b9f4d01959fd06a4dc7"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_tcn_worst_noise_selection_validation_robustness_v3.json",
+      "size_bytes": 8687,
+      "sha256": "fee08bc842fa5a91fd73c1a6b40eb042b1cbcb3550be4309f0ffe89451d91f33"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_weighted_worst_noise_local_protocol_v4.json",
+      "size_bytes": 2885,
+      "sha256": "5ce37a01467f4d1820a8036444ab839a890a89e02146523fd1e77b1655377923"
+    },
+    {
+      "path": "software/training/configs/ku_leuven_worst_noise_selection_local_protocol_v3.json",
+      "size_bytes": 3000,
+      "sha256": "7229b424e1006d2f62de350c542636a20299b059e5ee0e36dd4cbea0bcb54b20"
+    },
+    {
+      "path": "software/training/diagnose_ku_leuven_noise_errors.py",
+      "size_bytes": 6441,
+      "sha256": "b00f99bd2c68d79785e0a2d7ebf6b4ae60fbab4ea2d07d7b933c5a0db8a77449"
+    },
+    {
+      "path": "software/training/evaluate.py",
+      "size_bytes": 3710,
+      "sha256": "09db4a3920085622c5083333fd08d5af1cf8693c90d8f7cf45d99270192612b8"
+    },
+    {
+      "path": "software/training/evaluate_ku_leuven_robustness.py",
+      "size_bytes": 45589,
+      "sha256": "107e9e4376b177667ef069e98fb1535c4292d4047916014b812bf4eb5f6db466"
+    },
+    {
+      "path": "software/training/evaluate_robustness.py",
+      "size_bytes": 24770,
+      "sha256": "28d8efc05d29e6d536c416333e079730062ea302e32652de8e8cbe2e17e20284"
+    },
+    {
+      "path": "software/training/evaluate_uav_robustness.py",
+      "size_bytes": 18597,
+      "sha256": "2cd40117e21ee642f893b5646f6d1be6c7144e7c31f50e974169886c57f33f7b"
+    },
+    {
+      "path": "software/training/export_ku_leuven_runtime_demo.py",
+      "size_bytes": 3961,
+      "sha256": "9fbb1a408d1c5d8953a4aedf6b4e66d3a81ae49b07563346a22967578acf7f21"
+    },
+    {
+      "path": "software/training/freeze_ku_leuven_runtime.py",
+      "size_bytes": 6791,
+      "sha256": "ba71e19c45f8d3dcad54f6c1303a488c07dbfa5d4cc527d3c536db88da3c87cd"
+    },
+    {
+      "path": "software/training/freeze_ku_leuven_v4_runtime.py",
+      "size_bytes": 7796,
+      "sha256": "bef73198eb851b7ac8fd75327a55eff82d84f6d287df816d2ca5a95fff4eb0ea"
+    },
+    {
+      "path": "software/training/ku_leuven_augmentation.py",
+      "size_bytes": 3312,
+      "sha256": "39d13363d416cb6f53ef7d90fa58ef48649a4515ee14c6e7c978b4d115adee08"
+    },
+    {
+      "path": "software/training/ku_leuven_baseline.py",
+      "size_bytes": 21076,
+      "sha256": "952c36f8f5107062baad0d8b5de35513282cffeb031d8da396c910cdf42827db"
+    },
+    {
+      "path": "software/training/ku_leuven_checkpoint_selection.py",
+      "size_bytes": 5531,
+      "sha256": "f10003e60bf13574a0eb1797cd859b6f70ea1db3cd1ef2622f18505ae350536e"
+    },
+    {
+      "path": "software/training/resolve_a800_environment.py",
+      "size_bytes": 5392,
+      "sha256": "c9b5c2e7b787be775829d15af5b3f9ccfdf6c256803b1a9df6693a72eb660b7e"
+    },
+    {
+      "path": "software/training/run_ku_leuven_a800_matrix.py",
+      "size_bytes": 3459,
+      "sha256": "92f66387d5d062f6eb132e290c73ac7547aa7291bc7aa6c9af6fa2eb1db9612b"
+    },
+    {
+      "path": "software/training/run_ku_leuven_augmented_local.py",
+      "size_bytes": 5055,
+      "sha256": "2b1dc860365d915ea71fb42c8906cfb4a57e0a0a4ce81a64b1e4a1b2628a845a"
+    },
+    {
+      "path": "software/training/run_ku_leuven_local_matrix.py",
+      "size_bytes": 10898,
+      "sha256": "0d78d88701c9512b6c7e911d1a967a0a09ec80deccf7c493244805bbe479d801"
+    },
+    {
+      "path": "software/training/run_ku_leuven_strong_noise_local.py",
+      "size_bytes": 7732,
+      "sha256": "c320daf7fc3ab4516afd7014bac3a8b2094c0558ec22a8bc84ae20ccf53f5f8f"
+    },
+    {
+      "path": "software/training/run_ku_leuven_weighted_worst_noise_local.py",
+      "size_bytes": 6646,
+      "sha256": "5a0cb074710f61f2cf4975b9047d6c89882070f3bbe4cf74ffdfda1dd673dce7"
+    },
+    {
+      "path": "software/training/run_ku_leuven_worst_noise_selection_local.py",
+      "size_bytes": 10711,
+      "sha256": "518922af53906210bc6d7a6e4b08eb99b9f18af8cc04588857a09393c9260208"
+    },
+    {
+      "path": "software/training/run_uav_ablation.py",
+      "size_bytes": 4664,
+      "sha256": "0f2f56ce1d42ca80b83f6df9d8d319ef73f16985fd3d898412083d841d082bad"
+    },
+    {
+      "path": "software/training/run_uav_multiseed.py",
+      "size_bytes": 2517,
+      "sha256": "af543eae994164474d2deeff90af7a5db6be8f525f273ef8bdc246d742062936"
+    },
+    {
+      "path": "software/training/select_ku_leuven_a800_model.py",
+      "size_bytes": 6241,
+      "sha256": "a167fd60c71830eb787e5e49acd05aa64bad96531d717086c8978d6c2c30bf20"
+    },
+    {
+      "path": "software/training/train.py",
+      "size_bytes": 8187,
+      "sha256": "fd2b6515a93f62e1f44834145adc663132a6ed5d9bcb91d06f73eb8a9921e54b"
+    },
+    {
+      "path": "software/training/uav_baseline.py",
+      "size_bytes": 30951,
+      "sha256": "15ab08e99865b82b3b95f52f17cecac92f7146421d5190504e614f46834a187f"
+    },
+    {
+      "path": "software/training/verify_bearing_contract.py",
+      "size_bytes": 15281,
+      "sha256": "b108eb3ba6867418054999cc6714feecc83ec12f99e7d0f73b42af938f08a468"
+    },
+    {
+      "path": "software/ui_theme.py",
+      "size_bytes": 5681,
+      "sha256": "bfb5f484f2c304d2ab490645ce5fb76856b2726bbb78871779dadd608fa3d7e8"
+    },
+    {
+      "path": "software/waterfall_plotter.py",
+      "size_bytes": 166,
+      "sha256": "e6cf26f4b4cf7cb559a9a23ddeb98784ace3851be1c4130fe5d3555ee5e9e3d7"
+    },
+    {
+      "path": "software/一键运行.bat",
+      "size_bytes": 278,
+      "sha256": "ef31214714e6db8e5fe947b9d83fffe003762a337590cf2118d5eab0af1b5b4d"
+    },
+    {
+      "path": "WRITING_BRIEF.md",
+      "size_bytes": 3840,
+      "sha256": "3f7d08a419746261f5dd73a825e4c344aa2b26a67b80369323f582cb0e77e224"
+    }
+  ],
+  "file_count": 749,
+  "total_bytes": 30413590,
+  "credential_scan": {
+    "files_scanned": 747,
+    "suspicious_matches": 0,
+    "patterns": [
+      "GitHub tokens",
+      "OpenAI-style keys",
+      "private key PEM",
+      "URL credentials",
+      "known dataset archive password"
+    ],
+    "limitation": "Pattern-based check, not a proof of exhaustive secret detection"
+  },
+  "omitted": [
+    "raw datasets",
+    "weights and training checkpoints",
+    "optimizer/RNG state",
+    "Linux wheels",
+    "detailed evaluation shards",
+    "window-predictions.csv",
+    "local account and editor configuration",
+    "password request email"
+  ],
+  "source_archive_sha256": "325cf8f650b6bfa3dab6adf68bff55f940e52f031bc734a18acd36777de31e51"
+}

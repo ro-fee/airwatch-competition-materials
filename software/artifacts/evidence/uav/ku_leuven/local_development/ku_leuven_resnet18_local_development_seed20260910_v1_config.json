@@ -1,0 +1,39 @@
+{
+  "experiment_name": "ku_leuven_resnet18_local_development_v1",
+  "dataset": {
+    "name": "KU Leuven Drone RF Dataset",
+    "root": "D:/AirWatch_Datasets/ku_leuven_drone_rf/prepared/known-iq-v1",
+    "target": "known_source_classification",
+    "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "window_size": 4096,
+    "windows_per_recording": 32,
+    "input_channels": 2,
+    "num_classes": 3
+  },
+  "model": {
+    "name": "DroneRFResNet18"
+  },
+  "aggregation": {
+    "protocol": "mean-window-softmax-probability-v1",
+    "windows_per_recording": 32,
+    "open_set_target_known_acceptance": 0.95,
+    "threshold_selection_split": "validation"
+  },
+  "training": {
+    "seed": 20260910,
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 30,
+    "early_stopping_patience": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "cuda",
+    "amp": true,
+    "engineering_smoke": false
+  },
+  "output": {
+    "run_name": "ku_leuven_resnet18_local_development_seed20260910_v1",
+    "checkpoint_dir": "artifacts/checkpoints/uav/ku_leuven/local_development",
+    "evidence_dir": "artifacts/evidence/uav/ku_leuven/local_development"
+  }
+}

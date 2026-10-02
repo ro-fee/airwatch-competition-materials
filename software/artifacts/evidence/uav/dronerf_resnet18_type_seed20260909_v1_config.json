@@ -1,0 +1,30 @@
+{
+  "experiment_name": "dronerf_resnet18_type_baseline_v1",
+  "dataset": {
+    "name": "DroneRF",
+    "root": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908",
+    "target": "drone_type",
+    "window_size": 4096,
+    "normalization": "per_channel_window_zscore",
+    "num_classes": 4,
+    "cache_recordings": 12
+  },
+  "model": {
+    "name": "DroneRFResNet18"
+  },
+  "training": {
+    "seed": 20260909,
+    "batch_size": 96,
+    "num_workers": 0,
+    "epochs": 20,
+    "early_stopping_patience": 6,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "auto"
+  },
+  "output": {
+    "run_name": "dronerf_resnet18_type_seed20260909_v1",
+    "checkpoint_dir": "artifacts/checkpoints/uav",
+    "evidence_dir": "artifacts/evidence/uav"
+  }
+}

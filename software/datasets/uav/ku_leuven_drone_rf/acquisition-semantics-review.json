@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-09-09",
+  "dataset": "KU Leuven Drone RF Dataset V1.0",
+  "archive": "SJRC_pro.zip",
+  "evidence_findings": {
+    "signal_type": {
+      "value": "RC",
+      "confidence": "high",
+      "basis": "The DE-FEND paper's Table II lists SJRC pro with signal type RC among unknown sources."
+    },
+    "open_set_role": {
+      "value": "unknown_source",
+      "confidence": "high",
+      "basis": "The DE-FEND paper trains on Table I sources and evaluates novelty detection with Table II sources, which include SJRC pro RC."
+    },
+    "capture_environment": {
+      "value": "clean raw IQ in an RMA semi-anechoic chamber, without other communication interference",
+      "confidence": "high",
+      "basis": "DE-FEND database-development section and the official dataset README."
+    },
+    "mat_member_to_physical_session_mapping": {
+      "value": "not documented",
+      "confidence": "high",
+      "basis": "The official README, public repository metadata and reviewed papers do not map sjrc__0 through sjrc__50 to independent acquisition sessions."
+    }
+  },
+  "protocol_decision": {
+    "decision": "Lock the entire SJRC_pro archive as one external_unknown_test group.",
+    "reason": "This matches the paper's unknown-source role and prevents member-level train/test leakage despite unresolved physical-session relationships.",
+    "member_split": "forbidden",
+    "threshold_or_model_selection": "forbidden",
+    "primary_reporting_unit": "MAT member",
+    "secondary_reporting_unit": "entire archive"
+  },
+  "sources": [
+    "https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/HZRVNZ",
+    "https://doi.org/10.23919/ICACT56868.2023.10079363",
+    "https://arxiv.org/pdf/2011.13663",
+    "https://researchportal.rma.ac.be/en/studentTheses/drone-detection-and-classification-using-artificial-intelligence-/"
+  ],
+  "training_eligible": false,
+  "evaluation_eligible": false,
+  "remaining_blocker": "A compatible single-band IQ model and known-only calibration protocol must be frozen before any external-unknown evaluation."
+}

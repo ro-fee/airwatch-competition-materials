@@ -1,0 +1,48 @@
+{
+  "augmentation_protocol": "v4-paired-position-v1",
+  "data": {
+    "train_artifact": "v1",
+    "train_root": "data/prepared/known-iq-v1",
+    "validation_root": "data/prepared/known-iq-v1"
+  },
+  "experiment": "A",
+  "kind": "formal",
+  "model": {
+    "name": "tcn",
+    "num_classes": 3
+  },
+  "protocol": "airwatch-a800-v2",
+  "run_id": "A-seed20260909",
+  "schema_version": "2.0",
+  "seed": 20260909,
+  "selection": {
+    "clean_f1_floor": 0.97,
+    "repeat_seeds": [
+      2026090901,
+      2026090902,
+      2026090903
+    ]
+  },
+  "training": {
+    "anchors_per_batch": 128,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "cpu_threads": 4,
+    "eps": 1e-08,
+    "gradient_clip_norm": 1.0,
+    "interop_threads": 1,
+    "js_max_weight": 0.0,
+    "js_warmup_steps": 230,
+    "logical_epochs": 40,
+    "lr": 0.001,
+    "min_lr": 1e-05,
+    "precision": "bf16",
+    "steps_per_epoch": 230,
+    "total_steps": 9200,
+    "warmup_steps": 230,
+    "weight_decay": 0.0001,
+    "workers": 4
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "ku_leuven_local_training_stability_diagnostic",
+  "status": "completed_post_hoc_development_diagnostic",
+  "generated_at_utc": "2026-09-09T05:25:26.133005+00:00",
+  "source_comparison_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_local_reproducibility_v1.json",
+  "source_comparison_sha256": "e381ea62a8be4e771206b47b273500d373ea5f3f3f74d677a7b27f4c6de50028",
+  "runs": [
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260909,
+      "run_name": "ku_leuven_tcn_local_development_seed20260909_v1",
+      "selected_checkpoint_epoch": 9,
+      "selected_checkpoint_recording_macro_f1": 1.0,
+      "selected_checkpoint_window_macro_f1": 0.8058270858270858,
+      "selected_checkpoint_window_accuracy": 0.80859375,
+      "selected_checkpoint_validation_loss": 0.8766841813921928,
+      "selected_checkpoint_recording_per_class_recall": {
+        "frysky": 1.0,
+        "spektrum_dx4e": 1.0,
+        "dji_mini2_rc": 1.0
+      },
+      "trajectory_recording_macro_f1_mean": 0.6529718365925262,
+      "trajectory_recording_macro_f1_standard_deviation": 0.24303403982291552,
+      "trajectory_recording_macro_f1_minimum": 0.13333333333333333,
+      "trajectory_recording_macro_f1_maximum": 1.0,
+      "perfect_recording_macro_f1_epoch_count": 3,
+      "completed_epochs": 17,
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260909_v1_training.json",
+      "evidence_sha256": "7c314468df53372161bd1abf21c56cb45d89a2b03e5ffa0d7a610cf23e69401a"
+    },
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260910,
+      "run_name": "ku_leuven_tcn_local_development_seed20260910_v1",
+      "selected_checkpoint_epoch": 3,
+      "selected_checkpoint_recording_macro_f1": 1.0,
+      "selected_checkpoint_window_macro_f1": 0.7684315139898413,
+      "selected_checkpoint_window_accuracy": 0.7682291666666666,
+      "selected_checkpoint_validation_loss": 0.598219096660614,
+      "selected_checkpoint_recording_per_class_recall": {
+        "frysky": 1.0,
+        "spektrum_dx4e": 1.0,
+        "dji_mini2_rc": 1.0
+      },
+      "trajectory_recording_macro_f1_mean": 0.5449456970386345,
+      "trajectory_recording_macro_f1_standard_deviation": 0.2400334659646522,
+      "trajectory_recording_macro_f1_minimum": 0.13333333333333333,
+      "trajectory_recording_macro_f1_maximum": 1.0,
+      "perfect_recording_macro_f1_epoch_count": 1,
+      "completed_epochs": 11,
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260910_v1_training.json",
+      "evidence_sha256": "b77d6a5360d4605cf83e7202b5a0d27ec50c7b0fc77f56ee9b1567134dd777dd"
+    },
+    {
+      "model": "DroneRFTCN",
+      "seed": 20260911,
+      "run_name": "ku_leuven_tcn_local_development_seed20260911_v1",
+      "selected_checkpoint_epoch": 10,
+      "selected_checkpoint_recording_macro_f1": 1.0,
+      "selected_checkpoint_window_macro_f1": 0.7508394094138012,
+      "selected_checkpoint_window_accuracy": 0.7552083333333334,
+      "selected_checkpoint_validation_loss": 0.7765388811628023,
+      "selected_checkpoint_recording_per_class_recall": {
+        "frysky": 1.0,
+        "spektrum_dx4e": 1.0,
+        "dji_mini2_rc": 1.0
+      },
+      "trajectory_recording_macro_f1_mean": 0.6651336977170422,
+      "trajectory_recording_macro_f1_standard_deviation": 0.2054148273891456,
+      "trajectory_recording_macro_f1_minimum": 0.44787878787878793,
+      "trajectory_recording_macro_f1_maximum": 1.0,
+      "perfect_recording_macro_f1_epoch_count": 2,
+      "completed_epochs": 18,
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_tcn_local_development_seed20260911_v1_training.json",
+      "evidence_sha256": "8b4e3789736018425d29b56c6bfef741bd94482352dab81a0f0218f46ce7b38f"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260909,
+      "run_name": "ku_leuven_resnet18_local_development_seed20260909_v1",
+      "selected_checkpoint_epoch": 10,
+      "selected_checkpoint_recording_macro_f1": 1.0,
+      "selected_checkpoint_window_macro_f1": 0.7424772306231678,
+      "selected_checkpoint_window_accuracy": 0.73828125,
+      "selected_checkpoint_validation_loss": 0.8991341243187586,
+      "selected_checkpoint_recording_per_class_recall": {
+        "frysky": 1.0,
+        "spektrum_dx4e": 1.0,
+        "dji_mini2_rc": 1.0
+      },
+      "trajectory_recording_macro_f1_mean": 0.8512005640960862,
+      "trajectory_recording_macro_f1_standard_deviation": 0.1795554827317674,
+      "trajectory_recording_macro_f1_minimum": 0.4239130434782609,
+      "trajectory_recording_macro_f1_maximum": 1.0,
+      "perfect_recording_macro_f1_epoch_count": 7,
+      "completed_epochs": 18,
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260909_v1_training.json",
+      "evidence_sha256": "41d5224c59521abc4258b04b4c4fee32e76a478dc8c052c093fcee940e653104"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260910,
+      "run_name": "ku_leuven_resnet18_local_development_seed20260910_v1",
+      "selected_checkpoint_epoch": 5,
+      "selected_checkpoint_recording_macro_f1": 1.0,
+      "selected_checkpoint_window_macro_f1": 0.664105179350234,
+      "selected_checkpoint_window_accuracy": 0.6731770833333334,
+      "selected_checkpoint_validation_loss": 0.8892190953095754,
+      "selected_checkpoint_recording_per_class_recall": {
+        "frysky": 1.0,
+        "spektrum_dx4e": 1.0,
+        "dji_mini2_rc": 1.0
+      },
+      "trajectory_recording_macro_f1_mean": 0.7512607863426292,
+      "trajectory_recording_macro_f1_standard_deviation": 0.2085496419440811,
+      "trajectory_recording_macro_f1_minimum": 0.4222222222222222,
+      "trajectory_recording_macro_f1_maximum": 1.0,
+      "perfect_recording_macro_f1_epoch_count": 2,
+      "completed_epochs": 13,
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260910_v1_training.json",
+      "evidence_sha256": "fae960712be6d2eaebd69dd1fefd8517c45d9c6a9bed86cb9d0776d11d011c8c"
+    },
+    {
+      "model": "DroneRFResNet18",
+      "seed": 20260911,
+      "run_name": "ku_leuven_resnet18_local_development_seed20260911_v1",
+      "selected_checkpoint_epoch": 1,
+      "selected_checkpoint_recording_macro_f1": 1.0,
+      "selected_checkpoint_window_macro_f1": 0.5830122691696452,
+      "selected_checkpoint_window_accuracy": 0.59375,
+      "selected_checkpoint_validation_loss": 0.8494665697216988,
+      "selected_checkpoint_recording_per_class_recall": {
+        "frysky": 1.0,
+        "spektrum_dx4e": 1.0,
+        "dji_mini2_rc": 1.0
+      },
+      "trajectory_recording_macro_f1_mean": 0.7489144316730524,
+      "trajectory_recording_macro_f1_standard_deviation": 0.22665014989456125,
+      "trajectory_recording_macro_f1_minimum": 0.4735632183908047,
+      "trajectory_recording_macro_f1_maximum": 1.0,
+      "perfect_recording_macro_f1_epoch_count": 4,
+      "completed_epochs": 9,
+      "evidence_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\ku_leuven\\local_development\\ku_leuven_resnet18_local_development_seed20260911_v1_training.json",
+      "evidence_sha256": "56259c4d876f2959c344534b05c96bdf4dea9c947602191a477781dbc43e2c6f"
+    }
+  ],
+  "candidate_summaries": [
+    {
+      "model": "DroneRFTCN",
+      "selected_checkpoint_window_macro_f1": [
+        0.8058270858270858,
+        0.7684315139898413,
+        0.7508394094138012
+      ],
+      "mean_selected_checkpoint_window_macro_f1": 0.7750326697435761,
+      "standard_deviation_selected_checkpoint_window_macro_f1": 0.022928767699069274,
+      "minimum_selected_checkpoint_window_macro_f1": 0.7508394094138012,
+      "mean_selected_checkpoint_validation_loss": 0.7504807197385364,
+      "mean_within_run_recording_macro_f1_standard_deviation": 0.22949411105890447
+    },
+    {
+      "model": "DroneRFResNet18",
+      "selected_checkpoint_window_macro_f1": [
+        0.7424772306231678,
+        0.664105179350234,
+        0.5830122691696452
+      ],
+      "mean_selected_checkpoint_window_macro_f1": 0.6631982263810157,
+      "standard_deviation_selected_checkpoint_window_macro_f1": 0.06510445660940908,
+      "minimum_selected_checkpoint_window_macro_f1": 0.5830122691696452,
+      "mean_selected_checkpoint_validation_loss": 0.8792732631166776,
+      "mean_within_run_recording_macro_f1_standard_deviation": 0.20491842485680326
+    }
+  ],
+  "post_hoc_diagnostic_leader": {
+    "model": "DroneRFTCN",
+    "selected_checkpoint_window_macro_f1": [
+      0.8058270858270858,
+      0.7684315139898413,
+      0.7508394094138012
+    ],
+    "mean_selected_checkpoint_window_macro_f1": 0.7750326697435761,
+    "standard_deviation_selected_checkpoint_window_macro_f1": 0.022928767699069274,
+    "minimum_selected_checkpoint_window_macro_f1": 0.7508394094138012,
+    "mean_selected_checkpoint_validation_loss": 0.7504807197385364,
+    "mean_within_run_recording_macro_f1_standard_deviation": 0.22949411105890447
+  },
+  "post_hoc_diagnostic_only": true,
+  "formal_model_selection_claim_allowed": false,
+  "competition_test_claim_allowed": false,
+  "test_data_used": false,
+  "unknown_data_used": false,
+  "interpretation_boundary": "Recording-level validation saturated at 1.0 for every selected checkpoint; window metrics and epoch trajectories are reported only to diagnose the next frozen development protocol."
+}

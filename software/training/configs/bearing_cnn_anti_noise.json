@@ -1,0 +1,30 @@
+{
+  "experiment_name": "bearing_cnn_anti_noise",
+  "dataset": {
+    "name": "CWRU",
+    "manifest": "datasets/bearing/cwru/split-manifest.csv",
+    "label_map": "datasets/bearing/cwru/label-map.json",
+    "window_size": 1024,
+    "step": 1024,
+    "normalization": "window_zscore",
+    "num_classes": 4
+  },
+  "training": {
+    "seed": 20260904,
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "auto",
+    "augmentation": {
+      "enabled": true,
+      "clean_probability": 0.2,
+      "awgn_snr_db": [20.0, 10.0, 5.0, 0.0]
+    }
+  },
+  "output": {
+    "checkpoint_dir": "artifacts/checkpoints/bearing/anti_noise",
+    "evidence_dir": "artifacts/evidence/bearing/anti_noise"
+  }
+}

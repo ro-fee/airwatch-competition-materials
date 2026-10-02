@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "protocol_id": "ku-leuven-sjrc-external-unknown-v1",
+  "protocol_sha256": "a70fd2f571a97c2cab8cb8805cb2b5b3dbc4fb290bc05956186e64eb408f5a7c",
+  "official_readme": "datasets\\uav\\ku_leuven_drone_rf\\source-documentation\\README.txt",
+  "recording_count": 51,
+  "window_count": 1632,
+  "assigned_external_role": "external_unknown_test",
+  "source_manifest_split": "unassigned",
+  "training_data_used": false,
+  "validation_data_used": false,
+  "threshold_selection_data_used": false,
+  "evaluation_run": false,
+  "evaluation_eligible": false,
+  "blocker": "The current DroneRF model consumes separate 2.4/5.8 GHz band channels, while SJRC_pro contains single-band complex I/Q; no compatible frozen model exists yet."
+}

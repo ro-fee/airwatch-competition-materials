@@ -1,0 +1,49 @@
+{
+  "protocol": "dronerf-tcn-noise-augmented-validation-comparison-v1",
+  "frozen_on": "2026-09-08",
+  "task": "four-class drone type including background",
+  "data_identity_source": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908/metadata.json",
+  "data_identity_source_sha256": "526b0c41a0611994e3d97269f14c33f2910d118f6352fc6bd20ff8bf933402ee",
+  "split": "validation",
+  "test_usage": "Development-only paired comparison. The candidate checkpoint was selected on these validation conditions, so intervals are descriptive and not independent confirmatory evidence. The previously inspected test split remains unused for this candidate.",
+  "perturbation": {
+    "name": "deterministic_zero_mean_awgn_after_window_normalization",
+    "definition": "Requested dB is the empirical per-channel ratio of normalized captured-window power to added-noise power; it is not physical acquisition SNR.",
+    "snr_db_levels": [0, 5, 10, 15, 20],
+    "include_clean_reference": true,
+    "noise_seed": 2026090802
+  },
+  "statistics": {
+    "primary_unit": "recording",
+    "primary_metric": "recording_macro_f1",
+    "secondary_metrics": ["recording_accuracy", "window_macro_f1", "window_accuracy"],
+    "low_snr_interval_db": [0, 10],
+    "confidence_interval": "class-stratified paired recording bootstrap percentile 95%",
+    "bootstrap_seed": 2026090803,
+    "bootstrap_replicates": 2000
+  },
+  "evaluation": {"batch_size": 64, "num_workers": 0, "device": "auto"},
+  "models": [
+    {
+      "id": "tcn_baseline",
+      "config": "training/configs/dronerf_tcn_type_baseline_v1.json",
+      "config_sha256": "fb3bb165210123e96766d7e0a3278a58833093a85b89e711ae265ae017daacef",
+      "checkpoint": "artifacts/checkpoints/uav/dronerf_tcn_type_seed20260908_v1_best.pt",
+      "checkpoint_sha256": "7bfa947e0d06d2ee17819bd0e757e3df724d23ef342b0a1ba71c61012db194d3"
+    },
+    {
+      "id": "tcn_noise_augmented",
+      "config": "training/configs/dronerf_tcn_noise_augmented_validation_v1.json",
+      "config_sha256": "ac9795e36367eef3f6da79a49351bbc044634d26bc19bd49b9e6189350ea9698",
+      "checkpoint": "artifacts/checkpoints/uav/dronerf_tcn_noise_augmented_seed20260908_validation_v1_best.pt",
+      "checkpoint_sha256": "173b8009bda33a53e780f4576df2e1cd01f128143379dbe9d9fe56ddf85a6de3"
+    }
+  ],
+  "outputs": {
+    "summary_json": "artifacts/evidence/uav/dronerf_tcn_noise_augmented_validation_comparison_v1.json",
+    "metrics_csv": "artifacts/evidence/uav/dronerf_tcn_noise_augmented_validation_comparison_v1.csv",
+    "predictions_csv": "artifacts/evidence/uav/dronerf_tcn_noise_augmented_validation_comparison_v1_predictions.csv",
+    "curve_png": "artifacts/evidence/uav/dronerf_tcn_noise_augmented_validation_comparison_v1.png",
+    "curve_svg": "artifacts/evidence/uav/dronerf_tcn_noise_augmented_validation_comparison_v1.svg"
+  }
+}

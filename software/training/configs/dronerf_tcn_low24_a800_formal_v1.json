@@ -1,0 +1,33 @@
+{
+  "experiment_name": "dronerf_tcn_low24_a800_formal_v1",
+  "dataset": {
+    "name": "DroneRF",
+    "root": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908",
+    "target": "drone_type",
+    "band_selection": "low_2_4ghz",
+    "input_channels": 1,
+    "input_semantics": "lower_half_of_2_4ghz_real_time_domain_amplitude",
+    "window_size": 4096,
+    "normalization": "per_channel_window_zscore",
+    "num_classes": 4,
+    "cache_recordings": 32
+  },
+  "model": {
+    "name": "DroneRFTCN"
+  },
+  "training": {
+    "seed": 20260908,
+    "batch_size": 256,
+    "num_workers": 4,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "cuda"
+  },
+  "output": {
+    "run_name": "dronerf_tcn_low24_a800_seed20260908_v1",
+    "checkpoint_dir": "artifacts/checkpoints/uav/a800",
+    "evidence_dir": "artifacts/evidence/uav/a800"
+  }
+}

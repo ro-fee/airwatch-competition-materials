@@ -1,0 +1,20 @@
+{
+  "allocation_source": "owner-direct-authorization-2026-10-03: owner sole user of this A800; finalize phase authorized, 60 minutes",
+  "automatic_scheduling": false,
+  "container_visibility_caveat": "owner declared sole use; co-tenant OMBC jobs tolerated by explicit owner instruction, not by scheduler allocation",
+  "deadline_unix": 1790961004.0,
+  "gpu_index": 0,
+  "gpu_uuid": "GPU-846ca462-6ed9-19d9-24ab-43bafd745aa0",
+  "hostname": "k8s-master-1",
+  "memory_mib": 81920,
+  "name": "NVIDIA A800 80GB PCIe",
+  "observed_at_utc": "2026-10-02T16:10:06.560579+00:00",
+  "occupancy_verification": "owner_authorized_shared_occupancy",
+  "owner_owned_memory_mib": 0,
+  "owner_owned_processes": [],
+  "phase": "finalize",
+  "pid": 2555270,
+  "session_minutes": 60,
+  "started_at_unix": 1790957404.0,
+  "state": "allocated"
+}

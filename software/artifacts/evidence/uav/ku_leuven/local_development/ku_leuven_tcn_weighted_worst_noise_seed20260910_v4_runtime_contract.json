@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "status": "development_frozen",
+  "release_tier": "development_only",
+  "contract_id": "ku-leuven-known-source-runtime-dev-v2",
+  "created_on": "2026-09-09",
+  "model": {
+    "id": "tcn_seed20260910",
+    "version": "ku-leuven-tcn-weighted-worst-noise-dev-20260910-v4",
+    "name": "DroneRFTCN",
+    "training_seed": 20260910,
+    "checkpoint": "artifacts/checkpoints/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_best.pt",
+    "checkpoint_sha256": "6e08ad68ee07aa2df75dec9710d75f9c06b003161249f68d2c5d31a97e995cd0",
+    "resolved_config": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_config.json"
+  },
+  "input_contract": {
+    "format": "float IQ [32,2,4096], float IQ [2,131072], or complex [131072]",
+    "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "sample_rate_hz": 100000000,
+    "channels": 2,
+    "channel_semantics": [
+      "in_phase",
+      "quadrature"
+    ],
+    "window_samples": 4096,
+    "label_map": {
+      "frysky": 0,
+      "spektrum_dx4e": 1,
+      "dji_mini2_rc": 2
+    },
+    "display_labels": {
+      "frysky": "FrSky 遥控信号",
+      "spektrum_dx4e": "Spektrum DX4e 遥控信号",
+      "dji_mini2_rc": "DJI Mini 2 遥控信号"
+    }
+  },
+  "aggregation": {
+    "protocol": "mean-window-softmax-probability-v1",
+    "windows_per_recording": 32
+  },
+  "open_set": {
+    "status": "not_evaluated",
+    "threshold": null,
+    "known_unknown_publication_allowed": false,
+    "message": "No frozen KU Leuven unknown-rejection threshold is available; low confidence must not be relabeled as unknown."
+  },
+  "development_selection": {
+    "source_evidence": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_validation_robustness_v4.json",
+    "source_evidence_sha256": "1f0572bb980f25cd3b6543b1519c9ea2a1d71de87a71ab2f7c076bfb352b7966",
+    "accepted_comparison": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_weighted_worst_noise_local_comparison_v4.json",
+    "accepted_comparison_sha256": "739ab39c90928f63c2c1d7f888716feadb0d09d1bbffb3bd5ba8b33f8dc48323",
+    "method": "post_hoc_mean_recording_macro_f1_across_reused_40_condition_development_validation",
+    "predictor_means": {
+      "tcn_seed20260909": 0.8515467064501816,
+      "tcn_seed20260910": 0.8646808916487709,
+      "tcn_seed20260911": 0.7829866196664671
+    },
+    "selected_predictor": "tcn_seed20260910",
+    "selected_minus5_repeat_macro_f1": [
+      0.9547511312217195,
+      0.9547511312217195,
+      0.9107142857142857
+    ],
+    "independent_model_selection_claim_allowed": false
+  },
+  "claims": {
+    "known_source_classification_available": true,
+    "unknown_rejection_available": false,
+    "drone_presence_detection_available": false,
+    "operation_state_classification_available": false,
+    "competition_test_claim_allowed": false,
+    "test_data_used": false,
+    "unknown_data_used": false
+  },
+  "limitations": [
+    "Development-only model selected after repeated use of 24 known validation MAT members and 40 stress conditions.",
+    "Labels describe three known RF control sources, not a general drone-presence detector.",
+    "Open-set rejection, operation state, independent test performance, and cross-source generalization are not available.",
+    "The -5 dB improvement is restricted to reused synthetic development stressors and is not independent or physical-SNR evidence."
+  ],
+  "integrity": {
+    "algorithm": "sha256",
+    "files": [
+      {
+        "role": "checkpoint",
+        "path": "artifacts/checkpoints/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_best.pt",
+        "size_bytes": 3457394,
+        "sha256": "6e08ad68ee07aa2df75dec9710d75f9c06b003161249f68d2c5d31a97e995cd0"
+      },
+      {
+        "role": "resolved_config",
+        "path": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_tcn_weighted_worst_noise_seed20260910_v4_config.json",
+        "size_bytes": 1544,
+        "sha256": "3af90d988560380a32406fbe167c106d7617923d324f8168cadd4ef3448fe241"
+      },
+      {
+        "role": "model_definition",
+        "path": "airwatch/models/uav_baselines.py",
+        "size_bytes": 6118,
+        "sha256": "15f48724c3d1747454d4dab6b7a0106c9f84d80e0e2b242d9cf42885ebfcb1d5"
+      },
+      {
+        "role": "preprocessing_implementation",
+        "path": "airwatch/data/ku_leuven_preprocessing.py",
+        "size_bytes": 1995,
+        "sha256": "e74e8915c1bbc126ba5e0c422ad24e69e17b92d8c4d80d92e153f8d8fe5899ad"
+      },
+      {
+        "role": "inference_implementation",
+        "path": "airwatch/inference/ku_leuven.py",
+        "size_bytes": 18152,
+        "sha256": "ae806a9e7f9ed0d32edcda1e4845d427a0a6a323f4ec5cc0ad8d9e6f91d8a005"
+      },
+      {
+        "role": "development_protocol",
+        "path": "training/configs/ku_leuven_weighted_worst_noise_local_protocol_v4.json",
+        "size_bytes": 2885,
+        "sha256": "5ce37a01467f4d1820a8036444ab839a890a89e02146523fd1e77b1655377923"
+      },
+      {
+        "role": "development_comparison",
+        "path": "artifacts/evidence/uav/ku_leuven/local_development/ku_leuven_weighted_worst_noise_local_comparison_v4.json",
+        "size_bytes": 44694,
+        "sha256": "739ab39c90928f63c2c1d7f888716feadb0d09d1bbffb3bd5ba8b33f8dc48323"
+      }
+    ]
+  },
+  "contract_digest_sha256": "753bc17fb26b3f74ac9d0e396f9ff20f12d63f0ff5c000a8f7f6ec90d2822d25"
+}

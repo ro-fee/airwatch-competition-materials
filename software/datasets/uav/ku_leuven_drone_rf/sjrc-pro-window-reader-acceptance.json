@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "matlab_v73_iq_bounded_window_read_acceptance",
+  "generated_at_utc": "2026-09-08T22:57:55.213332+00:00",
+  "source": {
+    "path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/audit_sample/SJRC_pro/sjrc__0.mat",
+    "size_bytes": 29478333,
+    "sha256": "8632c26277a538c03982ccc48b6fd18cbbeaadfa42a3197094e1ceac434df6c8"
+  },
+  "runtime": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "h5py": "3.16.0"
+  },
+  "input_contract": {
+    "dataset_name": "uhd_samps",
+    "source_shape": [
+      1,
+      10000000
+    ],
+    "source_dtype": "[('real', '<f8'), ('imag', '<f8')]",
+    "matlab_class": "double",
+    "orientation": "row",
+    "sample_rate_hz": 100000000.0,
+    "total_sample_count": 10000000,
+    "recording_duration_seconds": 0.1
+  },
+  "bounded_read": {
+    "start_sample": 5000000,
+    "end_sample_exclusive": 5004096,
+    "window_size": 4096,
+    "window_duration_seconds": 4.096e-05,
+    "output_shape": [
+      2,
+      4096
+    ],
+    "output_dtype": "float32",
+    "output_bytes": 32768,
+    "writeable": false,
+    "all_finite": true,
+    "nonzero_fraction": 0.9981689453125,
+    "rms_i": 0.004148873880785966,
+    "rms_q": 0.004188021860872573
+  },
+  "passed": true,
+  "scope": "format and bounded-read acceptance only; no recognition metric was computed",
+  "training_eligible": false,
+  "training_blocker": "A recording manifest, leakage-audited split, common single-band IQ representation, and compatible trained model are still required."
+}

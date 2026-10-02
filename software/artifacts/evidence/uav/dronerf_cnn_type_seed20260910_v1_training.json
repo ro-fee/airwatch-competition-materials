@@ -1,0 +1,2710 @@
+{
+  "experiment_name": "dronerf_cnn_type_baseline_v1",
+  "run_name": "dronerf_cnn_type_seed20260910_v1",
+  "status": "completed",
+  "config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\dronerf_cnn_type_baseline_v1.json",
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "seed": 20260910,
+  "dataset": {
+    "train_windows": 5152,
+    "validation_windows": 1056,
+    "test_windows": 1056,
+    "train_recordings": 161,
+    "validation_recordings": 33,
+    "test_recordings": 33,
+    "window_size": 4096,
+    "channels": 2,
+    "normalization": "per_channel_window_zscore",
+    "label_map": {
+      "background": 0,
+      "parrot_bebop": 1,
+      "parrot_ar": 2,
+      "dji_phantom_3": 3
+    },
+    "data_identity": {
+      "dataset": "DroneRF",
+      "dataset_version": "1",
+      "preprocessing_version": "dronerf-two-band-raw-windows-v1",
+      "metadata_sha256": "526b0c41a0611994e3d97269f14c33f2910d118f6352fc6bd20ff8bf933402ee",
+      "verification_sha256": "eb6ba43cc88076e042e84cffb31d0cd9069a38fc9aa1522c20a089e4470e9149",
+      "window_manifest_sha256": "0cc0414945430d06d60be59c495fd948381f7f97c4b22e7cf34a8956d9bf3ba2",
+      "source_recording_manifest_sha256": "e0ee395eebac30c03de3007cb2269e2d471b58d703ae02ff5ec76ad6a2dda135",
+      "source_split_manifest_sha256": "d176a2598e7e1a0e2d888f52363d5d17ae3dec5351bfbbd6d2e9f0a5874edff2",
+      "split_protocol": "dronerf-recording-stratified-v1",
+      "split_seed": 20260908
+    },
+    "known_limitation": "DroneRF v1 未提供独立采集会话、日期或物理设备实例 ID；本划分仅证明 L/H 录制对及其未来切片不跨集合，不能证明跨会话泛化。"
+  },
+  "model": {
+    "name": "DroneRFCNN",
+    "input_shape": [
+      2,
+      4096
+    ],
+    "num_classes": 4,
+    "parameter_count": 242564
+  },
+  "class_weights": {
+    "background": 1.3879310344827587,
+    "parrot_bebop": 0.6708333333333333,
+    "parrot_ar": 0.706140350877193,
+    "dji_phantom_3": 2.683333333333333
+  },
+  "selection_rule": "maximum validation recording macro_f1; test unseen until frozen evaluation",
+  "resolved_config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_cnn_type_seed20260910_v1_config.json",
+  "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_cnn_type_seed20260910_v1_best.pt",
+  "last_checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_cnn_type_seed20260910_v1_last.pt",
+  "best_validation_recording_macro_f1": 0.9365079365079365,
+  "best_validation_window_loss": 0.8831964568658308,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.1487354206742708,
+      "train_accuracy": 0.40896739130434784,
+      "validation": {
+        "window": {
+          "accuracy": 0.3191287878787879,
+          "macro_f1": 0.32098371459008923,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              191,
+              1,
+              0,
+              0
+            ],
+            [
+              273,
+              108,
+              0,
+              3
+            ],
+            [
+              197,
+              185,
+              1,
+              1
+            ],
+            [
+              23,
+              36,
+              0,
+              37
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.27923976608187134,
+              "recall": 0.9947916666666666,
+              "f1": 0.4360730593607306,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.32727272727272727,
+              "recall": 0.28125,
+              "f1": 0.3025210084033613,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 1.0,
+              "recall": 0.0026041666666666665,
+              "f1": 0.005194805194805195,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.9024390243902439,
+              "recall": 0.3854166666666667,
+              "f1": 0.5401459854014599,
+              "support": 96
+            }
+          },
+          "loss": 1.802183378826488,
+          "evaluation_seconds": 0.17452040000353009,
+          "windows_per_second": 6050.868551634307
+        },
+        "recording": {
+          "accuracy": 0.3333333333333333,
+          "macro_f1": 0.3792929292929293,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              9,
+              3,
+              0,
+              0
+            ],
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.2857142857142857,
+              "recall": 1.0,
+              "f1": 0.4444444444444444,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.3,
+              "recall": 0.25,
+              "f1": 0.2727272727272727,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7826120542443317,
+      "train_accuracy": 0.6366459627329193,
+      "validation": {
+        "window": {
+          "accuracy": 0.3380681818181818,
+          "macro_f1": 0.305115774999126,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              189,
+              0,
+              0,
+              3
+            ],
+            [
+              178,
+              72,
+              1,
+              133
+            ],
+            [
+              56,
+              12,
+              0,
+              316
+            ],
+            [
+              0,
+              0,
+              0,
+              96
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.44680851063829785,
+              "recall": 0.984375,
+              "f1": 0.6146341463414634,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.8571428571428571,
+              "recall": 0.1875,
+              "f1": 0.3076923076923077,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.17518248175182483,
+              "recall": 1.0,
+              "f1": 0.2981366459627329,
+              "support": 96
+            }
+          },
+          "loss": 1.6509203075459509,
+          "evaluation_seconds": 0.17917089999536984,
+          "windows_per_second": 5893.814230030041
+        },
+        "recording": {
+          "accuracy": 0.30303030303030304,
+          "macro_f1": 0.25989010989010985,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              8,
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.42857142857142855,
+              "recall": 1.0,
+              "f1": 0.6,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.08333333333333333,
+              "f1": 0.15384615384615385,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.16666666666666666,
+              "recall": 1.0,
+              "f1": 0.2857142857142857,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6230074278316142,
+      "train_accuracy": 0.7313664596273292,
+      "validation": {
+        "window": {
+          "accuracy": 0.4981060606060606,
+          "macro_f1": 0.4359595328845265,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              190,
+              2,
+              0,
+              0
+            ],
+            [
+              76,
+              307,
+              1,
+              0
+            ],
+            [
+              58,
+              323,
+              2,
+              1
+            ],
+            [
+              6,
+              61,
+              2,
+              27
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.5757575757575758,
+              "recall": 0.9895833333333334,
+              "f1": 0.7279693486590039,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.443001443001443,
+              "recall": 0.7994791666666666,
+              "f1": 0.5701021355617456,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.4,
+              "recall": 0.005208333333333333,
+              "f1": 0.010282776349614395,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.9642857142857143,
+              "recall": 0.28125,
+              "f1": 0.43548387096774194,
+              "support": 96
+            }
+          },
+          "loss": 1.453694072636691,
+          "evaluation_seconds": 0.1827470000134781,
+          "windows_per_second": 5778.480631266817
+        },
+        "recording": {
+          "accuracy": 0.5454545454545454,
+          "macro_f1": 0.38866396761133604,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              12,
+              0,
+              0
+            ],
+            [
+              1,
+              11,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.9230769230769231,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.46153846153846156,
+              "recall": 1.0,
+              "f1": 0.631578947368421,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.5140608460266397,
+      "train_accuracy": 0.7769798136645962,
+      "validation": {
+        "window": {
+          "accuracy": 0.509469696969697,
+          "macro_f1": 0.34147261316422106,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              0,
+              73,
+              119,
+              0
+            ],
+            [
+              0,
+              151,
+              233,
+              0
+            ],
+            [
+              0,
+              11,
+              373,
+              0
+            ],
+            [
+              0,
+              12,
+              70,
+              14
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.611336032388664,
+              "recall": 0.3932291666666667,
+              "f1": 0.4786053882725832,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.4691823899371069,
+              "recall": 0.9713541666666666,
+              "f1": 0.6327396098388465,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 0.14583333333333334,
+              "f1": 0.2545454545454545,
+              "support": 96
+            }
+          },
+          "loss": 2.179560256726814,
+          "evaluation_seconds": 0.19854330000816844,
+          "windows_per_second": 5318.739035548186
+        },
+        "recording": {
+          "accuracy": 0.48484848484848486,
+          "macro_f1": 0.2676470588235294,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              0,
+              1,
+              5,
+              0
+            ],
+            [
+              0,
+              4,
+              8,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.8,
+              "recall": 0.3333333333333333,
+              "f1": 0.47058823529411764,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.42857142857142855,
+              "recall": 1.0,
+              "f1": 0.6,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.4167484085752357,
+      "train_accuracy": 0.8235636645962733,
+      "validation": {
+        "window": {
+          "accuracy": 0.36174242424242425,
+          "macro_f1": 0.3757177726788834,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              181,
+              0,
+              1,
+              10
+            ],
+            [
+              68,
+              90,
+              21,
+              205
+            ],
+            [
+              11,
+              0,
+              15,
+              358
+            ],
+            [
+              0,
+              0,
+              0,
+              96
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.6961538461538461,
+              "recall": 0.9427083333333334,
+              "f1": 0.8008849557522124,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.234375,
+              "f1": 0.379746835443038,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.40540540540540543,
+              "recall": 0.0390625,
+              "f1": 0.07125890736342043,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.14349775784753363,
+              "recall": 1.0,
+              "f1": 0.25098039215686274,
+              "support": 96
+            }
+          },
+          "loss": 2.2377658839139976,
+          "evaluation_seconds": 0.1787655999942217,
+          "windows_per_second": 5907.1767724558495
+        },
+        "recording": {
+          "accuracy": 0.3333333333333333,
+          "macro_f1": 0.37499999999999994,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              10
+            ],
+            [
+              0,
+              0,
+              0,
+              12
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.16666666666666666,
+              "f1": 0.2857142857142857,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.12,
+              "recall": 1.0,
+              "f1": 0.21428571428571427,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.35235839341738207,
+      "train_accuracy": 0.8425854037267081,
+      "validation": {
+        "window": {
+          "accuracy": 0.5965909090909091,
+          "macro_f1": 0.6091942326743991,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              149,
+              34,
+              5,
+              4
+            ],
+            [
+              1,
+              246,
+              68,
+              69
+            ],
+            [
+              1,
+              22,
+              150,
+              211
+            ],
+            [
+              0,
+              1,
+              10,
+              85
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9867549668874173,
+              "recall": 0.7760416666666666,
+              "f1": 0.8688046647230321,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.8118811881188119,
+              "recall": 0.640625,
+              "f1": 0.7161572052401747,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6437768240343348,
+              "recall": 0.390625,
+              "f1": 0.4862236628849271,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.23035230352303523,
+              "recall": 0.8854166666666666,
+              "f1": 0.3655913978494624,
+              "support": 96
+            }
+          },
+          "loss": 1.0000878030603582,
+          "evaluation_seconds": 0.1791969999903813,
+          "windows_per_second": 5892.955797567384
+        },
+        "recording": {
+          "accuracy": 0.696969696969697,
+          "macro_f1": 0.7050945378151261,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              5,
+              7
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 1.0,
+              "recall": 0.4166666666666667,
+              "f1": 0.5882352941176471,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.23076923076923078,
+              "recall": 1.0,
+              "f1": 0.375,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.2705014388753761,
+      "train_accuracy": 0.8779114906832298,
+      "validation": {
+        "window": {
+          "accuracy": 0.6193181818181818,
+          "macro_f1": 0.596401767577865,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              130,
+              8,
+              54,
+              0
+            ],
+            [
+              7,
+              113,
+              263,
+              1
+            ],
+            [
+              1,
+              4,
+              379,
+              0
+            ],
+            [
+              1,
+              12,
+              51,
+              32
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.935251798561151,
+              "recall": 0.6770833333333334,
+              "f1": 0.7854984894259819,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.8248175182481752,
+              "recall": 0.2942708333333333,
+              "f1": 0.43378119001919385,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.5073627844712182,
+              "recall": 0.9869791666666666,
+              "f1": 0.6702033598585323,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.9696969696969697,
+              "recall": 0.3333333333333333,
+              "f1": 0.49612403100775193,
+              "support": 96
+            }
+          },
+          "loss": 1.3913147828795693,
+          "evaluation_seconds": 0.179580399999395,
+          "windows_per_second": 5880.374472957837
+        },
+        "recording": {
+          "accuracy": 0.5454545454545454,
+          "macro_f1": 0.40384615384615385,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.4444444444444444,
+              "recall": 1.0,
+              "f1": 0.6153846153846154,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.20680960753689642,
+      "train_accuracy": 0.9149844720496895,
+      "validation": {
+        "window": {
+          "accuracy": 0.6231060606060606,
+          "macro_f1": 0.6329403303167545,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              163,
+              13,
+              7,
+              9
+            ],
+            [
+              5,
+              209,
+              96,
+              74
+            ],
+            [
+              2,
+              17,
+              208,
+              157
+            ],
+            [
+              0,
+              0,
+              18,
+              78
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9588235294117647,
+              "recall": 0.8489583333333334,
+              "f1": 0.9005524861878453,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.8744769874476988,
+              "recall": 0.5442708333333334,
+              "f1": 0.6709470304975923,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6322188449848024,
+              "recall": 0.5416666666666666,
+              "f1": 0.5834502103786816,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.24528301886792453,
+              "recall": 0.8125,
+              "f1": 0.37681159420289856,
+              "support": 96
+            }
+          },
+          "loss": 0.9849298668630195,
+          "evaluation_seconds": 0.17558579999604262,
+          "windows_per_second": 6014.153764278206
+        },
+        "recording": {
+          "accuracy": 0.7272727272727273,
+          "macro_f1": 0.7293233082706766,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.8571428571428571,
+              "recall": 0.5,
+              "f1": 0.631578947368421,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.2727272727272727,
+              "recall": 1.0,
+              "f1": 0.42857142857142855,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.15051497842954553,
+      "train_accuracy": 0.9407996894409938,
+      "validation": {
+        "window": {
+          "accuracy": 0.6136363636363636,
+          "macro_f1": 0.60741986025839,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              141,
+              51,
+              0,
+              0
+            ],
+            [
+              1,
+              341,
+              23,
+              19
+            ],
+            [
+              3,
+              229,
+              113,
+              39
+            ],
+            [
+              1,
+              27,
+              15,
+              53
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9657534246575342,
+              "recall": 0.734375,
+              "f1": 0.834319526627219,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.5262345679012346,
+              "recall": 0.8880208333333334,
+              "f1": 0.6608527131782945,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.7483443708609272,
+              "recall": 0.2942708333333333,
+              "f1": 0.4224299065420561,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.4774774774774775,
+              "recall": 0.5520833333333334,
+              "f1": 0.5120772946859904,
+              "support": 96
+            }
+          },
+          "loss": 1.0163110901008954,
+          "evaluation_seconds": 0.19077750001451932,
+          "windows_per_second": 5535.243935577477
+        },
+        "recording": {
+          "accuracy": 0.6363636363636364,
+          "macro_f1": 0.6666666666666666,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              12,
+              0,
+              0
+            ],
+            [
+              0,
+              12,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6666666666666666,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.10870974117554492,
+      "train_accuracy": 0.9633152173913043,
+      "validation": {
+        "window": {
+          "accuracy": 0.6998106060606061,
+          "macro_f1": 0.7050294423939145,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              173,
+              18,
+              0,
+              1
+            ],
+            [
+              8,
+              308,
+              59,
+              9
+            ],
+            [
+              8,
+              159,
+              208,
+              9
+            ],
+            [
+              1,
+              20,
+              25,
+              50
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9105263157894737,
+              "recall": 0.9010416666666666,
+              "f1": 0.9057591623036649,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.6099009900990099,
+              "recall": 0.8020833333333334,
+              "f1": 0.6929133858267716,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.7123287671232876,
+              "recall": 0.5416666666666666,
+              "f1": 0.6153846153846154,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.7246376811594203,
+              "recall": 0.5208333333333334,
+              "f1": 0.6060606060606061,
+              "support": 96
+            }
+          },
+          "loss": 0.774742325146993,
+          "evaluation_seconds": 0.17938040001899935,
+          "windows_per_second": 5886.93079003142
+        },
+        "recording": {
+          "accuracy": 0.8181818181818182,
+          "macro_f1": 0.8714285714285714,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              11,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              7,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.6875,
+              "recall": 0.9166666666666666,
+              "f1": 0.7857142857142857,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.875,
+              "recall": 0.5833333333333334,
+              "f1": 0.7,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.09181547336141516,
+      "train_accuracy": 0.9741847826086957,
+      "validation": {
+        "window": {
+          "accuracy": 0.5321969696969697,
+          "macro_f1": 0.5071960818357633,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              111,
+              2,
+              78,
+              1
+            ],
+            [
+              9,
+              48,
+              315,
+              12
+            ],
+            [
+              1,
+              3,
+              361,
+              19
+            ],
+            [
+              0,
+              2,
+              52,
+              42
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9173553719008265,
+              "recall": 0.578125,
+              "f1": 0.7092651757188498,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.8727272727272727,
+              "recall": 0.125,
+              "f1": 0.21867881548974943,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.4478908188585608,
+              "recall": 0.9401041666666666,
+              "f1": 0.6067226890756302,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.5675675675675675,
+              "recall": 0.4375,
+              "f1": 0.49411764705882355,
+              "support": 96
+            }
+          },
+          "loss": 1.6724163546706692,
+          "evaluation_seconds": 0.17531890000100248,
+          "windows_per_second": 6023.309523354081
+        },
+        "recording": {
+          "accuracy": 0.5454545454545454,
+          "macro_f1": 0.5061188811188811,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.4444444444444444,
+              "recall": 1.0,
+              "f1": 0.6153846153846154,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 0.3333333333333333,
+              "f1": 0.5,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.0589305496086245,
+      "train_accuracy": 0.9887422360248447,
+      "validation": {
+        "window": {
+          "accuracy": 0.4914772727272727,
+          "macro_f1": 0.4430889694575126,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              42,
+              133,
+              6,
+              11
+            ],
+            [
+              0,
+              285,
+              38,
+              61
+            ],
+            [
+              0,
+              104,
+              116,
+              164
+            ],
+            [
+              0,
+              7,
+              13,
+              76
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 0.21875,
+              "f1": 0.358974358974359,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.5387523629489603,
+              "recall": 0.7421875,
+              "f1": 0.624315443592552,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6705202312138728,
+              "recall": 0.3020833333333333,
+              "f1": 0.41651705565529623,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.24358974358974358,
+              "recall": 0.7916666666666666,
+              "f1": 0.37254901960784315,
+              "support": 96
+            }
+          },
+          "loss": 1.547823844533978,
+          "evaluation_seconds": 0.1876448000257369,
+          "windows_per_second": 5627.653949670663
+        },
+        "recording": {
+          "accuracy": 0.5151515151515151,
+          "macro_f1": 0.4077731092436975,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              5,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.5625,
+              "recall": 0.75,
+              "f1": 0.6428571428571429,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 1.0,
+              "recall": 0.4166666666666667,
+              "f1": 0.5882352941176471,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1": 0.4,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.049931971784334006,
+      "train_accuracy": 0.9902950310559007,
+      "validation": {
+        "window": {
+          "accuracy": 0.6051136363636364,
+          "macro_f1": 0.5428278168930806,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              188,
+              0,
+              4,
+              0
+            ],
+            [
+              92,
+              46,
+              244,
+              2
+            ],
+            [
+              10,
+              0,
+              374,
+              0
+            ],
+            [
+              2,
+              1,
+              62,
+              31
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.6438356164383562,
+              "recall": 0.9791666666666666,
+              "f1": 0.7768595041322314,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.9787234042553191,
+              "recall": 0.11979166666666667,
+              "f1": 0.21345707656612528,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.5467836257309941,
+              "recall": 0.9739583333333334,
+              "f1": 0.700374531835206,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.9393939393939394,
+              "recall": 0.3229166666666667,
+              "f1": 0.4806201550387597,
+              "support": 96
+            }
+          },
+          "loss": 2.7812058343128725,
+          "evaluation_seconds": 0.18492390000028536,
+          "windows_per_second": 5710.457112349299
+        },
+        "recording": {
+          "accuracy": 0.5454545454545454,
+          "macro_f1": 0.38866396761133604,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              11,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.9230769230769231,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.46153846153846156,
+              "recall": 1.0,
+              "f1": 0.631578947368421,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.04117118244446953,
+      "train_accuracy": 0.9912655279503105,
+      "validation": {
+        "window": {
+          "accuracy": 0.6704545454545454,
+          "macro_f1": 0.6474424093744174,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              191,
+              0,
+              1,
+              0
+            ],
+            [
+              101,
+              161,
+              115,
+              7
+            ],
+            [
+              32,
+              37,
+              314,
+              1
+            ],
+            [
+              4,
+              3,
+              47,
+              42
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.5823170731707317,
+              "recall": 0.9947916666666666,
+              "f1": 0.7346153846153847,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.8009950248756219,
+              "recall": 0.4192708333333333,
+              "f1": 0.5504273504273505,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6582809224318659,
+              "recall": 0.8177083333333334,
+              "f1": 0.7293844367015099,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.84,
+              "recall": 0.4375,
+              "f1": 0.5753424657534246,
+              "support": 96
+            }
+          },
+          "loss": 1.1026859459551899,
+          "evaluation_seconds": 0.18767959999968298,
+          "windows_per_second": 5626.610457406046
+        },
+        "recording": {
+          "accuracy": 0.8484848484848485,
+          "macro_f1": 0.8450549450549452,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              8,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.8571428571428571,
+              "recall": 1.0,
+              "f1": 0.9230769230769231,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.02557713167036172,
+      "train_accuracy": 0.9972826086956522,
+      "validation": {
+        "window": {
+          "accuracy": 0.6543560606060606,
+          "macro_f1": 0.632724010093432,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              102,
+              55,
+              33,
+              2
+            ],
+            [
+              4,
+              223,
+              134,
+              23
+            ],
+            [
+              0,
+              31,
+              308,
+              45
+            ],
+            [
+              1,
+              2,
+              35,
+              58
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9532710280373832,
+              "recall": 0.53125,
+              "f1": 0.6822742474916388,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.7170418006430869,
+              "recall": 0.5807291666666666,
+              "f1": 0.641726618705036,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6039215686274509,
+              "recall": 0.8020833333333334,
+              "f1": 0.6890380313199105,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.453125,
+              "recall": 0.6041666666666666,
+              "f1": 0.5178571428571429,
+              "support": 96
+            }
+          },
+          "loss": 1.1141097563685793,
+          "evaluation_seconds": 0.17735730001004413,
+          "windows_per_second": 5954.082521216756
+        },
+        "recording": {
+          "accuracy": 0.9090909090909091,
+          "macro_f1": 0.9365079365079365,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.014235899318009615,
+      "train_accuracy": 0.9992236024844721,
+      "validation": {
+        "window": {
+          "accuracy": 0.6628787878787878,
+          "macro_f1": 0.6524728886835609,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              185,
+              7,
+              0,
+              0
+            ],
+            [
+              16,
+              288,
+              55,
+              25
+            ],
+            [
+              14,
+              128,
+              167,
+              75
+            ],
+            [
+              1,
+              14,
+              21,
+              60
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.8564814814814815,
+              "recall": 0.9635416666666666,
+              "f1": 0.9068627450980392,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.6590389016018307,
+              "recall": 0.75,
+              "f1": 0.7015834348355664,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6872427983539094,
+              "recall": 0.4348958333333333,
+              "f1": 0.532695374800638,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.375,
+              "recall": 0.625,
+              "f1": 0.46875,
+              "support": 96
+            }
+          },
+          "loss": 0.9547901568990765,
+          "evaluation_seconds": 0.1867119999951683,
+          "windows_per_second": 5655.769313313162
+        },
+        "recording": {
+          "accuracy": 0.8181818181818182,
+          "macro_f1": 0.8461038961038961,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              2,
+              0
+            ],
+            [
+              0,
+              3,
+              8,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.7692307692307693,
+              "recall": 0.8333333333333334,
+              "f1": 0.8,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.8,
+              "recall": 0.6666666666666666,
+              "f1": 0.7272727272727273,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.009345741968555666,
+      "train_accuracy": 1.0,
+      "validation": {
+        "window": {
+          "accuracy": 0.6354166666666666,
+          "macro_f1": 0.6324560473090792,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              173,
+              19,
+              0,
+              0
+            ],
+            [
+              3,
+              329,
+              36,
+              16
+            ],
+            [
+              8,
+              225,
+              119,
+              32
+            ],
+            [
+              1,
+              33,
+              12,
+              50
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9351351351351351,
+              "recall": 0.9010416666666666,
+              "f1": 0.9177718832891246,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.5429042904290429,
+              "recall": 0.8567708333333334,
+              "f1": 0.6646464646464646,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.7125748502994012,
+              "recall": 0.3098958333333333,
+              "f1": 0.4319419237749546,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.5102040816326531,
+              "recall": 0.5208333333333334,
+              "f1": 0.5154639175257731,
+              "support": 96
+            }
+          },
+          "loss": 1.2120125510475852,
+          "evaluation_seconds": 0.1831368000130169,
+          "windows_per_second": 5766.181345993498
+        },
+        "recording": {
+          "accuracy": 0.696969696969697,
+          "macro_f1": 0.7478991596638656,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              12,
+              0,
+              0
+            ],
+            [
+              0,
+              10,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.5454545454545454,
+              "recall": 1.0,
+              "f1": 0.7058823529411765,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 1.0,
+              "recall": 0.16666666666666666,
+              "f1": 0.2857142857142857,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.006439899256371934,
+      "train_accuracy": 1.0,
+      "validation": {
+        "window": {
+          "accuracy": 0.6837121212121212,
+          "macro_f1": 0.6799332008624699,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              171,
+              21,
+              0,
+              0
+            ],
+            [
+              5,
+              321,
+              50,
+              8
+            ],
+            [
+              9,
+              181,
+              189,
+              5
+            ],
+            [
+              1,
+              23,
+              31,
+              41
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9193548387096774,
+              "recall": 0.890625,
+              "f1": 0.9047619047619048,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.5879120879120879,
+              "recall": 0.8359375,
+              "f1": 0.6903225806451613,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.7,
+              "recall": 0.4921875,
+              "f1": 0.5779816513761468,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.7592592592592593,
+              "recall": 0.4270833333333333,
+              "f1": 0.5466666666666666,
+              "support": 96
+            }
+          },
+          "loss": 1.0805423620975378,
+          "evaluation_seconds": 0.17456000001402572,
+          "windows_per_second": 6049.495874857651
+        },
+        "recording": {
+          "accuracy": 0.7878787878787878,
+          "macro_f1": 0.8475499092558983,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              11,
+              1,
+              0
+            ],
+            [
+              0,
+              6,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.6470588235294118,
+              "recall": 0.9166666666666666,
+              "f1": 0.7586206896551724,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.8571428571428571,
+              "recall": 0.5,
+              "f1": 0.631578947368421,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.0054677377819367075,
+      "train_accuracy": 1.0,
+      "validation": {
+        "window": {
+          "accuracy": 0.7471590909090909,
+          "macro_f1": 0.7275387618557881,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              174,
+              14,
+              4,
+              0
+            ],
+            [
+              13,
+              255,
+              100,
+              16
+            ],
+            [
+              3,
+              45,
+              309,
+              27
+            ],
+            [
+              1,
+              5,
+              39,
+              51
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9109947643979057,
+              "recall": 0.90625,
+              "f1": 0.9086161879895561,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.799373040752351,
+              "recall": 0.6640625,
+              "f1": 0.7254623044096729,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6836283185840708,
+              "recall": 0.8046875,
+              "f1": 0.7392344497607656,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.5425531914893617,
+              "recall": 0.53125,
+              "f1": 0.5368421052631579,
+              "support": 96
+            }
+          },
+          "loss": 0.8995221997752334,
+          "evaluation_seconds": 0.1890920999867376,
+          "windows_per_second": 5584.58021289131
+        },
+        "recording": {
+          "accuracy": 0.9090909090909091,
+          "macro_f1": 0.9365079365079365,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.004110613761192061,
+      "train_accuracy": 1.0,
+      "validation": {
+        "window": {
+          "accuracy": 0.7575757575757576,
+          "macro_f1": 0.7351806624402368,
+          "sample_count": 1056,
+          "confusion_matrix": [
+            [
+              178,
+              12,
+              2,
+              0
+            ],
+            [
+              9,
+              272,
+              90,
+              13
+            ],
+            [
+              6,
+              55,
+              303,
+              20
+            ],
+            [
+              1,
+              6,
+              42,
+              47
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 0.9175257731958762,
+              "recall": 0.9270833333333334,
+              "f1": 0.9222797927461139,
+              "support": 192
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 0.7884057971014493,
+              "recall": 0.7083333333333334,
+              "f1": 0.7462277091906722,
+              "support": 384
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.6933638443935927,
+              "recall": 0.7890625,
+              "f1": 0.7381242387332522,
+              "support": 384
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 0.5875,
+              "recall": 0.4895833333333333,
+              "f1": 0.5340909090909091,
+              "support": 96
+            }
+          },
+          "loss": 0.8831964568658308,
+          "evaluation_seconds": 0.17103910000878386,
+          "windows_per_second": 6174.026874239681
+        },
+        "recording": {
+          "accuracy": 0.9090909090909091,
+          "macro_f1": 0.9365079365079365,
+          "sample_count": 33,
+          "confusion_matrix": [
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              9,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              12,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "per_class": {
+            "background": {
+              "label_index": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 6
+            },
+            "parrot_bebop": {
+              "label_index": 1,
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571428571428571,
+              "support": 12
+            },
+            "parrot_ar": {
+              "label_index": 2,
+              "precision": 0.8,
+              "recall": 1.0,
+              "f1": 0.8888888888888888,
+              "support": 12
+            },
+            "dji_phantom_3": {
+              "label_index": 3,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0,
+              "support": 3
+            }
+          }
+        }
+      }
+    }
+  ],
+  "completed_epochs": 20
+}

@@ -1,0 +1,553 @@
+{
+  "schema_version": "1.0",
+  "status": "completed",
+  "protocol": "dronerf-added-noise-robustness-v1",
+  "protocol_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\dronerf_added_noise_robustness_protocol_v1.json",
+  "protocol_sha256": "bfca2a6ac7487089dc7ae068630ef592632981cf83f98fe1a73f34635769d393",
+  "protocol_frozen_on": "2026-09-08",
+  "environment": {
+    "python": "3.10.21",
+    "torch": "2.14.0+cu126",
+    "numpy": "2.2.6",
+    "device": "cuda",
+    "cuda_available": true,
+    "cuda_version": "12.6",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "data_identity": {
+    "dataset": "DroneRF",
+    "dataset_version": "1",
+    "preprocessing_version": "dronerf-two-band-raw-windows-v1",
+    "metadata_sha256": "526b0c41a0611994e3d97269f14c33f2910d118f6352fc6bd20ff8bf933402ee",
+    "verification_sha256": "eb6ba43cc88076e042e84cffb31d0cd9069a38fc9aa1522c20a089e4470e9149",
+    "window_manifest_sha256": "0cc0414945430d06d60be59c495fd948381f7f97c4b22e7cf34a8956d9bf3ba2",
+    "source_recording_manifest_sha256": "e0ee395eebac30c03de3007cb2269e2d471b58d703ae02ff5ec76ad6a2dda135",
+    "source_split_manifest_sha256": "d176a2598e7e1a0e2d888f52363d5d17ae3dec5351bfbbd6d2e9f0a5874edff2",
+    "split_protocol": "dronerf-recording-stratified-v1",
+    "split_seed": 20260908
+  },
+  "label_map": {
+    "background": 0,
+    "parrot_bebop": 1,
+    "parrot_ar": 2,
+    "dji_phantom_3": 3
+  },
+  "window_count_per_condition": 1056,
+  "recording_count_per_condition": 33,
+  "perturbation": {
+    "name": "deterministic_zero_mean_awgn_after_window_normalization",
+    "definition": "Requested dB is the empirical per-channel ratio of normalized captured-window power to added-noise power; it is not physical acquisition SNR because DroneRF already contains unknown captured noise.",
+    "snr_db_levels": [
+      -20,
+      -15,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "include_clean_reference": true,
+    "noise_seed": 20260908
+  },
+  "statistics": {
+    "primary_unit": "recording",
+    "primary_metric": "recording_macro_f1",
+    "secondary_metrics": [
+      "recording_accuracy",
+      "window_macro_f1",
+      "window_accuracy"
+    ],
+    "low_snr_interval_db": [
+      -20,
+      0
+    ],
+    "confidence_interval": "class-stratified paired recording bootstrap percentile 95%",
+    "bootstrap_seed": 2026090801,
+    "bootstrap_replicates": 2000
+  },
+  "results": [
+    {
+      "condition": "-20_db",
+      "snr_db": -20,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.3645833333333333,
+          "window_macro_f1": 0.1386208168942125,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.36363636363636365,
+          "window_macro_f1": 0.13333333333333333,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": {
+            "mean": 0.5144699339218664,
+            "standard_deviation": 0.00914977457515245,
+            "minimum": 0.4901723265647888,
+            "maximum": 0.5559752583503723
+          },
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    },
+    {
+      "condition": "-15_db",
+      "snr_db": -15,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.36363636363636365,
+          "window_macro_f1": 0.13333333333333333,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.36363636363636365,
+          "window_macro_f1": 0.13333333333333333,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": {
+            "mean": 0.5040544236191746,
+            "standard_deviation": 0.009057677740830952,
+            "minimum": 0.47583383321762085,
+            "maximum": 0.5491136908531189
+          },
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    },
+    {
+      "condition": "-10_db",
+      "snr_db": -10,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.36553030303030304,
+          "window_macro_f1": 0.14372285771053903,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.36363636363636365,
+          "window_macro_f1": 0.13333333333333333,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": {
+            "mean": 0.48956483436014614,
+            "standard_deviation": 0.009747752432067592,
+            "minimum": 0.448962539434433,
+            "maximum": 0.5238493084907532
+          },
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    },
+    {
+      "condition": "-5_db",
+      "snr_db": -5,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.3787878787878788,
+          "window_macro_f1": 0.21209324915007283,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.36363636363636365,
+          "window_macro_f1": 0.13333333333333333,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": {
+            "mean": 0.47793140104322723,
+            "standard_deviation": 0.013170478554005917,
+            "minimum": 0.4193061888217926,
+            "maximum": 0.5425461530685425
+          },
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    },
+    {
+      "condition": "0_db",
+      "snr_db": 0,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.4583333333333333,
+          "window_macro_f1": 0.3492653958824633,
+          "recording_accuracy": 0.3939393939393939,
+          "recording_macro_f1": 0.26136363636363635,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.39285714285714285
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.375,
+          "window_macro_f1": 0.1933826341960984,
+          "recording_accuracy": 0.36363636363636365,
+          "recording_macro_f1": 0.13333333333333333,
+          "fusion_weight_time": {
+            "mean": 0.4924053263032075,
+            "standard_deviation": 0.03735942497784625,
+            "minimum": 0.33381980657577515,
+            "maximum": 0.8106120824813843
+          },
+          "recording_macro_f1_ci95": [
+            0.13333333333333333,
+            0.13333333333333333
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": -0.12803030303030302,
+        "ci95": [
+          -0.2595238095238095,
+          0.0
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    },
+    {
+      "condition": "5_db",
+      "snr_db": 5,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.78125,
+          "window_macro_f1": 0.7580676050587349,
+          "recording_accuracy": 0.8787878787878788,
+          "recording_macro_f1": 0.904040404040404,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.8,
+            0.9791304347826086
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.4962121212121212,
+          "window_macro_f1": 0.44850016432822964,
+          "recording_accuracy": 0.5151515151515151,
+          "recording_macro_f1": 0.37727272727272726,
+          "fusion_weight_time": {
+            "mean": 0.8477551874168443,
+            "standard_deviation": 0.18556738062899517,
+            "minimum": 0.257097452878952,
+            "maximum": 0.9945544004440308
+          },
+          "recording_macro_f1_ci95": [
+            0.30952380952380953,
+            0.40384615384615385
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": -0.5267676767676768,
+        "ci95": [
+          -0.5844277673545967,
+          -0.4578947368421053
+        ],
+        "direction_supported_95pct": "candidate_worse"
+      }
+    },
+    {
+      "condition": "10_db",
+      "snr_db": 10,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.7964015151515151,
+          "window_macro_f1": 0.7820786565921666,
+          "recording_accuracy": 0.9090909090909091,
+          "recording_macro_f1": 0.9365079365079365,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.8666666666666667,
+            1.0
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.6676136363636364,
+          "window_macro_f1": 0.6618532569946896,
+          "recording_accuracy": 0.7272727272727273,
+          "recording_macro_f1": 0.7840909090909091,
+          "fusion_weight_time": {
+            "mean": 0.8526270827560714,
+            "standard_deviation": 0.19128759643426116,
+            "minimum": 0.2673751711845398,
+            "maximum": 0.9969661831855774
+          },
+          "recording_macro_f1_ci95": [
+            0.6506237006237007,
+            0.8841692789968651
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": -0.15241702741702745,
+        "ci95": [
+          -0.29103519668737055,
+          -0.029623824451410652
+        ],
+        "direction_supported_95pct": "candidate_worse"
+      }
+    },
+    {
+      "condition": "15_db",
+      "snr_db": 15,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.7973484848484849,
+          "window_macro_f1": 0.787055258713609,
+          "recording_accuracy": 0.9090909090909091,
+          "recording_macro_f1": 0.9365079365079365,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.8666666666666667,
+            1.0
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.7102272727272727,
+          "window_macro_f1": 0.7042920538623267,
+          "recording_accuracy": 0.8484848484848485,
+          "recording_macro_f1": 0.8558441558441559,
+          "fusion_weight_time": {
+            "mean": 0.8495730301365256,
+            "standard_deviation": 0.19318631052664323,
+            "minimum": 0.2638413608074188,
+            "maximum": 0.996517539024353
+          },
+          "recording_macro_f1_ci95": [
+            0.732715929113581,
+            0.958041958041958
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": -0.08066378066378066,
+        "ci95": [
+          -0.21808444207591504,
+          0.04540085846800912
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    },
+    {
+      "condition": "20_db",
+      "snr_db": 20,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.7926136363636364,
+          "window_macro_f1": 0.782786592123591,
+          "recording_accuracy": 0.9090909090909091,
+          "recording_macro_f1": 0.9365079365079365,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.8666666666666667,
+            1.0
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.7310606060606061,
+          "window_macro_f1": 0.7211236875649407,
+          "recording_accuracy": 0.9090909090909091,
+          "recording_macro_f1": 0.8996003996003996,
+          "fusion_weight_time": {
+            "mean": 0.8481986571216222,
+            "standard_deviation": 0.1940836169699308,
+            "minimum": 0.26169300079345703,
+            "maximum": 0.9961943626403809
+          },
+          "recording_macro_f1_ci95": [
+            0.780952380952381,
+            1.0
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": -0.0369075369075369,
+        "ci95": [
+          -0.16015651147853963,
+          0.08571428571428574
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    },
+    {
+      "condition": "clean",
+      "snr_db": null,
+      "models": {
+        "tcn_baseline": {
+          "window_accuracy": 0.7926136363636364,
+          "window_macro_f1": 0.7831046963422019,
+          "recording_accuracy": 0.9090909090909091,
+          "recording_macro_f1": 0.9365079365079365,
+          "fusion_weight_time": null,
+          "recording_macro_f1_ci95": [
+            0.8666666666666667,
+            1.0
+          ]
+        },
+        "dual_adaptive": {
+          "window_accuracy": 0.7367424242424242,
+          "window_macro_f1": 0.7336008842136099,
+          "recording_accuracy": 0.9090909090909091,
+          "recording_macro_f1": 0.8996003996003996,
+          "fusion_weight_time": {
+            "mean": 0.8467585101836559,
+            "standard_deviation": 0.19553159904060954,
+            "minimum": 0.26003298163414,
+            "maximum": 0.9960901141166687
+          },
+          "recording_macro_f1_ci95": [
+            0.7807692307692308,
+            1.0
+          ]
+        }
+      },
+      "paired_difference": {
+        "candidate": "dual_adaptive",
+        "reference": "tcn_baseline",
+        "metric": "recording_macro_f1",
+        "point": -0.0369075369075369,
+        "ci95": [
+          -0.16666666666666674,
+          0.08674948240165625
+        ],
+        "direction_supported_95pct": "inconclusive"
+      }
+    }
+  ],
+  "low_snr_summary": {
+    "tcn_baseline": {
+      "mean_recording_macro_f1_across_predeclared_levels": 0.15893939393939394
+    },
+    "dual_adaptive": {
+      "mean_recording_macro_f1_across_predeclared_levels": 0.13333333333333333
+    },
+    "candidate_minus_reference": -0.025606060606060604
+  },
+  "sources": [
+    {
+      "id": "tcn_baseline",
+      "config": "training/configs/dronerf_tcn_type_baseline_v1.json",
+      "config_sha256": "fb3bb165210123e96766d7e0a3278a58833093a85b89e711ae265ae017daacef",
+      "checkpoint": "artifacts/checkpoints/uav/dronerf_tcn_type_seed20260908_v1_best.pt",
+      "checkpoint_sha256": "7bfa947e0d06d2ee17819bd0e757e3df724d23ef342b0a1ba71c61012db194d3",
+      "config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\dronerf_tcn_type_baseline_v1.json",
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_tcn_type_seed20260908_v1_best.pt"
+    },
+    {
+      "id": "dual_adaptive",
+      "config": "training/configs/dronerf_dual_adaptive_type_ablation_v1.json",
+      "config_sha256": "8ee623b84f21f2a020c5958c3975ed18c550e6ebecfb97d7c1e351070d9b193b",
+      "checkpoint": "artifacts/checkpoints/uav/dronerf_dual_adaptive_type_seed20260908_ablation_v1_best.pt",
+      "checkpoint_sha256": "07c4642bb3c0b6eac058953640ab169367b04216e20363692a3fe816fbcc47cc",
+      "config_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\training\\configs\\dronerf_dual_adaptive_type_ablation_v1.json",
+      "checkpoint_path": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\checkpoints\\uav\\dronerf_dual_adaptive_type_seed20260908_ablation_v1_best.pt"
+    }
+  ],
+  "artifacts": {
+    "metrics_csv": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_added_noise_robustness_seed20260908_v1.csv",
+    "metrics_csv_sha256": "c3f64958e4f479703a6e747b5479b7d1e65444b90dea2ca9fa06db61a043a03d",
+    "predictions_csv": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_added_noise_robustness_seed20260908_v1_predictions.csv",
+    "predictions_csv_sha256": "229bacabed0b21cd0abc670bb2807fa52046a8f4226111c1bda63c9532869712",
+    "curve_png": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_added_noise_robustness_seed20260908_v1.png",
+    "curve_png_sha256": "51536600a5e97ee218d787ce53f87595618ea9221866081bf44ab5cf862cf988",
+    "curve_svg": "E:\\Code_Project\\Rofee_Project_Python\\【内部文件-禁止传播】software\\artifacts\\evidence\\uav\\dronerf_added_noise_robustness_seed20260908_v1.svg",
+    "curve_svg_sha256": "45fbf18838d624c835e65751941d877f38dd4e2d73aa1f1b0b2c7bd1e0027fa8"
+  },
+  "interpretation_boundary": "Injected dB values describe normalized captured-window power relative to newly added AWGN. They are not calibrated physical acquisition SNR and do not establish cross-source deployment performance.",
+  "selection_boundary": "Reporting-only robustness characterization of already frozen checkpoints. Results must not be used to change these checkpoints or retrospectively select SNR levels."
+}

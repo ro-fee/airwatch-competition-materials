@@ -1,0 +1,53 @@
+{
+  "protocol": "dronerf-added-noise-robustness-v1",
+  "frozen_on": "2026-09-08",
+  "task": "four-class drone type including background",
+  "data_identity_source": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908/metadata.json",
+  "data_identity_source_sha256": "526b0c41a0611994e3d97269f14c33f2910d118f6352fc6bd20ff8bf933402ee",
+  "split": "test",
+  "test_usage": "Reporting-only robustness characterization of already frozen checkpoints. Results must not be used to change these checkpoints or retrospectively select SNR levels.",
+  "perturbation": {
+    "name": "deterministic_zero_mean_awgn_after_window_normalization",
+    "definition": "Requested dB is the empirical per-channel ratio of normalized captured-window power to added-noise power; it is not physical acquisition SNR because DroneRF already contains unknown captured noise.",
+    "snr_db_levels": [-20, -15, -10, -5, 0, 5, 10, 15, 20],
+    "include_clean_reference": true,
+    "noise_seed": 20260908
+  },
+  "statistics": {
+    "primary_unit": "recording",
+    "primary_metric": "recording_macro_f1",
+    "secondary_metrics": ["recording_accuracy", "window_macro_f1", "window_accuracy"],
+    "low_snr_interval_db": [-20, 0],
+    "confidence_interval": "class-stratified paired recording bootstrap percentile 95%",
+    "bootstrap_seed": 2026090801,
+    "bootstrap_replicates": 2000
+  },
+  "evaluation": {
+    "batch_size": 48,
+    "num_workers": 0,
+    "device": "auto"
+  },
+  "models": [
+    {
+      "id": "tcn_baseline",
+      "config": "training/configs/dronerf_tcn_type_baseline_v1.json",
+      "config_sha256": "fb3bb165210123e96766d7e0a3278a58833093a85b89e711ae265ae017daacef",
+      "checkpoint": "artifacts/checkpoints/uav/dronerf_tcn_type_seed20260908_v1_best.pt",
+      "checkpoint_sha256": "7bfa947e0d06d2ee17819bd0e757e3df724d23ef342b0a1ba71c61012db194d3"
+    },
+    {
+      "id": "dual_adaptive",
+      "config": "training/configs/dronerf_dual_adaptive_type_ablation_v1.json",
+      "config_sha256": "8ee623b84f21f2a020c5958c3975ed18c550e6ebecfb97d7c1e351070d9b193b",
+      "checkpoint": "artifacts/checkpoints/uav/dronerf_dual_adaptive_type_seed20260908_ablation_v1_best.pt",
+      "checkpoint_sha256": "07c4642bb3c0b6eac058953640ab169367b04216e20363692a3fe816fbcc47cc"
+    }
+  ],
+  "outputs": {
+    "summary_json": "artifacts/evidence/uav/dronerf_added_noise_robustness_seed20260908_v1.json",
+    "metrics_csv": "artifacts/evidence/uav/dronerf_added_noise_robustness_seed20260908_v1.csv",
+    "predictions_csv": "artifacts/evidence/uav/dronerf_added_noise_robustness_seed20260908_v1_predictions.csv",
+    "curve_png": "artifacts/evidence/uav/dronerf_added_noise_robustness_seed20260908_v1.png",
+    "curve_svg": "artifacts/evidence/uav/dronerf_added_noise_robustness_seed20260908_v1.svg"
+  }
+}

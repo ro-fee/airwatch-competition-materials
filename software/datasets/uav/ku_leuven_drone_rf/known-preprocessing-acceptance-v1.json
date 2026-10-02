@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "ku_leuven_real_iq_preprocessing_acceptance",
+  "generated_at_utc": "2026-09-09T04:01:24.002667+00:00",
+  "preprocessing": {
+    "id": "ku-leuven-iq-dc-rms-v1",
+    "input_shape": [
+      2,
+      4096
+    ],
+    "channel_semantics": [
+      "in_phase",
+      "quadrature"
+    ],
+    "sample_rate_hz": 100000000,
+    "operations": [
+      "per_channel_dc_removal",
+      "per_window_complex_rms_normalization"
+    ],
+    "uses_cross_window_statistics": false,
+    "uses_validation_or_test_statistics": false
+  },
+  "source_evidence": {
+    "split_assignments": {
+      "path": "datasets/uav/ku_leuven_drone_rf/known-split-v1/known-split-assignments.csv",
+      "sha256": "bb6363366ea7ba5a8908eea4e048c817cbb28126f0d402547f458d036c8428ce"
+    },
+    "window_plans": [
+      {
+        "path": "datasets/uav/ku_leuven_drone_rf/frysky-manifest-v1/window-plan.csv",
+        "sha256": "2c7f80e9ad2c7db5a90a0445e9a998a586bdcd2bd4e1c9f7cbd7a63938a1561d"
+      },
+      {
+        "path": "datasets/uav/ku_leuven_drone_rf/spektrum-dx4e-manifest-v1/window-plan.csv",
+        "sha256": "77cd17bc6ba590a5e5c76ee2267114e12088e0d7e6806d454adab743c44aa6e0"
+      },
+      {
+        "path": "datasets/uav/ku_leuven_drone_rf/mini2-rc-manifest-v1/window-plan.csv",
+        "sha256": "e36ff3ee485d17df97742cf7c023d59c8e424d1ee0e1c4f732d3d3203dab46e5"
+      }
+    ]
+  },
+  "samples": [
+    {
+      "archive_id": "frysky-v1",
+      "archive_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/Frysky.zip",
+      "recording_id": "ku-leuven:frysky-v1:0000",
+      "member_path": "Frysky/Frysky_0.mat",
+      "member_sha256": "9cd5d70088a8383291fb5fc585da98ec5d2f73d67b10928b0e7cbfe827c1cd66",
+      "window_id": "ku-leuven:frysky-v1:0000:w000",
+      "start_sample": 190169,
+      "shape": [
+        2,
+        4096
+      ],
+      "dtype": "float32",
+      "channel_means": [
+        1.0265921446261927e-10,
+        -5.521769708138891e-10
+      ],
+      "complex_rms": 1.0000000490991068,
+      "finite": true,
+      "output_sha256": "7dc76c49cf13c8ab6943c573b23eecf4ff737141651baaa09b0769e037b20e3b",
+      "ok": true
+    },
+    {
+      "archive_id": "spektrum-dx4e-v1",
+      "archive_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/Spektrum_DX4e.zip",
+      "recording_id": "ku-leuven:spektrum-dx4e-v1:0000",
+      "member_path": "Spektrum_DX4e/DX4e_0.mat",
+      "member_sha256": "688790066291a6f5f48a40c576993d0936066547df1ffa66fd2fa6c6b799b433",
+      "window_id": "ku-leuven:spektrum-dx4e-v1:0000:w000",
+      "start_sample": 120800,
+      "shape": [
+        2,
+        4096
+      ],
+      "dtype": "float32",
+      "channel_means": [
+        -1.2332748156040907e-09,
+        1.3142198440618813e-10
+      ],
+      "complex_rms": 1.0000000281727905,
+      "finite": true,
+      "output_sha256": "510e430471996f4e9385bbde0932fb532fe06f3600ae9c8f2139c7fc10266460",
+      "ok": true
+    },
+    {
+      "archive_id": "mini2-rc-v1",
+      "archive_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/mini2RC.zip",
+      "recording_id": "ku-leuven:mini2-rc-v1:0000",
+      "member_path": "mini2RC/mini2_0.mat",
+      "member_sha256": "01f8bcc4e864d98d22f2da19133ddb0cf564e4b33952890d93c711637ab5f8bf",
+      "window_id": "ku-leuven:mini2-rc-v1:0000:w000",
+      "start_sample": 193685,
+      "shape": [
+        2,
+        4096
+      ],
+      "dtype": "float32",
+      "channel_means": [
+        4.970388545189053e-10,
+        -1.3029648471274413e-09
+      ],
+      "complex_rms": 0.9999999918700851,
+      "finite": true,
+      "output_sha256": "42b16102796cf4230751b1fe8954efbded7cd84a8f6e926d9314e52f67fedf10",
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "performance_evidence": false,
+  "interpretation": "This artifact validates data access and preprocessing only; it is not model-performance evidence."
+}

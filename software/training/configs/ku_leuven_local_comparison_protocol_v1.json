@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "protocol": "ku-leuven-local-single-seed-development-comparison-v1",
+  "status": "ready_not_run",
+  "purpose": "Confirm local convergence and expose model failure modes before the preserved A800 multi-seed protocol.",
+  "candidates": [
+    "training/configs/ku_leuven_tcn_local_development_v1.json",
+    "training/configs/ku_leuven_resnet18_local_development_v1.json"
+  ],
+  "seed": 20260909,
+  "selection_split": "validation",
+  "primary_diagnostic": "recording_macro_f1",
+  "secondary_diagnostic": "per_class_recording_recall",
+  "test_data_allowed": false,
+  "unknown_data_allowed": false,
+  "formal_model_selection_claim_allowed": false,
+  "a800_protocol_replaced": false
+}

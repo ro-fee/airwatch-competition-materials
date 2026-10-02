@@ -1,0 +1,37 @@
+{
+  "experiment_name": "ku_leuven_tcn_local_smoke_v2",
+  "dataset": {
+    "name": "KU Leuven Drone RF Dataset",
+    "root": "D:/AirWatch_Datasets/ku_leuven_drone_rf/prepared/known-iq-v1",
+    "target": "known_source_classification",
+    "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "window_size": 4096,
+    "windows_per_recording": 32,
+    "input_channels": 2,
+    "num_classes": 3
+  },
+  "model": {"name": "DroneRFTCN"},
+  "aggregation": {
+    "protocol": "mean-window-softmax-probability-v1",
+    "windows_per_recording": 32,
+    "open_set_target_known_acceptance": 0.95,
+    "threshold_selection_split": "validation"
+  },
+  "training": {
+    "seed": 20260909,
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 1,
+    "early_stopping_patience": 1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "auto",
+    "amp": false,
+    "engineering_smoke": true
+  },
+  "output": {
+    "run_name": "ku_leuven_tcn_local_smoke_seed20260909_v2",
+    "checkpoint_dir": "artifacts/checkpoints/uav/ku_leuven/smoke",
+    "evidence_dir": "artifacts/evidence/uav/ku_leuven/smoke"
+  }
+}

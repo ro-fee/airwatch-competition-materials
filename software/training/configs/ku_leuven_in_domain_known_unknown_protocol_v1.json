@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "ku-leuven-in-domain-known-unknown-v1",
+  "created_on": "2026-09-09",
+  "status": "ready_for_engineering_smoke_formal_training_not_started",
+  "dataset": {
+    "name": "KU Leuven Drone RF Dataset",
+    "version": "1.0",
+    "doi": "10.48804/HZRVNZ",
+    "sample_rate_hz": 100000000,
+    "center_frequency_hz": 2440000000,
+    "input_semantics": "single_band_complex_iq"
+  },
+  "known_sources": [
+    {
+      "archive": "Frysky.zip",
+      "source": "RadioMaster/Taranis RC",
+      "protocol": "Frysky",
+      "download_status": "verified"
+    },
+    {
+      "archive": "Spektrum_DX4e.zip",
+      "source": "Spektrum DX4e RC",
+      "protocol": "DSM",
+      "download_status": "verified"
+    },
+    {
+      "archive": "mini2RC.zip",
+      "source": "DJI Mini 2 RC",
+      "protocol": "Ocusync 2",
+      "download_status": "verified"
+    }
+  ],
+  "unknown_sources": [
+    {"archive": "NineEagles.zip", "source": "NineEagles RC", "evaluation_only": true},
+    {"archive": "wltoys.zip", "source": "WlToys RC", "evaluation_only": true},
+    {"archive": "Q205.zip", "source": "Q205 RC", "evaluation_only": true},
+    {"archive": "SJRC_pro.zip", "source": "SJRC Pro RC", "evaluation_only": true}
+  ],
+  "integrity_rules": {
+    "unknown_training_allowed": false,
+    "unknown_validation_allowed": false,
+    "unknown_threshold_selection_allowed": false,
+    "unknown_model_selection_allowed": false,
+    "split_unit": "MAT_member_recording",
+    "window_leakage_allowed": false,
+    "physical_session_independence_established": false,
+    "required_limitation_statement": "MAT member boundaries are verified, but physical acquisition-session independence is not established."
+  },
+  "planned_known_split": {
+    "status": "frozen",
+    "evidence": "datasets/uav/ku_leuven_drone_rf/known-split-v1/bundle-index.json",
+    "protocol": "contiguous-member-blocks-with-five-member-guards-v1",
+    "guard_members_per_boundary": 5,
+    "active_member_counts": {"train": 115, "validation": 24, "test": 24},
+    "guard_member_count": 30,
+    "threshold_selection_split": "validation",
+    "model_selection_split": "validation",
+    "test_opened_after_freeze": true,
+    "limitation": "The official metadata does not prove that MAT members are independent physical sessions; guard blocks reduce adjacency but do not establish cross-session generalization."
+  },
+  "preprocessing": {
+    "status": "frozen",
+    "id": "ku-leuven-iq-dc-rms-v1",
+    "acceptance_evidence": "datasets/uav/ku_leuven_drone_rf/known-preprocessing-acceptance-v1.json",
+    "input_shape": [2, 4096],
+    "sample_rate_hz": 100000000,
+    "channel_semantics": ["in_phase", "quadrature"],
+    "operations": ["per_channel_dc_removal", "per_window_complex_rms_normalization"],
+    "cross_window_statistics": false,
+    "validation_or_test_statistics": false
+  },
+  "aggregation": {
+    "status": "frozen",
+    "protocol": "mean-window-softmax-probability-v1",
+    "windows_per_recording": 32,
+    "known_class_prediction": "argmax_of_mean_window_softmax_probability",
+    "known_confidence": "maximum_of_mean_window_softmax_probability",
+    "open_set_target_known_acceptance": 0.95,
+    "open_set_threshold_source": "known_validation_recordings_only",
+    "incomplete_recording_allowed": false,
+    "mixed_target_recording_allowed": false
+  },
+  "evaluation": {
+    "primary_unit": "MAT_member_recording",
+    "window_predictions_intermediate_only": true,
+    "required_metrics": [
+      "known_source_macro_f1",
+      "known_acceptance_rate",
+      "unknown_rejection_rate",
+      "auroc_known_vs_unknown",
+      "fpr95"
+    ],
+    "unknown_results_may_not_change_model_or_threshold": true
+  },
+  "paper_alignment": {
+    "reference_doi": "10.23919/ICACT56868.2023.10079363",
+    "known_subset": "Spektrum DX4e RC, DJI Mini 2 RC and RadioMaster/Taranis Frysky are listed as known sources in Table I",
+    "unknown_set": "NineEagles RC, WlToys RC, Q205 RC and SJRC Pro RC are listed as unknown sources in Table II"
+  },
+  "prerequisites": [
+    "Completed: download and verify all three planned known archives",
+    "Completed: audit every known MAT member and bind member hashes",
+    "Completed: freeze a contiguous member-block split with five-member guard bands",
+    "Completed: freeze and verify per-window IQ preprocessing on one registered training window from each known source",
+    "Completed: freeze 32-window mean-softmax member aggregation and known-validation-only 95% acceptance calibration",
+    "Freeze model selection and known-validation threshold selection",
+    "Download and verify the remaining three unknown archives",
+    "Completed: freeze member-level aggregation before opening unknown results"
+  ]
+}

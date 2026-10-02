@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.1",
+  "purpose": "无人机射频数据来源、许可、选择与训练放行登记；公开可访问不等于已经下载或可用于训练。",
+  "selection": {
+    "selected_on": "2026-09-08",
+    "primary_source": "DroneRF",
+    "decision": "DroneRF 具备官方 Mendeley Data 固定版本、CC BY 4.0 许可、背景录制、三种无人机及多种工作模式，适合作为首条检测、类型/状态和开放集基线。",
+    "external_validation_candidate": "VTI_DroneSET",
+    "fallback_external_candidate": "KU Leuven Drone RF Dataset",
+    "download_strategy": "VTI 官方归档继续等待作者密码；KU Leuven V1.0 已下载并验证一个最小设备包、样本格式和分块读取器，不下载 43.49 GiB 全集。先完成该包的录制清单、窗口规则和通道语义审计，再决定是否扩展下载。",
+    "training_gate": "主数据集必须具有本地只读原始目录、下载日期、固定版本、文件清单和 SHA-256；审计通过前禁止训练或报告无人机指标。"
+  },
+  "sources": [
+    {
+      "name": "DroneRF",
+      "role": "primary",
+      "status": "官方 V1 归档、23 个源包、227 条录制清单、固定录制级划分及 7264 个双频段窗口均已验证；允许开始可复现基线训练",
+      "source_url": "https://data.mendeley.com/datasets/f4c2b4n755/1",
+      "dataset_doi": "10.17632/f4c2b4n755.1",
+      "paper_url": "https://doi.org/10.1016/j.dib.2019.104313",
+      "method_paper_url": "https://doi.org/10.1016/j.future.2019.05.007",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "license_verified": true,
+      "license_evidence_url": "https://data.mendeley.com/datasets/f4c2b4n755/1",
+      "license_legalcode_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "version": "1",
+      "published_date": "2019-03-02",
+      "verified_on": "2026-09-08",
+      "archive_url": "https://data.mendeley.com/public-api/zip/f4c2b4n755/download/1",
+      "archive_display_size": "3.75 GB",
+      "archive_sha256": "f3cd8a1dfe14f51edc40c8012f12cdf34c3d7e1c51b62ef4539505d9d3f32c0d",
+      "download_date": "2026-09-08",
+      "checksum": "f3cd8a1dfe14f51edc40c8012f12cdf34c3d7e1c51b62ef4539505d9d3f32c0d",
+      "archive_local_path": "datasets/uav/dronerf/source/DroneRF-v1.zip",
+      "archive_bytes": 4028694325,
+      "package_root": "datasets/uav/dronerf/packages/DroneRF",
+      "package_count": 23,
+      "recording_manifest": "datasets/uav/dronerf/recording-manifest.csv",
+      "recording_manifest_sha256": "e0ee395eebac30c03de3007cb2269e2d471b58d703ae02ff5ec76ad6a2dda135",
+      "split_manifest": "datasets/uav/dronerf/split-manifest.csv",
+      "split_manifest_sha256": "d176a2598e7e1a0e2d888f52363d5d17ae3dec5351bfbbd6d2e9f0a5874edff2",
+      "split_seed": 20260908,
+      "local_root": "datasets/uav/dronerf/packages/DroneRF",
+      "training_data_root": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908",
+      "training_verification_path": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908/verification.json",
+      "redistribution": "CC BY 4.0 允许在署名、保留许可链接并标注修改的前提下共享与改编；为控制安装包体积，默认不随软件分发全量原始数据。",
+      "official_description": {
+        "recorded_segments": 227,
+        "drone_count": 3,
+        "includes_background": true,
+        "modes": ["off", "on and connected", "hovering", "flying", "video recording"]
+      },
+      "notes": "Mendeley Data 官方页面确认固定版本、DOI、许可和数据用途。2026-09-08 下载的归档与官方 ZIP SHA-256 一致；自动解析得到 227 条 L/H 录制对。流式扫描验证每个频段均为 10000000 点，并生成 7264 个双频段原始幅值窗口；227 个产物的 SHA-256、形状、有限值、索引与集合隔离复核通过。允许开始同源录制级基线训练；数据未提供独立会话或物理设备实例 ID，不能宣称跨会话泛化。"
+    },
+    {
+      "name": "VTI_DroneSET",
+      "role": "external_candidate",
+      "status": "官方 V1 归档已下载且 SHA-256 核验通过；归档按作者要求受密码保护，内容解析与独立验证尚未放行",
+      "source_url": "https://data.mendeley.com/datasets/s6tgnnp5n2/1",
+      "dataset_doi": "10.17632/s6tgnnp5n2.1",
+      "paper_url": "https://www.vti.mod.gov.rs/oteh/elementi/rad/031.pdf",
+      "dataset_description_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/4e219a57-857d-4f58-b133-f7e1ed51de31",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "license_verified": true,
+      "license_evidence_url": "https://data.mendeley.com/datasets/s6tgnnp5n2/1",
+      "license_legalcode_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "version": "1",
+      "published_date": "2020-11-02",
+      "verified_on": "2026-09-08",
+      "archive_url": "https://data.mendeley.com/public-files/datasets/s6tgnnp5n2/files/0d16966c-fe20-45fe-a70f-d5dc55ba44ce/file_downloaded",
+      "archive_display_size": "6.28 GB",
+      "archive_bytes": 6277143852,
+      "archive_sha256": "524e038f6577729778dbd31910076880e296b24e3047e4976d7c74a6b7bc9a3a",
+      "archive_local_path": "datasets/uav/vti_droneset/source/VTI_DroneSET.7z",
+      "download_date": "2026-09-08",
+      "checksum": "524e038f6577729778dbd31910076880e296b24e3047e4976d7c74a6b7bc9a3a",
+      "archive_password_required": true,
+      "password_request_status": "已于 2026-09-08 从 2162891930@qq.com 向通讯作者发送申请，等待回复",
+      "archive_inventory": "datasets/uav/vti_droneset/archive-inventory.json",
+      "training_eligible": false,
+      "training_blocker": "缺少作者提供的归档密码，无法核验内层文件、MAT 变量、标签或录制边界；禁止用于训练或指标声明。",
+      "redistribution": "CC BY 4.0；下载后仍需保存标准引用、许可链接和修改说明。",
+      "official_description": {
+        "recording_count": 50,
+        "recording_duration_ms": 450,
+        "sampling_rate_msps": 150,
+        "instantaneous_bandwidth_mhz": 110,
+        "bands_ghz": [2.4, 5.8],
+        "drone_count": 3,
+        "experiments": ["single drone", "two drones", "three drones"],
+        "raw_format": "MATLAB .mat",
+        "environment": "laboratory/indoor"
+      },
+      "notes": "作为跨来源未知域候选，不与 DroneRF 标签直接混合。官方说明给出 25 条 2.4 GHz 与 25 条 5.8 GHz 录制及 BUI 标签规则，并明确要求邮件索取密码。取得密码后仍需核验内层文件、MAT 变量、设备/录制分组和频域数据含义；现阶段只有原始归档可审计，不具备训练资格。"
+    },
+    {
+      "name": "KU Leuven Drone RF Dataset",
+      "role": "external_candidate",
+      "status": "51 个 MAT 成员完成结构与 SHA-256 核验；论文确认 SJRC pro RC 属于 unknown source，整个归档已锁为 external_unknown_test；兼容单频段模型冻结前不运行评估",
+      "source_url": "https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/HZRVNZ",
+      "api_url": "https://rdr.kuleuven.be/api/datasets/:persistentId/?persistentId=doi:10.48804/HZRVNZ",
+      "dataset_doi": "10.48804/HZRVNZ",
+      "paper_url": "https://doi.org/10.23919/ICACT56868.2023.10079363",
+      "method_paper_url": "https://doi.org/10.1109/TCCN.2021.3099114",
+      "license": "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)",
+      "license_verified": true,
+      "license_evidence_url": "https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/HZRVNZ",
+      "license_legalcode_url": "https://creativecommons.org/licenses/by-nc/4.0/legalcode",
+      "version": "1.0",
+      "published_date": "2024-01-16",
+      "verified_on": "2026-09-08",
+      "official_file_count": 19,
+      "official_total_bytes": 46696930089,
+      "official_inventory": "datasets/uav/ku_leuven_drone_rf/file-inventory.json",
+      "official_api_snapshot": "datasets/uav/ku_leuven_drone_rf/official-api-response.json",
+      "documentation_download_log": "datasets/uav/ku_leuven_drone_rf/download-log.json",
+      "download_date": "2026-09-08",
+      "checksum": "SJRC_pro.zip MD5 afdf2346ea788452ffb171fe6bbc6566；SHA-256 4fc096a61f07cdc5e38b005578056264dad4742fa9a1778ed41abe89310f7cb9",
+      "archive_external_local_path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/source/SJRC_pro.zip",
+      "archive_audit": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-archive-audit.json",
+      "sample_content_audit": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-sample-content-audit.json",
+      "window_reader": "airwatch/data/matlab_v73_iq.py",
+      "window_reader_acceptance": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-window-reader-acceptance.json",
+      "recording_manifest": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-manifest-v1/recording-manifest.csv",
+      "recording_manifest_sha256": "e0601569c7230cdc1a93c58fadee9812be8f3685b6fe38e37ea65c377bbf43f9",
+      "window_plan": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-manifest-v1/window-plan.csv",
+      "window_plan_sha256": "406eb0a3c58ebff880ba6524a9b834154d606d1cb33ce18c2f99ecfe3743568c",
+      "manifest_verification": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-manifest-v1/manifest-verification.json",
+      "manifest_bundle_index": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-manifest-v1/bundle-index.json",
+      "acquisition_semantics_review": "datasets/uav/ku_leuven_drone_rf/acquisition-semantics-review.json",
+      "acquisition_semantics_review_sha256": "0981e3167cfb44143c298e2c87cb8597ba1d48802563826695aa9aba83addd7c",
+      "external_unknown_protocol": "training/configs/ku_leuven_sjrc_external_unknown_protocol_v1.json",
+      "external_unknown_protocol_sha256": "a70fd2f571a97c2cab8cb8805cb2b5b3dbc4fb290bc05956186e64eb408f5a7c",
+      "external_unknown_protocol_validation": "datasets/uav/ku_leuven_drone_rf/external-unknown-protocol-validation-v1.json",
+      "external_unknown_protocol_validation_sha256": "4f8367cbb31a0365791720f72310528442d4d020641830b7df427593d2e1802b",
+      "signal_type": "RC",
+      "evaluation_role": "external_unknown_test",
+      "training_eligible": false,
+      "training_blocker": "整个 SJRC_pro 归档被锁为外部未知类测试，永久禁止用于训练、验证、阈值选择或模型选择。现有 DroneRF 双频段模型与单频段 I/Q 不兼容。",
+      "redistribution": "CC BY-NC 4.0；正式参赛前需复核比赛授权条款，原始数据默认不随代码、安装包或公开材料再分发。",
+      "official_description": {
+        "sample_rate_msps": 100,
+        "center_frequency_ghz": 2.44,
+        "receiver": "Ettus Research USRP X310",
+        "environment": "semi-anechoic chamber",
+        "stored_format": "MATLAB v7.3 complex signal vectors in ZIP archives",
+        "device_or_controller_groups": 9
+      },
+      "first_archive_plan": {
+        "name": "SJRC_pro.zip",
+        "file_id": 154420,
+        "size_bytes": 1444331879,
+        "official_md5": "afdf2346ea788452ffb171fe6bbc6566",
+        "purpose": "只用于格式、变量和录制边界审计；审计通过前不进入训练或指标计算"
+      },
+      "notes": "51 个成员均直接在 ZIP 内核验为 uhd_samps 1×10000000 复数双精度数据，每条对应 0.1 秒，并计算独立 SHA-256。DE-FEND Table II 将 SJRC pro RC 列为 unknown source；采用整包外部未知测试可避免未公开会话关系导致的成员级切分泄漏。固定窗口计划的 1632 行只作为推理中间单元，正式报告按 MAT 成员和整包聚合。"
+    },
+    {
+      "name": "UAVSig",
+      "role": "external_candidate",
+      "status": "官方页面可访问，下载接口/版本待核实",
+      "source_url": "https://cores.ee.ucla.edu/downloads/datasets/uavsig/",
+      "paper_url": "待核实",
+      "license": "待核实",
+      "license_verified": false,
+      "version": "待核实",
+      "download_date": null,
+      "checksum": "待下载后计算",
+      "redistribution": "待核实",
+      "notes": "UCLA CORES 官方页面明确说明：用于无人机与遥控器 RF fingerprinting；数据由多架无人机/控制器采集；标签由 WHIRLS 算法生成；页面提醒 Dataverse 不稳定、整包下载可能过载，并指出 B205mini SDR 采样片段存在随机缺口。许可证未在页面明确给出，下载前必须核对 Dataverse 条款。",
+      "format": "官方页面未在本次登记中确认完整文件格式；待下载说明/Dataverse 元数据核对",
+      "labels": "论文/页面说明为 WHIRLS 标签；具体类别待从数据说明核对",
+      "access_evidence": "https://cores.ee.ucla.edu/downloads/datasets/uavsig/"
+    },
+    {
+      "name": "仓库历史演示数据",
+      "role": "demo_only",
+      "status": "仅流程测试，不是无人机训练数据",
+      "source_url": "仓库内 data/，来源记录不等同公开数据授权",
+      "paper_url": null,
+      "license": "项目内部演示资产，外部授权状态不适用",
+      "license_verified": true,
+      "version": "仓库当前版本",
+      "download_date": null,
+      "checksum": "由审计脚本生成",
+      "redistribution": "不得据此声明无人机业务性能",
+      "notes": "用于读取、绘图和历史模型流程测试；不纳入无人机训练/评估。"
+    }
+  ],
+  "local_inventory": {
+    "name": "仓库历史演示数据",
+    "root": "data",
+    "suffixes": [
+      ".npy",
+      ".dat",
+      ".mat"
+    ],
+    "files": [
+      {
+        "path": "bianma\\BCH\\BCH_demo_1.dat",
+        "size_bytes": 16384,
+        "sha256": "b3c7b0646a9aec21e53b98c3f714eec69457e56393c273ccd1d0eb503963b69d"
+      },
+      {
+        "path": "bianma\\BCH\\BCH_demo_2.dat",
+        "size_bytes": 16384,
+        "sha256": "f96a18f39eded9269047ca69c72b78f52b6e2733e36c8797e27872978c99496e"
+      },
+      {
+        "path": "bianma\\Conv\\Conv_demo_1.dat",
+        "size_bytes": 16384,
+        "sha256": "a2fea37756e1c23b277e5105082aff5f6925d7ad560f7c680b1df0ea577283f8"
+      },
+      {
+        "path": "bianma\\Conv\\Conv_demo_2.dat",
+        "size_bytes": 16384,
+        "sha256": "6d42534167b7d81aaacccf46b0eed09158d2b302f0d938e4b9a382fbffc81356"
+      },
+      {
+        "path": "demo_waveforms\\主页演示_QPSK_IQ.npy",
+        "size_bytes": 192128,
+        "sha256": "9d082d387d4f073ad9074a2b64909894c67129a0c8d169027ed212fa3df28f4c"
+      },
+      {
+        "path": "demo_waveforms\\主页演示_跳频脉冲.npy",
+        "size_bytes": 96128,
+        "sha256": "6a3cdb99bf1b899b760e2d8fb9475890fa9d3ac4fad4db92b3daf88b726ce2b2"
+      },
+      {
+        "path": "individual\\RCT102-171-2289-2001-06-car-A\\individual_demo_1_snr=19.dat",
+        "size_bytes": 65536,
+        "sha256": "fe0e5c5caf28533b9829233e1b8156c236f75c75906552e976ed1e10dfb4ef8a"
+      },
+      {
+        "path": "individual\\RCT102-171-2289-2001-06-car-A\\individual_demo_2_snr=25.dat",
+        "size_bytes": 65536,
+        "sha256": "50f6c2f4bf43de014b8eb5ebb79c2fd7f56d25f8c5ebb2407e2e89fa2aaae876"
+      },
+      {
+        "path": "individual\\RCT102-171-2289-2001-06-car-C\\individual_demo_1_snr=19.dat",
+        "size_bytes": 65536,
+        "sha256": "38e5eb78d6f316bfdbf8a7f1dd8319df9544d73d33766d7c76c9692b6b163abb"
+      },
+      {
+        "path": "individual\\RCT102-171-2289-2001-06-car-C\\individual_demo_2_snr=25.dat",
+        "size_bytes": 65536,
+        "sha256": "96ab49a536c231a8dc3be92c1c010556a43a218eb757e332da3240ac91c8806b"
+      },
+      {
+        "path": "modulation\\BPSK\\BPSK_demo_1_snr=18.dat",
+        "size_bytes": 65536,
+        "sha256": "6eb78fcdd89f2611ea5fbf78fead5d7ff4c9f7aa10aade503112ea32c9dc3ea1"
+      },
+      {
+        "path": "modulation\\BPSK\\BPSK_demo_2_snr=24.dat",
+        "size_bytes": 65536,
+        "sha256": "aedaa188d6e76d0a3ee999aad16ef3c454e0643f46928f857ccc3fadd227f5fe"
+      },
+      {
+        "path": "modulation\\QPSK\\QPSK_demo_1_snr=18.dat",
+        "size_bytes": 65536,
+        "sha256": "b8a7232cf271a438b61fccdbec5637af2216de4900f5dac3f2634a9ffebe0190"
+      },
+      {
+        "path": "modulation\\QPSK\\QPSK_demo_2_snr=24.dat",
+        "size_bytes": 65536,
+        "sha256": "1248981b9b9b83fb8944734863edf349cef629414e15f3a6f5186ba92b8de0b4"
+      },
+      {
+        "path": "tonglian\\1233\\link_demo_1_snr=20.dat",
+        "size_bytes": 160000,
+        "sha256": "9f0b336eb57d8f8275dc2a6286a93e556542b90e4a7b2da782164c45768dad62"
+      },
+      {
+        "path": "tonglian\\1233\\link_demo_2_snr=26.dat",
+        "size_bytes": 160000,
+        "sha256": "6c4bce9ca3f5a3479fe1469dcb28a300b8c566a879dc88e5cbbd0fc0fafeaf52"
+      },
+      {
+        "path": "tonglian\\1235\\link_demo_1_snr=20.dat",
+        "size_bytes": 160000,
+        "sha256": "3610c0ee991e1361c0c020ff535fdd3c0ba55c1d78cabef9575eaab1581ec660"
+      },
+      {
+        "path": "tonglian\\1235\\link_demo_2_snr=26.dat",
+        "size_bytes": 160000,
+        "sha256": "dccc7dcdcba0b349f21fa20a0402d6e3653e4070012c4af72236d3655e3a8937"
+      },
+      {
+        "path": "ui_manual_cases\\01_single_tone_6000Hz.npy",
+        "size_bytes": 65664,
+        "sha256": "0e593231504cc3d3ba97598c34a66011e6978d6e9e961132689b3eba3a3c33dd"
+      },
+      {
+        "path": "ui_manual_cases\\02_rising_chirp_2k_to_14k.npy",
+        "size_bytes": 65664,
+        "sha256": "7b84d811a51fffc0a61b1208749e801be9095c32d77479d225428975c54db80d"
+      },
+      {
+        "path": "ui_manual_cases\\03_periodic_pulses.npy",
+        "size_bytes": 65664,
+        "sha256": "11e723c85ea20c662ad89a89412825ed561c258a8ef7330082073bc492759e23"
+      },
+      {
+        "path": "ui_manual_cases\\04_qpsk_iq.npy",
+        "size_bytes": 131200,
+        "sha256": "b4c0e48f1e88d10da8a6390e7850e49cf0489968d7c38abd7ab1d4ca1244db5f"
+      },
+      {
+        "path": "ui_manual_cases\\05_two_channel_iq.npy",
+        "size_bytes": 131200,
+        "sha256": "0600b2fac11505405ae664c64b35a704b688da1a7171a904b668a99cc2bf1cce"
+      },
+      {
+        "path": "ui_manual_cases\\06_all_zero_rejected.npy",
+        "size_bytes": 16512,
+        "sha256": "2635875dd6981cd2c27ffe6e29691efb03a907ae8e34e0d4ea8013ecd5a5d8e2"
+      },
+      {
+        "path": "ui_manual_cases\\07_nan_rejected.npy",
+        "size_bytes": 144,
+        "sha256": "e82470c66f9ab8d0bddf51b0b461ec794d0c518b00c1c7ed94a9b8e6bcee3e8d"
+      },
+      {
+        "path": "ui_manual_cases\\08_too_short.npy",
+        "size_bytes": 140,
+        "sha256": "72e9745e2575f14e1e13f5f961b506ffd23551f1176a8a2a717007569b07fc80"
+      },
+      {
+        "path": "yewu\\数据\\data_demo_1_snr=18.dat",
+        "size_bytes": 65536,
+        "sha256": "5d72b6ded968d7408036334a5429c4871c98b6527527adf156a3d1124c3f7192"
+      },
+      {
+        "path": "yewu\\数据\\data_demo_2_snr=24.dat",
+        "size_bytes": 65536,
+        "sha256": "467f92e52276bd1db7441a3b9b2a6c3b81acde5dee8a0df08e7a5220fdc0a8da"
+      },
+      {
+        "path": "yewu\\话音\\voice_demo_1_snr=18.dat",
+        "size_bytes": 65536,
+        "sha256": "28898213502abfbf9c0fb3ba4b534137274afce58e25b26aa2c2342222af3e0d"
+      },
+      {
+        "path": "yewu\\话音\\voice_demo_2_snr=24.dat",
+        "size_bytes": 65536,
+        "sha256": "65b9632e6c89c906d437a7d6fec41f62cdd959277e9dbfab288e9768c65b0c7b"
+      }
+    ]
+  },
+  "research_checked_on": "2026-09-08",
+  "research_method": "核对 Mendeley Data 官方数据页、DataCite DOI 元数据、UCLA CORES 官方页面和数据作者官方代码仓库；未下载的外部数据仍不得用于训练或指标声明。"
+}

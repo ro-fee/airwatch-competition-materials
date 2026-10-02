@@ -1,0 +1,59 @@
+{
+  "architecture": "tcn",
+  "artifact_type": "airwatch_a800_runtime_v2",
+  "artifacts": {
+    "environment.json": {
+      "sha256": "69adf1f7561b454e3bfd36c5754bd90b3248b1f7e9b2a011a2e341379b20eda4",
+      "size_bytes": 231
+    },
+    "label-map.json": {
+      "sha256": "05b2e2ccb91d7b479dd9bd5d32d1dc318a923e25cb9ca9dac6fe99053c86d76a",
+      "size_bytes": 61
+    },
+    "model.pt": {
+      "sha256": "cbd2974953c85d694e87171755ae43754b44a6901aa0b77fac28661ab94c1695",
+      "size_bytes": 3448688
+    },
+    "open-set.json": {
+      "sha256": "eb313281c57ae8a70509d8949c2ee8a7e296e32a65e61bd01254cc264173eeb4",
+      "size_bytes": 22306
+    },
+    "preprocessing.json": {
+      "sha256": "882adc584d5a6443964fd7a1d0c7fea751ee4e2fa50434ef2aa5d397b54ce66f",
+      "size_bytes": 190
+    }
+  },
+  "code_hashes": {
+    "airwatch/__init__.py": "f26efdf859556476028fc99ae8dda93bb60b4060e1f180304eaa4447b23ab500",
+    "airwatch/data/__init__.py": "68479e2a7fcd727b4b037c71687b86ccadc9c5cc4b2abb8542ee0738d936aec9",
+    "airwatch/data/data_provenance.py": "c69be58464ddbcfa0c9e7f1e57be9168ba1c2c69617d8f0003688cde54df1287",
+    "airwatch/data/ku_leuven_preprocessing.py": "e74e8915c1bbc126ba5e0c422ad24e69e17b92d8c4d80d92e153f8d8fe5899ad",
+    "airwatch/inference/__init__.py": "e9bfe0dcadda69e11b6a1c644528d5324e62c2621afbbe376ee13d0971b23a2c",
+    "airwatch/inference/uav_a800_contract.py": "f31b8f44ef826bf62d285f9f7b4133ec62bb2d0176caa0cca9db2a1b3dbb4036",
+    "airwatch/inference/uav_open_set.py": "e908baf91c04477f51fda761a70d653040f20d3c260914eefb1fdc4dbb31dbfe",
+    "airwatch/models/__init__.py": "3104277c261b3c7c177b58e938c951dfed85585e2759878d3a6c60e51de6d125",
+    "airwatch/models/uav_baselines.py": "15f48724c3d1747454d4dab6b7a0106c9f84d80e0e2b242d9cf42885ebfcb1d5",
+    "airwatch/models/uav_multiscale_tcn.py": "df62c0b677748f1471b22b06aea4c52eda63e41cf54baf9180bb1c5517eef8c2"
+  },
+  "direction": "higher_is_known",
+  "input": {
+    "channels": [
+      "in_phase",
+      "quadrature"
+    ],
+    "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+    "sample_rate_hz": 100000000,
+    "window_samples": 4096,
+    "windows_per_member": 32
+  },
+  "limitations": [
+    "Three known RF control sources, not generic UAV presence detection.",
+    "A800 benchmark does not establish performance on an unmeasured target GPU."
+  ],
+  "model_version": "ff57311926a7633bf4643b394dd740d4329b9ae3dafcf16e34d22436ca507ed2",
+  "parameters": 856067,
+  "precision": "fp32",
+  "primary_score": "cosine",
+  "schema_version": "2.0",
+  "source_loading": "Put release/source first on PYTHONPATH; imported code must match shipped hashes."
+}

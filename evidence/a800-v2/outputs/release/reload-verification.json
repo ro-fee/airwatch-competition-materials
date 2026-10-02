@@ -1,0 +1,10 @@
+{
+  "actual_errors": {
+    "logits_max_absolute": 0.0,
+    "scores_max_absolute": 0.0
+  },
+  "class_equal": true,
+  "decision_equal": true,
+  "precision": "fp32",
+  "validation_member": "ku-leuven:frysky-v1:0034"
+}

@@ -1,0 +1,87 @@
+{
+  "purpose": "人工界面验收案例",
+  "sample_rate_hz": 48000,
+  "cases": [
+    {
+      "file": "01_single_tone_6000Hz.npy",
+      "relative_path": "data/ui_manual_cases/01_single_tone_6000Hz.npy",
+      "bytes": 65664,
+      "sha256": "0e593231504cc3d3ba97598c34a66011e6978d6e9e961132689b3eba3a3c33dd",
+      "shape": [
+        16384
+      ],
+      "dtype": "float32"
+    },
+    {
+      "file": "02_rising_chirp_2k_to_14k.npy",
+      "relative_path": "data/ui_manual_cases/02_rising_chirp_2k_to_14k.npy",
+      "bytes": 65664,
+      "sha256": "7b84d811a51fffc0a61b1208749e801be9095c32d77479d225428975c54db80d",
+      "shape": [
+        16384
+      ],
+      "dtype": "float32"
+    },
+    {
+      "file": "03_periodic_pulses.npy",
+      "relative_path": "data/ui_manual_cases/03_periodic_pulses.npy",
+      "bytes": 65664,
+      "sha256": "11e723c85ea20c662ad89a89412825ed561c258a8ef7330082073bc492759e23",
+      "shape": [
+        16384
+      ],
+      "dtype": "float32"
+    },
+    {
+      "file": "04_qpsk_iq.npy",
+      "relative_path": "data/ui_manual_cases/04_qpsk_iq.npy",
+      "bytes": 131200,
+      "sha256": "b4c0e48f1e88d10da8a6390e7850e49cf0489968d7c38abd7ab1d4ca1244db5f",
+      "shape": [
+        16384
+      ],
+      "dtype": "complex64"
+    },
+    {
+      "file": "05_two_channel_iq.npy",
+      "relative_path": "data/ui_manual_cases/05_two_channel_iq.npy",
+      "bytes": 131200,
+      "sha256": "0600b2fac11505405ae664c64b35a704b688da1a7171a904b668a99cc2bf1cce",
+      "shape": [
+        2,
+        16384
+      ],
+      "dtype": "float32"
+    },
+    {
+      "file": "06_all_zero_rejected.npy",
+      "relative_path": "data/ui_manual_cases/06_all_zero_rejected.npy",
+      "bytes": 16512,
+      "sha256": "2635875dd6981cd2c27ffe6e29691efb03a907ae8e34e0d4ea8013ecd5a5d8e2",
+      "shape": [
+        4096
+      ],
+      "dtype": "float32"
+    },
+    {
+      "file": "07_nan_rejected.npy",
+      "relative_path": "data/ui_manual_cases/07_nan_rejected.npy",
+      "bytes": 144,
+      "sha256": "e82470c66f9ab8d0bddf51b0b461ec794d0c518b00c1c7ed94a9b8e6bcee3e8d",
+      "shape": [
+        4
+      ],
+      "dtype": "float32"
+    },
+    {
+      "file": "08_too_short.npy",
+      "relative_path": "data/ui_manual_cases/08_too_short.npy",
+      "bytes": 140,
+      "sha256": "72e9745e2575f14e1e13f5f961b506ffd23551f1176a8a2a717007569b07fc80",
+      "shape": [
+        3
+      ],
+      "dtype": "float32"
+    }
+  ]
+}

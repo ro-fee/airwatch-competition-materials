@@ -1,0 +1,14 @@
+{
+  "protocol": "ku-leuven-augmented-local-development-v1",
+  "base_config": "training/configs/ku_leuven_tcn_local_development_v1.json",
+  "seeds": [20260909, 20260910, 20260911],
+  "augmentation": {"protocol": "ku-leuven-clean-awgn-multipath-training-v1"},
+  "training_mixture": "50% clean; 25% circular AWGN uniformly at 0/5/10/15/20 dB; 25% mild/severe multipath uniformly; epoch-dependent deterministic draw",
+  "checkpoint_selection": "unchanged: maximum clean validation recording macro-F1 then minimum clean validation loss",
+  "comparison": "all 40 previously frozen validation stress conditions, all three paired model seeds and each ensemble",
+  "acceptance": "candidate mean clean recording macro-F1 >= baseline mean minus 0.03; improve both mean 0/5/10 dB AWGN and mean mild/severe multipath recording macro-F1 across model seeds and repeats",
+  "test_data_allowed": false,
+  "unknown_data_allowed": false,
+  "competition_test_claim_allowed": false,
+  "a800_protocol_replaced": false
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "ku-leuven-sjrc-external-unknown-v1",
+  "frozen_on": "2026-09-09",
+  "task": "external_unknown_signal_rejection",
+  "dataset": {
+    "name": "KU Leuven Drone RF Dataset",
+    "version": "1.0",
+    "doi": "10.48804/HZRVNZ",
+    "archive_id": "sjrc-pro-v1",
+    "archive_name": "SJRC_pro.zip",
+    "archive_sha256": "4fc096a61f07cdc5e38b005578056264dad4742fa9a1778ed41abe89310f7cb9",
+    "device": "SJRC F11 Pro",
+    "signal_type": "RC",
+    "paper_role": "unknown_source"
+  },
+  "source_evidence": [
+    {
+      "kind": "official_dataset_documentation",
+      "url": "https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/HZRVNZ",
+      "local_path": "datasets/uav/ku_leuven_drone_rf/source-documentation/README.txt",
+      "sha256": "b4777ba35f90490a34c832187437bb84d339ecd35abfc670aa91cd6daca255eb",
+      "supports": "100 MSps, 2.44 GHz, USRP X310, semi-anechoic acquisition and SJRC F11 Pro source group"
+    },
+    {
+      "kind": "peer_reviewed_protocol_paper",
+      "title": "Autoencoder based framework for drone RF signal classification and novelty detection",
+      "doi": "10.23919/ICACT56868.2023.10079363",
+      "supports": "Table II identifies SJRC pro RC as an unknown source; the database section describes clean raw IQ acquisition without other communication interference"
+    },
+    {
+      "kind": "related_primary_paper",
+      "title": "Drone classification from RF fingerprints using deep residual nets",
+      "url": "https://arxiv.org/pdf/2011.13663",
+      "supports": "USRP signals were received in burst mode; stored bursts containing detected signals were later transformed into spectrogram samples"
+    }
+  ],
+  "artifacts": {
+    "manifest_bundle_index": {
+      "path": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-manifest-v1/bundle-index.json",
+      "sha256": "1ca68350378c95c24906a3b28183485a1e1efe1b3eed7d34afb1d486d3144da7"
+    },
+    "window_reader_acceptance": {
+      "path": "datasets/uav/ku_leuven_drone_rf/sjrc-pro-window-reader-acceptance.json",
+      "sha256": "c5f039cc4b8ea5a27bc1b07d0f68a1c62101a44e737d5f11e7b20f92a93b9562"
+    }
+  },
+  "role_assignment": {
+    "entire_archive_role": "external_unknown_test",
+    "all_recordings_in_one_locked_evaluation_group": true,
+    "member_level_split_allowed": false,
+    "training_allowed": false,
+    "validation_allowed": false,
+    "threshold_selection_allowed": false,
+    "model_selection_allowed": false,
+    "paper_protocol_alignment": "SJRC pro RC is treated as unknown, matching the DE-FEND paper's source role"
+  },
+  "evaluation_units": {
+    "window_predictions_are_intermediate_only": true,
+    "primary_unit": "MAT member",
+    "secondary_unit": "entire SJRC_pro archive",
+    "physical_session_independence_established": false
+  },
+  "prerequisites": [
+    "Freeze a model accepting single-band complex IQ or a derived time-frequency representation",
+    "Train and select the model without any KU Leuven samples",
+    "Select every open-set threshold using known-source validation data only",
+    "Freeze member-level aggregation before opening external-unknown results",
+    "Report that MAT-file independence at the physical acquisition-session level is unknown"
+  ],
+  "status": "blocked",
+  "training_eligible": false,
+  "evaluation_eligible": false,
+  "blocker": "The current DroneRF model consumes separate 2.4/5.8 GHz band channels, while SJRC_pro contains single-band complex I/Q; no compatible frozen model exists yet."
+}

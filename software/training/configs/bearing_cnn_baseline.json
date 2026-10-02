@@ -1,0 +1,25 @@
+{
+  "experiment_name": "bearing_cnn_baseline",
+  "dataset": {
+    "name": "CWRU",
+    "manifest": "datasets/bearing/cwru/split-manifest.csv",
+    "label_map": "datasets/bearing/cwru/label-map.json",
+    "window_size": 1024,
+    "step": 1024,
+    "normalization": "none",
+    "num_classes": 4
+  },
+  "training": {
+    "seed": 20260902,
+    "batch_size": 64,
+    "num_workers": 0,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "device": "auto"
+  },
+  "output": {
+    "checkpoint_dir": "artifacts/checkpoints/bearing",
+    "evidence_dir": "artifacts/evidence/bearing"
+  }
+}

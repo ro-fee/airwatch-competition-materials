@@ -1,0 +1,2 @@
+# Preserve snapshot bytes so scientific source hashes remain meaningful.
+* -text

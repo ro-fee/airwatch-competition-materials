@@ -1,0 +1,22 @@
+{
+  "protocol": "dronerf-dual-branch-ablation-v1",
+  "frozen_on": "2026-09-08",
+  "seed": 20260908,
+  "data_identity_source": "datasets/uav/dronerf/processed/dronerf-two-band-raw-windows-v1-w4096-n32-seed20260908/metadata.json",
+  "selection_metric": "validation recording-level drone_type macro_f1",
+  "test_usage": "Each predeclared variant is evaluated once after its best validation checkpoint is frozen; test results must not change the architecture or thresholds.",
+  "variants": [
+    {"id": "spectral_only", "model": "DroneRFSpectralCNN", "presence_head": false},
+    {"id": "dual_concat", "model": "DroneRFDualBranch", "fusion_mode": "concat", "presence_head": false},
+    {"id": "dual_adaptive", "model": "DroneRFDualBranch", "fusion_mode": "adaptive", "presence_head": false},
+    {"id": "dual_adaptive_presence", "model": "DroneRFDualBranch", "fusion_mode": "adaptive", "presence_head": true, "presence_loss_weight": 0.3}
+  ],
+  "fixed_training": {
+    "batch_size": 48,
+    "epochs": 20,
+    "early_stopping_patience": 6,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "normalization": "per_channel_window_zscore"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "command": "E:/CondaEnvs/rofee-bearing/python.exe -m unittest tests.test_uav_a800_contract tests.test_uav_multiscale_tcn -q",
+  "tests": 7,
+  "seconds": 10.385,
+  "cuda_visible_devices": "",
+  "scope": "Runtime contract and model unit tests; not business performance evaluation"
+}

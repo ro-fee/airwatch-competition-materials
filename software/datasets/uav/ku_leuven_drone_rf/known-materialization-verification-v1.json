@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "ku_leuven_known_materialization_registration",
+  "registered_on": "2026-09-09",
+  "external_root": "D:/AirWatch_Datasets/ku_leuven_drone_rf/prepared/known-iq-v1",
+  "external_metadata": {
+    "path": "D:/AirWatch_Datasets/ku_leuven_drone_rf/prepared/known-iq-v1/dataset-metadata.json",
+    "size_bytes": 2498,
+    "sha256": "a19f68f50a5636c01a2040817e993964ec17f3eca43420c5680a5df7dc86b9ca"
+  },
+  "preprocessing_id": "ku-leuven-iq-dc-rms-v1",
+  "train": {
+    "window_count": 3680,
+    "recording_count": 115,
+    "label_window_counts": [928, 1376, 1376],
+    "data_sha256": "c11a7027963b2fbe93517b9cb594a7362a7ec17157742570d6a5aebae26c3b13",
+    "labels_sha256": "4253ec981b7c00eea00687d189ccebe7eea0a7e30b4794e8458835de4d07b1db",
+    "windows_sha256": "292c9daedb6c482456a2ff3e0f21d675a4fb8906e446e24b62e4fa8480949464"
+  },
+  "validation": {
+    "window_count": 768,
+    "recording_count": 24,
+    "label_window_counts": [192, 288, 288],
+    "data_sha256": "78fc54b38f001a8f75984c3a7677c081704d49975658971af385ecd1d663d350",
+    "labels_sha256": "f1ce8b6e375aa7e190f925392a3ea769f02368e52ab3fc58a3c88d6b8c6bb325",
+    "windows_sha256": "48630436cfe4c3fccd463e4827127e65d286aa6519bdbf4d56e6ddf5710e3d7b"
+  },
+  "test_materialized": false,
+  "unknown_materialized": false,
+  "all_values_finite": true,
+  "training_data_ready": true,
+  "performance_evidence": false
+}
