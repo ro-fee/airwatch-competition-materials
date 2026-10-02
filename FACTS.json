@@ -2513,5 +2513,5 @@
     "Same-user process checks are workflow isolation, not an adversarial security boundary."
   ],
   "deployment_benchmark": "A800 only; recorded shared-GPU execution, target NVIDIA desktop benchmark pending",
-  "exclusions": "Private writing snapshot omits all raw datasets, model weights, optimizer checkpoints, wheels, detailed test shards and 90MB window predictions. Retains member-level evidence and source hashes. Not a complete runnable distribution."
+  "exclusions": "Public writing snapshot omits all raw datasets, model weights, optimizer checkpoints, wheels, detailed test shards and 90MB window predictions. Retains member-level evidence and source hashes. Not a complete runnable distribution."
 }

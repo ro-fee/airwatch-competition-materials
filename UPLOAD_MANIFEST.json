@@ -1,8 +1,8 @@
 {
   "as_of": "2026-10-03",
-  "purpose": "Private Codex Your dot competition writing reference",
+  "purpose": "Public Codex Your dot competition writing reference",
   "intended_repository": "ro-fee/airwatch-competition-materials",
-  "visibility_required": "private",
+  "visibility_required": "public",
   "files": [
     {
       "path": ".gitattributes",
@@ -16,18 +16,43 @@
     },
     {
       "path": "AGENTS.md",
-      "size_bytes": 1900,
-      "sha256": "98164918ba75e7b7f61acdf37eb6abd7ba2864bc7f267f587f8c5af6dcebc5ee"
+      "size_bytes": 1936,
+      "sha256": "5dcad93a7e07678162643a3f81b6e8eb3a01e539e275497034eb3359cb74f0af"
     },
     {
       "path": "CURRENT_FACTS.md",
-      "size_bytes": 3406,
-      "sha256": "9306ff5c4ef0b6eb21defbf260a109a32acbd9a1a72fa1fddbd10c5df4c090b1"
+      "size_bytes": 3427,
+      "sha256": "1487365fd6392f6539a92013fa09081dd4d5b1171d0e342a165770b49ad7c7cc"
     },
     {
       "path": "DOT_START_HERE.md",
-      "size_bytes": 2573,
-      "sha256": "0e0fabe01fc6bcfba5b3633e24e9b7db48b36ac24aadded526cf3a21cfa2c93c"
+      "size_bytes": 2582,
+      "sha256": "e03ad1e82289f664a23a4d262df110ce2fc44db8c93b7c4112d143c3a453f64e"
+    },
+    {
+      "path": "FACTS.json",
+      "size_bytes": 63590,
+      "sha256": "cbda3f60559c993a36b217807f617810bbd73a4085ae6445176912a18b2a9cff"
+    },
+    {
+      "path": "PRIVATE_USE.md",
+      "size_bytes": 1069,
+      "sha256": "c31f872aa2c2a0550422fbe1189d36c1fb4f4fb2aa0e57f23d5b6c46609bb0c2"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2342,
+      "sha256": "bf2a935b8cb46462fa213500f88e33f4ba2dd9a9d051d04787220b1caac3da4e"
+    },
+    {
+      "path": "WRITING_BRIEF.md",
+      "size_bytes": 3840,
+      "sha256": "3f7d08a419746261f5dd73a825e4c344aa2b26a67b80369323f582cb0e77e224"
+    },
+    {
+      "path": "evidence/a800-v2/README.md",
+      "size_bytes": 892,
+      "sha256": "5d4074ccc9978dcc24dabdcee9687988d4efb9bfce4840683d081041ac876f48"
     },
     {
       "path": "evidence/a800-v2/environment/candidate-status.json",
@@ -1220,29 +1245,9 @@
       "sha256": "e7b96212911e4337dc5c3c1a0ad26e82c502e17388a941eff358d6895d7a7b3f"
     },
     {
-      "path": "evidence/a800-v2/README.md",
-      "size_bytes": 892,
-      "sha256": "5d4074ccc9978dcc24dabdcee9687988d4efb9bfce4840683d081041ac876f48"
-    },
-    {
       "path": "evidence/a800-v2/training/configs/a800_v2/matrix.json",
       "size_bytes": 14465,
       "sha256": "c7b98f236a51e46ecaac554e96582f7ea5be0de0467d975939ecb4dfe853c4c9"
-    },
-    {
-      "path": "FACTS.json",
-      "size_bytes": 63591,
-      "sha256": "affae8088fb7d84fc12c1127db8f298169db59d77ba23fd8904ce2c1725befeb"
-    },
-    {
-      "path": "PRIVATE_USE.md",
-      "size_bytes": 1018,
-      "sha256": "c37c45f5eda41d3ec84e2640db78c619ea7af7a0d9246713b03e2ffc18360f68"
-    },
-    {
-      "path": "README.md",
-      "size_bytes": 2273,
-      "sha256": "75c4a1bfe6cfbff29885333fd9362697c6fbb544cb3e989bb15dbdb3e2fe760c"
     },
     {
       "path": "reference/空域电波哨兵_竞赛技术报告雏形_Word文本摘录.md",
@@ -1258,6 +1263,21 @@
       "path": "reference/项目功能与模块说明书_Word文本摘录.md",
       "size_bytes": 12452,
       "sha256": "7f8e3d8efa3f57edb326326d3ba525ef2d04494e39582d37cb09bc5ee2c9d31e"
+    },
+    {
+      "path": "software/MainWindowui.py",
+      "size_bytes": 66565,
+      "sha256": "1ce045d8729f017fe4c7e4a0c3dfc002d72972a5bf1af3de83ce469b5f2ffb9f"
+    },
+    {
+      "path": "software/MainWindowui.ui",
+      "size_bytes": 67626,
+      "sha256": "74c856a468b4a44bf459c6da77ef3cf1e159212744ff7a8060da8907a373fddf"
+    },
+    {
+      "path": "software/README.md",
+      "size_bytes": 7079,
+      "sha256": "80f23cec971561c5eb3eee82afcc7bd792b36dd3add9b5d093582e1b08271ba2"
     },
     {
       "path": "software/airwatch/__init__.py",
@@ -2280,14 +2300,14 @@
       "sha256": "1653c23bcb7c464437325600178557b79b49983df1c3ffb41c613ad83ece3dbe"
     },
     {
-      "path": "software/datasets/uav/dronerf/download-log.json",
-      "size_bytes": 1702,
-      "sha256": "d0d56e011579ec31c96951ffc0583b3bedb287256b18ea21359af6503cbda4cb"
-    },
-    {
       "path": "software/datasets/uav/dronerf/README.md",
       "size_bytes": 2038,
       "sha256": "3efde8c2dd19d22b99eb866a1a4f6f1551bf021125ddc511a468701c1a366801"
+    },
+    {
+      "path": "software/datasets/uav/dronerf/download-log.json",
+      "size_bytes": 1702,
+      "sha256": "d0d56e011579ec31c96951ffc0583b3bedb287256b18ea21359af6503cbda4cb"
     },
     {
       "path": "software/datasets/uav/dronerf/source-semantics-review.json",
@@ -2298,6 +2318,11 @@
       "path": "software/datasets/uav/dronerf/split-audit.json",
       "size_bytes": 2133,
       "sha256": "d2e792edad6b6dfb3d065970a88fa2df17f00575b75cabdd7eaaa2a6ca9dab4d"
+    },
+    {
+      "path": "software/datasets/uav/ku_leuven_drone_rf/README.md",
+      "size_bytes": 14374,
+      "sha256": "0c2774d9e0f3c67fba419ecca384dc49bd7ecdae18917adbd53884347b95ee8a"
     },
     {
       "path": "software/datasets/uav/ku_leuven_drone_rf/acquisition-semantics-review.json",
@@ -2355,11 +2380,6 @@
       "sha256": "0d65561efebda94605655eef065b60040b11f0634e3583012b9e2b72fee502a1"
     },
     {
-      "path": "software/datasets/uav/ku_leuven_drone_rf/README.md",
-      "size_bytes": 14374,
-      "sha256": "0c2774d9e0f3c67fba419ecca384dc49bd7ecdae18917adbd53884347b95ee8a"
-    },
-    {
       "path": "software/datasets/uav/ku_leuven_drone_rf/sjrc-pro-archive-audit.json",
       "size_bytes": 8511,
       "sha256": "be7c53dc533db173fed7a3931c8abe5a3c4419c60d004585614c6a7c35e3d1e7"
@@ -2380,6 +2400,11 @@
       "sha256": "1295070224649c511c4fdf22b23c906957ea28af32b8307d49c851be746f1e8b"
     },
     {
+      "path": "software/datasets/uav/vti_droneset/README.md",
+      "size_bytes": 2429,
+      "sha256": "e0a89af2317cce0ec73155456d17ef79008abe6588364a07066a56ccdb9f58e8"
+    },
+    {
       "path": "software/datasets/uav/vti_droneset/archive-inventory.json",
       "size_bytes": 1019,
       "sha256": "8da373da682f4de06575d247d1782a722ed043bc1a0b79e4bb678f0db93ed2bc"
@@ -2393,11 +2418,6 @@
       "path": "software/datasets/uav/vti_droneset/download-log.json",
       "size_bytes": 1095,
       "sha256": "a97301acd60cd2a32f3be75a76290a1ca1f8232da983ad4c3058ab7099bc6d2e"
-    },
-    {
-      "path": "software/datasets/uav/vti_droneset/README.md",
-      "size_bytes": 2429,
-      "sha256": "e0a89af2317cce0ec73155456d17ef79008abe6588364a07066a56ccdb9f58e8"
     },
     {
       "path": "software/docs/A800_ClaudeCode执行指南.md",
@@ -2515,14 +2535,9 @@
       "sha256": "e639c6615781f5b81abab55ba62dfea204c4f79f05898aa183d344ae2aa3caa7"
     },
     {
-      "path": "software/MainWindowui.py",
-      "size_bytes": 66565,
-      "sha256": "1ce045d8729f017fe4c7e4a0c3dfc002d72972a5bf1af3de83ce469b5f2ffb9f"
-    },
-    {
-      "path": "software/MainWindowui.ui",
-      "size_bytes": 67626,
-      "sha256": "74c856a468b4a44bf459c6da77ef3cf1e159212744ff7a8060da8907a373fddf"
+      "path": "software/models/ResNet18_TCN.py",
+      "size_bytes": 3474,
+      "sha256": "d6a7eb851c81a54803360aea0a2f18b01314482737767a544064d6e98a58033a"
     },
     {
       "path": "software/models/__init__.py",
@@ -2558,11 +2573,6 @@
       "path": "software/models/resnet.py",
       "size_bytes": 4342,
       "sha256": "0e6be7f56f5230146ddb5ccca0d432f3533b1dd723c1418ab17470197c207beb"
-    },
-    {
-      "path": "software/models/ResNet18_TCN.py",
-      "size_bytes": 3474,
-      "sha256": "d6a7eb851c81a54803360aea0a2f18b01314482737767a544064d6e98a58033a"
     },
     {
       "path": "software/models/resnet_tonglian.py",
@@ -2650,11 +2660,6 @@
       "sha256": "268866160cfb08e928c52c8067c044b4e42975d2a9e8e3adde989b43044d80fc"
     },
     {
-      "path": "software/README.md",
-      "size_bytes": 7079,
-      "sha256": "80f23cec971561c5eb3eee82afcc7bd792b36dd3add9b5d093582e1b08271ba2"
-    },
-    {
       "path": "software/requirements-hht.txt",
       "size_bytes": 332,
       "sha256": "4da2051729705564382d17f63146d4b0a1138a4e761c181616c123eddde282a4"
@@ -2705,6 +2710,11 @@
       "sha256": "9de12c4acf536cde2fe0f660862241ac692fee3b5b00168f5e8758d3f10aee52"
     },
     {
+      "path": "software/tests/README.md",
+      "size_bytes": 5695,
+      "sha256": "3d530c5ad6591abcdbd66dd195543d2fef9adde2366e0a0364e7c7e6b45490eb"
+    },
+    {
       "path": "software/tests/__init__.py",
       "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2713,11 +2723,6 @@
       "path": "software/tests/audit_general_recognition.py",
       "size_bytes": 4068,
       "sha256": "68c0970af6faefb03076a09aa8e7d1acbfdef5d9981fd78b5e03d7ef4e778801"
-    },
-    {
-      "path": "software/tests/README.md",
-      "size_bytes": 5695,
-      "sha256": "3d530c5ad6591abcdbd66dd195543d2fef9adde2366e0a0364e7c7e6b45490eb"
     },
     {
       "path": "software/tests/smoke_test.py",
@@ -3290,6 +3295,16 @@
       "sha256": "6bb550a405b1f8004818d4db98995fbe525e54a226f043bdf6560535cf6dbf8d"
     },
     {
+      "path": "software/training/A800_IMPLEMENTATION_CONTRACT.md",
+      "size_bytes": 4913,
+      "sha256": "fb0bf53bf0c9e3b0ed859e8c8f05bf790d61b4c9473a0e17fca874cba05a29d8"
+    },
+    {
+      "path": "software/training/A800_SERVER_AGENTS.md",
+      "size_bytes": 2041,
+      "sha256": "dab98a2def085d98f0d8cb217d00a8ff577fd485576ec930f9b33371927204ed"
+    },
+    {
       "path": "software/training/__init__.py",
       "size_bytes": 70,
       "sha256": "e1696139cc6de3a94ade7fbcdc10d15f9d15f805ff154b9584cf5ac0c1f15afc"
@@ -3330,11 +3345,6 @@
       "sha256": "75ae81bba1f92e92b361281b7201cc85c8875f0996cfd2d51693869f026d87f2"
     },
     {
-      "path": "software/training/A800_IMPLEMENTATION_CONTRACT.md",
-      "size_bytes": 4913,
-      "sha256": "fb0bf53bf0c9e3b0ed859e8c8f05bf790d61b4c9473a0e17fca874cba05a29d8"
-    },
-    {
       "path": "software/training/a800_objective.py",
       "size_bytes": 8909,
       "sha256": "d9e08861e5afbf713bbc64fefc5755c511e3394a38a1a87838973093a4cee1db"
@@ -3343,11 +3353,6 @@
       "path": "software/training/a800_runner.py",
       "size_bytes": 51376,
       "sha256": "9f21df92d2fbfab94621cb4c550d3879c239c9b7cd14e3dc477f14a45f10e09f"
-    },
-    {
-      "path": "software/training/A800_SERVER_AGENTS.md",
-      "size_bytes": 2041,
-      "sha256": "dab98a2def085d98f0d8cb217d00a8ff577fd485576ec930f9b33371927204ed"
     },
     {
       "path": "software/training/accept_bearing_inference.py",
@@ -3743,15 +3748,10 @@
       "path": "software/一键运行.bat",
       "size_bytes": 278,
       "sha256": "ef31214714e6db8e5fe947b9d83fffe003762a337590cf2118d5eab0af1b5b4d"
-    },
-    {
-      "path": "WRITING_BRIEF.md",
-      "size_bytes": 3840,
-      "sha256": "3f7d08a419746261f5dd73a825e4c344aa2b26a67b80369323f582cb0e77e224"
     }
   ],
   "file_count": 749,
-  "total_bytes": 30413590,
+  "total_bytes": 30413775,
   "credential_scan": {
     "files_scanned": 747,
     "suspicious_matches": 0,
@@ -3774,5 +3774,6 @@
     "local account and editor configuration",
     "password request email"
   ],
-  "source_archive_sha256": "325cf8f650b6bfa3dab6adf68bff55f940e52f031bc734a18acd36777de31e51"
+  "source_archive_sha256": "325cf8f650b6bfa3dab6adf68bff55f940e52f031bc734a18acd36777de31e51",
+  "visibility_authorized_on": "2026-10-03"
 }
